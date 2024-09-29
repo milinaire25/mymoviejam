@@ -40,12 +40,13 @@
         h1, h2, h3 {
             font-family: 'Bangers', cursive;
             letter-spacing: 2px;
+            margin-bottom: 1rem;
         }
         
         .hero {
             background-color: var(--secondary-color);
-            color: var(--dark-color);
-            padding: 4rem 0;
+            color: var(--light-color);
+            padding: 6rem 0;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -53,77 +54,167 @@
         
         .hero::before, .hero::after {
             content: "🎬";
-            font-size: 100px;
+            font-size: 150px;
             position: absolute;
-            opacity: 0.2;
+            opacity: 0.1;
         }
         
         .hero::before {
-            top: 20px;
-            left: 20px;
+            top: -20px;
+            left: -20px;
             transform: rotate(-20deg);
         }
         
         .hero::after {
-            bottom: 20px;
-            right: 20px;
+            bottom: -20px;
+            right: -20px;
             transform: rotate(20deg);
         }
         
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--light-color);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: var(--light-color);
+        }
+        
         .features {
-            padding: 4rem 0;
+            padding: 6rem 0;
             background-color: var(--light-color);
         }
         
         .feature {
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
             background-color: white;
-            padding: 20px;
+            padding: 30px;
             border-radius: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
         .feature:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .feature h3 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
         }
         
         .cta {
             background-color: var(--accent-color);
             color: var(--dark-color);
-            padding: 4rem 0;
+            padding: 6rem 0;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta::before, .cta::after {
+            content: "🍿";
+            font-size: 150px;
+            position: absolute;
+            opacity: 0.1;
+        }
+        
+        .cta::before {
+            top: -20px;
+            left: -20px;
+            transform: rotate(-20deg);
+        }
+        
+        .cta::after {
+            bottom: -20px;
+            right: -20px;
+            transform: rotate(20deg);
+        }
+        
+        .btn-container {
+            position: relative;
+            display: inline-block;
+            padding: 20px 0;
         }
         
         .btn {
             display: inline-block;
             background-color: var(--primary-color);
             color: var(--light-color);
-            padding: 12px 24px;
+            padding: 15px 30px;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
+            font-size: 1.1rem;
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            z-index: 1;
+            position: relative;
         }
         
         .btn:hover {
             background-color: var(--dark-color);
-            transform: scale(1.05);
+            transform: scale(1.05) rotate(-2deg);
+        }
+        
+        .movie-icon {
+            position: absolute;
+            font-size: 2.5rem;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .popcorn { left: -60px; top: -30px; animation-delay: 0s; }
+        .drink { right: -60px; top: -30px; animation-delay: 0.5s; }
+        .tv { left: -40px; bottom: -30px; animation-delay: 1s; }
+        .remote { right: -40px; bottom: -30px; animation-delay: 1.5s; }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
         }
         
         footer {
             background-color: var(--dark-color);
             color: var(--light-color);
             text-align: center;
-            padding: 1rem 0;
+            padding: 2rem 0;
+        }
+        
+        .emoji {
+            font-size: 2rem;
+            vertical-align: middle;
+            margin-right: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+            
+            .feature {
+                padding: 20px;
+            }
+            
+            .movie-icon {
+                font-size: 2rem;
+            }
+            
+            .popcorn { left: -40px; top: -20px; }
+            .drink { right: -40px; top: -20px; }
+            .tv { left: -30px; bottom: -20px; }
+            .remote { right: -30px; bottom: -20px; }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>🍿 MyMovieJam 🎥</h1>
+            <h1><span class="emoji">🍿</span>MyMovieJam<span class="emoji">🎥</span></h1>
         </div>
     </header>
 
@@ -131,22 +222,28 @@
         <div class="container">
             <h2>Discover Your Next Favorite Movie in Seconds!</h2>
             <p>AI-powered recommendations from real friends' feedback, right on WhatsApp!</p>
-            <a href="https://wa.me/6581615926" class="btn">Get Started 🚀</a>
+            <div class="btn-container">
+                <span class="movie-icon popcorn">🍿</span>
+                <span class="movie-icon drink">🥤</span>
+                <span class="movie-icon tv">📺</span>
+                <span class="movie-icon remote">📱</span>
+                <a href="https://wa.me/6581615926" class="btn">Get Started <span class="emoji">🚀</span></a>
+            </div>
         </div>
     </section>
 
     <section class="features">
         <div class="container">
             <div class="feature">
-                <h3>🎭 500+ Curated movie</h3>
-                <p>Access a handpicked selection of 500+ movie, carefully chosen based on real discussions and feedback from movie enthusiasts.</p>
+                <h3><span class="emoji">🎭</span>500+ Curated Movies</h3>
+                <p>Access a handpicked selection of 500+ movies, carefully chosen based on real discussions and feedback from movie enthusiasts.</p>
             </div>
             <div class="feature">
-                <h3>💬 WhatsApp Integration</h3>
+                <h3><span class="emoji">💬</span>WhatsApp Integration</h3>
                 <p>No need for another app! Get personalized movie recommendations right in your WhatsApp chat.</p>
             </div>
             <div class="feature">
-                <h3>⏱️ Save Time, Watch More</h3>
+                <h3><span class="emoji">⏱️</span>Save Time, Watch More</h3>
                 <p>Stop endless scrolling and searching. Get quick, tailored recommendations and spend more time enjoying great films.</p>
             </div>
         </div>
@@ -155,14 +252,14 @@
     <section class="cta">
         <div class="container">
             <h2>Ready to Transform Your Movie Nights?</h2>
-            <p>Join MymovieJam today and never struggle to find the perfect movie again!</p>
-            <a href="https://wa.me/6581615926" class="btn">Start Chatting with Our Bot 🤖</a>
+            <p>Join MyMovieJam today and never struggle to find the perfect movie again!</p>
+            <a href="https://wa.me/6581615926" class="btn">Start Chatting with Our Bot <span class="emoji">🤖</span></a>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 MymovieJam.com. All rights reserved. 🎬</p>
+            <p>&copy; 2024 MyMovieJam.com. All rights reserved. <span class="emoji">🎬</span></p>
         </div>
     </footer>
 </body>
