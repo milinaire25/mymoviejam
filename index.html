@@ -13,6 +13,8 @@
             --accent-color: #FFD93D;
             --dark-color: #1A535C;
             --light-color: #F7FFF7;
+            --user-bubble-color: #F4A261; /* Darker shade of yellow/orange */
+            --user-text-color: #2D3748; /* Dark gray for better contrast */
         }
         
         body {
@@ -112,7 +114,8 @@
         }
         
         .user-bubble {
-            background-color: var(--accent-color);
+            background-color: var(--user-bubble-color);
+            color: var(--user-text-color);
             align-self: flex-end;
             margin-left: auto;
         }
