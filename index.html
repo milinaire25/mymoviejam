@@ -46,33 +46,25 @@
         .hero {
             background-color: var(--secondary-color);
             color: var(--light-color);
-            padding: 6rem 0;
-            text-align: center;
+            padding: 4rem 0;
+            text-align: left;
             position: relative;
             overflow: hidden;
         }
         
-        .hero::before, .hero::after {
-            content: "🎬";
-            font-size: 150px;
-            position: absolute;
-            opacity: 0.1;
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         
-        .hero::before {
-            top: -20px;
-            left: -20px;
-            transform: rotate(-20deg);
-        }
-        
-        .hero::after {
-            bottom: -20px;
-            right: -20px;
-            transform: rotate(20deg);
+        .hero-text {
+            flex: 1;
+            padding-right: 2rem;
         }
         
         .hero h2 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin-bottom: 1rem;
             color: var(--light-color);
             text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
@@ -84,130 +76,103 @@
             color: var(--light-color);
         }
         
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .btn:hover {
+            background-color: var(--dark-color);
+            transform: scale(1.05);
+        }
+        
+        .chat-visual {
+            flex: 1;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            padding: 20px;
+            max-width: 300px;
+        }
+        
+        .chat-bubble {
+            max-width: 80%;
+            padding: 10px 15px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        
+        .user-bubble {
+            background-color: var(--accent-color);
+            align-self: flex-end;
+            margin-left: auto;
+        }
+        
+        .bot-bubble {
+            background-color: var(--secondary-color);
+            color: var(--light-color);
+        }
+        
         .features {
-            padding: 6rem 0;
+            padding: 4rem 0;
             background-color: var(--light-color);
         }
         
         .feature {
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
             background-color: white;
-            padding: 30px;
+            padding: 20px;
             border-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
         }
         
         .feature:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-        }
-        
-        .feature h3 {
-            color: var(--primary-color);
-            font-size: 1.8rem;
+            transform: translateY(-5px);
         }
         
         .cta {
             background-color: var(--accent-color);
             color: var(--dark-color);
-            padding: 6rem 0;
+            padding: 4rem 0;
             text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .cta::before, .cta::after {
-            content: "🍿";
-            font-size: 150px;
-            position: absolute;
-            opacity: 0.1;
-        }
-        
-        .cta::before {
-            top: -20px;
-            left: -20px;
-            transform: rotate(-20deg);
-        }
-        
-        .cta::after {
-            bottom: -20px;
-            right: -20px;
-            transform: rotate(20deg);
-        }
-        
-        .btn-container {
-            position: relative;
-            display: inline-block;
-            padding: 20px 0;
-        }
-        
-        .btn {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: var(--light-color);
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            z-index: 1;
-            position: relative;
-        }
-        
-        .btn:hover {
-            background-color: var(--dark-color);
-            transform: scale(1.05) rotate(-2deg);
-        }
-        
-        .movie-icon {
-            position: absolute;
-            font-size: 2.5rem;
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        .popcorn { left: -60px; top: -30px; animation-delay: 0s; }
-        .drink { right: -60px; top: -30px; animation-delay: 0.5s; }
-        .tv { left: -40px; bottom: -30px; animation-delay: 1s; }
-        .remote { right: -40px; bottom: -30px; animation-delay: 1.5s; }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
         }
         
         footer {
             background-color: var(--dark-color);
             color: var(--light-color);
             text-align: center;
-            padding: 2rem 0;
+            padding: 1rem 0;
         }
         
         .emoji {
-            font-size: 2rem;
+            font-size: 1.5rem;
             vertical-align: middle;
             margin-right: 0.5rem;
         }
         
         @media (max-width: 768px) {
-            .hero h2 {
-                font-size: 2.5rem;
+            .hero-content {
+                flex-direction: column;
             }
             
-            .feature {
-                padding: 20px;
+            .hero-text {
+                padding-right: 0;
+                margin-bottom: 2rem;
             }
             
-            .movie-icon {
-                font-size: 2rem;
+            .chat-visual {
+                max-width: 100%;
             }
-            
-            .popcorn { left: -40px; top: -20px; }
-            .drink { right: -40px; top: -20px; }
-            .tv { left: -30px; bottom: -20px; }
-            .remote { right: -30px; bottom: -20px; }
         }
     </style>
 </head>
@@ -219,15 +184,17 @@
     </header>
 
     <section class="hero">
-        <div class="container">
-            <h2>Discover Your Next Favorite Movie in Seconds!</h2>
-            <p>Discover films everyone love: AI powered movie recommendations on WhatsApp!</p>
-            <div class="btn-container">
-                <span class="movie-icon popcorn">🍿</span>
-                <span class="movie-icon drink">🥤</span>
-                <span class="movie-icon tv">📺</span>
-                <span class="movie-icon remote">📱</span>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h2>Discover Your Next Favorite Movie in Seconds!</h2>
+                <p>AI-powered recommendations from real friends' feedback, right on WhatsApp!</p>
                 <a href="https://wa.me/6581615926" class="btn">Get Started <span class="emoji">🚀</span></a>
+            </div>
+            <div class="chat-visual">
+                <div class="chat-bubble user-bubble">What should I watch tonight?</div>
+                <div class="chat-bubble bot-bubble">Based on your preferences, I recommend "The Grand Budapest Hotel"! It's a quirky comedy with great visuals.</div>
+                <div class="chat-bubble user-bubble">Sounds interesting! Any more details?</div>
+                <div class="chat-bubble bot-bubble">Directed by Wes Anderson, it's set in a fictional European country and follows the adventures of a legendary concierge. It's got a star-studded cast and a unique storytelling style!</div>
             </div>
         </div>
     </section>
