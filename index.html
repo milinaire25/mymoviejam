@@ -13,8 +13,8 @@
             --accent-color: #FFD93D;
             --dark-color: #1A535C;
             --light-color: #F7FFF7;
-            --user-bubble-color: #F4A261; /* Darker shade of yellow/orange */
-            --user-text-color: #2D3748; /* Dark gray for better contrast */
+            --user-bubble-color: #F4A261;
+            --user-text-color: #2D3748;
         }
         
         body {
@@ -103,6 +103,15 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
             padding: 20px;
             max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+        }
+        
+        .chat-messages {
+            flex-grow: 1;
+            overflow-y: auto;
+            margin-bottom: 10px;
         }
         
         .chat-bubble {
@@ -123,6 +132,28 @@
         .bot-bubble {
             background-color: var(--secondary-color);
             color: var(--light-color);
+        }
+        
+        .chat-input {
+            display: flex;
+        }
+        
+        .chat-input input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .chat-input button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            margin-left: 10px;
+            cursor: pointer;
         }
         
         .features {
@@ -194,10 +225,11 @@
                 <a href="https://wa.me/6581615926" class="btn">Get Started <span class="emoji">🚀</span></a>
             </div>
             <div class="chat-visual">
-                <div class="chat-bubble user-bubble">What should I watch tonight?</div>
-                <div class="chat-bubble bot-bubble">Based on your preferences, I recommend "The Grand Budapest Hotel"! It's a quirky comedy with great visuals.</div>
-                <div class="chat-bubble user-bubble">Sounds interesting! Any more details?</div>
-                <div class="chat-bubble bot-bubble">Directed by Wes Anderson, it's set in a fictional European country and follows the adventures of a legendary concierge. It's got a star-studded cast and a unique storytelling style!</div>
+                <div class="chat-messages" id="chatMessages"></div>
+                <div class="chat-input">
+                    <input type="text" id="userInput" placeholder="Type your message...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
             </div>
         </div>
     </section>
@@ -232,5 +264,59 @@
             <p>&copy; 2024 MyMovieJam.com. All rights reserved. <span class="emoji">🎬</span></p>
         </div>
     </footer>
+
+    <script>
+        const chatMessages = document.getElementById('chatMessages');
+        const userInput = document.getElementById('userInput');
+        let conversationStep = 0;
+
+        const conversation = [
+            { role: 'user', message: "What should I watch tonight?" },
+            { role: 'bot', message: "Based on your preferences, I recommend 'The Grand Budapest Hotel'! It's a quirky comedy with great visuals." },
+            { role: 'user', message: "Sounds interesting! Any more details?" },
+            { role: 'bot', message: "Certainly! 'The Grand Budapest Hotel' is directed by Wes Anderson. It's set in a fictional European country and follows the adventures of a legendary concierge. The film features a star-studded cast including Ralph Fiennes, Tony Revolori, and many others. It's known for its unique storytelling style, vibrant color palette, and meticulous set design. The movie blends comedy, drama, and a touch of mystery, making it a delightful and visually stunning experience!" }
+        ];
+
+        function addMessage(role, message) {
+            const bubble = document.createElement('div');
+            bubble.className = `chat-bubble ${role}-bubble`;
+            bubble.textContent = message;
+            chatMessages.appendChild(bubble);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function sendMessage() {
+            const message = userInput.value.trim();
+            if (message) {
+                addMessage('user', message);
+                userInput.value = '';
+                setTimeout(() => {
+                    if (conversationStep < conversation.length) {
+                        addMessage(conversation[conversationStep].role, conversation[conversationStep].message);
+                        conversationStep++;
+                    } else {
+                        addMessage('bot', "I hope that helps! Do you have any other questions about movies or would you like another recommendation?");
+                    }
+                }, 1000);
+            }
+        }
+
+        userInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Start the conversation
+        function startConversation() {
+            if (conversationStep < conversation.length) {
+                addMessage(conversation[conversationStep].role, conversation[conversationStep].message);
+                conversationStep++;
+                setTimeout(startConversation, 1500);
+            }
+        }
+
+        setTimeout(startConversation, 1000);
+    </script>
 </body>
 </html>
