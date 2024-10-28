@@ -296,7 +296,37 @@
             font-size: 16px;
             font-weight: 400;
         }
+        
+        /* Add these new styles right here */
+        .email-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #666;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background: white;
+            margin-top: 15px;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
 
+        .email-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            color: #333;
+        }
+
+        .email-link svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .email-link span {
+            font-size: 14px;
+            font-weight: 500;
+        }
         .emoji {
             font-size: 20px;
             vertical-align: middle;
@@ -409,6 +439,19 @@
             .x-link {
                 padding: 8px;
             }
+            /* Add these new styles here */
+            .email-link {
+                padding: 6px 12px;
+            }
+            
+            .email-link svg {
+                width: 16px;
+                height: 16px;
+            }
+            
+            .email-link span {
+                font-size: 13px;
+            }
         }
 
         @media (max-width: 360px) {
@@ -444,6 +487,7 @@
                 font-size: 13px;
             }
         }
+       
     </style>
 </head>
 <body>
@@ -526,6 +570,13 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 MyMovieJam.com. All rights reserved. <span class="emoji">🎬</span></p>
+            <a href="mailto:milinaire@outlook.com" class="email-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <span>Mailbox</span>
+            </a>
         </div>
     </footer>
 </body>
