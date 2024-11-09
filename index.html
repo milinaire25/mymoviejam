@@ -331,7 +331,34 @@
             font-size: 20px;
             vertical-align: middle;
         }
+        .tagline {
+            margin: -20px 0 40px 0;
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            color: #666;
+        }
+        @media (max-width: 768px) {
+            .tagline {
+                font-size: 20px;
+                margin: -15px 0 30px 0;
+            }
+        }
 
+        @media (max-width: 480px) {
+            .tagline {
+                font-size: 18px;
+                margin: -10px 0 25px 0;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .tagline {
+                font-size: 16px;
+                margin: -8px 0 20px 0;
+            }
+        }
+        
         @media (max-width: 768px) {
             body {
                 padding: 10px;
@@ -511,16 +538,13 @@
     </header>
 
     <main class="container">
-        <div class="badge">
-            <div class="badge-icon">
-                <svg viewBox="0 0 24 24" fill="white">
-                    <path d="M8 5v14l11-7z"/>
-                </svg>
-            </div>
-            <span>Your Personal Entertainment Guide</span>
-        </div>
-
+        
         <h1>The AI-powered WhatsApp chatbot for perfect streaming recommendations</h1>
+
+
+        <div style="margin: -20px 0 40px 0; font-size: 24px; font-weight: 900; letter-spacing: -0.02em; color: #666;">
+            Stop Scrolling, Start Watching
+        </div>
 
         <div class="action-buttons">
             <a href="https://api.whatsapp.com/send?phone=6581615926&text=Hi,%20What%20should%20I%20watch%20today%20?" class="button">
