@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMovieJam Blog - Streaming Playbooks & Product Updates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --accent: #ff4444;
+            --text: #111;
+            --muted: #666;
+            --surface: #fff;
+            --gradient: linear-gradient(135deg, #f8f9fe 0%, #f0e6ff 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: var(--gradient);
+            color: var(--text);
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .page-shell {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0 10px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            background: var(--accent);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon svg {
+            width: 22px;
+            height: 22px;
+            fill: #fff;
+        }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--muted);
+            padding: 6px 12px;
+            border-radius: 999px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background: rgba(37, 211, 102, 0.12);
+            color: var(--primary);
+        }
+
+        .hero {
+            text-align: center;
+            margin: 40px 0 48px;
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 6vw, 52px);
+            font-weight: 900;
+            letter-spacing: -0.04em;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: var(--muted);
+            max-width: 640px;
+            margin: 0 auto 24px;
+        }
+
+        .hero .meta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--surface);
+            padding: 10px 20px;
+            border-radius: 32px;
+            font-weight: 500;
+            box-shadow: 0 10px 30px rgba(25, 4, 82, 0.1);
+        }
+
+        .section-label {
+            font-size: 14px;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .featured-card {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 32px;
+            padding: 32px;
+            box-shadow: 0 15px 35px rgba(25, 4, 82, 0.08);
+            margin-bottom: 56px;
+        }
+
+        .featured-card img {
+            width: 100%;
+            border-radius: 24px;
+            object-fit: cover;
+            aspect-ratio: 4 / 3;
+        }
+
+        .featured-card h2 {
+            font-size: 32px;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .featured-card p {
+            color: var(--muted);
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary);
+            background: rgba(37, 211, 102, 0.12);
+            padding: 6px 14px;
+            border-radius: 999px;
+            margin-bottom: 16px;
+        }
+
+        .featured-card a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--primary);
+        }
+
+        .featured-card a svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .post-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin-bottom: 64px;
+        }
+
+        .post-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 24px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            box-shadow: 0 12px 30px rgba(25, 4, 82, 0.07);
+        }
+
+        .post-card h3 {
+            font-size: 22px;
+            letter-spacing: -0.01em;
+        }
+
+        .post-card p {
+            color: var(--muted);
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        .post-card footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 12px;
+            border-top: 1px solid rgba(0,0,0,0.08);
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .post-card .cta-link {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .subscribe {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: #fff;
+            border-radius: 32px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(18, 140, 126, 0.35);
+            margin-bottom: 64px;
+        }
+
+        .subscribe h2 {
+            font-size: 28px;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        .subscribe p {
+            opacity: 0.85;
+            margin-bottom: 24px;
+        }
+
+        .subscribe form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .subscribe input {
+            padding: 14px 18px;
+            border-radius: 999px;
+            border: none;
+            min-width: 260px;
+            font-size: 16px;
+        }
+
+        .subscribe button {
+            border: none;
+            border-radius: 999px;
+            padding: 14px 28px;
+            background: #fff;
+            color: var(--primary);
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .article-list {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 24px;
+            padding: 32px;
+            box-shadow: 0 12px 24px rgba(25, 4, 82, 0.06);
+        }
+
+        .article-item {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 18px;
+            padding: 18px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .article-item:last-child {
+            border-bottom: none;
+        }
+
+        .article-item h4 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .article-meta {
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 28px;
+            border-radius: 999px;
+            background: var(--surface);
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            margin-top: 16px;
+        }
+
+        footer.site-foot {
+            margin-top: 64px;
+            padding: 24px 0 0;
+            border-top: 1px solid rgba(0,0,0,0.08);
+            text-align: center;
+            color: var(--muted);
+        }
+
+        @media (max-width: 720px) {
+            header {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .featured-card {
+                padding: 24px;
+            }
+
+            .article-item {
+                grid-template-columns: 1fr;
+            }
+
+            .subscribe {
+                padding: 32px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-shell">
+        <header>
+            <a class="logo" href="/">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </span>
+                <span class="logo-text">MyMovieJam</span>
+            </a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/blog" class="active">Blog</a>
+                <a href="https://api.whatsapp.com/send?phone=6581615926&text=Hi%20MovieJam,%20What%20should%20I%20watch%20tonight?" target="_blank">Chat on WhatsApp</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="meta">Insights · Product drops · Streaming guides</div>
+            <h1>Stories from the MovieJam crew</h1>
+            <p>Behind-the-scenes learnings as we build the WhatsApp companion that fixes decision fatigue for movie lovers. Product updates, curations, and data-backed playbooks for better movie nights.</p>
+        </section>
+
+        <div class="section-label">Feature</div>
+        <article class="featured-card">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=800&q=80" alt="People choosing movies together">
+            <div>
+                <span class="tag">Product Update</span>
+                <h2>How MovieJam builds a perfect rec flow in under 90 seconds</h2>
+                <p>We walk through the conversation design, ranking heuristics, and personalization loops that power MovieJam today—including a peek at the human-in-the-loop process for keeping recommendations fresh in Southeast Asia.</p>
+                <a href="/blog/perfect-rec-flow" aria-label="Read more about the recommendation flow">
+                    Read the playbook
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </article>
+
+        <div class="section-label">Latest Drops</div>
+        <div class="post-grid">
+            <article class="post-card">
+                <span class="tag">Curated List</span>
+                <h3>12 rainy-night comfort films our community can’t stop rewatching</h3>
+                <p>From Ghibli vibes to nostalgic rom-coms, here’s what WhatsApp users are queuing when the weather calls for coziness. Each pick comes with a snack pairing and where to stream in SG.</p>
+                <footer>
+                    <span>Mar 4 · 6 min read</span>
+                    <a class="cta-link" href="/blog/rainy-night-comfort-films">Read</a>
+                </footer>
+            </article>
+
+            <article class="post-card">
+                <span class="tag">Builder Notes</span>
+                <h3>Shipping faster replies with a WhatsApp-native typing indicator</h3>
+                <p>We shaved 14 seconds off perceived wait time by rethinking how the bot tees up follow-up prompts. Here’s the UX rationale and the automation recipe.</p>
+                <footer>
+                    <span>Feb 25 · 4 min read</span>
+                    <a class="cta-link" href="/blog/typing-indicator-launch">Read</a>
+                </footer>
+            </article>
+
+            <article class="post-card">
+                <span class="tag">Data Note</span>
+                <h3>The genres trending in Singapore this quarter</h3>
+                <p>Romance surged 22% while thriller chats dipped. We share anonymized watchlist data, what it means for our recommendation weights, and how brands can plug in.</p>
+                <footer>
+                    <span>Feb 10 · 5 min read</span>
+                    <a class="cta-link" href="/blog/sg-streaming-trends-q1">Read</a>
+                </footer>
+            </article>
+        </div>
+
+        <section class="subscribe">
+            <h2>Get the drop first</h2>
+            <p>Monthly digest with new features, curated lists, and open roles. Zero spam, pinky promise.</p>
+            <form>
+                <input type="email" placeholder="Email address" aria-label="Email address">
+                <button type="button">Notify me</button>
+            </form>
+            <a class="cta-button" href="https://api.whatsapp.com/send?phone=6581615926&text=Add%20me%20to%20the%20MovieJam%20insider%20list" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12l5 5L20 7" />
+                </svg>
+                Prefer WhatsApp? Tap to join the insider list
+            </a>
+        </section>
+
+        <div class="section-label">More Stories</div>
+        <div class="article-list">
+            <div class="article-item">
+                <div>
+                    <h4>Designing emojis that feel like film critics</h4>
+                    <p class="article-meta">Tone, pacing, and microcopy tips from the MovieJam conversation style guide.</p>
+                </div>
+                <a class="cta-link" href="/blog/emoji-style-guide">Read →</a>
+            </div>
+            <div class="article-item">
+                <div>
+                    <h4>Why we route discovery conversations through WhatsApp first</h4>
+                    <p class="article-meta">Channel strategy notes plus the KPIs we monitor each week.</p>
+                </div>
+                <a class="cta-link" href="/blog/whatsapp-first-strategy">Read →</a>
+            </div>
+            <div class="article-item">
+                <div>
+                    <h4>Integrating Letterboxd lists into the recommendation engine</h4>
+                    <p class="article-meta">A quick walkthrough of our new ingestion pipeline.</p>
+                </div>
+                <a class="cta-link" href="/blog/letterboxd-pipeline">Read →</a>
+            </div>
+        </div>
+
+        <footer class="site-foot">
+            <p>© 2024 MyMovieJam. Built for people who are done doom-scrolling.</p>
+        </footer>
+    </div>
+</body>
+</html>
