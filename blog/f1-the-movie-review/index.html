@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 The Movie Review – Adrenaline for MovieJam Readers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --accent: #ff4444;
+            --text: #0c0c0c;
+            --muted: #555;
+            --surface: #fff;
+            --gradient: linear-gradient(135deg, #0f1117 0%, #1b1f2b 35%, #012b45 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: var(--gradient);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            color: var(--text);
+            line-height: 1.65;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        header {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 28px 24px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: #fff;
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            margin-left: 18px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        .article-shell {
+            max-width: 780px;
+            margin: 0 auto 80px;
+            background: #fff;
+            border-radius: 36px;
+            padding: 48px 40px 64px;
+            box-shadow: 0 25px 60px rgba(5, 7, 21, 0.4);
+        }
+
+        .eyebrow {
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            font-size: 13px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: clamp(32px, 6vw, 48px);
+            letter-spacing: -0.03em;
+            margin-bottom: 18px;
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .hero-img {
+            width: 100%;
+            border-radius: 26px;
+            margin-bottom: 30px;
+            object-fit: cover;
+            max-height: 430px;
+        }
+
+        p {
+            margin-bottom: 18px;
+            color: #1b1b1b;
+        }
+
+        h2 {
+            font-size: 26px;
+            margin: 32px 0 12px;
+        }
+
+        ul {
+            padding-left: 22px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        blockquote {
+            margin: 28px 0;
+            padding: 18px 22px;
+            border-left: 4px solid var(--primary);
+            background: rgba(37,211,102,0.08);
+            color: #0f5132;
+            font-style: italic;
+        }
+
+        .callout {
+            background: rgba(18,140,126,0.08);
+            border-radius: 20px;
+            padding: 18px 22px;
+            margin-bottom: 24px;
+        }
+
+        .rating-card {
+            margin-top: 44px;
+            padding: 32px;
+            border-radius: 30px;
+            background: linear-gradient(145deg, #ff512f 0%, #dd2476 100%);
+            color: #fff;
+            text-align: center;
+        }
+
+        .rating-card strong {
+            font-size: 42px;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        footer {
+            text-align: center;
+            color: rgba(255,255,255,0.7);
+            padding-bottom: 40px;
+        }
+
+        @media (max-width: 640px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+            nav a {
+                margin-left: 0;
+            }
+            .article-shell {
+                padding: 36px 22px 48px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a class="logo" href="/">
+            <span class="logo-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                </svg>
+            </span>
+            <span>MyMovieJam</span>
+        </a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/blog">Blog</a>
+            <a href="https://api.whatsapp.com/send?phone=6581615926&text=Hey%20MovieJam" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </nav>
+    </header>
+
+    <main class="article-shell">
+        <div class="eyebrow">Curated List · Audience Perspective</div>
+        <h1>F1 The Movie Review: Buckle Up for the Ultimate Adrenaline Rush</h1>
+        <div class="meta">
+            <span>Published · March 22, 2026</span>
+            <span>By MovieJam Crew</span>
+            <span>5 min read</span>
+        </div>
+        <img class="hero-img" src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=80" alt="Formula 1 car at full speed">
+
+        <p>I walked into the theater expecting a solid racing flick with Brad Pitt doing his cool-guy thing, but what I got was a full-throttle, heart-pounding experience that had me gripping my seat like it was a steering wheel at 200 mph. As a casual F1 fan who mostly watches highlights on YouTube, <em>F1 The Movie</em> (or simply <em>F1</em>) completely blew me away. Directed by Joseph Kosinski (the mind behind <em>Top Gun: Maverick</em>), this isn’t just another sports drama—it’s a love letter to speed, redemption, and the raw chaos of Formula 1 that demands the biggest screen you can find.</p>
+
+        <p>The setup is classic, but the execution is pure cinema. Sonny Hayes (Brad Pitt), a washed-up legend from the ’90s, gets pulled back to mentor a fearless rookie (Damson Idris) and salvage a scrappy underdog team. Javier Bardem charms and bargains as the team boss, Kerry Condon keeps the garage grounded, and together they feel like real mechanics chasing impossible lap times. Rivalries, crashes, hot-head decisions—it hits every beat, but with enough restraint that nothing feels cheesy. The emotional punches actually land because the characters earn them.</p>
+
+        <h2>Why audiences are obsessed</h2>
+        <ul>
+            <li><strong>The racing sequences are insane.</strong> Shot during actual Grand Prix weekends, every camera move puts you inside the cockpit—tires screaming, G-forces punching, overtakes that made our entire IMAX auditorium shriek.</li>
+            <li><strong>Sound design that rattles your spine.</strong> Engines roar through your chest cavity; you can practically smell the brake dust. It’s <em>Rush</em> meets <em>Top Gun</em>, but grounded in real F1 energy.</li>
+            <li><strong>Brad Pitt in swagger mode.</strong> He balances laid-back charisma with bruised vulnerability; Sonny Hayes feels like a guy who’s seen it all but still has one more fire left.</li>
+            <li><strong>Team chemistry.</strong> The rookie-mentor bromance plus the pit-wall banter makes you invest from lap one. The cameos and Easter eggs are tasteful, too.</li>
+        </ul>
+
+        <h2>Is it perfect?</h2>
+        <p>Not quite. The story follows a familiar redemption arc and a couple of emotional beats telegraph themselves like a DRS overtake. If you crave documentary-level pit-stop realism, you might nitpick a strategy call or two. But honestly? When the rest of the film is this entertaining, the predictability barely registers.</p>
+
+        <blockquote>
+            “I saw it in IMAX and immediately wanted to buy another ticket. The adrenaline high had me humming the soundtrack on the ride home.”
+        </blockquote>
+
+        <div class="callout">
+            <strong>Watch settings:</strong> Catch it in the loudest auditorium you can—IMAX or Dolby if still playing. Bring your crew, because you’ll want to gush right after.
+        </div>
+
+        <h2>Bottom line</h2>
+        <p><em>F1 The Movie</em> is pure summer-blockbuster joy. It left me buzzing for hours, already planning a rewatch with friends. If you’re into fast cars, widescreen spectacle, or just two and a half hours of escapist thrill, this is the pick. Skip the small screen—this belongs in theaters.</p>
+
+        <div class="rating-card">
+            <strong>8.5 / 10</strong>
+            <span>(Or ★★★★☆ — that half-star is for the adrenaline rush that lingers days later.)</span>
+        </div>
+    </main>
+
+    <footer>
+        © 2026 MyMovieJam · Perfecting movie night recs in WhatsApp.
+    </footer>
+</body>
+</html>
