@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMovieJam Pricing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f8f9fe 0%, #f0e6ff 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #0d0d0d;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px 40px;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-left: 40px;
+        }
+
+        .logo-icon {
+            background: #ff4444;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+        }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-left: auto;
+            margin-right: 10px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            font-weight: 500;
+            color: #000;
+            padding: 8px 18px;
+            border-radius: 999px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.2s ease;
+        }
+
+        .nav-link:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .social-links {
+            margin-right: 40px;
+        }
+
+        .x-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background: white;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .x-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .x-link svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .pricing-hero {
+            max-width: 900px;
+            margin: 60px auto 40px;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            padding: 8px 18px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.7);
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #6c4cff;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            margin-bottom: 20px;
+            color: #0d0d0d;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #4a4a4a;
+            line-height: 1.4;
+        }
+
+        .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .plan-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 20px 45px rgba(79, 70, 229, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .plan-card.featured {
+            background: linear-gradient(180deg, #ffffff 0%, #edf6f2 100%);
+            border: 1px solid rgba(18, 140, 126, 0.25);
+            position: relative;
+            transform: translateY(-10px);
+        }
+
+        .plan-card h3 {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .plan-tagline {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .price {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+        }
+
+        .price .current {
+            font-size: 40px;
+            font-weight: 900;
+        }
+
+        .price .period {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .price-note {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .price-note .original {
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            color: #333;
+            line-height: 1.4;
+            font-size: 16px;
+        }
+
+        li::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #25D366;
+            margin-top: 7px;
+            flex-shrink: 0;
+        }
+
+        .plan-card.free li::before {
+            background: #cfcfcf;
+        }
+
+        .plan-card.premium li::before {
+            background: #8f5cff;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            border-radius: 999px;
+            padding: 14px 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            font-size: 16px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        .cta-button.free {
+            background: linear-gradient(135deg, #fef7ff 0%, #f0e3ff 100%);
+            color: #6c4cff;
+            border: 1px solid rgba(108, 76, 255, 0.2);
+            box-shadow: 0 8px 18px rgba(108, 76, 255, 0.15);
+        }
+
+        .cta-button.starter {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: #fff;
+            box-shadow: 0 10px 25px rgba(18, 140, 126, 0.25);
+        }
+
+        .cta-button.premium {
+            background: linear-gradient(135deg, #8f5cff 0%, #5c38d4 100%);
+            color: #fff;
+            box-shadow: 0 10px 25px rgba(92, 56, 212, 0.2);
+        }
+
+        .badge {
+            align-self: flex-start;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(37, 211, 102, 0.15);
+            color: #128C7E;
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            padding: 6px 14px;
+            border-radius: 999px;
+            letter-spacing: 0.08em;
+            margin-bottom: 8px;
+        }
+
+        .pricing-note {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .cta-strip {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: #fff;
+            max-width: 900px;
+            margin: 60px auto;
+            border-radius: 30px;
+            padding: 40px 50px;
+            text-align: center;
+            box-shadow: 0 25px 40px rgba(18, 140, 126, 0.25);
+        }
+
+        .cta-strip h2 {
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+        }
+
+        .cta-strip p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 24px;
+        }
+
+        .white-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            color: #128C7E;
+            font-weight: 600;
+            border-radius: 30px;
+            padding: 14px 28px;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #f8f9fe;
+            padding: 30px 0;
+            text-align: center;
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+        footer p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .email-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #666;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background: white;
+            margin-top: 15px;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .email-link svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .email-link span {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px 10px;
+            }
+
+            .logo {
+                margin-left: 0;
+            }
+
+            .nav-links {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+
+            .plan-card {
+                padding: 24px;
+            }
+
+            .plan-card.featured {
+                transform: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .price .current {
+                font-size: 32px;
+            }
+
+            .cta-strip {
+                padding: 30px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24" fill="white">
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+            </div>
+            <span class="logo-text">MyMovieJam</span>
+        </div>
+        <nav class="nav-links">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/pricing.html" class="nav-link">Pricing</a>
+            <a href="/blog" class="nav-link">Blog</a>
+        </nav>
+        <div class="social-links">
+            <a href="https://x.com/movies_jam" target="_blank" class="x-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                </svg>
+                <span>Follow us</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="pricing-hero">
+        <div class="eyebrow">Pricing</div>
+        <h1>Pick the plan that keeps your movie nights effortless</h1>
+        <p class="subtitle">Every plan keeps you chatting with MovieJam on WhatsApp—upgrade only when you want insider drops and proactive recs.</p>
+    </main>
+
+    <section class="plans-grid">
+        <article class="plan-card free">
+            <div>
+                <h3>Free</h3>
+                <p class="plan-tagline">Jump in and chat with MovieJam today.</p>
+            </div>
+            <div>
+                <div class="price">
+                    <span class="current">$0</span>
+                    <span class="period">/ forever</span>
+                </div>
+            </div>
+            <ul>
+                <li>Direct access to the WhatsApp bot for instant recommendations.</li>
+                <li>Weekly Twitter drops highlighting what to watch.</li>
+                <li>In-depth blog breakdowns of new releases.</li>
+            </ul>
+            <button class="cta-button free">Start for Free</button>
+        </article>
+
+        <article class="plan-card featured">
+            <div class="badge">Most Popular · 50% off</div>
+            <div>
+                <h3>Starter</h3>
+                <p class="plan-tagline">Become an insider and get nudges before the weekend hits.</p>
+            </div>
+            <div>
+                <div class="price">
+                    <span class="current">$6</span>
+                    <span class="period">/ 6 months</span>
+                </div>
+                <p class="price-note">Launch offer · <span class="original">$12</span> value</p>
+            </div>
+            <ul>
+                <li>Everything in Free.</li>
+                <li>Insider List membership for behind-the-scenes experiments.</li>
+                <li>Push movie recommendations every Friday on WhatsApp.</li>
+            </ul>
+            <button class="cta-button starter">Buy Starter Pass</button>
+        </article>
+
+        <article class="plan-card premium">
+            <div>
+                <h3>Premium</h3>
+                <p class="plan-tagline">Stay in the loop all year with zero gaps.</p>
+            </div>
+            <div>
+                <div class="price">
+                    <span class="current">$12</span>
+                    <span class="period">/ year</span>
+                </div>
+                <p class="price-note">Launch offer · <span class="original">$24</span> value</p>
+            </div>
+            <ul>
+                <li>Everything in Free and Starter.</li>
+                <li>Year-long concierge access so pushes never stop.</li>
+                <li>Priority access to upcoming AI features and drops.</li>
+            </ul>
+            <button class="cta-button premium">Buy Premium</button>
+        </article>
+    </section>
+
+    <p class="pricing-note">*We charge because Meta charges us for sending outgoing messages.</p>
+
+    <section class="cta-strip">
+        <h2>Ready to stop scrolling and start watching?</h2>
+        <p>Lock in your plan now and let MovieJam handle movie night.</p>
+        <a href="https://api.whatsapp.com/send?phone=6581615926&text=What%20should%20I%20watch%20tonight%3F" class="white-btn" target="_blank">Chat with the bot</a>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MyMovieJam.com. All rights reserved. 🎬</p>
+            <a href="mailto:milinaire@outlook.com" class="email-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <span>Mailbox</span>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
