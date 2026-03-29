@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How MovieJam Builds a Perfect Rec Flow in Under 90 Seconds | MyMovieJam</title>
+    <meta name="description" content="A peek inside MovieJam’s WhatsApp conversation design: context capture, ranking heuristics, human-in-the-loop edits, and the KPIs that keep replies under 90 seconds." />
+    <meta name="keywords" content="movie recommendation flow, conversation design, WhatsApp chatbot, MovieJam" />
+    <link rel="canonical" href="https://mymoviejam.com/blog/perfect-rec-flow/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="MyMovieJam" />
+    <meta property="og:title" content="How MovieJam Builds a Perfect Rec Flow in Under 90 Seconds" />
+    <meta property="og:description" content="See the conversation architecture and ranking loops that power the MovieJam WhatsApp concierge." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=1200&q=80" />
+    <meta property="article:published_time" content="2026-03-29" />
+    <meta property="article:author" content="MovieJam Crew" />
+    <meta property="og:url" content="https://mymoviejam.com/blog/perfect-rec-flow/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="How MovieJam Builds a Perfect Rec Flow in Under 90 Seconds" />
+    <meta name="twitter:description" content="See the conversation architecture and ranking loops that power the MovieJam WhatsApp concierge." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=1200&q=80" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --accent: #ff5757;
+            --text: #111;
+            --muted: #555;
+            --surface: #fff;
+            --gradient: linear-gradient(135deg, #05060f 0%, #12081f 40%, #030a18 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            min-height: 100vh;
+            background: var(--gradient);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            color: var(--text);
+            line-height: 1.65;
+        }
+
+        header {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .logo-icon {
+            background: var(--accent);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon svg { width: 20px; height: 20px; fill: #fff; }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 500;
+            color: rgba(255,255,255,0.85);
+            margin-left: 16px;
+        }
+
+        nav a:hover { color: var(--primary); }
+
+        .article-shell {
+            max-width: 780px;
+            margin: 0 auto 80px;
+            background: var(--surface);
+            border-radius: 32px;
+            padding: 40px 36px 64px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            font-size: 13px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: clamp(32px, 6vw, 48px);
+            letter-spacing: -0.03em;
+            margin-bottom: 18px;
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 14px;
+            color: var(--muted);
+            margin-bottom: 28px;
+        }
+
+        .hero-img {
+            width: 100%;
+            border-radius: 24px;
+            margin-bottom: 28px;
+            object-fit: cover;
+            max-height: 420px;
+        }
+
+        h2 { font-size: 26px; margin: 32px 0 12px; letter-spacing: -0.01em; }
+        h3 { font-size: 20px; margin: 18px 0 10px; }
+        p { margin-bottom: 18px; color: #1b1b1b; }
+
+        .pill-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+
+        .pill {
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: rgba(37,211,102,0.12);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+
+        .stage-card {
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 24px;
+            background: rgba(18,140,126,0.08);
+        }
+
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin: 32px 0;
+        }
+
+        .kpi-card {
+            border-radius: 18px;
+            padding: 20px;
+            background: rgba(255, 87, 87, 0.08);
+            border: 1px solid rgba(255,87,87,0.18);
+        }
+
+        .kpi-card strong { font-size: 30px; display: block; margin-bottom: 4px; }
+
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 16px;
+            margin: 24px 0;
+            color: var(--muted);
+            font-style: italic;
+        }
+
+        .cta-card {
+            margin-top: 40px;
+            padding: 32px;
+            border-radius: 24px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: #fff;
+            box-shadow: 0 20px 40px rgba(18,140,126,0.35);
+        }
+
+        .cta-card h3 { font-size: 24px; margin-bottom: 12px; }
+
+        .cta-card a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 18px;
+            padding: 12px 24px;
+            border-radius: 999px;
+            background: #fff;
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        footer { text-align: center; color: rgba(255,255,255,0.7); margin: 40px 0; font-size: 14px; }
+
+        @media (max-width: 640px) {
+            header { flex-direction: column; gap: 12px; }
+            nav a { margin-left: 0; }
+            .article-shell { padding: 32px 22px 48px; }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "How MovieJam Builds a Perfect Rec Flow in Under 90 Seconds",
+      "description": "A behind-the-scenes look at the conversation flow, scoring, and human review loop that power MovieJam's WhatsApp concierge.",
+      "image": "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=1200&q=80",
+      "datePublished": "2026-03-29",
+      "dateModified": "2026-03-29",
+      "author": {
+        "@type": "Organization",
+        "name": "MovieJam Crew"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "MyMovieJam",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://mymoviejam.com/logo.svg"
+        }
+      },
+      "mainEntityOfPage": "https://mymoviejam.com/blog/perfect-rec-flow/"
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <a class="logo" href="/">
+            <span class="logo-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                </svg>
+            </span>
+            <span>MyMovieJam</span>
+        </a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/blog">Blog</a>
+            <a href="https://api.whatsapp.com/send?phone=6581615926&text=Hi%20MovieJam" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </nav>
+    </header>
+
+    <main class="article-shell">
+        <div class="eyebrow">Product Update · March 29, 2026</div>
+        <h1>How MovieJam Builds a Perfect Rec Flow in Under 90 Seconds</h1>
+        <div class="meta">
+            <span>By MovieJam Crew</span>
+            <span>5 min read</span>
+            <span>Tags: Product · Automation</span>
+        </div>
+        <img class="hero-img" src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=1200&q=80" alt="Notebooks and sticky notes planning a conversational flow">
+
+        <p>The WhatsApp experience is deceptively simple—text MovieJam, wait a minute, get three eerily accurate picks. Under the hood we run a tight loop of context capture, scoring, and human spot-checks. Here’s the exact flow we iterate on every week.</p>
+
+        <div class="pill-row">
+            <span class="pill">Latency target: &lt; 90s</span>
+            <span class="pill">Top-3 accuracy goal: 86%</span>
+            <span class="pill">Human review coverage: 20%</span>
+        </div>
+
+        <h2>Step 1 · Warm context intake</h2>
+        <div class="stage-card">
+            <h3>Conversation primer</h3>
+            <p>We ask for four data points upfront: mood, companions, available services, and hard no-go genres. If the user skips one, the bot adds a light follow-up (“any services off limits tonight?”) before it starts ranking.</p>
+            <p>We also track “emotional energy” keywords (tired, wired, need cozy) because they map better to success than genre labels alone.</p>
+        </div>
+
+        <h2>Step 2 · Scoring + ranking</h2>
+        <div class="stage-card">
+            <h3>Recipe</h3>
+            <ul>
+                <li><strong>Weight 1:</strong> Mood compatibility score pulled from our embeddings library.</li>
+                <li><strong>Weight 2:</strong> Momentum signals (Letterboxd buzz, WhatsApp mentions, box office if theatrical).</li>
+                <li><strong>Weight 3:</strong> Diversity guardrail—we ensure at least one pick is a “curveball” to avoid bland lists.</li>
+            </ul>
+            <p>The system drafts 5–7 options, then whittles down to three based on freshness (no repeats in the last 21 days for the same user).</p>
+        </div>
+
+        <h2>Step 3 · Human-in-the-loop</h2>
+        <div class="stage-card">
+            <h3>Editor review</h3>
+            <p>20% of chats route to a human editor (rotating schedule) who can tweak synopses, swap a title, or add snack/playlist notes. Editors tag each change with a reason code so the model learns when we override it.</p>
+        </div>
+
+        <h2>Step 4 · Delivery + instrumentation</h2>
+        <div class="stage-card">
+            <h3>What we watch</h3>
+            <ul>
+                <li>Did the user react with 👍, ask for swaps, or drop off?</li>
+                <li>Did they request the same mood again within 7 days?</li>
+                <li>Were any titles geo-blocked? If so, the fallback library updates automatically.</li>
+            </ul>
+        </div>
+
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <strong>67%</strong>
+                <span>Sessions that end after the first three picks (no swaps needed).</span>
+            </div>
+            <div class="kpi-card">
+                <strong>32s</strong>
+                <span>Median time from prompt → first response when no follow-up questions are needed.</span>
+            </div>
+            <div class="kpi-card">
+                <strong>11%</strong>
+                <span>Chats where we deliberately inject a human editor for surprise &amp; delight.</span>
+            </div>
+        </div>
+
+        <blockquote>“The magic trick is balancing personalisation with novelty. We’d rather risk one wild-card pick than send three safe tiles you could’ve scrolled past yourself.” — MovieJam Ops</blockquote>
+
+        <h2>What’s next</h2>
+        <ul>
+            <li>Auto-summarising “why this rec” blurbs so people can skim faster.</li>
+            <li>Surfacing soundtrack snippets inside WhatsApp for music-driven films.</li>
+            <li>Letting Premium users say “send me the rainy-night variant” and auto-apply saved preferences.</li>
+        </ul>
+
+        <div class="cta-card">
+            <h3>Want the full playbook?</h3>
+            <p>If you’re building a compset concierge or want help tuning your rec system, we can share our prompt templates and QA dashboards.</p>
+            <a href="https://api.whatsapp.com/send?phone=6581615926&text=Walk%20me%20through%20the%20rec%20stack" target="_blank" rel="noopener">Request the walkthrough →</a>
+        </div>
+    </main>
+
+    <footer>
+        © 2026 MyMovieJam · Built for movie lovers who’d rather chat than doom-scroll.
+    </footer>
+</body>
+</html>

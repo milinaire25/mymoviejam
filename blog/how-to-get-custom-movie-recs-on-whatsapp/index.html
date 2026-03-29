@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Get Custom Movie Recommendations on WhatsApp in 3 Steps | MyMovieJam</title>
+    <meta name="description" content="Follow this 3-step playbook to message MyMovieJam on WhatsApp, feed it the right context, and lock in a personalized movie queue in under a minute." />
+    <meta name="keywords" content="WhatsApp movie recommendations, custom movie picks, MyMovieJam tutorial, how to use MovieJam" />
+    <link rel="canonical" href="https://mymoviejam.com/blog/how-to-get-custom-movie-recs-on-whatsapp/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="MyMovieJam" />
+    <meta property="og:title" content="How to Get Custom Movie Recommendations on WhatsApp in 3 Steps" />
+    <meta property="og:description" content="Save the bot, send the perfect first prompt, and refine your queue—here’s the fastest way to use MyMovieJam on WhatsApp." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" />
+    <meta property="article:published_time" content="2026-03-29" />
+    <meta property="article:author" content="MovieJam Crew" />
+    <meta property="og:url" content="https://mymoviejam.com/blog/how-to-get-custom-movie-recs-on-whatsapp/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="How to Get Custom Movie Recommendations on WhatsApp in 3 Steps" />
+    <meta name="twitter:description" content="Save the bot, send the perfect first prompt, and refine your queue—here’s the fastest way to use MyMovieJam on WhatsApp." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --accent: #ffbf34;
+            --text: #111;
+            --muted: #575757;
+            --surface: #fff;
+            --gradient: linear-gradient(135deg, #05060c 0%, #111628 40%, #1a2033 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: var(--gradient);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            color: var(--text);
+            line-height: 1.65;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        header {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .logo-icon {
+            background: var(--accent);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: #fff;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 500;
+            color: rgba(255,255,255,0.85);
+            margin-left: 16px;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .article-shell {
+            max-width: 760px;
+            margin: 0 auto 80px;
+            background: var(--surface);
+            border-radius: 32px;
+            padding: 40px 32px 64px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            font-size: 13px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: clamp(32px, 6vw, 46px);
+            letter-spacing: -0.03em;
+            margin-bottom: 18px;
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 14px;
+            color: var(--muted);
+            margin-bottom: 28px;
+        }
+
+        .hero-img {
+            width: 100%;
+            border-radius: 24px;
+            margin-bottom: 28px;
+            object-fit: cover;
+            max-height: 420px;
+        }
+
+        h2 {
+            font-size: 26px;
+            margin: 32px 0 12px;
+            letter-spacing: -0.01em;
+        }
+
+        p {
+            margin-bottom: 18px;
+            color: #1b1b1b;
+        }
+
+        .step-card {
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 24px;
+            background: rgba(18,140,126,0.07);
+        }
+
+        .step-label {
+            font-size: 13px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .step-card h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .tip {
+            padding: 14px 18px;
+            border-radius: 14px;
+            background: rgba(255,191,52,0.18);
+            font-size: 14px;
+            color: #7a4b00;
+            margin-top: 12px;
+        }
+
+        .cta-card {
+            margin-top: 40px;
+            padding: 32px;
+            border-radius: 24px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: #fff;
+            box-shadow: 0 20px 40px rgba(18,140,126,0.35);
+        }
+
+        .cta-card h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .cta-card p {
+            color: rgba(255,255,255,0.92);
+        }
+
+        .cta-card a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 18px;
+            padding: 12px 24px;
+            border-radius: 999px;
+            background: #fff;
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            color: rgba(255,255,255,0.7);
+            margin: 40px 0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 640px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin-left: 0;
+            }
+
+            .article-shell {
+                padding: 32px 20px 48px;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to get custom movie recommendations on WhatsApp",
+      "description": "Use MyMovieJam on WhatsApp to generate personalized movie queues in three steps.",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+      "totalTime": "PT1M",
+      "supply": [
+        {"@type": "HowToSupply", "name": "WhatsApp account"},
+        {"@type": "HowToSupply", "name": "MovieJam contact"}
+      ],
+      "tool": [
+        {"@type": "HowToTool", "name": "Smartphone"}
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Save the MovieJam contact",
+          "text": "Add +65 8161 5926 to WhatsApp, label it MovieJam, and pin it for quick access.",
+          "url": "https://mymoviejam.com/blog/how-to-get-custom-movie-recs-on-whatsapp/#step-1"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Send the perfect first prompt",
+          "text": "Open the chat and send a quick brief that covers mood, who you're watching with, preferred services, and any hard no-go genres.",
+          "url": "https://mymoviejam.com/blog/how-to-get-custom-movie-recs-on-whatsapp/#step-2"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Refine and pin your watch pack",
+          "text": "Ask follow-up questions, request alternates, then star the final list or forward it to your group.",
+          "url": "https://mymoviejam.com/blog/how-to-get-custom-movie-recs-on-whatsapp/#step-3"
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "MyMovieJam",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://mymoviejam.com/logo.svg"
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <a class="logo" href="/">
+            <span class="logo-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                </svg>
+            </span>
+            <span>MyMovieJam</span>
+        </a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/blog">Blog</a>
+            <a href="https://api.whatsapp.com/send?phone=6581615926&text=Hi%20MovieJam" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </nav>
+    </header>
+
+    <main class="article-shell">
+        <div class="eyebrow">How-To · March 29, 2026</div>
+        <h1>How to Get Custom Movie Recommendations on WhatsApp in 3 Steps</h1>
+        <div class="meta">
+            <span>By MovieJam Crew</span>
+            <span>4 min read</span>
+            <span>Tags: How-To · WhatsApp</span>
+        </div>
+        <img class="hero-img" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Person using WhatsApp on smartphone with laptop nearby">
+
+        <p>No more doom-scrolling inside Netflix. If you message the MovieJam bot with the right context, it spits out a three-title pack—with streaming links and snack ideas—in under a minute. Here’s the exact flow our power users follow.</p>
+
+        <div class="step-card" id="step-1">
+            <div class="step-label">Step 1</div>
+            <h3>Save + pin the MovieJam contact</h3>
+            <p>Add <strong>+65 8161 5926</strong> to your phone, label it “MovieJam 🎬”, and pin it to the top of WhatsApp so it’s one tap away. Bonus: star the latest watch pack so you can surface it any time.</p>
+            <div class="tip">Tip: If you’re sharing the bot with friends, drop the contact card into your group chat once so everyone can summon it.</div>
+        </div>
+
+        <div class="step-card" id="step-2">
+            <div class="step-label">Step 2</div>
+            <h3>Send the perfect first prompt</h3>
+            <p>The bot replies fastest when you give it human-level context. Copy/paste this template and tweak the blanks:</p>
+            <p><strong>“Hey MovieJam, it’s ______. I’m watching with ______, mood is ______, we have ______ (Netflix/Prime/Disney+), hard no-go genres: ______. Hit me with three picks + snack ideas.”</strong></p>
+            <div class="tip">Want TV shows instead? Mention episode length (“need 30-min episodes only”) or say “give me series not films.”</div>
+        </div>
+
+        <div class="step-card" id="step-3">
+            <div class="step-label">Step 3</div>
+            <h3>Refine, react, and pin the final list</h3>
+            <p>If a suggestion doesn’t vibe with you, reply with “swap #2 for something funnier” or “need Tamil-only dubs.” Once you love the list, star the message or forward it to your group chat so the plan doesn’t get buried.</p>
+            <div class="tip">You can also text “Friday drop” to get a proactive pack before the weekend. Premium members get it automatically.</div>
+        </div>
+
+        <h2>FAQ: quick fixes</h2>
+        <p><strong>Can MovieJam handle multiple regions?</strong> Yes—just tell us your country or VPN setup so we can prioritise the right catalogs.</p>
+        <p><strong>What if I want shows for kids / parents / date night?</strong> Mention the audience and we’ll split the playlist or send separate packs.</p>
+        <p><strong>Will I be spammed?</strong> Nope. You only get pushes if you opt into Starter/Premium. Free users trigger chats on demand.</p>
+
+        <div class="cta-card">
+            <h3>Try it right now</h3>
+            <p>Text “Help me plan tonight’s movie” and see how fast the queue shows up. If you want the bot to nudge you every Friday, unlock the Starter pass in Pricing.</p>
+            <a href="https://api.whatsapp.com/send?phone=6581615926&text=Help%20me%20plan%20tonight%E2%80%99s%20movie" target="_blank" rel="noopener">
+                Chat with MovieJam →
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        © 2026 MyMovieJam · Built for movie lovers who’d rather chat than doom-scroll.
+    </footer>
+</body>
+</html>

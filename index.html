@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyMovieJam - AI-Powered Movie Recommendation</title>
+    <meta name="description" content="MyMovieJam is the WhatsApp-first movie concierge that ends streaming decision fatigue with human-tuned AI picks, curated lists, and proactive nudges." />
+    <link rel="canonical" href="https://mymoviejam.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MyMovieJam" />
+    <meta property="og:title" content="MyMovieJam – WhatsApp AI Movie Concierge" />
+    <meta property="og:description" content="Stop doom-scrolling. Chat with MyMovieJam on WhatsApp for ultra-personal movie recommendations, insider drops, and proactive weekend watch packs." />
+    <meta property="og:url" content="https://mymoviejam.com/" />
+    <meta property="og:image" content="https://mymoviejam.com/blog/images/stop-scrolling-hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MyMovieJam – WhatsApp AI Movie Concierge" />
+    <meta name="twitter:description" content="Stop doom-scrolling. Chat with MyMovieJam on WhatsApp for ultra-personal movie recommendations, insider drops, and proactive weekend watch packs." />
+    <meta name="twitter:image" content="https://mymoviejam.com/blog/images/stop-scrolling-hero.jpg" />
     <!-- Add Inter font from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -551,8 +563,121 @@
                 font-size: 13px;
             }
         }
+        
+        .faq-section {
+            max-width: 800px;
+            margin: 60px auto 0;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 20px 45px rgba(15, 34, 61, 0.08);
+        }
+
+        .faq-section h2 {
+            font-size: 30px;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .faq-item + .faq-item {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0,0,0,0.08);
+        }
+
+        .faq-question {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: #444;
+            line-height: 1.6;
+        }
        
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://mymoviejam.com/#organization",
+          "name": "MyMovieJam",
+          "url": "https://mymoviejam.com/",
+          "logo": "https://mymoviejam.com/logo.svg",
+          "sameAs": [
+            "https://x.com/movies_jam",
+            "https://api.whatsapp.com/send?phone=6581615926&text=Hi%20MovieJam"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "email": "milinaire1425@icloud.com",
+            "areaServed": ["SG", "IN", "US"],
+            "availableLanguage": ["en"]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mymoviejam.com/#website",
+          "url": "https://mymoviejam.com/",
+          "name": "MyMovieJam",
+          "description": "MyMovieJam is the WhatsApp-first AI concierge that ends streaming decision fatigue with curated recommendations and proactive watch packs.",
+          "publisher": {
+            "@id": "https://mymoviejam.com/#organization"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://mymoviejam.com/#service",
+          "name": "MyMovieJam WhatsApp movie concierge",
+          "serviceType": "AI movie recommendations",
+          "provider": {
+            "@id": "https://mymoviejam.com/#organization"
+          },
+          "areaServed": ["SG", "IN", "US"],
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "SGD",
+            "url": "https://mymoviejam.com/pricing.html"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://mymoviejam.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How does MyMovieJam work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tap the WhatsApp buttons, tell the bot your mood, genre cravings, or who you're watching with, and get three curated picks with streaming links in under a minute."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is there a free plan?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Free tier gives you unlimited chats plus the weekly blog round-up, while Starter and Premium unlock proactive Friday drops and concierge nudges."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where is MyMovieJam available?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "MovieJam serves watchers globally with a focus on Singapore, India, and the US, and suggests alternates if a title isn't available in your region."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -618,6 +743,22 @@
             <span>Online on WhatsApp</span>
         </div>
     </main>
+
+    <section class="faq-section" id="faq">
+        <h2>MovieJam FAQ</h2>
+        <div class="faq-item">
+            <div class="faq-question">How does MyMovieJam work?</div>
+            <p class="faq-answer">Tap the WhatsApp buttons above, tell the bot your mood, genre cravings, or who you're watching with, and get three curated picks with streaming links in under a minute. A human editor keeps the AI model fresh so the recs never feel generic.</p>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Is there a free plan?</div>
+            <p class="faq-answer">Yes. The Free tier gives you unlimited chats plus the weekly blog round-up. Starter and Premium (see Pricing) unlock proactive Friday drops, insider experiments, and concierge-level nudges for big watch parties.</p>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Where is MyMovieJam available?</div>
+            <p class="faq-answer">We ship recommendations globally with a focus on Singapore, India, and the US. If a title isn't available in your region, the bot suggests the closest alternative or a VPN-friendly streaming source.</p>
+        </div>
+    </section>
 
     <section class="cta">
         <div class="container">
