@@ -1,0 +1,51 @@
+{
+  "csv_path": "data/blog_mymoviejam_enriched.csv",
+  "state_path": "automation/blog-pipeline/state.json",
+  "brief_output_path": "automation/blog-pipeline/next_brief.json",
+  "min_titles_per_post": 5,
+  "target_titles_per_post": 7,
+  "theme_rotation": [
+    "year_genre",
+    "platform_genre",
+    "year_platform_genre",
+    "evergreen_genre"
+  ],
+  "genre_blacklist": [
+    "Unknown"
+  ],
+  "preferred_years": [
+    2026,
+    2025,
+    2024,
+    2023
+  ],
+  "cta": {
+    "headline": "Want a custom watchlist instead of generic streaming lists?",
+    "body": "Message MovieJam on WhatsApp and get 3 tailored picks based on your mood, genre, and how much brainpower you want to spend tonight.",
+    "button": "Get picks on WhatsApp →",
+    "url": "https://api.whatsapp.com/send?phone=6581615926&text=Hi%20MovieJam,%20give%20me%203%20movie%20or%20show%20picks"
+  },
+  "internal_link_defaults": [
+    {
+      "title": "How to get custom movie recs on WhatsApp",
+      "url": "/blog/how-to-get-custom-movie-recs-on-whatsapp/"
+    },
+    {
+      "title": "Why endless scrolling ruins movie night",
+      "url": "/blog/stop-the-endless-scroll/"
+    },
+    {
+      "title": "MovieJam blog home",
+      "url": "/blog/"
+    }
+  ],
+  "style_rules": [
+    "Lead with a viral, opinionated hook in the first paragraph.",
+    "Write like a real viewer, not a neutral encyclopedia.",
+    "Do not fake plot details, awards, or availability.",
+    "If the CSV data is thin, make the opinion narrower instead of inventing facts.",
+    "Use the MyMovieJam visual theme and CTA style already present on the site.",
+    "SEO first, but never at the cost of sounding robotic.",
+    "Use clear subheads, quick picks, FAQs, and a strong WhatsApp CTA."
+  ]
+}

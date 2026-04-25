@@ -1,0 +1,233 @@
+id,title,genre,ott_platform,year_of_release,description,genre_source_raw,year_source
+1,Crew,Comedy/Hindi,Netflix,2024,"Three women airhostes, who are best friends takes an unexpected turn.",Comedy/Hindi - NFX,imdb_exact
+2,Dream Girl,Comedy/Hindi,Netflix,2019,A Hindi comedy about a man with a talent for mimicking female voices.,Comedy/Hindi - NFX,imdb_exact
+3,Dream Girl 2,Comedy/Hindi,Netflix,2023,"The sequel to the hit Hindi comedy, likely continuing the protagonist's voice-mimicking adventures.",Comedy/Hindi - NFX,imdb_exact
+4,Chor Nikal ke Bhaga,Thriller,Netflix,2023,A thrilling Hindi heist movie with unexpected twists and turns.,Thriller - NFX,imdb_exact
+5,Great Indian Kapil Show S 2,Comedy,Netflix,,The second season of a popular Hindi comedy show featuring stand-up and celebrity interviews.,Comedy -NFX,unmatched
+6,Emily in Paris,Comedy,Netflix,2020,An American comedy series about a young woman's adventures in the fashion industry in Paris.,Comedy - NFX,imdb_exact
+7,Panchayat,Comedy,Amazon Prime,2020,A heartwarming Hindi comedy series depicting life in rural India through the eyes of a city-bred government officer.,Comedy - AP,imdb_exact
+8,Srikanth,Drama,,2024,A Hindi biographical drama portraying the inspiring life story of a notable individual named Srikanth.,Drama,imdb_exact
+9,Maharaja,Thriller,Netflix,2024,A gripping Tamil thriller about a desperate father challenging both gangsters and police to find justice.,Thriller - NFX,imdb_exact
+10,Mr & Mrs Mahi,Comedy,,2024,A lighthearted Hindi comedy exploring the dynamics of a married couple and life with Cricket.,Comedy,imdb_exact
+11,12th Fail,Drama,,2023,A Hindi drama highlighting the challenges and triumphs of academic struggles.,Drama,imdb_exact
+12,83,Drama,,2021,A Hindi sports drama recreating India's historic cricket World Cup victory in 1983.,Drama,imdb_exact
+13,Fauda,Thriller,,2015,An intense Israeli thriller series depicting the Israel-Palestine conflict.,Thriller,imdb_exact
+14,Sukhee,Comedy,,2023,A feel-good Hindi comedy likely centered around a character's journey to happiness.,Comedy,imdb_exact
+15,Teri Baaton Mein Aisa Uljha Jiya,Comedy,,2024,A quirky Hindi rom-com exploring the unexpected love between a man and an advanced humanoid robot.,Comedy,imdb_exact
+16,Jaanejaan,Thriller,,2023,A Hindi thriller revolving around suspense and hidden secrets.,Thriller,imdb_exact
+17,Article 15,Drama/Crime,,2019,A Hindi crime drama about caste-based discrimination and police investigation.,Drama/Crime,imdb_exact
+18,Ulajh,Drama,,2024,A Hindi drama that delves into complex human emotions and relationships.,Drama,imdb_exact
+19,Bhool Bhulaiyaa 2,Comedy/Horror,,2022,A Hindi comedy-horror sequel about a haunted mansion and strange occurrences.,Comedy/Horror,imdb_exact
+20,Bhool Bhulaiyaa,Comedy/Horror,,2007,A Hindi comedy-horror about a psychiatrist trying to solve the mystery of a haunted palace.,Comedy/Horror,imdb_exact
+21,The Railway Man,Biographical/Drama,Amazon Prime,2013,A biographical drama about a World War II soldier seeking revenge after surviving torture.,Biographical/Drama,imdb_exact
+22,Khakee,Action/Thriller,,2004,A Hindi action-thriller about a police squad tasked with escorting a terrorist to court.,Action/Thriller,imdb_exact
+23,Article 370,Drama,,2024,A Hindi political drama focusing on the abrogation of Article 370 in Kashmir.,Drama,imdb_exact
+24,Maamla Legal Hai,Comedy,,2024,A Hindi comedy about legal complications that bring humor and chaos.,Comedy,imdb_exact
+25,IC814,Thriller,,2024,A Hindi thriller based on the real-life hijacking of Indian Airlines Flight IC814.,Thriller,imdb_loose
+26,RRR,Action/Drama,,2022,An Indian epic action-drama about two revolutionaries fighting for freedom against British rule.,Action/Drama,imdb_exact
+27,The Investigator,Crime/Drama,,2013,A crime drama centered around a detective solving complex cases.,Crime/Drama,imdb_exact
+28,Hilda,Adventure/Animation,,2018,An animated series about a fearless girl exploring a magical world full of creatures.,Adventure/Animation,imdb_exact
+29,Worst Witch,Fantasy/Adventure,,1998,A fantasy series about a young girl attending a school for witches and her magical mishaps.,Fantasy/Adventure,imdb_loose
+30,Charlie and the Chocolate Factory,Fantasy/Family,,2005,A fantasy about a boy's adventure in a magical chocolate factory.,Fantasy/Family,imdb_exact
+31,We Can Be Heroes,Action/Family,,2020,A superhero family movie where kids of superheroes band together to save the world.,Action/Family,imdb_exact
+32,Dr Binocs,Educational/Animation,,,An animated educational show that teaches kids fun science facts with Dr. Binocs.,Educational/Animation,unmatched
+33,The Monkey King,Adventure/Animation,,2023,An animated adventure based on the legendary Monkey King from Chinese folklore.,Adventure/Animation,imdb_exact
+34,Ponyo,Fantasy/Adventure,,2008,A magical animated film about a fish who turns into a girl and embarks on an adventure.,Fantasy/Adventure,imdb_exact
+35,My Neighbor Totoro,Fantasy/Adventure,,1988,A heartwarming animated tale about two girls who discover friendly forest spirits.,Fantasy/Adventure,imdb_exact
+36,The Sea Beast,Adventure/Animation,,2022,An animated adventure about a legendary sea monster hunter who finds an unlikely friend.,Adventure/Animation,imdb_exact
+37,Spirited Away,Fantasy/Adventure,,2001,An animated fantasy about a girl trapped in a magical world and her quest to return home.,Fantasy/Adventure,imdb_exact
+38,Ivy and Bean,Comedy/Family,,,A family comedy about two unlikely friends who create wild and imaginative adventures.,Comedy/Family,unmatched
+39,The Christmas Chronicles,Family/Adventure,,2018,A family adventure about two kids who team up with Santa to save Christmas.,Family/Adventure,imdb_exact
+40,True Spirit,Adventure/Drama,,2023,A drama about a young girl setting out to become the youngest person to sail solo around the world.,Adventure/Drama,imdb_exact
+41,Sharkboy and Lavagirl,Fantasy/Adventure,,2005,A fantasy adventure about a boy's dream world where his superheroes come to life.,Fantasy/Adventure,imdb_loose
+42,Arrietty,Fantasy/Adventure,,2010,A fantasy film about tiny people living secretly in the walls of a house.,Fantasy/Adventure,imdb_loose
+43,The Magic School Bus,Educational/Animation,,1994,An educational animated series where kids learn science by going on magical bus adventures.,Educational/Animation,imdb_exact
+44,A Little Princess,Family/Drama,,1995,A family drama about a young girl who stays optimistic despite her hardships.,Family/Drama,imdb_exact
+45,Pets United,Animation/Comedy,,2019,An animated comedy about a group of pets who team up to save their city from robots.,Animation/Comedy,imdb_exact
+46,Over the Moon,Fantasy/Adventure,,2020,An animated fantasy about a girl who builds a rocket to the moon to meet a mythical goddess.,Fantasy/Adventure,imdb_exact
+47,Weird but True,Educational/Family,,2016,An educational family show that explores amazing and weird facts about the world.,Educational/Family,imdb_exact
+48,The Witches,Fantasy/Adventure,,2020,A fantasy film about a boy who stumbles upon a group of witches plotting to turn kids into mice.,Fantasy/Adventure,imdb_exact
+49,Backyard Wilderness,Documentary,,2018,A documentary about the hidden wonders of nature right in our own backyards.,Documentary,imdb_exact
+50,Inside the Mind of a Dog,Documentary,,2024,"A documentary exploring how dogs think, learn, and interact with humans.",Documentary,imdb_exact
+51,Richie Rich,Comedy/Family,,1994,A family comedy about the richest kid in the world and his adventures.,Comedy/Family,imdb_exact
+52,Orion and the Dark,Fantasy/Adventure,,2024,A fantasy about a young boy who befriends the embodiment of Darkness to overcome his fears.,Fantasy/Adventure,imdb_exact
+53,Chillar Party,Comedy/Drama,,,A Hindi comedy-drama about a group of kids standing up for a cause they believe in.,Comedy/Drama,unmatched
+54,Nightbooks,Fantasy/Horror,,2021,A fantasy-horror about a boy who is captured by a witch and must tell scary stories to survive.,Fantasy/Horror,imdb_exact
+55,Mogawli,Adventure/Family,,,"An adventure film about a boy raised by wolves in the jungle, based on 'The Jungle Book'.",Adventure/Family,unmatched
+56,Major,Biographical/Action,Amazon Prime,2022,"A Hindi biographical action film based on the life of Major Sandeep Unnikrishnan, a martyr in the 26/11 attacks.",Biographical/Action,imdb_exact
+57,8 Mile,Drama/Music/True Story,Netflix,2002,A rapper overcomes struggles to find success in Detroit.,Drama/Music/True Story - NFX,imdb_exact
+58,A Beautiful Mind,Drama/Biography/True Story,Amazon Prime,2001,A mathematician battles schizophrenia.,Drama/Biography/True Story - AP,imdb_exact
+59,Braveheart,History/Drama/True Story,Netflix,1995,William Wallace leads a Scottish rebellion.,History/Drama/True Story - NFX,imdb_exact
+60,Miracle on Ice,Sports/Drama/True Story,Disney+,1981,The U.S. hockey team faces the Soviet Union.,Sports/Drama/True Story - DNY,imdb_exact
+61,American Hustle,Crime/Drama/True Story,,2013,A con artist helps the FBI uncover corruption.,Crime/Drama/True Story,imdb_exact
+62,American Sniper,Action/Biography/True Story,"Netflix, Amazon Prime",2014,A Navy SEAL becomes a top sniper in U.S. history.,Action/Biography/True Story - NFX,imdb_exact
+63,Apollo 13,Drama/History/True Story,Amazon Prime,1995,NASA faces a mission in crisis to bring astronauts home.,Drama/History/True Story - AP,imdb_exact
+64,Black Hawk Down,Action/War/True Story,Amazon Prime,2001,U.S. soldiers face a deadly mission in Somalia.,Action/War/True Story - AP,imdb_exact
+65,Bohemian Rhapsody,Drama/Music/True Story,Amazon Prime,2018,"The story of Queen's lead singer, Freddie Mercury.",Drama/Music/True Story - AP,imdb_exact
+66,Capote,Drama/Biography/True Story,"Netflix, Amazon Prime",2005,A writer investigates a chilling murder case.,Drama/Biography/True Story - NFX,imdb_exact
+67,Chaplin,Biography/Drama/True Story,Amazon Prime,1992,The life and career of Charlie Chaplin.,Biography/Drama/True Story - AP,imdb_exact
+68,Catch Me If You Can,Crime/Drama/True Story,Netflix,2002,A con artist evades the FBI with clever tricks.,Crime/Drama/True Story - NFX,imdb_exact
+69,Che,Drama/Biography/True Story,Amazon Prime,,The life and legacy of revolutionary Che Guevara.,Drama/Biography/True Story - AP,imdb_loose
+70,Coach Carter,Drama/Sports/True Story,Amazon Prime,2005,A coach teaches life lessons on and off the court.,Drama/Sports/True Story - AP,imdb_exact
+71,Darkest Hour,Drama/History/True Story,Amazon Prime,2017,Winston Churchill faces World War II's challenges.,Drama/History/True Story - AP,imdb_exact
+72,Deepwater Horizon,Action/Drama/True Story,Netflix,2016,An oil rig faces a catastrophic explosion.,Action/Drama/True Story - NFX,imdb_exact
+73,Dunkirk,Action/War/True Story,Netflix,2017,The evacuation of Allied soldiers during WWII.,Action/War/True Story - NFX,imdb_exact
+74,Flight,Drama/Thriller/True Story,Amazon Prime,2012,A pilot faces trial after a heroic landing.,Drama/Thriller/True Story - AP,imdb_exact
+75,First Man,Drama/History/True Story,Amazon Prime,2018,Neil Armstrong's journey to the moon.,Drama/History/True Story - AP,imdb_exact
+76,Goodfellas,Crime/Drama/True Story,Netflix,1990,A man's life in the mob unfolds over decades.,Crime/Drama/True Story - NFX,imdb_exact
+77,Green Book,Drama/Comedy/True Story,Amazon Prime,2018,An unlikely friendship in the Deep South.,Drama/Comedy/True Story - AP,imdb_exact
+78,Hidden Figures,Drama/History/True Story,Netflix,2016,NASA's unsung heroes in the space race.,Drama/History/True Story - NFX,imdb_exact
+79,Invictus,Drama/Sports/True Story,Netflix,2009,A rugby team unites post-apartheid South Africa.,Drama/Sports/True Story - NFX,imdb_exact
+80,Invincible,Drama/Sports/True Story,Amazon Prime,2021,A man pursues his dream to play in the NFL.,Drama/Sports/True Story - AP,imdb_exact
+81,Into the Wild,Drama/Adventure/True Story,Netflix,2007,A young man abandons society for nature.,Drama/Adventure/True Story - NFX,imdb_exact
+82,Jackie,Biography/Drama/True Story,"Netflix, Amazon Prime",,The story of Jackie Kennedy after JFK's death.,Biography/Drama/True Story - NFX,imdb_loose
+83,JFK,Drama/History/True Story,Amazon Prime,1991,A lawyer investigates JFK's assassination.,Drama/History/True Story - AP,imdb_exact
+84,Just Mercy,Drama/Crime/True Story,Amazon Prime,2019,A lawyer fights for the wrongly accused.,Drama/Crime/True Story - AP,imdb_exact
+85,Jungle,Adventure/Drama/True Story,Netflix,2017,A man survives the Amazon rainforest alone.,Adventure/Drama/True Story - NFX,imdb_exact
+86,Lincoln,Biography/Drama/History,"Netflix, Amazon Prime",2012,A film about President Abraham Lincoln's efforts to pass the 13th Amendment during the Civil War.,Biography/Drama/History - NFX,imdb_exact
+87,Lion,Biography/Drama,Amazon Prime,2016,An Indian man searches for his birth family years after being adopted by an Australian couple.,Biography/Drama - AP,imdb_exact
+88,Miracle,Biography/Drama/Sport,Amazon Prime,2004,The story of the US men's ice hockey team's victory over the Soviet team at the 1980 Winter Olympics.,Biography/Drama/Sport - AP,imdb_exact
+89,Milk,Biography/Drama,"Netflix, Amazon Prime",2008,"The story of Harvey Milk, California's first openly gay elected official.",Biography/Drama - NFX,imdb_exact
+90,Moneyball,Biography/Drama/Sport,Amazon Prime,2011,Oakland A's GM Billy Beane's successful attempt to build a baseball team on a budget.,Biography/Drama/Sport - AP,imdb_exact
+91,Remember the Titans,Biography/Drama/Sport,"Netflix, Amazon Prime",2000,A newly integrated high school football team overcomes racial tensions in 1970s Virginia.,Biography/Drama/Sport - NFX,imdb_exact
+92,Selma,Biography/Drama/History,"Netflix, Amazon Prime",2014,Dr. Martin Luther King Jr.'s campaign to secure equal voting rights via a march from Selma to Montgomery.,Biography/Drama/History - NFX,imdb_exact
+93,Snowden,Biography/Drama/Thriller,Amazon Prime,2016,"The story of Edward Snowden, who leaked classified NSA information to the press.",Biography/Drama/Thriller - AP,imdb_exact
+94,Sully,Biography/Drama,"Netflix, Amazon Prime",2016,Pilot Chesley Sullenberger's emergency landing of a passenger plane on the Hudson River.,Biography/Drama - NFX,imdb_exact
+95,Spotlight,Biography/Crime/Drama,Amazon Prime,2015,The Boston Globe uncovers a massive scandal of child molestation within the local Catholic Archdiocese.,Biography/Crime/Drama - AP,imdb_exact
+96,Steve Jobs,Biography/Drama,"Netflix, Amazon Prime",2015,A look at the personal and professional life of Apple co-founder Steve Jobs.,Biography/Drama - NFX,imdb_exact
+97,The 33,Biography/Drama,Amazon Prime,2015,The true story of the 2010 collapse of a Chilean mine and the rescue of 33 miners.,Biography/Drama - AP,imdb_exact
+98,The Aviator,Biography/Drama,Amazon Prime,2004,"The story of aviation pioneer Howard Hughes, focusing on his life from the late 1920s to 1940s.",Biography/Drama - AP,imdb_exact
+99,The Big Short,Biography/Comedy/Drama,"Netflix, Amazon Prime",2015,Four outsiders in the finance world predict the 2008 global financial crisis and profit from it.,Biography/Comedy/Drama - NFX,imdb_exact
+100,The Blind Side,Biography/Drama/Sport,Amazon Prime,2009,"The story of Michael Oher, an homeless boy who became an All-American football player.",Biography/Drama/Sport - AP,imdb_exact
+101,The Conjuring,Horror/Mystery/Thriller,Netflix,2013,Paranormal investigators help a family terrorized by a dark presence in their home.,Horror/Mystery/Thriller - NFX,imdb_exact
+102,The Fighter,Biography/Drama/Sport,Amazon Prime,2010,"The early years of boxer 'Irish' Micky Ward and his brother, who helped train him.",Biography/Drama/Sport - AP,imdb_exact
+103,The Hurricane,Biography/Drama/Sport,"Netflix, Amazon Prime",1999,"The story of Rubin 'Hurricane' Carter, a boxer wrongly imprisoned for murder.",Biography/Drama/Sport - NFX,imdb_exact
+104,The Impossible,Drama/History/Thriller,Amazon Prime,2012,A family's experience of the 2004 Indian Ocean tsunami.,Drama/History/Thriller - AP,imdb_exact
+105,The Man Who Knew,Biography/Drama,Amazon Prime,2015,The story of an FBI agent who tried to warn about the threat of Al-Qaeda before 9/11.,Biography/Drama - AP,imdb_loose
+106,The Pursuit of Happyness,Biography/Drama,"Netflix, Amazon Prime",2006,A struggling salesman takes custody of his son as he's poised to begin a life-changing career.,Biography/Drama - NFX,imdb_exact
+107,The Theory of Everything,Biography/Drama/Romance,Amazon Prime,2014,The story of the relationship between Stephen Hawking and his wife.,Biography/Drama/Romance - AP,imdb_exact
+108,Titanic,Drama/Romance,Amazon Prime,1997,"A fictionalized account of the sinking of the RMS Titanic, focusing on a romance between passengers.",Drama/Romance - AP,imdb_exact
+109,Unbroken,Biography/Drama/Sport,"Netflix, Amazon Prime",2014,"The life of Olympian and war hero Louis Zamperini, who survived in a raft for 47 days.",Biography/Drama/Sport - NFX,imdb_exact
+110,Vice,Biography/Comedy/Drama,Amazon Prime,2018,"The story of Dick Cheney, the most powerful Vice President in history.",Biography/Comedy/Drama - AP,imdb_exact
+111,Zero Dark Thirty,Drama/History/Thriller,Netflix,2012,The hunt for Osama bin Laden after the September 11 attacks.,Drama/History/Thriller - NFX,imdb_exact
+1027,hello bacchoo,Unknown,,,No description available.,Unknown,unmatched
+831,all the sharks,Thriller/Action,,2025,Action thriller involving dangerous encounters with sharks.,Thriller/Action,imdb_exact
+112,The Intern,Comedy Drama,,2015,"A 70-year-old widower becomes a senior intern at an online fashion site, where he forms an unlikely bond with the company's workaholic founder and CEO.",Comedy-Drama,imdb_exact
+133,Frozen,"Animation, Musical, Fantasy",,2013,"When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.","Animation, Musical, Fantasy",imdb_exact
+166,CTRL,Sci Fi Thriller,Netflix,2024,"When a famous influencer erases her unfaithful boyfriend from photos using an AI app, she's shocked to find he's vanished in real life, leaving her fans and followers puzzled.",Sci-Fi Thriller/NF,imdb_exact
+167,Mission to the Sun,Science Documentary,Disney+,2019,"A thrilling journey to explore our closest star! Young explorers and their satellite uncover the Sun's secrets, a great family watch to inspire all ages.",Science Documentary-DIS,imdb_exact
+199,Citadel Honey Bunny,Spy/Action,Amazon Prime,2024,"When a stuntman and actress dive into espionage, their past forces them to reunite and protect their daughter.",Spy/Action-AP,imdb_exact
+200,Carmen Sandiego,Spy/Action/Kids,Netflix,2019,A master thief who steals artifacts to keep them safe from true criminals..,Spy/Action/Kids-NFX,imdb_exact
+201,Brainchild,STEM/Science/Kids,Netflix,2018,Join the host to explore common questions and how things work.,STEM/Science/Kids-NFX,imdb_exact
+202,The Who Was Show,Comedy/History/Kids,Netflix,2018,"Learn about people who had a big impact on the world in a funny way, Great family watch.",Comedy/History/Kids-NFX,imdb_exact
+203,Inside the mind of a CAT,Documentary/Science/Kids,Netflix,2022,Learn about the relationship between humans and Cats in this cute documentary.,Documentary/Science/Kids-NFX,imdb_exact
+204,My perfect Landing,Sports/School/Kids,Netflix,2020,"Stream your way to success with My Perfect Landing on Netflix. Gymnastics, family, and adventure await!.",Sports/School/Kids-NFX,imdb_exact
+205,Barbie Mysteries The Great Horse Chase,Sports/Mystery/Kids,Netflix,2024,Watch the barbies solve the mystery of the missing horses.,Sports/Mystery/Kids-NFX,imdb_loose
+206,Zombies,School/Horror/Kids,Disney+,2018,"Zombies in Disney ""Zombies"" are lively, friendly, with pale skin, blue eyes, and stitches. They are strong, sentient, and strive for integration with humans.",School/Horror/Kids-DIS,imdb_exact
+207,Descendants 2,School/Fantasy/Kids,Disney+,2017,"4 of her friends search for Mal, who went back to her home island without telling them, but then what one of them gets captured.",School/Fantasy/Kids-DIS,imdb_exact
+208,Sam and Cat,School/Comedy/Kids,Disney+,,"Sam and Cat- total opposites, but best friends.",School/Comedy/Kids-DIS,unmatched
+209,The Thundermans,School/Kids,Disney+,2013,A family of 6 with special powers,School/Kids-DIS,imdb_exact
+210,The Siege of Jadotville,Action/War,Netflix,2016,"This war drama showcases the untold story of Irish UN troops in Congo, delivering intense action and a reminder of the power of strategic thinking over brute force.",Action/War-NFX,imdb_exact
+211,Physical 100,Action,Netflix,2023,It is where Korea top athletes not only compete for the ultimate prize but also share compelling personal stories. Season 1 edges out Season 2 for its richer narrative.,Action-NFX,imdb_exact
+232,Dont Come Home,Horror,Netflix,2024,Dive into the eerie world where a mothers search for her vanished daughter in their ancestral home unveils chilling family secrets.,Horror-NFX,imdb_exact
+233,Nayanthara,Documentary,Netflix,,"It really gives you a glimpse into the life of the incredible Nayanthara. If you need some motivation or just love a good cinematic story, give this documentary a watch.",Documentary-NFX,imdb_loose
+234,Spellbound,Kids,Netflix,1945,A girls parents turn into monster and she tries to return them to normal.,Kids-NFX,imdb_exact
+235,Arcane,Action Animation,Netflix,2021,"Dive into a beautifully crafted tale of two sisters in the LeagueOfLegends universe, where the animation dazzles and the story strikes deep.",Action-Animation-NFX,imdb_exact
+236,YehKaaliKaaliAnkhein,Thriller/Action,Netflix,2022,Dive back into the twisted world of love and deceit! Season 2 is just as compelling as Season 1.,Thriller/Action-NFX,imdb_exact
+265,Dhoom Dhaam,Comedy/Action,Netflix,2025,"Newly married couple to go on the run on their wedding night and search for the mysterious ""Charlie"".",Comedy/Action -NFX,imdb_exact
+266,The Greatest Rivalry India vs Pakistan,Documentary/Sports,Netflix,2025,Cricket ultimate showdown The Greatest Rivalry: India vs Pakistan on #Netflix relives epic battles. A must-watch doc for sports fans.,Documentary/Sports -NFX,imdb_exact
+267,Surviving Black Hawk Down,Documentary/Action,Netflix,2025,American forces on the defensive Mogadishu 93 through raw real voices.,Documentary/Action -NFX,imdb_exact
+268,Black Warrant,Documentary/Action,Netflix,2025,"A new jailer at Tihar Prison faces corruption and injustice grappling with a choice preserve the system or fight for reform in this tense, gritty drama.",Documentary/Action -NFX,imdb_exact
+269,Paatal lok Season 2,Action,Amazon Prime,,"Hathi Ram, a weary cop, probes a murder in North-East India, facing power and loss in his quest for truth.",Action-Amazon,unmatched
+1057,peaky blinders,Unknown,,2013,No description available.,Unknown,imdb_exact
+364,adolescence,Drama/Coming of Age,,2025,A poignant exploration of the turbulent teenage years and the journey to self-discovery.,Drama/Coming-of-Age,imdb_exact
+333,bandish bandit,Drama/Music Indian,Amazon Prime,2020,A young musician strives to balance the demands of tradition with his passion for innovation in classical Indian music.,Drama/Music - Indian/AP,imdb_loose
+332,dabba cartel,Crime/Thriller Indian,Netflix,2025,"A gripping series about a group of women who form an unlikely drug cartel, challenging gender norms and the criminal underworld.",Crime/Thriller - Indian/NF,imdb_exact
+331,dupahiya,Comedy/Drama Indian,Amazon Prime,2025,A light-hearted story about the adventures and misadventures of a character with a two-wheeler in urban India.,Comedy/Drama - Indian/AP,imdb_exact
+463,Chaava,History/Drama,Netflix,,"Chaava is a thrilling historical drama that brings legendary figures to life with intense battles, deep emotions, and gripping storytelling. A must-watch epic.",History/Drama/NF,imdb_loose
+464,Kota Factory,Drama,Netflix,2019,"Kota Factory follows Vaibhav and friends in Kota, tackling IIT-JEE prep with humor and heart. A raw, black-and-white Indian series on Netflix.",Drama/NF,imdb_exact
+563,chandu champion,Biography/Sports,Amazon Prime,2024,"Chandu Champion tells the inspiring story of India's first Paralympic gold medalist Murlikant Petkar, showcasing his journey from army man to sports champion despite physical challenges.",Biography/Sports,imdb_exact
+562,farzi,Crime/Thriller,,2023,"An artist who gets pulled into the murky high stakes of a con job and a fiery task force officer on the mission to rid the country of his menaces in a fast-paced, edgy cat-and-mouse thriller.",Crime/Thriller,imdb_exact
+529,woody woodpecker goes to camp,Animation/Comedy,,2024,"Woody Woodpecker and his friends head to Camp Woo Hoo for summer fun, only to discover they must save the camp from closing while dealing with the mischievous antics of their bird friend.",Animation/Comedy,imdb_exact
+497,my octopus teacher,Documentary,Netflix,2020,"A filmmaker forges an unusual friendship with an octopus living in a South African kelp forest, learning as the animal shares the mysteries of her world.",Documentary/NF,imdb_exact
+496,pangolin kulu’s journey,Documentary,,2025,"A heartwarming documentary following Kulu, a rescued pangolin, as conservationists help rehabilitate and return the endangered animal back to the wild.",Documentary,imdb_exact
+430,khakee bengal chapter,Crime/Drama,,,"Based on true events, Khakee: The Bengal Chapter follows the journey of a courageous police officer as he tackles organized crime in Bihar and Bengal during the early 2000s.",Crime/Drama,unmatched
+530,be happy,Drama/Kids,Amazon Prime,2026,A father and daughter story of fighting cancer and living the dream.,Drama/Kids/AP,imdb_exact
+397,the terminator,Sci Fi/Action,,1984,"A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity's future salvation.",Sci-Fi/Action,imdb_exact
+595,You,Thriller/Drama,Netflix,2018,"A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by. Based on Caroline Kepnes' novel, this psychological thriller follows Joe Goldberg, a bookstore manager whose infatuation with aspiring writers turns into toxic obsession as he uses social media and technology to stalk and manipulate his way into their lives.",Thriller/Drama/NF,imdb_exact
+795,bhool chuk maaf ( hindi - prime),Comedy/Romance,,2025,"A Hindi drama film about love, forgiveness, and second chances in relationships.",Comedy/Romance,imdb_loose
+727,kingdom of heaven,Historical/Epic,,2005,"An epic historical drama set during the Crusades, following a blacksmith who becomes a knight defender of Jerusalem.",Historical/Epic,imdb_exact
+694,american manhunt,Crime/Documentary,,2025,A gripping documentary series about real-life manhunts of world most dangerous criminal.,Crime/Documentary,imdb_loose
+664,exterritorial,Thriller/Drama,,2025,A political thriller exploring diplomatic immunity and international law complexities.,Thriller/Drama,imdb_exact
+663,ted lasso,Comedy/Sports,,2020,A heartwarming comedy series about an American football coach who moves to England to manage a soccer team.,Comedy/Sports,imdb_exact
+761,stolen hindi ap,Action/Thriller,,,Two brothers witness a baby being kidnapped at a railway station.,Action/Thriller,unmatched
+859,saare jahan se accha,Action/Thriller,,2025,A spy Indian mission in the nuclear arms race,Action/Thriller,imdb_loose
+834,happy gilmore 1,Comedy/Sports,,1996,A hockey player turned golfer uses his slap shot to dominate the golf course.,Comedy/Sports,imdb_loose
+760,The Matrix,Sci Fi/Action,,1999,"A computer hacker discovers that reality as he knows it is actually a simulated world controlled by machines, and joins a rebellion to free humanity.",Sci-Fi/Action,imdb_exact
+796,John Wick,Action/Thriller,,2014,An ex-hitman comes out of retirement to track down the gangsters who took everything from him.,Action/Thriller,imdb_exact
+833,happy gilmore 2,Comedy/Sports,,2025,Sequel to Happy Gilmore with more golf comedy adventures.,Comedy/Sports,imdb_exact
+832,raid 2,Crime/Thriller,,2025,Income Tax officer uncovers corruption linked to politician in this tense sequel.,Crime/Thriller,imdb_exact
+892,Tehran,Action/Thriller,,2020,A spy mission in Iran with high-stakes espionage and international intrigue.,Action/Thriller,imdb_exact
+794,kaho na pyar hai,Romance/Action,,,"A Bollywood romantic thriller starring Hrithik Roshan about love, revenge, and mistaken identity.",Romance/Action,unmatched
+793,kabhi khushi kabhi gam,Family/Drama,,,"An epic Bollywood family drama about love, tradition, and reconciliation across generations.",Family/Drama,unmatched
+762,paddington in peru ( kids),Family/Adventure,,2024,The beloved bear Paddington embarks on a thrilling adventure to Peru to visit his Aunt Lucy.,Family/Adventure,imdb_loose
+298,mrs,Drama/Biography,Amazon Prime,2023,A biographical drama about a woman overcoming personal challenges and societal expectations.,Drama/Biography,imdb_exact
+628,asterix and obelix: the big fight,Comedy/Adventure,,,The famous Gaulish warriors Asterix and Obelix face their biggest challenge yet in this animated comedy adventure.,Comedy/Adventure,unmatched
+661,the diplomat,Political/Thriller,,2023,A skilled diplomat navigates international crises while dealing with personal and professional challenges in the volatile world of politics.,Political/Thriller,imdb_exact
+662,the seat,Sports/Drama,,2025,"A high-octane Formula One drama about the intense competition, rivalries, and personal sacrifices in the world of professional racing.",Sports/Drama,imdb_exact
+828,"kpop demon hunters (movie, animated action-comedy)",Animated/Action Comedy,Netflix,,An animated action-comedy where K-pop stars battle supernatural demons while maintaining their musical careers.,Animated/Action-Comedy-NFX,unmatched
+827,lucky bhaskar,Drama/Crime,,,A middle-class bank employee gets entangled in financial scams and money laundering in this gripping Telugu drama.,Drama/Crime,unmatched
+826,rangastalam,Action/Drama,,,A partially deaf man fights against corruption and injustice in his village in this critically acclaimed Telugu period drama.,Action/Drama,unmatched
+797,straw,Thriller/Drama,,2025,A psychological thriller about seemingly small decisions that lead to life-changing consequences.,Thriller/Drama,imdb_exact
+829,The Great Indian Kapil Show: Season 3,Comedy/Talk Show,,2024,"Kapil Sharma's hit comedy talk show returns with Sunil Grover, Kiku Sharda, and the surprise return of Navjot Singh Sidhu. Streaming weekly on Saturdays, it's been a social media favorite for its celebrity guests and humor, with Salman Khan kicking off the season.",Comedy/Talk Show,imdb_loose
+893,Kpop Demon Hunters (2025),Animated/Musical/Comedy,,2025,Netflix K-pop animated hit blending catchy tunes with demon-fighting action and viral songs.,Animated/Musical/Comedy,title
+906,do little,"Adventure, Family, Kids",,2020,A veterinarian who talks to animals embarks on a whimsical journey.,"Adventure, Family, Kids",imdb_exact
+905,two much,Comedy,,1995,"The talk show, hosted by Kajol and Twinkle, promises candid conversations.",Comedy,imdb_exact
+904,oni,"Anime, Fantasy",,2022,A mystical story of demons and spirits from Japanese folklore.,"Anime, Fantasy",imdb_loose
+903,thefamily man,"Action, Thriller, Drama",,2019,"A middle-class man and world-class spy, struggles to balance family life with his role in the National Intelligence Agency.","Action, Thriller, Drama",imdb_exact
+902,oppenheimer,Historical Drama,,2023,The story of J. Robert Oppenheimer and the creation of the atomic bomb.,Historical Drama,imdb_exact
+901,metro in dino,"Drama, Comedy",,2025,Everyday lives and relationships intersect in a bustling Indian metro.,"Drama, Comedy",imdb_exact
+900,wolf king,"Crime, Thriller",,2025,"A gritty underworld tale of loyalty, betrayal, and survival.","Crime, Thriller",imdb_exact
+899,queen gambit,"Drama, Miniseries",,,A young chess prodigy battles addiction while rising to world fame.,"Drama, Miniseries",unmatched
+898,narcos,"Crime, Drama",,2015,The rise and fall of drug cartels in Colombia and their global impact.,"Crime, Drama",imdb_exact
+897,designated survivor,Political Thriller,,2016,"After an attack, a low-level official becomes U.S. President overnight.",Political Thriller,imdb_exact
+896,blacklist,"Crime, Thriller",,2019,"A master criminal known as Raymond ""Red"" Reddington teams up with the FBI to catch elusive criminals.","Crime, Thriller",imdb_exact
+895,next gen chef,"Reality TV, Cooking",,2025,Aspiring chefs compete in intense challenges to prove their culinary skills and creativity.,"Reality-TV, Cooking",imdb_exact
+894,saiyaara,Romantic Drama,,2025,A soulful love story that explores deep emotions and unforgettable connections.,Romantic Drama,imdb_exact
+830,app jaisa koi,Romantic Drama,,,"Shrirenu lives by tradition. Madhu lives unapologetically. When their paths cross, a tender romance unfolds - awkward, sweet but shadowed by patriarchy.",Romantic Drama,unmatched
+908,homebound,Unknown,,2025,No description available.,Unknown,imdb_exact
+925,kurukshetra,Mythological War/Historical Epic,,2025,"A large-scale India mythological war film based on Mahabharata, with grand battle sequences, divine interventions and epic spectacle.",Mythological War / Historical Epic,imdb_exact
+926,annie,Musical/Family,,2014,A heartwarming musical about a spirited young orphan whose life changes when she is welcomed into the home of a wealthy businessman.,Musical / Family,imdb_exact
+907,avatar,Science Fiction/Adventure/Fantasy,,2009,"In the year 2154 a paraplegic former Marine is given the opportunity to inhabit an alien body on the lush moon Pandora, where he becomes torn between following orders and protecting the world he feels is his home.",Science Fiction / Adventure / Fantasy,imdb_exact
+909,senna,Documentary/Sport,,2010,"A moving and immersive documentary that chronicles the rise and tragic death of Brazilian Formula One racing champion Ayrton Senna, told almost entirely through archival footage and his own voice.",Documentary / Sport,imdb_exact
+911,the final table,Reality/Competition/Food & Travel,,2018,A global culinary competition show in which elite chefs from around the world go head-to-head creating national dishes from nine countries for a coveted seat at the Final Table.,Reality / Competition / Food & Travel,imdb_exact
+910,sunnysanskarikitulsikumari,Romantic Comedy,,2025,"Sunny Sanskari teams up with Tulsi Kumari to crash his ex wedding, but their plan for revenge leads to unexpected romance and self-discovery.",Romantic Comedy,imdb_exact
+927,Thamma,Horror,,2025,"A chilling horror film that follows eerie supernatural events surrounding a mysterious figure known as Thamma. The story blends atmospheric tension, psychological fear, and unsettling twists that keep viewers on edge.",Horror,imdb_exact
+1059,war machine 2026,Sci Fi/Action,,2026,"A futuristic war epic exploring advanced military tech, power struggles, and global conflict.",Sci-Fi/Action,imdb_loose
+1058,something bad is going to happen,Horror/Thriller,,,A tense psychological thriller where a looming sense of dread builds into a chilling reality.,Horror/Thriller,unmatched
+931,harry potter,Fantasy/Adventure,,2026,A young wizard discovers his magical heritage and faces dark forces while attending Hogwarts School of Witchcraft and Wizardry.,Fantasy / Adventure,imdb_exact
+1062,thrash,Action/Thriller,,2026,"Raw, high-energy action drama centered on chaos, survival, and intense confrontations.",Action/Thriller,imdb_exact
+1060,extraction2,Action/Thriller,,2020,"A black-ops mercenary returns for a deadly mission, facing impossible odds and relentless enemies.",Action/Thriller,imdb_loose
+932,halloween,Horror/Slasher,,1978,"A masked killer, Michael Myers, returns to terrorize a quiet town on Halloween night in this iconic slasher classic.",Horror / Slasher,imdb_exact
+929,frankenstein,Horror/Gothic,,2025,"A scientist creates a living creature from dead body parts, leading to tragic consequences as the monster seeks acceptance and identity.",Horror / Gothic,imdb_exact
+930,de de pyaar de 2,Romantic Comedy/Family Drama,,2025,"A light-hearted romantic comedy that explores modern relationships, family dynamics, and second chances in love.",Romantic Comedy / Family Drama,imdb_exact
+928,zakir mannpasand,Comedy/Family Drama,,2023,"A light, feel-good comedy centered on relationships, family bonds, and a man whose likable nature brings joy and chaos in equal measure.",Comedy / Family Drama,imdb_loose
+934,idly kadai,"Drama, Slice of Life",,2025,"A heartfelt story rooted in everyday life, food, and human connections.","Drama, Slice of Life",imdb_exact
+935,mrs deshpande,Drama,,2025,"A quiet, emotional journey of identity, resilience, and family bonds.",Drama,imdb_exact
+960,ron’s gone wrong,"Animation, Comedy, Family",,2021,A boy and his malfunctioning robot discover friendship beyond technology.,"Animation, Comedy, Family",imdb_exact
+959,sam bahadur,"Biography, War, Drama",Amazon Prime,2023,The inspiring life of Field Marshal Sam Manekshaw and India military legacy.,"Biography, War, Drama",imdb_exact
+933,stranger things 5,"Sci Fi, Horror, Drama",,2026,The final battle as Hawkins faces its darkest threat from the Upside Down.,"Sci-Fi, Horror, Drama",imdb_loose
+958,avatater: the way if water,"Sci Fi, Adventure",,,Jake Sully explores Pandora oceans while protecting his family from new dangers.,"Sci-Fi, Adventure",unmatched
+961,Haq,"Courtroom Drama, Thriller",,2025,A gripping courtroom thriller that explores justice.,"Courtroom Drama, Thriller",imdb_exact
+962,Single Papa,"Comedy, Family, Drama",,2025,"A warm, light-hearted story about single parenthood filled with humor, family moments, and relatable everyday challenges.","Comedy, Family, Drama",imdb_exact
+991,f1 the movie,Sports Drama,,2025,Speed. Rivalry. Redemption. Glory.,Sports Drama,imdb_exact
+992,tehran on apple tv,Spy Thriller,,,Undercover. Betrayal. Intelligence. Survival.,Spy Thriller,unmatched
+993,taskaree,Crime Drama,,2026,Smuggling. Power. Loyalty. Consequences.,Crime Drama,imdb_loose
+994,skyscraper live,Action Thriller,,2026,Trapped. Heights. Explosions. Rescue.,Action Thriller,imdb_exact
+995,free solo,Documentary/Adventure,,2018,Climb. Fearless. Silence. Survival.,Documentary / Adventure,imdb_exact
+996,single salma,Romantic Comedy,,2025,Single. Chaos. Love. Laughter.,Romantic Comedy,imdb_exact
+997,Durandhar,Action Drama,,,Power. Politics. Revenge. Destiny.,Action Drama,unmatched
+1024,kohhra 2,Unknown,,,No description available.,Unknown,unmatched
+1061,durandhar 1,Action/Drama,,,"A powerful Indian action drama about courage, justice, and a man rising against all odds.",Action/Drama,unmatched
+1025,kohra 2,Crime/Drama/Thriller,,2022,"A gripping crime drama exploring dark secrets, complex relationships, and a murder investigation in rural India.",Crime/Drama/Thriller,imdb_loose
+1026,the hate u give,Drama,,2018,A powerful story of a young girl navigating identity and injustice after witnessing a police shooting.,Drama,imdb_exact

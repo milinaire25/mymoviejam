@@ -1,0 +1,119 @@
+{
+  "generated_at": "2026-04-25T23:22:23",
+  "date": "2026-04-25",
+  "readable_date": "April 25, 2026",
+  "family": "year_genre",
+  "headline": "Best comedy picks from 2025: 5 titles actually worth your time",
+  "slug": "best-comedy-movies-and-shows-in-2025",
+  "primary_keyword": "best comedy movies and shows in 2025",
+  "meta_description": "Looking for the best comedy picks from 2025? Here are the titles that actually deserve your time, with clear audience-first takes and quick watch-fit guidance.",
+  "eyebrow": "Curated List · April 25, 2026",
+  "subtitle": "Featuring Dhoom Dhaam, dupahiya, and bhool chuk maaf ( hindi - prime) — plus more comedy picks that deserve real attention.",
+  "tags": [
+    "Comedy",
+    "2025",
+    "Curated list"
+  ],
+  "genre": "Comedy",
+  "platform": null,
+  "year": 2025,
+  "hero_image": {
+    "file": "best-comedy-movies-and-shows-in-2025.jpg",
+    "path": "blog/images/best-comedy-movies-and-shows-in-2025.jpg",
+    "web_path": "/blog/images/best-comedy-movies-and-shows-in-2025.jpg",
+    "eyebrow": "Comedy",
+    "title": "Best comedy picks from 2025: 5 titles actually worth your time",
+    "subtitle": "Featuring Dhoom Dhaam, dupahiya, and bhool chuk maaf ( hindi - prime) — plus more comedy picks that deserve real attention."
+  },
+  "selected_titles": [
+    {
+      "id": "265",
+      "title": "Dhoom Dhaam",
+      "genre": "Comedy/Action",
+      "primary_genre": "Comedy",
+      "ott_platform": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
+      "year_of_release": 2025,
+      "description": "Newly married couple to go on the run on their wedding night and search for the mysterious \"Charlie\"."
+    },
+    {
+      "id": "331",
+      "title": "dupahiya",
+      "genre": "Comedy/Drama Indian",
+      "primary_genre": "Comedy",
+      "ott_platform": "Amazon Prime",
+      "platforms": [
+        "Amazon Prime"
+      ],
+      "year_of_release": 2025,
+      "description": "A light-hearted story about the adventures and misadventures of a character with a two-wheeler in urban India."
+    },
+    {
+      "id": "795",
+      "title": "bhool chuk maaf ( hindi - prime)",
+      "genre": "Comedy/Romance",
+      "primary_genre": "Comedy",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2025,
+      "description": "A Hindi drama film about love, forgiveness, and second chances in relationships."
+    },
+    {
+      "id": "833",
+      "title": "happy gilmore 2",
+      "genre": "Comedy/Sports",
+      "primary_genre": "Comedy",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2025,
+      "description": "Sequel to Happy Gilmore with more golf comedy adventures."
+    },
+    {
+      "id": "962",
+      "title": "Single Papa",
+      "genre": "Comedy, Family, Drama",
+      "primary_genre": "Comedy",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2025,
+      "description": "A warm, light-hearted story about single parenthood filled with humor, family moments, and relatable everyday challenges."
+    }
+  ],
+  "cta": {
+    "headline": "Want a custom watchlist instead of generic streaming lists?",
+    "body": "Message MovieJam on WhatsApp and get 3 tailored picks based on your mood, genre, and how much brainpower you want to spend tonight.",
+    "button": "Get picks on WhatsApp →",
+    "url": "https://api.whatsapp.com/send?phone=6581615926&text=Hi%20MovieJam,%20give%20me%203%20movie%20or%20show%20picks"
+  },
+  "internal_link_defaults": [
+    {
+      "title": "How to get custom movie recs on WhatsApp",
+      "url": "/blog/how-to-get-custom-movie-recs-on-whatsapp/"
+    },
+    {
+      "title": "Why endless scrolling ruins movie night",
+      "url": "/blog/stop-the-endless-scroll/"
+    },
+    {
+      "title": "MovieJam blog home",
+      "url": "/blog/"
+    }
+  ],
+  "style_rules": [
+    "Lead with a viral, opinionated hook in the first paragraph.",
+    "Write like a real viewer, not a neutral encyclopedia.",
+    "Do not fake plot details, awards, or availability.",
+    "If the CSV data is thin, make the opinion narrower instead of inventing facts.",
+    "Use the MyMovieJam visual theme and CTA style already present on the site.",
+    "SEO first, but never at the cost of sounding robotic.",
+    "Use clear subheads, quick picks, FAQs, and a strong WhatsApp CTA."
+  ],
+  "notes_for_writer": [
+    "Tell the truth if the list mixes films and series.",
+    "Write as a sharp viewer with taste, not a neutral database.",
+    "Pick clear winners, easy starters, and mood-based recommendations.",
+    "Use a clear WhatsApp CTA at the end."
+  ]
+}
