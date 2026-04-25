@@ -10,6 +10,7 @@ Create a daily SEO-optimized post that feels like a real MyMovieJam article:
 - honest recommendations only
 - clear WhatsApp CTA
 - visual/theme consistency with existing MyMovieJam pages
+- same vibe as the current MyMovieJam blog, not a new editorial voice
 
 ## Inputs
 
@@ -60,11 +61,13 @@ Create a daily SEO-optimized post that feels like a real MyMovieJam article:
 
 ## Voice rules
 
+- Match the current MyMovieJam blog voice: sharp, warm, audience-first, scannable, and a little opinionated.
 - Sound like a smart viewer with taste.
 - Be honest, not fake-hyped.
 - Prefer lines like “this is the one to start with”, “this one is messy but fun”, “this one is better than its marketing”, “this one only works if you want pure comfort”.
 - Keep the writing punchy and scannable.
 - Avoid generic AI phrasing and plot-summary sludge.
+- Do not suddenly become more aggressive, slangy, or sensational than the existing published MyMovieJam posts.
 
 ## Safety rules
 

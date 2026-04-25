@@ -41,6 +41,7 @@
   ],
   "style_rules": [
     "Lead with a viral, opinionated hook in the first paragraph.",
+    "Keep the same vibe as the existing MyMovieJam blog: sharp, audience-first, clean, punchy, and honest.",
     "Write like a real viewer, not a neutral encyclopedia.",
     "Do not fake plot details, awards, or availability.",
     "If the CSV data is thin, make the opinion narrower instead of inventing facts.",
