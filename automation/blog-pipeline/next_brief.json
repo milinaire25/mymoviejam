@@ -1,84 +1,116 @@
 {
-  "generated_at": "2026-04-25T23:30:07",
-  "date": "2026-04-25",
-  "readable_date": "April 25, 2026",
-  "family": "year_genre",
-  "headline": "Best comedy picks from 2025: 5 titles actually worth your time",
-  "slug": "best-comedy-movies-and-shows-in-2025",
-  "primary_keyword": "best comedy movies and shows in 2025",
-  "meta_description": "Looking for the best comedy picks from 2025? Here are the titles that actually deserve your time, with clear audience-first takes and quick watch-fit guidance.",
-  "eyebrow": "Curated List · April 25, 2026",
-  "subtitle": "Featuring Dhoom Dhaam, dupahiya, and bhool chuk maaf ( hindi - prime) — plus more comedy picks that deserve real attention.",
+  "generated_at": "2026-04-26T10:00:16",
+  "date": "2026-04-26",
+  "readable_date": "April 26, 2026",
+  "family": "platform_genre",
+  "headline": "Best biography picks on Amazon Prime right now: 7 titles worth starting first",
+  "slug": "best-biography-picks-on-amazon-prime",
+  "primary_keyword": "best biography picks on amazon prime",
+  "meta_description": "Need the best biography picks on Amazon Prime? These are the titles worth starting first if you want something better than random browsing.",
+  "eyebrow": "Curated List · April 26, 2026",
+  "subtitle": "Featuring chandu champion, sam bahadur, and Vice — plus more biography picks that deserve real attention.",
   "tags": [
-    "Comedy",
-    "2025",
+    "Amazon Prime",
+    "Biography",
     "Curated list"
   ],
-  "genre": "Comedy",
-  "platform": null,
-  "year": 2025,
+  "genre": "Biography",
+  "platform": "Amazon Prime",
+  "year": null,
   "hero_image": {
-    "file": "best-comedy-movies-and-shows-in-2025.jpg",
-    "path": "blog/images/best-comedy-movies-and-shows-in-2025.jpg",
-    "web_path": "/blog/images/best-comedy-movies-and-shows-in-2025.jpg",
-    "eyebrow": "Comedy",
-    "title": "Best comedy picks from 2025: 5 titles actually worth your time",
-    "subtitle": "Featuring Dhoom Dhaam, dupahiya, and bhool chuk maaf ( hindi - prime) — plus more comedy picks that deserve real attention."
+    "file": "best-biography-picks-on-amazon-prime.jpg",
+    "path": "blog/images/best-biography-picks-on-amazon-prime.jpg",
+    "web_path": "/blog/images/best-biography-picks-on-amazon-prime.jpg",
+    "eyebrow": "Biography · Amazon Prime",
+    "title": "Best biography picks on Amazon Prime right now: 7 titles worth starting first",
+    "subtitle": "Featuring chandu champion, sam bahadur, and Vice — plus more biography picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "265",
-      "title": "Dhoom Dhaam",
-      "genre": "Comedy/Action",
-      "primary_genre": "Comedy",
-      "ott_platform": "Netflix",
-      "platforms": [
-        "Netflix"
-      ],
-      "year_of_release": 2025,
-      "description": "Newly married couple to go on the run on their wedding night and search for the mysterious \"Charlie\"."
-    },
-    {
-      "id": "331",
-      "title": "dupahiya",
-      "genre": "Comedy/Drama Indian",
-      "primary_genre": "Comedy",
+      "id": "563",
+      "title": "chandu champion",
+      "genre": "Biography/Sports",
+      "primary_genre": "Biography",
       "ott_platform": "Amazon Prime",
       "platforms": [
         "Amazon Prime"
       ],
-      "year_of_release": 2025,
-      "description": "A light-hearted story about the adventures and misadventures of a character with a two-wheeler in urban India."
+      "year_of_release": 2024,
+      "description": "Chandu Champion tells the inspiring story of India's first Paralympic gold medalist Murlikant Petkar, showcasing his journey from army man to sports champion despite physical challenges."
     },
     {
-      "id": "795",
-      "title": "bhool chuk maaf ( hindi - prime)",
-      "genre": "Comedy/Romance",
-      "primary_genre": "Comedy",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2025,
-      "description": "A Hindi drama film about love, forgiveness, and second chances in relationships."
+      "id": "959",
+      "title": "sam bahadur",
+      "genre": "Biography, War, Drama",
+      "primary_genre": "Biography",
+      "ott_platform": "Amazon Prime",
+      "platforms": [
+        "Amazon Prime"
+      ],
+      "year_of_release": 2023,
+      "description": "The inspiring life of Field Marshal Sam Manekshaw and India military legacy."
     },
     {
-      "id": "833",
-      "title": "happy gilmore 2",
-      "genre": "Comedy/Sports",
-      "primary_genre": "Comedy",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2025,
-      "description": "Sequel to Happy Gilmore with more golf comedy adventures."
+      "id": "110",
+      "title": "Vice",
+      "genre": "Biography/Comedy/Drama",
+      "primary_genre": "Biography",
+      "ott_platform": "Amazon Prime",
+      "platforms": [
+        "Amazon Prime"
+      ],
+      "year_of_release": 2018,
+      "description": "The story of Dick Cheney, the most powerful Vice President in history."
     },
     {
-      "id": "962",
-      "title": "Single Papa",
-      "genre": "Comedy, Family, Drama",
-      "primary_genre": "Comedy",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2025,
-      "description": "A warm, light-hearted story about single parenthood filled with humor, family moments, and relatable everyday challenges."
+      "id": "94",
+      "title": "Sully",
+      "genre": "Biography/Drama",
+      "primary_genre": "Biography",
+      "ott_platform": "Netflix, Amazon Prime",
+      "platforms": [
+        "Netflix",
+        "Amazon Prime"
+      ],
+      "year_of_release": 2016,
+      "description": "Pilot Chesley Sullenberger's emergency landing of a passenger plane on the Hudson River."
+    },
+    {
+      "id": "87",
+      "title": "Lion",
+      "genre": "Biography/Drama",
+      "primary_genre": "Biography",
+      "ott_platform": "Amazon Prime",
+      "platforms": [
+        "Amazon Prime"
+      ],
+      "year_of_release": 2016,
+      "description": "An Indian man searches for his birth family years after being adopted by an Australian couple."
+    },
+    {
+      "id": "93",
+      "title": "Snowden",
+      "genre": "Biography/Drama/Thriller",
+      "primary_genre": "Biography",
+      "ott_platform": "Amazon Prime",
+      "platforms": [
+        "Amazon Prime"
+      ],
+      "year_of_release": 2016,
+      "description": "The story of Edward Snowden, who leaked classified NSA information to the press."
+    },
+    {
+      "id": "96",
+      "title": "Steve Jobs",
+      "genre": "Biography/Drama",
+      "primary_genre": "Biography",
+      "ott_platform": "Netflix, Amazon Prime",
+      "platforms": [
+        "Netflix",
+        "Amazon Prime"
+      ],
+      "year_of_release": 2015,
+      "description": "A look at the personal and professional life of Apple co-founder Steve Jobs."
     }
   ],
   "cta": {
@@ -103,6 +135,7 @@
   ],
   "style_rules": [
     "Lead with a viral, opinionated hook in the first paragraph.",
+    "Keep the same vibe as the existing MyMovieJam blog: sharp, audience-first, clean, punchy, and honest.",
     "Write like a real viewer, not a neutral encyclopedia.",
     "Do not fake plot details, awards, or availability.",
     "If the CSV data is thin, make the opinion narrower instead of inventing facts.",
