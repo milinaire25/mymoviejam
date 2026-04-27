@@ -11,6 +11,12 @@
       "headline": "Best biography picks on Amazon Prime right now: 7 titles worth starting first",
       "family": "platform_genre",
       "published_at": "2026-04-26T10:02:37"
+    },
+    {
+      "slug": "best-drama-picks-to-stream",
+      "headline": "Best drama picks to stream when you want something better than another lazy scroll",
+      "family": "evergreen_genre",
+      "published_at": "2026-04-27T10:02:37"
     }
   ],
   "published_titles": [
@@ -25,7 +31,14 @@
     "Sully",
     "Lion",
     "Snowden",
-    "Steve Jobs"
+    "Steve Jobs",
+    "be happy",
+    "adolescence",
+    "idly kadai",
+    "metro in dino",
+    "mrs deshpande",
+    "Article 370",
+    "Srikanth"
   ],
   "theme_history": [
     {
@@ -37,12 +50,17 @@
       "family": "platform_genre",
       "slug": "best-biography-picks-on-amazon-prime",
       "published_at": "2026-04-26T10:02:37"
+    },
+    {
+      "family": "evergreen_genre",
+      "slug": "best-drama-picks-to-stream",
+      "published_at": "2026-04-27T10:02:37"
     }
   ],
-  "next_theme_index": 2,
-  "last_generated_at": "2026-04-26T10:00:16",
+  "next_theme_index": 0,
+  "last_generated_at": "2026-04-27T10:00:16",
   "notes": "Pipeline state for automated MyMovieJam daily blog generation. Titles are marked only after a post is successfully published.",
-  "last_generated_slug": "best-biography-picks-on-amazon-prime",
-  "last_generated_family": "platform_genre",
-  "last_theme_index_used": 1
+  "last_generated_slug": "best-drama-picks-to-stream",
+  "last_generated_family": "evergreen_genre",
+  "last_theme_index_used": 3
 }
