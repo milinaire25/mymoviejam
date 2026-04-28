@@ -1,101 +1,82 @@
 {
-  "generated_at": "2026-04-27T10:00:16",
-  "date": "2026-04-27",
-  "readable_date": "April 27, 2026",
-  "family": "evergreen_genre",
-  "headline": "Best drama picks to stream when you want something better than another lazy scroll",
-  "slug": "best-drama-picks-to-stream",
-  "primary_keyword": "best drama picks to stream",
-  "meta_description": "Need better drama picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
-  "eyebrow": "Curated List · April 27, 2026",
-  "subtitle": "Featuring be happy, adolescence, and idly kadai — plus more drama picks that deserve real attention.",
+  "generated_at": "2026-04-28T10:00:16",
+  "date": "2026-04-28",
+  "readable_date": "April 28, 2026",
+  "family": "year_genre",
+  "headline": "Best comedy picks from 2024: 5 titles actually worth your time",
+  "slug": "best-comedy-movies-and-shows-in-2024",
+  "primary_keyword": "best comedy movies and shows in 2024",
+  "meta_description": "Looking for the best comedy picks from 2024? Here are the titles that actually deserve your time, with clear audience-first takes and quick watch-fit guidance.",
+  "eyebrow": "Curated List · April 28, 2026",
+  "subtitle": "Featuring Crew, Maamla Legal Hai, and Mr & Mrs Mahi — plus more comedy picks that deserve real attention.",
   "tags": [
-    "Drama",
+    "Comedy",
+    "2024",
     "Curated list"
   ],
-  "genre": "Drama",
+  "genre": "Comedy",
   "platform": null,
-  "year": null,
+  "year": 2024,
   "hero_image": {
-    "file": "best-drama-picks-to-stream.jpg",
-    "path": "blog/images/best-drama-picks-to-stream.jpg",
-    "web_path": "/blog/images/best-drama-picks-to-stream.jpg",
-    "eyebrow": "Drama",
-    "title": "Best drama picks to stream when you want something better than another lazy scroll",
-    "subtitle": "Featuring be happy, adolescence, and idly kadai — plus more drama picks that deserve real attention."
+    "file": "best-comedy-movies-and-shows-in-2024.jpg",
+    "path": "blog/images/best-comedy-movies-and-shows-in-2024.jpg",
+    "web_path": "/blog/images/best-comedy-movies-and-shows-in-2024.jpg",
+    "eyebrow": "Comedy",
+    "title": "Best comedy picks from 2024: 5 titles actually worth your time",
+    "subtitle": "Featuring Crew, Maamla Legal Hai, and Mr & Mrs Mahi — plus more comedy picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "530",
-      "title": "be happy",
-      "genre": "Drama/Kids",
-      "primary_genre": "Drama",
-      "ott_platform": "Amazon Prime",
+      "id": "1",
+      "title": "Crew",
+      "genre": "Comedy/Hindi",
+      "primary_genre": "Comedy",
+      "ott_platform": "Netflix",
       "platforms": [
-        "Amazon Prime"
+        "Netflix"
       ],
-      "year_of_release": 2026,
-      "description": "A father and daughter story of fighting cancer and living the dream."
+      "year_of_release": 2024,
+      "description": "Three women airhostes, who are best friends takes an unexpected turn."
     },
     {
-      "id": "364",
-      "title": "adolescence",
-      "genre": "Drama/Coming of Age",
-      "primary_genre": "Drama",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2025,
-      "description": "A poignant exploration of the turbulent teenage years and the journey to self-discovery."
-    },
-    {
-      "id": "934",
-      "title": "idly kadai",
-      "genre": "Drama, Slice of Life",
-      "primary_genre": "Drama",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2025,
-      "description": "A heartfelt story rooted in everyday life, food, and human connections."
-    },
-    {
-      "id": "901",
-      "title": "metro in dino",
-      "genre": "Drama, Comedy",
-      "primary_genre": "Drama",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2025,
-      "description": "Everyday lives and relationships intersect in a bustling Indian metro."
-    },
-    {
-      "id": "935",
-      "title": "mrs deshpande",
-      "genre": "Drama",
-      "primary_genre": "Drama",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2025,
-      "description": "A quiet, emotional journey of identity, resilience, and family bonds."
-    },
-    {
-      "id": "23",
-      "title": "Article 370",
-      "genre": "Drama",
-      "primary_genre": "Drama",
+      "id": "24",
+      "title": "Maamla Legal Hai",
+      "genre": "Comedy",
+      "primary_genre": "Comedy",
       "ott_platform": "",
       "platforms": [],
       "year_of_release": 2024,
-      "description": "A Hindi political drama focusing on the abrogation of Article 370 in Kashmir."
+      "description": "A Hindi comedy about legal complications that bring humor and chaos."
     },
     {
-      "id": "8",
-      "title": "Srikanth",
-      "genre": "Drama",
-      "primary_genre": "Drama",
+      "id": "10",
+      "title": "Mr & Mrs Mahi",
+      "genre": "Comedy",
+      "primary_genre": "Comedy",
       "ott_platform": "",
       "platforms": [],
       "year_of_release": 2024,
-      "description": "A Hindi biographical drama portraying the inspiring life story of a notable individual named Srikanth."
+      "description": "A lighthearted Hindi comedy exploring the dynamics of a married couple and life with Cricket."
+    },
+    {
+      "id": "15",
+      "title": "Teri Baaton Mein Aisa Uljha Jiya",
+      "genre": "Comedy",
+      "primary_genre": "Comedy",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2024,
+      "description": "A quirky Hindi rom-com exploring the unexpected love between a man and an advanced humanoid robot."
+    },
+    {
+      "id": "829",
+      "title": "The Great Indian Kapil Show: Season 3",
+      "genre": "Comedy/Talk Show",
+      "primary_genre": "Comedy",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2024,
+      "description": "Kapil Sharma's hit comedy talk show returns with Sunil Grover, Kiku Sharda, and the surprise return of Navjot Singh Sidhu. Streaming weekly on Saturdays, it's been a social media favorite for its celebrity guests and humor, with Salman Khan kicking off the season."
     }
   ],
   "cta": {

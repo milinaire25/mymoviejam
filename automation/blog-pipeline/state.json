@@ -17,6 +17,12 @@
       "headline": "Best drama picks to stream when you want something better than another lazy scroll",
       "family": "evergreen_genre",
       "published_at": "2026-04-27T10:02:37"
+    },
+    {
+      "slug": "best-comedy-movies-and-shows-in-2024",
+      "headline": "Best comedy picks from 2024: 5 titles actually worth your time",
+      "family": "year_genre",
+      "published_at": "2026-04-28T10:02:59"
     }
   ],
   "published_titles": [
@@ -38,7 +44,12 @@
     "metro in dino",
     "mrs deshpande",
     "Article 370",
-    "Srikanth"
+    "Srikanth",
+    "Crew",
+    "Maamla Legal Hai",
+    "Mr & Mrs Mahi",
+    "Teri Baaton Mein Aisa Uljha Jiya",
+    "The Great Indian Kapil Show: Season 3"
   ],
   "theme_history": [
     {
@@ -55,12 +66,17 @@
       "family": "evergreen_genre",
       "slug": "best-drama-picks-to-stream",
       "published_at": "2026-04-27T10:02:37"
+    },
+    {
+      "family": "year_genre",
+      "slug": "best-comedy-movies-and-shows-in-2024",
+      "published_at": "2026-04-28T10:02:59"
     }
   ],
-  "next_theme_index": 0,
-  "last_generated_at": "2026-04-27T10:00:16",
+  "next_theme_index": 1,
+  "last_generated_at": "2026-04-28T10:00:16",
   "notes": "Pipeline state for automated MyMovieJam daily blog generation. Titles are marked only after a post is successfully published.",
-  "last_generated_slug": "best-drama-picks-to-stream",
-  "last_generated_family": "evergreen_genre",
-  "last_theme_index_used": 3
+  "last_generated_slug": "best-comedy-movies-and-shows-in-2024",
+  "last_generated_family": "year_genre",
+  "last_theme_index_used": 0
 }
