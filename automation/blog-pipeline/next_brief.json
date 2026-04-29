@@ -1,82 +1,117 @@
 {
-  "generated_at": "2026-04-28T10:00:16",
-  "date": "2026-04-28",
-  "readable_date": "April 28, 2026",
-  "family": "year_genre",
-  "headline": "Best comedy picks from 2024: 5 titles actually worth your time",
-  "slug": "best-comedy-movies-and-shows-in-2024",
-  "primary_keyword": "best comedy movies and shows in 2024",
-  "meta_description": "Looking for the best comedy picks from 2024? Here are the titles that actually deserve your time, with clear audience-first takes and quick watch-fit guidance.",
-  "eyebrow": "Curated List · April 28, 2026",
-  "subtitle": "Featuring Crew, Maamla Legal Hai, and Mr & Mrs Mahi — plus more comedy picks that deserve real attention.",
+  "generated_at": "2026-04-29T10:00:15",
+  "date": "2026-04-29",
+  "readable_date": "April 29, 2026",
+  "family": "platform_genre",
+  "headline": "Best biography picks on Amazon Prime right now: 7 titles worth starting first",
+  "slug": "best-biography-picks-on-amazon-prime-2",
+  "primary_keyword": "best biography picks on amazon prime",
+  "meta_description": "Need the best biography picks on Amazon Prime? These are the titles worth starting first if you want something better than random browsing.",
+  "eyebrow": "Curated List · April 29, 2026",
+  "subtitle": "Featuring The Big Short, Spotlight, and The 33 — plus more biography picks that deserve real attention.",
   "tags": [
-    "Comedy",
-    "2024",
+    "Amazon Prime",
+    "Biography",
     "Curated list"
   ],
-  "genre": "Comedy",
-  "platform": null,
-  "year": 2024,
+  "genre": "Biography",
+  "platform": "Amazon Prime",
+  "year": null,
   "hero_image": {
-    "file": "best-comedy-movies-and-shows-in-2024.jpg",
-    "path": "blog/images/best-comedy-movies-and-shows-in-2024.jpg",
-    "web_path": "/blog/images/best-comedy-movies-and-shows-in-2024.jpg",
-    "eyebrow": "Comedy",
-    "title": "Best comedy picks from 2024: 5 titles actually worth your time",
-    "subtitle": "Featuring Crew, Maamla Legal Hai, and Mr & Mrs Mahi — plus more comedy picks that deserve real attention."
+    "file": "best-biography-picks-on-amazon-prime-2.jpg",
+    "path": "blog/images/best-biography-picks-on-amazon-prime-2.jpg",
+    "web_path": "/blog/images/best-biography-picks-on-amazon-prime-2.jpg",
+    "eyebrow": "Biography · Amazon Prime",
+    "title": "Best biography picks on Amazon Prime right now: 7 titles worth starting first",
+    "subtitle": "Featuring The Big Short, Spotlight, and The 33 — plus more biography picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "1",
-      "title": "Crew",
-      "genre": "Comedy/Hindi",
-      "primary_genre": "Comedy",
-      "ott_platform": "Netflix",
+      "id": "99",
+      "title": "The Big Short",
+      "genre": "Biography/Comedy/Drama",
+      "primary_genre": "Biography",
+      "ott_platform": "Netflix, Amazon Prime",
       "platforms": [
-        "Netflix"
+        "Netflix",
+        "Amazon Prime"
       ],
-      "year_of_release": 2024,
-      "description": "Three women airhostes, who are best friends takes an unexpected turn."
+      "year_of_release": 2015,
+      "description": "Four outsiders in the finance world predict the 2008 global financial crisis and profit from it."
     },
     {
-      "id": "24",
-      "title": "Maamla Legal Hai",
-      "genre": "Comedy",
-      "primary_genre": "Comedy",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2024,
-      "description": "A Hindi comedy about legal complications that bring humor and chaos."
+      "id": "95",
+      "title": "Spotlight",
+      "genre": "Biography/Crime/Drama",
+      "primary_genre": "Biography",
+      "ott_platform": "Amazon Prime",
+      "platforms": [
+        "Amazon Prime"
+      ],
+      "year_of_release": 2015,
+      "description": "The Boston Globe uncovers a massive scandal of child molestation within the local Catholic Archdiocese."
     },
     {
-      "id": "10",
-      "title": "Mr & Mrs Mahi",
-      "genre": "Comedy",
-      "primary_genre": "Comedy",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2024,
-      "description": "A lighthearted Hindi comedy exploring the dynamics of a married couple and life with Cricket."
+      "id": "97",
+      "title": "The 33",
+      "genre": "Biography/Drama",
+      "primary_genre": "Biography",
+      "ott_platform": "Amazon Prime",
+      "platforms": [
+        "Amazon Prime"
+      ],
+      "year_of_release": 2015,
+      "description": "The true story of the 2010 collapse of a Chilean mine and the rescue of 33 miners."
     },
     {
-      "id": "15",
-      "title": "Teri Baaton Mein Aisa Uljha Jiya",
-      "genre": "Comedy",
-      "primary_genre": "Comedy",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2024,
-      "description": "A quirky Hindi rom-com exploring the unexpected love between a man and an advanced humanoid robot."
+      "id": "105",
+      "title": "The Man Who Knew",
+      "genre": "Biography/Drama",
+      "primary_genre": "Biography",
+      "ott_platform": "Amazon Prime",
+      "platforms": [
+        "Amazon Prime"
+      ],
+      "year_of_release": 2015,
+      "description": "The story of an FBI agent who tried to warn about the threat of Al-Qaeda before 9/11."
     },
     {
-      "id": "829",
-      "title": "The Great Indian Kapil Show: Season 3",
-      "genre": "Comedy/Talk Show",
-      "primary_genre": "Comedy",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2024,
-      "description": "Kapil Sharma's hit comedy talk show returns with Sunil Grover, Kiku Sharda, and the surprise return of Navjot Singh Sidhu. Streaming weekly on Saturdays, it's been a social media favorite for its celebrity guests and humor, with Salman Khan kicking off the season."
+      "id": "92",
+      "title": "Selma",
+      "genre": "Biography/Drama/History",
+      "primary_genre": "Biography",
+      "ott_platform": "Netflix, Amazon Prime",
+      "platforms": [
+        "Netflix",
+        "Amazon Prime"
+      ],
+      "year_of_release": 2014,
+      "description": "Dr. Martin Luther King Jr.'s campaign to secure equal voting rights via a march from Selma to Montgomery."
+    },
+    {
+      "id": "109",
+      "title": "Unbroken",
+      "genre": "Biography/Drama/Sport",
+      "primary_genre": "Biography",
+      "ott_platform": "Netflix, Amazon Prime",
+      "platforms": [
+        "Netflix",
+        "Amazon Prime"
+      ],
+      "year_of_release": 2014,
+      "description": "The life of Olympian and war hero Louis Zamperini, who survived in a raft for 47 days."
+    },
+    {
+      "id": "107",
+      "title": "The Theory of Everything",
+      "genre": "Biography/Drama/Romance",
+      "primary_genre": "Biography",
+      "ott_platform": "Amazon Prime",
+      "platforms": [
+        "Amazon Prime"
+      ],
+      "year_of_release": 2014,
+      "description": "The story of the relationship between Stephen Hawking and his wife."
     }
   ],
   "cta": {
