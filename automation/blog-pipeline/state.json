@@ -29,6 +29,12 @@
       "headline": "Best biography picks on Amazon Prime right now: 7 titles worth starting first",
       "family": "platform_genre",
       "published_at": "2026-04-29T10:02:24"
+    },
+    {
+      "slug": "best-drama-picks-to-stream-2",
+      "headline": "Best drama picks to stream when you want something better than another lazy scroll",
+      "family": "evergreen_genre",
+      "published_at": "2026-04-30T10:03:04"
     }
   ],
   "published_titles": [
@@ -62,7 +68,14 @@
     "The Man Who Knew",
     "Selma",
     "Unbroken",
-    "The Theory of Everything"
+    "The Theory of Everything",
+    "Ulajh",
+    "mrs",
+    "12th Fail",
+    "Invincible",
+    "83",
+    "bandish bandit",
+    "Just Mercy"
   ],
   "theme_history": [
     {
@@ -89,12 +102,17 @@
       "family": "platform_genre",
       "slug": "best-biography-picks-on-amazon-prime-2",
       "published_at": "2026-04-29T10:02:24"
+    },
+    {
+      "family": "evergreen_genre",
+      "slug": "best-drama-picks-to-stream-2",
+      "published_at": "2026-04-30T10:03:04"
     }
   ],
-  "next_theme_index": 2,
-  "last_generated_at": "2026-04-29T10:00:15",
+  "next_theme_index": 0,
+  "last_generated_at": "2026-04-30T10:01:08",
   "notes": "Pipeline state for automated MyMovieJam daily blog generation. Titles are marked only after a post is successfully published.",
-  "last_generated_slug": "best-biography-picks-on-amazon-prime-2",
-  "last_generated_family": "platform_genre",
-  "last_theme_index_used": 1
+  "last_generated_slug": "best-drama-picks-to-stream-2",
+  "last_generated_family": "evergreen_genre",
+  "last_theme_index_used": 3
 }

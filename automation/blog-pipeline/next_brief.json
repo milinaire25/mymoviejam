@@ -1,117 +1,107 @@
 {
-  "generated_at": "2026-04-29T10:00:15",
-  "date": "2026-04-29",
-  "readable_date": "April 29, 2026",
-  "family": "platform_genre",
-  "headline": "Best biography picks on Amazon Prime right now: 7 titles worth starting first",
-  "slug": "best-biography-picks-on-amazon-prime-2",
-  "primary_keyword": "best biography picks on amazon prime",
-  "meta_description": "Need the best biography picks on Amazon Prime? These are the titles worth starting first if you want something better than random browsing.",
-  "eyebrow": "Curated List · April 29, 2026",
-  "subtitle": "Featuring The Big Short, Spotlight, and The 33 — plus more biography picks that deserve real attention.",
+  "generated_at": "2026-04-30T10:01:08",
+  "date": "2026-04-30",
+  "readable_date": "April 30, 2026",
+  "family": "evergreen_genre",
+  "headline": "Best drama picks to stream when you want something better than another lazy scroll",
+  "slug": "best-drama-picks-to-stream-2",
+  "primary_keyword": "best drama picks to stream",
+  "meta_description": "Need better drama picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
+  "eyebrow": "Curated List · April 30, 2026",
+  "subtitle": "Featuring Ulajh, mrs, and 12th Fail — plus more drama picks that deserve real attention.",
   "tags": [
-    "Amazon Prime",
-    "Biography",
+    "Drama",
     "Curated list"
   ],
-  "genre": "Biography",
-  "platform": "Amazon Prime",
+  "genre": "Drama",
+  "platform": null,
   "year": null,
   "hero_image": {
-    "file": "best-biography-picks-on-amazon-prime-2.jpg",
-    "path": "blog/images/best-biography-picks-on-amazon-prime-2.jpg",
-    "web_path": "/blog/images/best-biography-picks-on-amazon-prime-2.jpg",
-    "eyebrow": "Biography · Amazon Prime",
-    "title": "Best biography picks on Amazon Prime right now: 7 titles worth starting first",
-    "subtitle": "Featuring The Big Short, Spotlight, and The 33 — plus more biography picks that deserve real attention."
+    "file": "best-drama-picks-to-stream-2.jpg",
+    "path": "blog/images/best-drama-picks-to-stream-2.jpg",
+    "web_path": "/blog/images/best-drama-picks-to-stream-2.jpg",
+    "eyebrow": "Drama",
+    "title": "Best drama picks to stream when you want something better than another lazy scroll",
+    "subtitle": "Featuring Ulajh, mrs, and 12th Fail — plus more drama picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "99",
-      "title": "The Big Short",
-      "genre": "Biography/Comedy/Drama",
-      "primary_genre": "Biography",
-      "ott_platform": "Netflix, Amazon Prime",
-      "platforms": [
-        "Netflix",
-        "Amazon Prime"
-      ],
-      "year_of_release": 2015,
-      "description": "Four outsiders in the finance world predict the 2008 global financial crisis and profit from it."
+      "id": "18",
+      "title": "Ulajh",
+      "genre": "Drama",
+      "primary_genre": "Drama",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2024,
+      "description": "A Hindi drama that delves into complex human emotions and relationships."
     },
     {
-      "id": "95",
-      "title": "Spotlight",
-      "genre": "Biography/Crime/Drama",
-      "primary_genre": "Biography",
+      "id": "298",
+      "title": "mrs",
+      "genre": "Drama/Biography",
+      "primary_genre": "Drama",
       "ott_platform": "Amazon Prime",
       "platforms": [
         "Amazon Prime"
       ],
-      "year_of_release": 2015,
-      "description": "The Boston Globe uncovers a massive scandal of child molestation within the local Catholic Archdiocese."
+      "year_of_release": 2023,
+      "description": "A biographical drama about a woman overcoming personal challenges and societal expectations."
     },
     {
-      "id": "97",
-      "title": "The 33",
-      "genre": "Biography/Drama",
-      "primary_genre": "Biography",
+      "id": "11",
+      "title": "12th Fail",
+      "genre": "Drama",
+      "primary_genre": "Drama",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2023,
+      "description": "A Hindi drama highlighting the challenges and triumphs of academic struggles."
+    },
+    {
+      "id": "80",
+      "title": "Invincible",
+      "genre": "Drama/Sports/True Story",
+      "primary_genre": "Drama",
       "ott_platform": "Amazon Prime",
       "platforms": [
         "Amazon Prime"
       ],
-      "year_of_release": 2015,
-      "description": "The true story of the 2010 collapse of a Chilean mine and the rescue of 33 miners."
+      "year_of_release": 2021,
+      "description": "A man pursues his dream to play in the NFL."
     },
     {
-      "id": "105",
-      "title": "The Man Who Knew",
-      "genre": "Biography/Drama",
-      "primary_genre": "Biography",
+      "id": "12",
+      "title": "83",
+      "genre": "Drama",
+      "primary_genre": "Drama",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2021,
+      "description": "A Hindi sports drama recreating India's historic cricket World Cup victory in 1983."
+    },
+    {
+      "id": "333",
+      "title": "bandish bandit",
+      "genre": "Drama/Music Indian",
+      "primary_genre": "Drama",
       "ott_platform": "Amazon Prime",
       "platforms": [
         "Amazon Prime"
       ],
-      "year_of_release": 2015,
-      "description": "The story of an FBI agent who tried to warn about the threat of Al-Qaeda before 9/11."
+      "year_of_release": 2020,
+      "description": "A young musician strives to balance the demands of tradition with his passion for innovation in classical Indian music."
     },
     {
-      "id": "92",
-      "title": "Selma",
-      "genre": "Biography/Drama/History",
-      "primary_genre": "Biography",
-      "ott_platform": "Netflix, Amazon Prime",
-      "platforms": [
-        "Netflix",
-        "Amazon Prime"
-      ],
-      "year_of_release": 2014,
-      "description": "Dr. Martin Luther King Jr.'s campaign to secure equal voting rights via a march from Selma to Montgomery."
-    },
-    {
-      "id": "109",
-      "title": "Unbroken",
-      "genre": "Biography/Drama/Sport",
-      "primary_genre": "Biography",
-      "ott_platform": "Netflix, Amazon Prime",
-      "platforms": [
-        "Netflix",
-        "Amazon Prime"
-      ],
-      "year_of_release": 2014,
-      "description": "The life of Olympian and war hero Louis Zamperini, who survived in a raft for 47 days."
-    },
-    {
-      "id": "107",
-      "title": "The Theory of Everything",
-      "genre": "Biography/Drama/Romance",
-      "primary_genre": "Biography",
+      "id": "84",
+      "title": "Just Mercy",
+      "genre": "Drama/Crime/True Story",
+      "primary_genre": "Drama",
       "ott_platform": "Amazon Prime",
       "platforms": [
         "Amazon Prime"
       ],
-      "year_of_release": 2014,
-      "description": "The story of the relationship between Stephen Hawking and his wife."
+      "year_of_release": 2019,
+      "description": "A lawyer fights for the wrongly accused."
     }
   ],
   "cta": {
