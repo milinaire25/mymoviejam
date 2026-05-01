@@ -35,6 +35,12 @@
       "headline": "Best drama picks to stream when you want something better than another lazy scroll",
       "family": "evergreen_genre",
       "published_at": "2026-04-30T10:03:04"
+    },
+    {
+      "slug": "best-drama-picks-on-amazon-prime",
+      "headline": "Best drama picks on Amazon Prime right now: 7 titles worth starting first",
+      "family": "platform_genre",
+      "published_at": "2026-05-01T10:02:25"
     }
   ],
   "published_titles": [
@@ -75,7 +81,14 @@
     "Invincible",
     "83",
     "bandish bandit",
-    "Just Mercy"
+    "Just Mercy",
+    "Bohemian Rhapsody",
+    "First Man",
+    "Green Book",
+    "Darkest Hour",
+    "Flight",
+    "The Impossible",
+    "Capote"
   ],
   "theme_history": [
     {
@@ -107,12 +120,17 @@
       "family": "evergreen_genre",
       "slug": "best-drama-picks-to-stream-2",
       "published_at": "2026-04-30T10:03:04"
+    },
+    {
+      "family": "platform_genre",
+      "slug": "best-drama-picks-on-amazon-prime",
+      "published_at": "2026-05-01T10:02:25"
     }
   ],
-  "next_theme_index": 0,
-  "last_generated_at": "2026-04-30T10:01:08",
+  "next_theme_index": 2,
+  "last_generated_at": "2026-05-01T10:00:17",
   "notes": "Pipeline state for automated MyMovieJam daily blog generation. Titles are marked only after a post is successfully published.",
-  "last_generated_slug": "best-drama-picks-to-stream-2",
-  "last_generated_family": "evergreen_genre",
-  "last_theme_index_used": 3
+  "last_generated_slug": "best-drama-picks-on-amazon-prime",
+  "last_generated_family": "platform_genre",
+  "last_theme_index_used": 1
 }
