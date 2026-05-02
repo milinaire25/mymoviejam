@@ -41,6 +41,12 @@
       "headline": "Best drama picks on Amazon Prime right now: 7 titles worth starting first",
       "family": "platform_genre",
       "published_at": "2026-05-01T10:02:25"
+    },
+    {
+      "slug": "best-action-picks-to-stream",
+      "headline": "Best action picks to stream when you want something better than another lazy scroll",
+      "family": "evergreen_genre",
+      "published_at": "2026-05-02T10:03:41"
     }
   ],
   "published_titles": [
@@ -88,7 +94,14 @@
     "Darkest Hour",
     "Flight",
     "The Impossible",
-    "Capote"
+    "Capote",
+    "thrash",
+    "saare jahan se accha",
+    "Physical 100",
+    "RRR",
+    "extraction2",
+    "Tehran",
+    "We Can Be Heroes"
   ],
   "theme_history": [
     {
@@ -125,12 +138,17 @@
       "family": "platform_genre",
       "slug": "best-drama-picks-on-amazon-prime",
       "published_at": "2026-05-01T10:02:25"
+    },
+    {
+      "family": "evergreen_genre",
+      "slug": "best-action-picks-to-stream",
+      "published_at": "2026-05-02T10:03:41"
     }
   ],
-  "next_theme_index": 2,
-  "last_generated_at": "2026-05-01T10:00:17",
+  "next_theme_index": 0,
+  "last_generated_at": "2026-05-02T10:00:14",
   "notes": "Pipeline state for automated MyMovieJam daily blog generation. Titles are marked only after a post is successfully published.",
-  "last_generated_slug": "best-drama-picks-on-amazon-prime",
-  "last_generated_family": "platform_genre",
-  "last_theme_index_used": 1
+  "last_generated_slug": "best-action-picks-to-stream",
+  "last_generated_family": "evergreen_genre",
+  "last_theme_index_used": 3
 }

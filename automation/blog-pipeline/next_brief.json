@@ -1,115 +1,101 @@
 {
-  "generated_at": "2026-05-01T10:00:17",
-  "date": "2026-05-01",
-  "readable_date": "May 1, 2026",
-  "family": "platform_genre",
-  "headline": "Best drama picks on Amazon Prime right now: 7 titles worth starting first",
-  "slug": "best-drama-picks-on-amazon-prime",
-  "primary_keyword": "best drama picks on amazon prime",
-  "meta_description": "Need the best drama picks on Amazon Prime? These are the titles worth starting first if you want something better than random browsing.",
-  "eyebrow": "Curated List · May 1, 2026",
-  "subtitle": "Featuring Bohemian Rhapsody, First Man, and Green Book — plus more drama picks that deserve real attention.",
+  "generated_at": "2026-05-02T10:00:14",
+  "date": "2026-05-02",
+  "readable_date": "May 2, 2026",
+  "family": "evergreen_genre",
+  "headline": "Best action picks to stream when you want something better than another lazy scroll",
+  "slug": "best-action-picks-to-stream",
+  "primary_keyword": "best action picks to stream",
+  "meta_description": "Need better action picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
+  "eyebrow": "Curated List · May 2, 2026",
+  "subtitle": "Featuring thrash, saare jahan se accha, and Physical 100 — plus more action picks that deserve real attention.",
   "tags": [
-    "Amazon Prime",
-    "Drama",
+    "Action",
     "Curated list"
   ],
-  "genre": "Drama",
-  "platform": "Amazon Prime",
+  "genre": "Action",
+  "platform": null,
   "year": null,
   "hero_image": {
-    "file": "best-drama-picks-on-amazon-prime.jpg",
-    "path": "blog/images/best-drama-picks-on-amazon-prime.jpg",
-    "web_path": "/blog/images/best-drama-picks-on-amazon-prime.jpg",
-    "eyebrow": "Drama · Amazon Prime",
-    "title": "Best drama picks on Amazon Prime right now: 7 titles worth starting first",
-    "subtitle": "Featuring Bohemian Rhapsody, First Man, and Green Book — plus more drama picks that deserve real attention."
+    "file": "best-action-picks-to-stream.jpg",
+    "path": "blog/images/best-action-picks-to-stream.jpg",
+    "web_path": "/blog/images/best-action-picks-to-stream.jpg",
+    "eyebrow": "Action",
+    "title": "Best action picks to stream when you want something better than another lazy scroll",
+    "subtitle": "Featuring thrash, saare jahan se accha, and Physical 100 — plus more action picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "65",
-      "title": "Bohemian Rhapsody",
-      "genre": "Drama/Music/True Story",
-      "primary_genre": "Drama",
-      "ott_platform": "Amazon Prime",
-      "platforms": [
-        "Amazon Prime"
-      ],
-      "year_of_release": 2018,
-      "description": "The story of Queen's lead singer, Freddie Mercury."
+      "id": "1062",
+      "title": "thrash",
+      "genre": "Action/Thriller",
+      "primary_genre": "Action",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2026,
+      "description": "Raw, high-energy action drama centered on chaos, survival, and intense confrontations."
     },
     {
-      "id": "75",
-      "title": "First Man",
-      "genre": "Drama/History/True Story",
-      "primary_genre": "Drama",
-      "ott_platform": "Amazon Prime",
-      "platforms": [
-        "Amazon Prime"
-      ],
-      "year_of_release": 2018,
-      "description": "Neil Armstrong's journey to the moon."
+      "id": "859",
+      "title": "saare jahan se accha",
+      "genre": "Action/Thriller",
+      "primary_genre": "Action",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2025,
+      "description": "A spy Indian mission in the nuclear arms race"
     },
     {
-      "id": "77",
-      "title": "Green Book",
-      "genre": "Drama/Comedy/True Story",
-      "primary_genre": "Drama",
-      "ott_platform": "Amazon Prime",
+      "id": "211",
+      "title": "Physical 100",
+      "genre": "Action",
+      "primary_genre": "Action",
+      "ott_platform": "Netflix",
       "platforms": [
-        "Amazon Prime"
+        "Netflix"
       ],
-      "year_of_release": 2018,
-      "description": "An unlikely friendship in the Deep South."
+      "year_of_release": 2023,
+      "description": "It is where Korea top athletes not only compete for the ultimate prize but also share compelling personal stories. Season 1 edges out Season 2 for its richer narrative."
     },
     {
-      "id": "71",
-      "title": "Darkest Hour",
-      "genre": "Drama/History/True Story",
-      "primary_genre": "Drama",
-      "ott_platform": "Amazon Prime",
-      "platforms": [
-        "Amazon Prime"
-      ],
-      "year_of_release": 2017,
-      "description": "Winston Churchill faces World War II's challenges."
+      "id": "26",
+      "title": "RRR",
+      "genre": "Action/Drama",
+      "primary_genre": "Action",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2022,
+      "description": "An Indian epic action-drama about two revolutionaries fighting for freedom against British rule."
     },
     {
-      "id": "74",
-      "title": "Flight",
-      "genre": "Drama/Thriller/True Story",
-      "primary_genre": "Drama",
-      "ott_platform": "Amazon Prime",
-      "platforms": [
-        "Amazon Prime"
-      ],
-      "year_of_release": 2012,
-      "description": "A pilot faces trial after a heroic landing."
+      "id": "1060",
+      "title": "extraction2",
+      "genre": "Action/Thriller",
+      "primary_genre": "Action",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2020,
+      "description": "A black-ops mercenary returns for a deadly mission, facing impossible odds and relentless enemies."
     },
     {
-      "id": "104",
-      "title": "The Impossible",
-      "genre": "Drama/History/Thriller",
-      "primary_genre": "Drama",
-      "ott_platform": "Amazon Prime",
-      "platforms": [
-        "Amazon Prime"
-      ],
-      "year_of_release": 2012,
-      "description": "A family's experience of the 2004 Indian Ocean tsunami."
+      "id": "892",
+      "title": "Tehran",
+      "genre": "Action/Thriller",
+      "primary_genre": "Action",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2020,
+      "description": "A spy mission in Iran with high-stakes espionage and international intrigue."
     },
     {
-      "id": "66",
-      "title": "Capote",
-      "genre": "Drama/Biography/True Story",
-      "primary_genre": "Drama",
-      "ott_platform": "Netflix, Amazon Prime",
-      "platforms": [
-        "Netflix",
-        "Amazon Prime"
-      ],
-      "year_of_release": 2005,
-      "description": "A writer investigates a chilling murder case."
+      "id": "31",
+      "title": "We Can Be Heroes",
+      "genre": "Action/Family",
+      "primary_genre": "Action",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2020,
+      "description": "A superhero family movie where kids of superheroes band together to save the world."
     }
   ],
   "cta": {
