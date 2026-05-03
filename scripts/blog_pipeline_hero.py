@@ -179,13 +179,12 @@ def main():
     draw = ImageDraw.Draw(img)
     eyebrow_font = load_font(FONT_CANDIDATES_BOLD, 26)
     subtitle_font = load_font(FONT_CANDIDATES_REGULAR, 27)
-    footer_font = load_font(FONT_CANDIDATES_BOLD, 24)
-    cta_font = load_font(FONT_CANDIDATES_BOLD, 28)
-    micro_font = load_font(FONT_CANDIDATES_BOLD, 22)
+    footer_font = load_font(FONT_CANDIDATES_BOLD, 30)
+    cta_font = load_font(FONT_CANDIDATES_BOLD, 34)
     title_font, title_lines = fit_title_font(draw, args.title, 748, 4, start_size=94, min_size=56)
 
-    draw.text((86, 104), "HOOK-STYLE BLOG IMAGE", font=micro_font, fill=(255, 245, 220))
-    draw_pill(draw, 86, 150, args.eyebrow.upper()[:34], eyebrow_font, fill=accent + (255,), text_fill=(18, 18, 22))
+    draw_pill(draw, 86, 98, "BLOG", eyebrow_font, fill=accent + (255,), text_fill=(18, 18, 22))
+    draw_pill(draw, 86, 150, args.eyebrow.upper()[:34], eyebrow_font, fill=(255, 255, 255, 28), text_fill=(255, 255, 255), outline=(255, 255, 255, 50))
     draw_pill(draw, 350, 150, "MYMOVIEJAM", eyebrow_font, fill=(255, 255, 255, 28), text_fill=(255, 255, 255), outline=(255, 255, 255, 50))
 
     y = 246
@@ -206,10 +205,10 @@ def main():
         draw.text((90, y), line, font=subtitle_font, fill=color)
         y += subtitle_font.size + 10
 
-    draw.rounded_rectangle((86, 720, 446, 782), radius=26, fill=accent2, outline=accent, width=3)
-    draw.text((120, 739), "Get picks on WhatsApp →", font=cta_font, fill=(255, 255, 255))
+    draw.rounded_rectangle((86, 714, 520, 788), radius=28, fill=accent2, outline=accent, width=3)
+    draw.text((122, 736), "Get picks on WhatsApp →", font=cta_font, fill=(255, 255, 255))
     draw.text((86, 804), "MYMOVIEJAM BLOG", font=footer_font, fill=(255, 255, 255))
-    draw.text((330, 804), "what to watch without the scroll", font=footer_font, fill=(230, 232, 236))
+    draw.text((86, 844), "what to watch without the scroll", font=footer_font, fill=(255, 244, 214))
 
     img.convert("RGB").save(out_path, quality=92)
     print(out_path)
