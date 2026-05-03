@@ -128,8 +128,6 @@ def build_poster_stack(featured_titles, accent, accent2):
         card = Image.new("RGBA", (card_w, card_h), (0, 0, 0, 0))
         cd = ImageDraw.Draw(card, "RGBA")
         cd.rounded_rectangle((0, 0, card_w, card_h), radius=30, fill=(10, 12, 18, 245), outline=(255, 255, 255, 38), width=2)
-        cd.rounded_rectangle((24, 24, 156, 62), radius=16, fill=accent + (255,))
-        cd.text((42, 34), "HOOK PICK", font=meta_font, fill=(18, 18, 22))
         cd.rounded_rectangle((0, card_h - 74, card_w, card_h), radius=30, fill=accent2 + (255,))
         cd.rectangle((0, card_h - 74, card_w, card_h - 30), fill=accent2 + (255,))
 
@@ -182,6 +180,7 @@ def main():
     eyebrow_font = load_font(FONT_CANDIDATES_BOLD, 26)
     subtitle_font = load_font(FONT_CANDIDATES_REGULAR, 27)
     footer_font = load_font(FONT_CANDIDATES_BOLD, 24)
+    cta_font = load_font(FONT_CANDIDATES_BOLD, 28)
     micro_font = load_font(FONT_CANDIDATES_BOLD, 22)
     title_font, title_lines = fit_title_font(draw, args.title, 748, 4, start_size=94, min_size=56)
 
@@ -207,8 +206,8 @@ def main():
         draw.text((90, y), line, font=subtitle_font, fill=color)
         y += subtitle_font.size + 10
 
-    draw.rounded_rectangle((86, 724, 430, 778), radius=24, outline=accent, width=3)
-    draw.text((116, 738), "Get picks on WhatsApp →", font=footer_font, fill=accent)
+    draw.rounded_rectangle((86, 720, 446, 782), radius=26, fill=accent2, outline=accent, width=3)
+    draw.text((120, 739), "Get picks on WhatsApp →", font=cta_font, fill=(255, 255, 255))
     draw.text((86, 804), "MYMOVIEJAM BLOG", font=footer_font, fill=(255, 255, 255))
     draw.text((330, 804), "what to watch without the scroll", font=footer_font, fill=(230, 232, 236))
 
