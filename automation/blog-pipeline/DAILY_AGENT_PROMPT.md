@@ -38,6 +38,9 @@ Create a daily SEO-optimized post that feels like a real MyMovieJam article:
    ```bash
    '/Users/milinaire/.openclaw/venvs/tweetx/bin/python' scripts/blog_pipeline_hero.py --title "<headline>" --eyebrow "<eyebrow>" --subtitle "<subtitle>" --out "blog/images/<image-file>.jpg"
    ```
+   - This is the **default blog image generator** now.
+   - Keep using the latest dark, high-contrast MyMovieJam hook-style look from `scripts/blog_pipeline_hero.py`.
+   - Do not revert to the older softer blog-card look unless Milind explicitly asks.
 7. Update `blog/index.html` so the new post appears in the featured/latest area if appropriate and also inside the post grid.
 8. Update `sitemap.xml` with the new URL and `lastmod` date.
 9. Add 2-4 relevant internal links inside the article.
