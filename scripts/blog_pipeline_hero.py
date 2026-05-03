@@ -184,10 +184,8 @@ def main():
     title_font, title_lines = fit_title_font(draw, args.title, 748, 4, start_size=94, min_size=56)
 
     draw_pill(draw, 86, 98, "BLOG", eyebrow_font, fill=accent + (255,), text_fill=(18, 18, 22))
-    draw_pill(draw, 86, 150, args.eyebrow.upper()[:34], eyebrow_font, fill=(255, 255, 255, 28), text_fill=(255, 255, 255), outline=(255, 255, 255, 50))
-    draw_pill(draw, 350, 150, "MYMOVIEJAM", eyebrow_font, fill=(255, 255, 255, 28), text_fill=(255, 255, 255), outline=(255, 255, 255, 50))
 
-    y = 246
+    y = 214
     for line in title_lines:
         draw.text((89, y + 3), line, font=title_font, fill=(0, 0, 0, 110))
         draw.text((86, y), line, font=title_font, fill=(255, 255, 255))
