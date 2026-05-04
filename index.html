@@ -673,6 +673,46 @@
             letter-spacing: 0.02em;
         }
 
+        .review-spotlight {
+            margin-top: 44px;
+            text-align: left;
+        }
+
+        .review-spotlight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin-top: 18px;
+        }
+
+        .review-spotlight-card {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            background: rgba(255, 255, 255, 0.94);
+            border-radius: 22px;
+            padding: 22px;
+            box-shadow: 0 14px 32px rgba(15, 34, 61, 0.08);
+        }
+
+        .review-spotlight-card strong {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .review-spotlight-card p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .review-spotlight-card span {
+            color: #25D366;
+            font-weight: 700;
+        }
+
         .faq-section h2 {
             font-size: 30px;
             margin-bottom: 24px;
@@ -894,6 +934,28 @@
                     <strong>Amazon Prime recommendations</strong>
                     <span>Prime-specific recommendation paths for biography, drama, and better what-to-watch-tonight decisions.</span>
                     <small>Open Prime picks →</small>
+                </a>
+            </div>
+        </section>
+        <section class="review-spotlight" aria-labelledby="single-review-spotlight">
+            <div class="section-kicker">Audience-first single-title reviews</div>
+            <h2 id="single-review-spotlight" style="text-align:center; margin-bottom:14px;">Some of our best movie-specific reviews</h2>
+            <p style="max-width:760px; margin:0 auto 24px; text-align:center; color:#555; line-height:1.7;">These are strong MyMovieJam-style review pages: direct verdicts, viewer-fit guidance, and real audience-first writing rather than generic recap copy.</p>
+            <div class="review-spotlight-grid">
+                <a class="review-spotlight-card" href="/blog/apex-netflix-review/">
+                    <strong>Apex on Netflix review</strong>
+                    <p>Charlize Theron carries the tension. The writing does not. Strong watch-with-caveats energy.</p>
+                    <span>Read the review →</span>
+                </a>
+                <a class="review-spotlight-card" href="/blog/f1-the-movie-review/">
+                    <strong>F1 The Movie review</strong>
+                    <p>Pure adrenaline, crowd-pleasing racing spectacle, and one of our better audience-first theatrical reviews.</p>
+                    <span>Read the F1 review →</span>
+                </a>
+                <a class="review-spotlight-card" href="/blog/dhurandhar-2-the-revenge/">
+                    <strong>Dhurandhar 2 review</strong>
+                    <p>Big patriotic-theatre energy, strong audience pulse, and a clear read on where the runtime drags.</p>
+                    <span>Read the Durandhar 2 review →</span>
                 </a>
             </div>
         </section>

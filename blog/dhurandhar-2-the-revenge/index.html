@@ -169,6 +169,31 @@
             font-style: italic;
         }
 
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 24px 0 8px;
+        }
+
+        .link-card {
+            border-radius: 20px;
+            background: #f6f6f6;
+            padding: 18px;
+        }
+
+        .link-card h3 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: var(--muted);
+            margin-bottom: 8px;
+        }
+
+        .link-card p {
+            margin: 0;
+        }
+
         .rating-card {
             margin-top: 40px;
             padding: 28px;
@@ -210,25 +235,47 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Durandhar 2: The Revenge – Epic Payoff or Overstuffed Sequel?",
-      "description": "Audience exit-poll notes on Durandhar 2—where Ranveer Singh lands and how the crowd feels about the runtime.",
-      "image": "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=1200&q=80",
-      "datePublished": "2026-03-22",
-      "dateModified": "2026-03-22",
-      "author": {
-        "@type": "Organization",
-        "name": "MovieJam Crew"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "MyMovieJam",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://mymoviejam.com/logo.svg"
+      "@graph": [
+        {
+          "@type": "Review",
+          "headline": "Durandhar 2: The Revenge – Epic Payoff or Overstuffed Sequel?",
+          "description": "Audience exit-poll notes on Durandhar 2—where Ranveer Singh lands and how the crowd feels about the runtime.",
+          "image": "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=1200&q=80",
+          "datePublished": "2026-03-22",
+          "dateModified": "2026-03-22",
+          "author": {
+            "@type": "Organization",
+            "name": "MovieJam Crew"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "MyMovieJam",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://mymoviejam.com/logo.svg"
+            }
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.3",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "itemReviewed": {
+            "@type": "Movie",
+            "name": "Durandhar 2: The Revenge"
+          },
+          "mainEntityOfPage": "https://mymoviejam.com/blog/dhurandhar-2-the-revenge/"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mymoviejam.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Movie Reviews", "item": "https://mymoviejam.com/movie-reviews/"},
+            {"@type": "ListItem", "position": 3, "name": "Durandhar 2 Review", "item": "https://mymoviejam.com/blog/dhurandhar-2-the-revenge/"}
+          ]
         }
-      },
-      "mainEntityOfPage": "https://mymoviejam.com/blog/dhurandhar-2-the-revenge/"
+      ]
     }
     </script>
     <!-- Privacy-friendly analytics by Plausible -->
@@ -290,6 +337,22 @@
 
         <h2>Should you buy a ticket?</h2>
         <p>If you crave big-screen spectacle, goosebumps, and a cinema hall chanting in unison, <em>Dhurandhar 2</em> absolutely earns the price of admission. If you’re allergic to marathon runtimes or wanted the exact tonal snap of Part 1, temper expectations. The broader audience sentiment, though, leans heavily positive—especially among patriotic viewers and franchise loyalists who want closure on the 26/11 revenge arc.</p>
+
+        <h2>Where to go next if crowd energy matters to your picks</h2>
+        <div class="link-grid">
+            <div class="link-card">
+                <h3>Review hub</h3>
+                <p><a href="/movie-reviews/">Browse more audience-first single-title reviews.</a></p>
+            </div>
+            <div class="link-card">
+                <h3>Recommendations</h3>
+                <p><a href="/movie-recommendations/">Want a broader recommendation path instead of one sequel review? Start here.</a></p>
+            </div>
+            <div class="link-card">
+                <h3>About our approach</h3>
+                <p><a href="/editorial-policy/">See why MyMovieJam leans into truthful audience-first review writing.</a></p>
+            </div>
+        </div>
 
         <div class="rating-card">
             <strong>4.3 / 5</strong>
