@@ -1,101 +1,117 @@
 {
-  "generated_at": "2026-05-02T10:00:14",
-  "date": "2026-05-02",
-  "readable_date": "May 2, 2026",
-  "family": "evergreen_genre",
-  "headline": "Best action picks to stream when you want something better than another lazy scroll",
-  "slug": "best-action-picks-to-stream",
-  "primary_keyword": "best action picks to stream",
-  "meta_description": "Need better action picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
-  "eyebrow": "Curated List · May 2, 2026",
-  "subtitle": "Featuring thrash, saare jahan se accha, and Physical 100 — plus more action picks that deserve real attention.",
+  "generated_at": "2026-05-04T10:00:18",
+  "date": "2026-05-04",
+  "readable_date": "May 4, 2026",
+  "family": "platform_genre",
+  "headline": "Best biography picks on Amazon Prime right now: 7 titles worth starting first",
+  "slug": "best-biography-picks-on-amazon-prime-3",
+  "primary_keyword": "best biography picks on amazon prime",
+  "meta_description": "Need the best biography picks on Amazon Prime? These are the titles worth starting first if you want something better than random browsing.",
+  "eyebrow": "Curated List · May 4, 2026",
+  "subtitle": "Featuring Lincoln, Moneyball, and The Fighter — plus more biography picks that deserve real attention.",
   "tags": [
-    "Action",
+    "Amazon Prime",
+    "Biography",
     "Curated list"
   ],
-  "genre": "Action",
-  "platform": null,
+  "genre": "Biography",
+  "platform": "Amazon Prime",
   "year": null,
   "hero_image": {
-    "file": "best-action-picks-to-stream.jpg",
-    "path": "blog/images/best-action-picks-to-stream.jpg",
-    "web_path": "/blog/images/best-action-picks-to-stream.jpg",
-    "eyebrow": "Action",
-    "title": "Best action picks to stream when you want something better than another lazy scroll",
-    "subtitle": "Featuring thrash, saare jahan se accha, and Physical 100 — plus more action picks that deserve real attention."
+    "file": "best-biography-picks-on-amazon-prime-3.jpg",
+    "path": "blog/images/best-biography-picks-on-amazon-prime-3.jpg",
+    "web_path": "/blog/images/best-biography-picks-on-amazon-prime-3.jpg",
+    "eyebrow": "Biography · Amazon Prime",
+    "title": "Best biography picks on Amazon Prime right now: 7 titles worth starting first",
+    "subtitle": "Featuring Lincoln, Moneyball, and The Fighter — plus more biography picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "1062",
-      "title": "thrash",
-      "genre": "Action/Thriller",
-      "primary_genre": "Action",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2026,
-      "description": "Raw, high-energy action drama centered on chaos, survival, and intense confrontations."
-    },
-    {
-      "id": "859",
-      "title": "saare jahan se accha",
-      "genre": "Action/Thriller",
-      "primary_genre": "Action",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2025,
-      "description": "A spy Indian mission in the nuclear arms race"
-    },
-    {
-      "id": "211",
-      "title": "Physical 100",
-      "genre": "Action",
-      "primary_genre": "Action",
-      "ott_platform": "Netflix",
+      "id": "86",
+      "title": "Lincoln",
+      "genre": "Biography/Drama/History",
+      "primary_genre": "Biography",
+      "ott_platform": "Netflix, Amazon Prime",
       "platforms": [
-        "Netflix"
+        "Netflix",
+        "Amazon Prime"
       ],
-      "year_of_release": 2023,
-      "description": "It is where Korea top athletes not only compete for the ultimate prize but also share compelling personal stories. Season 1 edges out Season 2 for its richer narrative."
+      "year_of_release": 2012,
+      "description": "A film about President Abraham Lincoln's efforts to pass the 13th Amendment during the Civil War."
     },
     {
-      "id": "26",
-      "title": "RRR",
-      "genre": "Action/Drama",
-      "primary_genre": "Action",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2022,
-      "description": "An Indian epic action-drama about two revolutionaries fighting for freedom against British rule."
+      "id": "90",
+      "title": "Moneyball",
+      "genre": "Biography/Drama/Sport",
+      "primary_genre": "Biography",
+      "ott_platform": "Amazon Prime",
+      "platforms": [
+        "Amazon Prime"
+      ],
+      "year_of_release": 2011,
+      "description": "Oakland A's GM Billy Beane's successful attempt to build a baseball team on a budget."
     },
     {
-      "id": "1060",
-      "title": "extraction2",
-      "genre": "Action/Thriller",
-      "primary_genre": "Action",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2020,
-      "description": "A black-ops mercenary returns for a deadly mission, facing impossible odds and relentless enemies."
+      "id": "102",
+      "title": "The Fighter",
+      "genre": "Biography/Drama/Sport",
+      "primary_genre": "Biography",
+      "ott_platform": "Amazon Prime",
+      "platforms": [
+        "Amazon Prime"
+      ],
+      "year_of_release": 2010,
+      "description": "The early years of boxer 'Irish' Micky Ward and his brother, who helped train him."
     },
     {
-      "id": "892",
-      "title": "Tehran",
-      "genre": "Action/Thriller",
-      "primary_genre": "Action",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2020,
-      "description": "A spy mission in Iran with high-stakes espionage and international intrigue."
+      "id": "100",
+      "title": "The Blind Side",
+      "genre": "Biography/Drama/Sport",
+      "primary_genre": "Biography",
+      "ott_platform": "Amazon Prime",
+      "platforms": [
+        "Amazon Prime"
+      ],
+      "year_of_release": 2009,
+      "description": "The story of Michael Oher, an homeless boy who became an All-American football player."
     },
     {
-      "id": "31",
-      "title": "We Can Be Heroes",
-      "genre": "Action/Family",
-      "primary_genre": "Action",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2020,
-      "description": "A superhero family movie where kids of superheroes band together to save the world."
+      "id": "89",
+      "title": "Milk",
+      "genre": "Biography/Drama",
+      "primary_genre": "Biography",
+      "ott_platform": "Netflix, Amazon Prime",
+      "platforms": [
+        "Netflix",
+        "Amazon Prime"
+      ],
+      "year_of_release": 2008,
+      "description": "The story of Harvey Milk, California's first openly gay elected official."
+    },
+    {
+      "id": "106",
+      "title": "The Pursuit of Happyness",
+      "genre": "Biography/Drama",
+      "primary_genre": "Biography",
+      "ott_platform": "Netflix, Amazon Prime",
+      "platforms": [
+        "Netflix",
+        "Amazon Prime"
+      ],
+      "year_of_release": 2006,
+      "description": "A struggling salesman takes custody of his son as he's poised to begin a life-changing career."
+    },
+    {
+      "id": "88",
+      "title": "Miracle",
+      "genre": "Biography/Drama/Sport",
+      "primary_genre": "Biography",
+      "ott_platform": "Amazon Prime",
+      "platforms": [
+        "Amazon Prime"
+      ],
+      "year_of_release": 2004,
+      "description": "The story of the US men's ice hockey team's victory over the Soviet team at the 1980 Winter Olympics."
     }
   ],
   "cta": {
