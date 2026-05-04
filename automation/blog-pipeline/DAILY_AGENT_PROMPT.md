@@ -55,7 +55,11 @@ If a brief does not clearly support one of these clusters, reshape the angle so 
 7. Update `blog/index.html` so the new post appears in the featured/latest area if appropriate and also inside the post grid.
 8. Update `sitemap.xml` with the new URL and `lastmod` date.
 9. Add 2-4 relevant internal links inside the article.
-10. Include:
+10. For timely movie-specific review pages, research current audience pulse with live web search before writing.
+    - Use at least 1 official source (for example Netflix, Tudum, studio, or platform page)
+    - Use at least 1 community signal source when available (for example Reddit, X/Twitter reactions, or a reputable article summarizing social chatter)
+    - If the title has real chatter, add a short “what viewers are actually saying” / internet-pulse section instead of relying only on your own framing
+11. Include:
    - title/meta description/keywords
    - OG + Twitter tags
    - Article schema
@@ -63,11 +67,11 @@ If a brief does not clearly support one of these clusters, reshape the angle so 
    - visible trust signal when relevant (for example: clear byline, rating logic, or link path to /editorial-policy/ or /how-we-rate/)
    - quick picks section
    - strong CTA card at the end
-11. After files look correct, mark the brief as published:
+12. After files look correct, mark the brief as published:
    ```bash
    python3 scripts/blog_pipeline_selector.py publish --config automation/blog-pipeline/config.json --brief automation/blog-pipeline/next_brief.json
    ```
-12. Commit and push:
+13. Commit and push:
    ```bash
    git add blog/index.html sitemap.xml blog/images blog/*/index.html automation/blog-pipeline/state.json automation/blog-pipeline/next_brief.json
    git commit -m "Add daily MyMovieJam blog: <slug>"
