@@ -268,6 +268,24 @@
             padding: 14px 24px;
         }
 
+
+        .trust-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .trust-links a {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--primary-dark, var(--primary));
+            background: rgba(37, 211, 102, 0.12);
+            padding: 10px 14px;
+            border-radius: 999px;
+        }
+
         footer.site-foot {
             margin-top: 64px;
             padding-top: 24px;
@@ -458,6 +476,11 @@
 
         <footer class="site-foot">
             <p>© 2026 MyMovieJam. Built for people who are done doom-scrolling.</p>
+            <div class="trust-links">
+                <a href="/about/">About</a>
+                <a href="/editorial-policy/">Editorial policy</a>
+                <a href="/how-we-rate/">How we rate</a>
+            </div>
         </footer>
     </div>
 </body>

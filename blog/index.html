@@ -377,6 +377,24 @@
             margin-top: 16px;
         }
 
+
+        .trust-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .trust-links a {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--primary-dark, var(--primary));
+            background: rgba(37, 211, 102, 0.12);
+            padding: 10px 14px;
+            border-radius: 999px;
+        }
+
         footer.site-foot {
             margin-top: 64px;
             padding: 24px 0 0;
@@ -462,6 +480,7 @@
             <nav>
                 <a href="/">Home</a>
                 <a href="/blog" class="active">Blog</a>
+                <a href="/about/">About</a>
                 <a href="https://api.whatsapp.com/send?phone=6581615926&text=Hi%20MovieJam,%20What%20should%20I%20watch%20tonight?" target="_blank">Chat on WhatsApp</a>
             </nav>
         </header>
@@ -798,6 +817,11 @@
 
         <footer class="site-foot">
             <p>© 2024 MyMovieJam. Built for people who are done doom-scrolling.</p>
+            <div class="trust-links">
+                <a href="/about/">About</a>
+                <a href="/editorial-policy/">Editorial policy</a>
+                <a href="/how-we-rate/">How we rate</a>
+            </div>
         </footer>
     </div>
 </body>

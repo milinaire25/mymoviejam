@@ -60,6 +60,7 @@ If a brief does not clearly support one of these clusters, reshape the angle so 
    - OG + Twitter tags
    - Article schema
    - FAQ schema
+   - visible trust signal when relevant (for example: clear byline, rating logic, or link path to /editorial-policy/ or /how-we-rate/)
    - quick picks section
    - strong CTA card at the end
 11. After files look correct, mark the brief as published:
@@ -72,6 +73,14 @@ If a brief does not clearly support one of these clusters, reshape the angle so 
    git commit -m "Add daily MyMovieJam blog: <slug>"
    git push origin main
    ```
+
+
+## Transparency rule
+
+Where it fits naturally, reinforce the site’s trust layer:
+- use clear bylines and honest caveat language
+- prefer explicit uncertainty over fake precision
+- support review/recommendation pages with links to `/editorial-policy/`, `/how-we-rate/`, or relevant hub pages when that improves reader trust
 
 ## Voice rules
 

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How We Rate Movies | MyMovieJam</title>
+    <meta name="description" content="See how MyMovieJam ratings work, what the scores mean, and how watch-or-skip judgments are made." />
+    <link rel="canonical" href="https://mymoviejam.com/how-we-rate/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MyMovieJam" />
+    <meta property="og:title" content="How MyMovieJam Rates Movies" />
+    <meta property="og:description" content="See how MyMovieJam scores reviews and makes watch-or-skip calls." />
+    <meta property="og:url" content="https://mymoviejam.com/how-we-rate/" />
+    <meta property="og:image" content="https://mymoviejam.com/blog/images/stop-scrolling-hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="How MyMovieJam Rates Movies" />
+    <meta name="twitter:description" content="See how MyMovieJam scores reviews and makes watch-or-skip calls." />
+    <meta name="twitter:image" content="https://mymoviejam.com/blog/images/stop-scrolling-hero.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --accent: #ff4444;
+            --text: #111;
+            --muted: #666;
+            --surface: #fff;
+            --gradient: linear-gradient(135deg, #f8f9fe 0%, #f0e6ff 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: var(--gradient);
+            color: var(--text);
+        }
+
+        a { color: inherit; }
+
+        .page-shell {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px 0 10px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            background: var(--accent);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon svg {
+            width: 22px;
+            height: 22px;
+            fill: #fff;
+        }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--muted);
+            font-weight: 500;
+            padding: 8px 14px;
+            border-radius: 999px;
+        }
+
+        nav a.active,
+        nav a:hover {
+            background: rgba(37, 211, 102, 0.12);
+            color: var(--primary);
+        }
+
+        .hero {
+            max-width: 760px;
+            margin: 44px auto 24px;
+            text-align: center;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.92);
+            border-radius: 999px;
+            padding: 10px 18px;
+            color: var(--muted);
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0 10px 24px rgba(25, 4, 82, 0.08);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(34px, 6vw, 54px);
+            letter-spacing: -0.04em;
+            margin-bottom: 14px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: var(--muted);
+        }
+
+        .article-shell {
+            background: rgba(255,255,255,0.96);
+            border-radius: 32px;
+            padding: 36px;
+            box-shadow: 0 18px 36px rgba(25, 4, 82, 0.08);
+        }
+
+        .article-shell h2 {
+            font-size: 28px;
+            margin: 30px 0 14px;
+            letter-spacing: -0.02em;
+        }
+
+        .article-shell p,
+        .article-shell li {
+            color: #2b2b2b;
+            line-height: 1.7;
+        }
+
+        .article-shell p + p {
+            margin-top: 14px;
+        }
+
+        .article-shell ul {
+            padding-left: 20px;
+            margin-top: 12px;
+        }
+
+        .article-shell li + li {
+            margin-top: 10px;
+        }
+
+        .callout {
+            margin: 24px 0;
+            padding: 20px 22px;
+            border-radius: 22px;
+            background: rgba(37, 211, 102, 0.1);
+            border: 1px solid rgba(18,140,126,0.18);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin: 22px 0 10px;
+        }
+
+        .card {
+            background: #fafafa;
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 22px;
+            padding: 20px;
+        }
+
+        .card strong {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .trust-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .trust-links a {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--primary-dark);
+            background: rgba(37, 211, 102, 0.12);
+            padding: 10px 14px;
+            border-radius: 999px;
+        }
+
+        footer.site-foot {
+            margin-top: 56px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(0,0,0,0.08);
+            text-align: center;
+            color: var(--muted);
+        }
+
+        @media (max-width: 720px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .article-shell {
+                padding: 26px 20px;
+            }
+        }
+
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "How MyMovieJam Rates Movies",
+      "description": "See how MyMovieJam ratings work, what the scores mean, and how watch-or-skip judgments are made.",
+      "url": "https://mymoviejam.com/how-we-rate/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "MyMovieJam",
+        "url": "https://mymoviejam.com/"
+      }
+    }
+    </script>
+    <script async src="https://plausible.io/js/pa--oC4nGgp0K7LQGFneiNaZ.js"></script>
+    <script>
+        window.plausible = window.plausible || function () { (plausible.q = plausible.q || []).push(arguments) };
+        plausible.init = plausible.init || function (opts) { plausible.o = opts || {}; };
+        plausible.init();
+    </script>
+</head>
+<body>
+    <div class="page-shell">
+        <header>
+            <a class="logo" href="/">
+                <span class="logo-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></span>
+                <span class="logo-text">MyMovieJam</span>
+            </a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/blog/">Blog</a>
+                <a href="/movie-recommendations/">Recommendations</a>
+                <a href="/about/">About</a>
+            </nav>
+        </header>
+        
+        <section class="hero">
+            <div class="eyebrow">How we rate · Watch or skip methodology</div>
+            <h1>How MyMovieJam ratings work</h1>
+            <p>Our ratings are not trying to mimic a giant critic aggregator. They are built for one practical question: is this actually worth your time, and for what kind of viewer?</p>
+        </section>
+        <main class="article-shell">
+            <h2>What the rating means</h2>
+            <p>A MyMovieJam score is a recommendation signal, not an objective truth claim. It reflects the likely quality of the watch experience for the intended audience, especially in a streaming context where attention, mood, and regret matter.</p>
+            <div class="grid">
+                <div class="card"><strong>9-10</strong><p>Highly recommended. Strong execution, clear audience fit, and easy to recommend confidently.</p></div>
+                <div class="card"><strong>7-8.5</strong><p>Recommend, sometimes with caveats. Usually strong enough to be worth your night for the right viewer.</p></div>
+                <div class="card"><strong>5-6.5</strong><p>Mixed. May work for a narrow audience, but not a broad recommendation.</p></div>
+                <div class="card"><strong>Below 5</strong><p>Usually a skip unless you have a very specific reason to watch.</p></div>
+            </div>
+            <h2>What we look at</h2>
+            <ul>
+                <li><strong>Watchability:</strong> does it hold attention and deliver on its promise?</li>
+                <li><strong>Fit:</strong> who is this actually for, and how narrow is that audience?</li>
+                <li><strong>Execution:</strong> writing, pacing, tone, emotional payoff, and overall craft.</li>
+                <li><strong>Streaming value:</strong> is this a good use of a night at home versus other options?</li>
+            </ul>
+            <h2>Why some scores include caveats</h2>
+            <p>A movie can be decent for one audience and frustrating for another. That is why MyMovieJam often uses verdicts like “recommend with caveats” instead of pretending the same rating means the same thing for everyone.</p>
+            <div class="callout">
+                <strong>Example:</strong>
+                <p>Apex received a 7.5/10 because the tension and lead performance make it watchable, but the writing is not strong enough for a blanket recommendation.</p>
+            </div>
+            <div class="trust-links">
+                <a href="/blog/apex-netflix-review/">See the Apex review example</a>
+                <a href="/editorial-policy/">Read the editorial policy</a>
+                <a href="/movie-reviews/">Browse honest reviews</a>
+            </div>
+        </main>
+
+        <footer class="site-foot">
+            <p>© 2026 MyMovieJam. Built for people who are done doom-scrolling.</p>
+            <div class="trust-links">
+                <a href="/about/">About</a>
+                <a href="/editorial-policy/">Editorial policy</a>
+                <a href="/how-we-rate/">How we rate</a>
+                <a href="https://api.whatsapp.com/send?phone=6581615926&text=Hi%20MovieJam" target="_blank" rel="noopener">Contact on WhatsApp</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
