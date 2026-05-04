@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyMovieJam Blog - Streaming Playbooks & Product Updates</title>
-    <meta name="description" content="Builder notes, audience pulses, and curated streaming playbooks from the MyMovieJam crew. Stay ahead of what to watch and how we ship the WhatsApp concierge." />
+    <title>MyMovieJam Blog | Honest Movie Reviews & What to Watch Next</title>
+    <meta name="description" content="Honest movie reviews, what-to-watch-tonight guides, similarity picks, and audience-first recommendation pages from the MyMovieJam crew." />
     <link rel="canonical" href="https://mymoviejam.com/blog/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="MyMovieJam" />
-    <meta property="og:title" content="MyMovieJam Blog" />
-    <meta property="og:description" content="Builder notes, streaming data drops, and curated lists from the MyMovieJam crew." />
+    <meta property="og:title" content="MyMovieJam Blog – Honest Reviews & Smarter Streaming Picks" />
+    <meta property="og:description" content="Honest movie reviews, decision-help guides, similarity pages, and audience-first streaming recommendations." />
     <meta property="og:url" content="https://mymoviejam.com/blog/" />
     <meta property="og:image" content="https://mymoviejam.com/blog/images/stop-scrolling-hero.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="MyMovieJam Blog" />
-    <meta name="twitter:description" content="Builder notes, streaming data drops, and curated lists from the MyMovieJam crew." />
+    <meta name="twitter:title" content="MyMovieJam Blog – Honest Reviews & Smarter Streaming Picks" />
+    <meta name="twitter:description" content="Honest reviews, what-to-watch-tonight guides, and audience-first recommendation pages from MyMovieJam." />
     <meta name="twitter:image" content="https://mymoviejam.com/blog/images/stop-scrolling-hero.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -215,6 +215,40 @@
             margin-bottom: 64px;
         }
 
+        .cluster-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin-bottom: 56px;
+        }
+
+        .cluster-card {
+            display: block;
+            background: rgba(255, 255, 255, 0.94);
+            border-radius: 24px;
+            padding: 24px;
+            box-shadow: 0 12px 30px rgba(25, 4, 82, 0.07);
+            text-decoration: none;
+        }
+
+        .cluster-card strong {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+        }
+
+        .cluster-card p {
+            color: var(--muted);
+            line-height: 1.55;
+            margin-bottom: 14px;
+        }
+
+        .cluster-card span {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
         .post-card {
             background: rgba(255, 255, 255, 0.95);
             border-radius: 24px;
@@ -375,6 +409,37 @@
             }
         }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Blog",
+          "@id": "https://mymoviejam.com/blog/#blog",
+          "url": "https://mymoviejam.com/blog/",
+          "name": "MyMovieJam Blog",
+          "description": "Honest movie reviews, what-to-watch-tonight guides, similarity picks, and audience-first recommendation pages.",
+          "publisher": {
+            "@type": "Organization",
+            "name": "MyMovieJam",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://mymoviejam.com/logo.svg"
+            }
+          }
+        },
+        {
+          "@type": "ItemList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "url": "https://mymoviejam.com/blog/apex-netflix-review/"},
+            {"@type": "ListItem", "position": 2, "url": "https://mymoviejam.com/blog/best-action-picks-to-stream/"},
+            {"@type": "ListItem", "position": 3, "url": "https://mymoviejam.com/blog/best-biography-picks-on-amazon-prime-3/"},
+            {"@type": "ListItem", "position": 4, "url": "https://mymoviejam.com/blog/movies-like-interstellar/"}
+          ]
+        }
+      ]
+    }
+    </script>
     <!-- Privacy-friendly analytics by Plausible -->
     <script async src="https://plausible.io/js/pa--oC4nGgp0K7LQGFneiNaZ.js"></script>
     <script>
@@ -402,9 +467,45 @@
         </header>
 
         <section class="hero">
-            <div class="meta">Insights · Product drops · Streaming guides</div>
-            <h1>Stories from the MovieJam crew</h1>
-            <p>Behind-the-scenes learnings as we build the WhatsApp companion that fixes decision fatigue for movie lovers. Product updates, curations, and data-backed playbooks for better movie nights.</p>
+            <div class="meta">Honest reviews · Decision help · Similarity picks</div>
+            <h1>Honest movie reviews and smarter streaming picks</h1>
+            <p>MyMovieJam is leaning hard into the search intents that fit the brand: blunt reviews, what-to-watch-tonight pages, “movies like…” discovery, and recommendation pages that actually help people choose.</p>
+        </section>
+
+        <section aria-labelledby="cluster-focus">
+            <div class="section-label" id="cluster-focus">Strategic Clusters</div>
+            <div class="cluster-grid">
+                <a class="cluster-card" href="/movie-reviews/">
+                    <strong>Honest movie reviews</strong>
+                    <p>Should you watch it, who is it for, and where the hype stops.</p>
+                    <span>Browse reviews →</span>
+                </a>
+                <a class="cluster-card" href="/what-to-watch-tonight/">
+                    <strong>Decision-help guides</strong>
+                    <p>Netflix, Prime Video, and mood-based picks for when you just need a better answer tonight.</p>
+                    <span>Get tonight’s picks →</span>
+                </a>
+                <a class="cluster-card" href="/movies-like/">
+                    <strong>Similarity / fit pages</strong>
+                    <p>Recommendation paths for people searching by vibe, mood, and favorite titles.</p>
+                    <span>Find similar movies →</span>
+                </a>
+                <a class="cluster-card" href="/movie-recommendations/">
+                    <strong>Audience-first recommendation hubs</strong>
+                    <p>Sharper recommendation pages built around who should watch or skip — not generic positivity.</p>
+                    <span>See the hub →</span>
+                </a>
+                <a class="cluster-card" href="/netflix-movie-recommendations/">
+                    <strong>Netflix recommendation hub</strong>
+                    <p>Our Netflix review and decision-help layer for users who already know the platform they want tonight.</p>
+                    <span>Open Netflix picks →</span>
+                </a>
+                <a class="cluster-card" href="/amazon-prime-movie-recommendations/">
+                    <strong>Amazon Prime recommendation hub</strong>
+                    <p>Prime-specific recommendation paths built for easier “what should I start first?” decisions.</p>
+                    <span>Open Prime picks →</span>
+                </a>
+            </div>
         </section>
 
         <div class="section-label">Feature</div>
@@ -424,7 +525,7 @@
             </div>
         </article>
 
-        <div class="section-label">Latest Drops</div>
+        <div class="section-label">Recent Posts</div>
         <div class="post-grid">
             <article class="post-card">
                 <span class="tag">Curated List</span>
@@ -630,7 +731,7 @@
                 <p>We sent an audience reviewer into Joseph Kosinski’s high-octane racer and they walked out buzzing. Think <em>Rush</em> energy, real Grand Prix footage, and an IMAX-worthy adrenaline hit.</p>
                 <footer>
                     <span>Mar 22 · 5 min read</span>
-                    <a class="cta-link" href="/blog/f1-the-movie-review">Read</a>
+                    <a class="cta-link" href="/blog/f1-the-movie-review/">Read</a>
                 </footer>
             </article>
             <article class="post-card">
@@ -639,7 +740,7 @@
                 <p>Ranveer Singh’s espionage sequel has theatres chanting and debating. We collected real audience reactions on the patriotic highs, the pacing gripes, and whether the 3.5-hour runtime still slaps.</p>
                 <footer>
                     <span>Mar 22 · 4 min read</span>
-                    <a class="cta-link" href="/blog/dhurandhar-2-the-revenge">Read</a>
+                    <a class="cta-link" href="/blog/dhurandhar-2-the-revenge/">Read</a>
                 </footer>
             </article>
             <article class="post-card">

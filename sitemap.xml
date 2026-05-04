@@ -16,6 +16,36 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://mymoviejam.com/movie-recommendations/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mymoviejam.com/movie-reviews/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mymoviejam.com/what-to-watch-tonight/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mymoviejam.com/movies-like/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mymoviejam.com/netflix-movie-recommendations/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mymoviejam.com/amazon-prime-movie-recommendations/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://mymoviejam.com/blog/best-biography-picks-on-amazon-prime-3/</loc>
     <lastmod>2026-05-04</lastmod>
   </url>
@@ -126,6 +156,10 @@
   <url>
     <loc>https://mymoviejam.com/blog/heartbreak-high-season-3-netflix-review/</loc>
     <lastmod>2026-04-09</lastmod>
+  </url>
+  <url>
+    <loc>https://mymoviejam.com/blog/war-machine-2026-netflix-review/</loc>
+    <lastmod>2026-04-10</lastmod>
   </url>
   <url>
     <loc>https://mymoviejam.com/blog/stranger-things-tales-from-85-review/</loc>

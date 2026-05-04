@@ -8,9 +8,20 @@ Create a daily SEO-optimized post that feels like a real MyMovieJam article:
 - strong viral hook
 - opinionated audience-first voice
 - honest recommendations only
+- explicit fit for one of the four strategic search clusters
 - clear WhatsApp CTA
 - visual/theme consistency with existing MyMovieJam pages
 - same vibe as the current MyMovieJam blog, not a new editorial voice
+
+## Strategic lane priority
+
+Default to topics that strengthen one of these MyMovieJam search clusters:
+1. **Honest movie reviews** — “Should I watch X?”, “worth watching or skip?”, blunt verdict pages
+2. **Decision-help queries** — “what to watch tonight”, platform-specific picks, mood-based lists
+3. **Similarity / fit queries** — “movies like Interstellar”, “if I liked X what should I watch”
+4. **Audience-first recommendation pages** — who should watch / who should skip, no fake positivity
+
+If a brief does not clearly support one of these clusters, reshape the angle so it does. Prefer fit, honesty, and decision-help over generic entertainment blogging.
 
 ## Inputs
 

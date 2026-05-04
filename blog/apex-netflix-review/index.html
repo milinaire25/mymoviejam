@@ -207,6 +207,31 @@
             margin: 0;
         }
 
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 24px 0 8px;
+        }
+
+        .link-card {
+            border-radius: 20px;
+            background: #f6f6f6;
+            padding: 18px;
+        }
+
+        .link-card h3 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: var(--muted);
+            margin-bottom: 8px;
+        }
+
+        .link-card p {
+            margin: 0;
+        }
+
         .rating-card {
             margin-top: 40px;
             padding: 32px;
@@ -288,25 +313,47 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Apex on Netflix Review: Charlize Theron Does the Hard Part",
-      "description": "An honest MyMovieJam review of Apex on Netflix: strong survival-thriller tension, shakier writing, and a clear verdict on who should stream it.",
-      "image": "https://mymoviejam.com/blog/images/apex-netflix-review.png",
-      "datePublished": "2026-05-03",
-      "dateModified": "2026-05-03",
-      "author": {
-        "@type": "Organization",
-        "name": "MovieJam Crew"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "MyMovieJam",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://mymoviejam.com/logo.svg"
+      "@graph": [
+        {
+          "@type": "Review",
+          "headline": "Apex on Netflix Review: Charlize Theron Does the Hard Part",
+          "description": "An honest MyMovieJam review of Apex on Netflix: strong survival-thriller tension, shakier writing, and a clear verdict on who should stream it.",
+          "image": "https://mymoviejam.com/blog/images/apex-netflix-review.png",
+          "datePublished": "2026-05-03",
+          "dateModified": "2026-05-03",
+          "author": {
+            "@type": "Organization",
+            "name": "MovieJam Crew"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "MyMovieJam",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://mymoviejam.com/logo.svg"
+            }
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "7.5",
+            "bestRating": "10",
+            "worstRating": "1"
+          },
+          "itemReviewed": {
+            "@type": "Movie",
+            "name": "Apex"
+          },
+          "mainEntityOfPage": "https://mymoviejam.com/blog/apex-netflix-review/"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mymoviejam.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Movie Reviews", "item": "https://mymoviejam.com/movie-reviews/"},
+            {"@type": "ListItem", "position": 3, "name": "Apex on Netflix Review", "item": "https://mymoviejam.com/blog/apex-netflix-review/"}
+          ]
         }
-      },
-      "mainEntityOfPage": "https://mymoviejam.com/blog/apex-netflix-review/"
+      ]
     }
     </script>
     <!-- Privacy-friendly analytics by Plausible -->
@@ -397,6 +444,22 @@
         <div class="rating-card">
             <strong>7.5 / 10</strong>
             <span>MyMovieJam rating · Recommend with caveats</span>
+        </div>
+
+        <h2>Where to go next if Apex mostly worked for you</h2>
+        <div class="link-grid">
+            <div class="link-card">
+                <h3>Netflix hub</h3>
+                <p><a href="/netflix-movie-recommendations/">Open the Netflix recommendation hub for more honest watch-or-skip picks.</a></p>
+            </div>
+            <div class="link-card">
+                <h3>Tonight picks</h3>
+                <p><a href="/what-to-watch-tonight/">Need something else tonight? Jump to our faster decision-help hub.</a></p>
+            </div>
+            <div class="link-card">
+                <h3>Action lane</h3>
+                <p><a href="/blog/best-action-picks-to-stream/">If you want more momentum and less wilderness dread, start with our action picks.</a></p>
+            </div>
         </div>
 
         <div class="cta-card">

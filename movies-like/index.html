@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Like Your Favorites | MyMovieJam</title>
+    <meta name="description" content="Find movies and shows like your favorite titles with MyMovieJam similarity pages and fit-based recommendation paths." />
+    <link rel="canonical" href="https://mymoviejam.com/movies-like/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MyMovieJam" />
+    <meta property="og:title" content="Movies Like Your Favorites | MyMovieJam" />
+    <meta property="og:description" content="Similarity pages for viewers searching by vibe, mood, and favorite titles instead of generic genre lists." />
+    <meta property="og:url" content="https://mymoviejam.com/movies-like/" />
+    <meta property="og:image" content="https://mymoviejam.com/blog/images/stop-scrolling-hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Movies Like Your Favorites | MyMovieJam" />
+    <meta name="twitter:description" content="Similarity pages for viewers searching by vibe, mood, and favorite titles instead of generic genre lists." />
+    <meta name="twitter:image" content="https://mymoviejam.com/blog/images/stop-scrolling-hero.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --accent: #ff4444;
+            --text: #111;
+            --muted: #666;
+            --surface: #fff;
+            --gradient: linear-gradient(135deg, #f8f9fe 0%, #f0e6ff 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: var(--gradient);
+            color: var(--text);
+        }
+
+        a { color: inherit; }
+
+        .page-shell {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px 0 10px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            background: var(--accent);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon svg {
+            width: 22px;
+            height: 22px;
+            fill: #fff;
+        }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--muted);
+            font-weight: 500;
+            padding: 8px 14px;
+            border-radius: 999px;
+        }
+
+        nav a.active,
+        nav a:hover {
+            background: rgba(37, 211, 102, 0.12);
+            color: var(--primary);
+        }
+
+        .hero {
+            text-align: center;
+            margin: 44px auto 32px;
+            max-width: 840px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.92);
+            border-radius: 999px;
+            padding: 10px 18px;
+            color: var(--muted);
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0 10px 24px rgba(25, 4, 82, 0.08);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(34px, 6vw, 56px);
+            letter-spacing: -0.04em;
+            margin-bottom: 16px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: var(--muted);
+        }
+
+        .quick-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin: 32px 0 56px;
+        }
+
+        .quick-card {
+            background: rgba(255,255,255,0.92);
+            border-radius: 24px;
+            padding: 22px;
+            box-shadow: 0 12px 30px rgba(25, 4, 82, 0.07);
+        }
+
+        .quick-card strong {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            letter-spacing: -0.02em;
+        }
+
+        .quick-card p {
+            color: var(--muted);
+            line-height: 1.55;
+        }
+
+        .section-label {
+            font-size: 14px;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 14px;
+            font-weight: 700;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+            margin-bottom: 56px;
+        }
+
+        .content-card {
+            background: rgba(255,255,255,0.96);
+            border-radius: 28px;
+            padding: 24px;
+            box-shadow: 0 14px 34px rgba(25, 4, 82, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .content-card .tag {
+            display: inline-flex;
+            align-items: center;
+            width: fit-content;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: rgba(37, 211, 102, 0.12);
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .content-card h2 {
+            font-size: 24px;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        .content-card p {
+            color: var(--muted);
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        .content-card ul {
+            padding-left: 18px;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .content-card li + li {
+            margin-top: 8px;
+        }
+
+        .content-card a.card-link {
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .cta {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            border-radius: 32px;
+            padding: 38px;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 18px 36px rgba(18, 140, 126, 0.28);
+        }
+
+        .cta h2 {
+            font-size: 30px;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        .cta p {
+            max-width: 720px;
+            margin: 0 auto 20px;
+            opacity: 0.92;
+            line-height: 1.6;
+        }
+
+        .cta a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            background: #fff;
+            color: var(--primary-dark);
+            font-weight: 700;
+            border-radius: 999px;
+            padding: 14px 24px;
+        }
+
+        footer.site-foot {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(0,0,0,0.08);
+            text-align: center;
+            color: var(--muted);
+        }
+
+        @media (max-width: 720px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .cta {
+                padding: 30px 22px;
+            }
+        }
+
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "url": "https://mymoviejam.com/movies-like/",
+          "name": "Movies Like Your Favorites | MyMovieJam",
+          "description": "Find movies and shows like your favorite titles with MyMovieJam similarity pages and fit-based recommendation paths."
+        },
+        {
+          "@type": "ItemList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "url": "https://mymoviejam.com/blog/movies-like-interstellar/"},
+            {"@type": "ListItem", "position": 2, "url": "https://mymoviejam.com/blog/best-animated-netflix-shows-for-stranger-things-fans/"},
+            {"@type": "ListItem", "position": 3, "url": "https://mymoviejam.com/blog/best-netflix-shows-like-stranger-things-for-families/"},
+            {"@type": "ListItem", "position": 4, "url": "https://mymoviejam.com/blog/stranger-things-tales-from-85-vs-original-series/"}
+          ]
+        }
+      ]
+    }
+    </script>
+    <!-- Privacy-friendly analytics by Plausible -->
+    <script async src="https://plausible.io/js/pa--oC4nGgp0K7LQGFneiNaZ.js"></script>
+    <script>
+        window.plausible = window.plausible || function () { (plausible.q = plausible.q || []).push(arguments) };
+        plausible.init = plausible.init || function (opts) { plausible.o = opts || {}; };
+        plausible.init();
+    </script>
+</head>
+<body>
+    <div class="page-shell">
+        <header>
+            <a class="logo" href="/">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+                </span>
+                <span class="logo-text">MyMovieJam</span>
+            </a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/blog/">Blog</a>
+                <a href="/movie-recommendations/">Recommendations</a>
+                <a href="https://api.whatsapp.com/send?phone=6581615926&text=Hi%20MovieJam,%20what%20should%20I%20watch%20tonight?" target="_blank" rel="noopener">Chat on WhatsApp</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="eyebrow">Similarity pages · Vibe matching · Fit over genre spam</div>
+                <h1>Find movies like your favorites without getting generic recommendations</h1>
+                <p>People often know the feeling they want before they know the title. This hub helps viewers search by vibe: like Interstellar, like Stranger Things, or like a specific comfort lane they want again.</p>
+            </section>
+
+            <section class="quick-grid">
+            <div class="quick-card">
+                <strong>What this solves</strong>
+                <p>The “I liked X, what should I watch next?” problem.</p>
+            </div>
+            <div class="quick-card">
+                <strong>Best query fit</strong>
+                <p>“Movies like Interstellar” and “if I liked X what should I watch”.</p>
+            </div>
+            <div class="quick-card">
+                <strong>MyMovieJam angle</strong>
+                <p>We focus on the feel, pace, emotional payoff, and audience fit — not just matching genres.</p>
+            </div>
+            </section>
+
+            <div class="section-label">Start here</div>
+            <section class="card-grid">
+                <article class="content-card">
+                    <span class="tag">Sci-Fi Similarity</span>
+                    <h2>10 movies like Interstellar</h2>
+                    <p>A strong early similarity page centered on scale, awe, emotion, and that mind-bending sci-fi pull people are actually searching for.</p>
+                    <ul>
+                        <li>Best for viewers chasing cosmic wonder.</li>
+                        <li>Great entry point for future “movies like…” expansion.</li>
+                    </ul>
+                    <a class="card-link" href="/blog/movies-like-interstellar/">See the Interstellar alternatives →</a>
+                </article>
+                <article class="content-card">
+                    <span class="tag">Stranger Things Vibe</span>
+                    <h2>Best animated Netflix shows for Stranger Things fans</h2>
+                    <p>For viewers who want mystery, adventure, and genre energy without defaulting to the exact same show again.</p>
+                    <ul>
+                        <li>Good “if I liked this, what next?” behavior.</li>
+                        <li>Leans into fan-fit rather than generic animation tags.</li>
+                    </ul>
+                    <a class="card-link" href="/blog/best-animated-netflix-shows-for-stranger-things-fans/">Open the animated follow-ups →</a>
+                </article>
+                <article class="content-card">
+                    <span class="tag">Family-Safe Similarity</span>
+                    <h2>Best Netflix shows like Stranger Things for families</h2>
+                    <p>A narrower similarity page that improves fit by filtering for family viewing instead of only franchise adjacency.</p>
+                    <ul>
+                        <li>Useful for “same vibe, less intense” searches.</li>
+                        <li>Better family fit than a generic sci-fi list.</li>
+                    </ul>
+                    <a class="card-link" href="/blog/best-netflix-shows-like-stranger-things-for-families/">Find family-friendly alternatives →</a>
+                </article>
+                <article class="content-card">
+                    <span class="tag">Comparison Layer</span>
+                    <h2>Tales from ’85 vs the original series</h2>
+                    <p>Not a pure similarity page, but useful for users deciding whether the spin-off scratches the same itch as the original.</p>
+                    <ul>
+                        <li>Helps with expectation-setting.</li>
+                        <li>Good companion to future franchise fit pages.</li>
+                    </ul>
+                    <a class="card-link" href="/blog/stranger-things-tales-from-85-vs-original-series/">Read the comparison →</a>
+                </article>
+                <article class="content-card">
+                    <span class="tag">Review Companion</span>
+                    <h2>Stranger Things: Tales from ’85 review</h2>
+                    <p>Use the review alongside the similarity pages if you want to know whether the spin-off is worth watching before you chase alternatives.</p>
+                    <ul>
+                        <li>Useful when similarity and quality questions overlap.</li>
+                        <li>Adds watch-or-skip context.</li>
+                    </ul>
+                    <a class="card-link" href="/blog/stranger-things-tales-from-85-review/">Read the review →</a>
+                </article>
+                <article class="content-card">
+                    <span class="tag">Need more?</span>
+                    <h2>Ask MyMovieJam for “If I liked X…” picks</h2>
+                    <p>The WhatsApp concierge is the fastest way to turn one favorite title into a personalized next-watch shortlist.</p>
+                    <ul>
+                        <li>Great for niche or emerging titles.</li>
+                        <li>Better than waiting for a dedicated static page.</li>
+                    </ul>
+                    <a class="card-link" href="https://api.whatsapp.com/send?phone=6581615926&text=Hi%20MovieJam,%20if%20I%20liked%20Interstellar%20what%20should%20I%20watch%20next%3F">Ask for a personalized similarity shortlist →</a>
+                </article>
+            </section>
+
+            <section class="cta">
+                <h2>Want a “movies like this” answer for a title we have not covered yet?</h2>
+                <p>Send MovieJam your favorite movie or show and ask for the closest vibe matches. It is the quickest way to get a similarity shortlist without relying on generic algorithm recs.</p>
+                <a href="https://api.whatsapp.com/send?phone=6581615926&text=Hi%20MovieJam,%20give%20me%203%20movie%20or%20show%20picks" target="_blank" rel="noopener">Get picks on WhatsApp →</a>
+            </section>
+        </main>
+
+        <footer class="site-foot">
+            <p>© 2026 MyMovieJam. Built for people who are done doom-scrolling.</p>
+        </footer>
+    </div>
+</body>
+</html>

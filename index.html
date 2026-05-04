@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyMovieJam - AI-Powered Movie Recommendation</title>
-    <meta name="description" content="MyMovieJam is the WhatsApp-first movie concierge that ends streaming decision fatigue with human-tuned AI picks, curated lists, and proactive nudges." />
+    <title>MyMovieJam | Honest Movie Reviews & What to Watch Tonight</title>
+    <meta name="description" content="Honest movie reviews, audience-first recommendations, and what-to-watch-tonight picks for Netflix, Prime Video, and more." />
     <link rel="canonical" href="https://mymoviejam.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="MyMovieJam" />
-    <meta property="og:title" content="MyMovieJam – WhatsApp AI Movie Concierge" />
-    <meta property="og:description" content="Stop doom-scrolling. Chat with MyMovieJam on WhatsApp for ultra-personal movie recommendations, insider drops, and proactive weekend watch packs." />
+    <meta property="og:title" content="MyMovieJam – Honest Movie Reviews & What to Watch Tonight" />
+    <meta property="og:description" content="Skip the fake hype. Find honest movie reviews, what-to-watch-tonight guides, and audience-first recommendations that actually help." />
     <meta property="og:url" content="https://mymoviejam.com/" />
     <meta property="og:image" content="https://mymoviejam.com/blog/images/stop-scrolling-hero.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="MyMovieJam – WhatsApp AI Movie Concierge" />
-    <meta name="twitter:description" content="Stop doom-scrolling. Chat with MyMovieJam on WhatsApp for ultra-personal movie recommendations, insider drops, and proactive weekend watch packs." />
+    <meta name="twitter:title" content="MyMovieJam – Honest Movie Reviews & What to Watch Tonight" />
+    <meta name="twitter:description" content="Skip the fake hype. Honest reviews, what-to-watch-tonight picks, and smarter streaming recommendations." />
     <meta name="twitter:image" content="https://mymoviejam.com/blog/images/stop-scrolling-hero.jpg" />
     <!-- Add Inter font from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -573,6 +573,106 @@
             box-shadow: 0 20px 45px rgba(15, 34, 61, 0.08);
         }
 
+        .home-copy {
+            max-width: 720px;
+            margin: 0 auto 24px;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #4a4a4a;
+        }
+
+        .proof-strip {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin: 0 auto 34px;
+            max-width: 760px;
+        }
+
+        .proof-pill {
+            background: rgba(255, 255, 255, 0.92);
+            border-radius: 999px;
+            padding: 10px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #444;
+            box-shadow: 0 8px 20px rgba(15, 34, 61, 0.08);
+        }
+
+        .hub-section {
+            margin-top: 48px;
+            text-align: left;
+        }
+
+        .section-kicker {
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            font-size: 12px;
+            font-weight: 700;
+            color: #666;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .hub-section h2 {
+            font-size: 32px;
+            letter-spacing: -0.03em;
+            text-align: center;
+            margin-bottom: 14px;
+        }
+
+        .hub-section > p {
+            max-width: 760px;
+            margin: 0 auto 28px;
+            text-align: center;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .hub-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        .hub-card {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            background: rgba(255, 255, 255, 0.94);
+            border-radius: 22px;
+            padding: 24px;
+            box-shadow: 0 14px 32px rgba(15, 34, 61, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .hub-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 18px 38px rgba(15, 34, 61, 0.12);
+        }
+
+        .hub-card strong {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+        }
+
+        .hub-card span {
+            display: block;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 14px;
+        }
+
+        .hub-card small {
+            color: #25D366;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+
         .faq-section h2 {
             font-size: 30px;
             margin-bottom: 24px;
@@ -624,7 +724,7 @@
           "@id": "https://mymoviejam.com/#website",
           "url": "https://mymoviejam.com/",
           "name": "MyMovieJam",
-          "description": "MyMovieJam is the WhatsApp-first AI concierge that ends streaming decision fatigue with curated recommendations and proactive watch packs.",
+          "description": "MyMovieJam publishes honest movie reviews, what-to-watch-tonight picks, and audience-first streaming recommendations.",
           "publisher": {
             "@id": "https://mymoviejam.com/#organization"
           }
@@ -633,7 +733,7 @@
           "@type": "Service",
           "@id": "https://mymoviejam.com/#service",
           "name": "MyMovieJam WhatsApp movie concierge",
-          "serviceType": "AI movie recommendations",
+          "serviceType": "Movie reviews and AI-powered recommendations",
           "provider": {
             "@id": "https://mymoviejam.com/#organization"
           },
@@ -712,11 +812,20 @@
 
     <main class="container">
         
-        <h1>The WhatsApp chatbot for perfect streaming recommendations</h1>
+        <h1>Honest movie reviews and what-to-watch-tonight picks</h1>
 
 
-        <div style="margin: -20px 0 40px 0; font-size: 24px; font-weight: 900; letter-spacing: -0.02em; color: #666;">
-            Stop Scrolling, Start Watching
+        <div style="margin: -20px 0 20px 0; font-size: 24px; font-weight: 900; letter-spacing: -0.02em; color: #666;">
+            Skip the fake hype. Find the right watch faster.
+        </div>
+
+        <p class="home-copy">MyMovieJam is built for people who want a blunt answer fast: is this movie worth it, what should I watch tonight, and what fits if I loved something else? We focus on honest reviews, decision-help guides, similarity picks, and audience-first recommendations instead of generic movie fluff.</p>
+
+        <div class="proof-strip">
+            <div class="proof-pill">Honest reviews without fake positivity</div>
+            <div class="proof-pill">What-to-watch-tonight guides for Netflix & Prime</div>
+            <div class="proof-pill">Similarity pages like “movies like Interstellar”</div>
+            <div class="proof-pill">WhatsApp concierge when you want faster picks</div>
         </div>
 
         <div class="action-buttons">
@@ -749,6 +858,44 @@
             <div class="status-dot"></div>
             <span>Online on WhatsApp</span>
         </div>
+
+        <section class="hub-section" aria-labelledby="find-your-path">
+            <div class="section-kicker">Phase 1 focus</div>
+            <h2 id="find-your-path">Start with the kind of help you actually want</h2>
+            <p>We are intentionally building around the search intents MyMovieJam can win: blunt reviews, smarter tonight picks, “movies like…” discovery, and recommendation pages that tell you who should watch or skip.</p>
+            <div class="hub-grid">
+                <a class="hub-card" href="/movie-reviews/">
+                    <strong>Honest movie reviews</strong>
+                    <span>Quick verdicts, who should watch, who should skip, and zero fake positivity.</span>
+                    <small>Explore reviews →</small>
+                </a>
+                <a class="hub-card" href="/what-to-watch-tonight/">
+                    <strong>What to watch tonight</strong>
+                    <span>Decision-help pages for Netflix, Amazon Prime, and mood-based streaming nights.</span>
+                    <small>Get tonight’s picks →</small>
+                </a>
+                <a class="hub-card" href="/movies-like/">
+                    <strong>Movies like your favorites</strong>
+                    <span>Similarity pages for when you want the closest vibe match instead of a random algorithm guess.</span>
+                    <small>Find similar picks →</small>
+                </a>
+                <a class="hub-card" href="/movie-recommendations/">
+                    <strong>Audience-first recommendations</strong>
+                    <span>Sharper recommendation pages built around fit, taste, and honest context — not empty hype.</span>
+                    <small>See recommendation hubs →</small>
+                </a>
+                <a class="hub-card" href="/netflix-movie-recommendations/">
+                    <strong>Netflix recommendations</strong>
+                    <span>Platform-first Netflix pages for viewers who want a faster answer than random homepage browsing.</span>
+                    <small>Open Netflix picks →</small>
+                </a>
+                <a class="hub-card" href="/amazon-prime-movie-recommendations/">
+                    <strong>Amazon Prime recommendations</strong>
+                    <span>Prime-specific recommendation paths for biography, drama, and better what-to-watch-tonight decisions.</span>
+                    <small>Open Prime picks →</small>
+                </a>
+            </div>
+        </section>
     </main>
 
     <section class="faq-section" id="faq">

@@ -15,6 +15,10 @@
     <meta property="og:image" content="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80" />
     <meta property="article:published_time" content="2026-03-30" />
     <meta property="article:author" content="MovieJam Crew" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Movies Like Interstellar (10 Mind-Bending Alternatives)" />
+    <meta name="twitter:description" content="Ten emotional, brainy sci-fi alternatives for viewers chasing the Interstellar feeling again." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -189,6 +193,25 @@
             font-size: 18px;
         }
 
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 24px 0;
+        }
+
+        .link-card {
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 20px;
+            padding: 18px 20px;
+            background: #fafafa;
+        }
+
+        .link-card h4 {
+            margin-bottom: 6px;
+            font-size: 16px;
+        }
+
         blockquote {
             border-left: 4px solid var(--primary);
             padding-left: 16px;
@@ -268,25 +291,60 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Movies Like Interstellar (10 Mind-Bending Alternatives)",
-      "description": "Ten emotional, brainy sci-fi films to watch after Interstellar, plus quick picks and FAQs from the MyMovieJam crew.",
-      "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80",
-      "datePublished": "2026-03-30",
-      "dateModified": "2026-03-30",
-      "author": {
-        "@type": "Organization",
-        "name": "MovieJam Crew"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "MyMovieJam",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://mymoviejam.com/logo.svg"
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "headline": "Movies Like Interstellar (10 Mind-Bending Alternatives)",
+          "description": "Ten emotional, brainy sci-fi films to watch after Interstellar, plus quick picks and FAQs from the MyMovieJam crew.",
+          "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80",
+          "datePublished": "2026-03-30",
+          "dateModified": "2026-03-30",
+          "author": {
+            "@type": "Organization",
+            "name": "MovieJam Crew"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "MyMovieJam",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://mymoviejam.com/logo.svg"
+            }
+          },
+          "mainEntityOfPage": "https://mymoviejam.com/blog/movies-like-interstellar/"
+        },
+        {
+          "@type": "ItemList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Arrival"},
+            {"@type": "ListItem", "position": 2, "name": "The Martian"},
+            {"@type": "ListItem", "position": 3, "name": "Gravity"},
+            {"@type": "ListItem", "position": 4, "name": "Contact"},
+            {"@type": "ListItem", "position": 5, "name": "Ad Astra"},
+            {"@type": "ListItem", "position": 6, "name": "Sunshine"},
+            {"@type": "ListItem", "position": 7, "name": "Moon"},
+            {"@type": "ListItem", "position": 8, "name": "2001: A Space Odyssey"},
+            {"@type": "ListItem", "position": 9, "name": "Tenet"},
+            {"@type": "ListItem", "position": 10, "name": "Inception"}
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {"@type": "Question", "name": "What is the closest movie to Interstellar?", "acceptedAnswer": {"@type": "Answer", "text": "Arrival and Contact match the tone, pacing, and emotional sweep almost perfectly."}},
+            {"@type": "Question", "name": "Are there newer movies like Interstellar?", "acceptedAnswer": {"@type": "Answer", "text": "Ad Astra and Tenet are recent releases that scratch the same itch—one contemplative, one action-heavy."}},
+            {"@type": "Question", "name": "What should I watch right after Interstellar?", "acceptedAnswer": {"@type": "Answer", "text": "Our top four-step path: Arrival, The Martian, Contact, Inception."}}
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mymoviejam.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Movies Like", "item": "https://mymoviejam.com/movies-like/"},
+            {"@type": "ListItem", "position": 3, "name": "Movies Like Interstellar", "item": "https://mymoviejam.com/blog/movies-like-interstellar/"}
+          ]
         }
-      },
-      "mainEntityOfPage": "https://mymoviejam.com/blog/movies-like-interstellar/"
+      ]
     }
     </script>
     <!-- Privacy-friendly analytics by Plausible -->
@@ -324,7 +382,7 @@
         </div>
         <img class="hero-img" src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80" alt="Astronaut standing in front of glowing cosmic horizon">
 
-        <p>Christopher Nolan’s <em>Interstellar</em> mixes grand-scale space exploration with intimate, emotional stakes. If you walked out wanting more films that blend science, heart, and mind-bending ideas, this watchlist is for you. These titles cover everything from survival epics to philosophical chillers—aka the perfect double-feature partners for Coop and Brand.</p>
+        <p>Christopher Nolan’s <em>Interstellar</em> mixes grand-scale space exploration with intimate, emotional stakes. If you walked out wanting more films that blend science, heart, and mind-bending ideas, this watchlist is for you. These titles cover everything from survival epics to philosophical chillers—aka the perfect double-feature partners for Coop and Brand. If you want more pages built this way, the new <a href="/movies-like/">Movies Like hub</a> is the best place to keep going.</p>
 
         <h2>10 movies like Interstellar</h2>
 
@@ -409,6 +467,22 @@
         </div>
 
         <blockquote>Still stuck? Screenshot this list and text "Interstellar" to MovieJam—we’ll build a custom double feature around your favorite moments.</blockquote>
+
+        <h2>More ways to keep the same vibe going</h2>
+        <div class="link-grid">
+            <div class="link-card">
+                <h4>Similarity hub</h4>
+                <p><a href="/movies-like/">Browse the full Movies Like hub for more fit-based recommendation pages.</a></p>
+            </div>
+            <div class="link-card">
+                <h4>Netflix fan follow-ups</h4>
+                <p><a href="/blog/best-animated-netflix-shows-for-stranger-things-fans/">Want another fan-fit recommendation page? Try this Stranger Things follow-up list.</a></p>
+            </div>
+            <div class="link-card">
+                <h4>Recommendation hub</h4>
+                <p><a href="/movie-recommendations/">Need broader audience-first recommendations instead of one similarity page? Start here.</a></p>
+            </div>
+        </div>
 
         <div class="cta-card">
             <h3>Still can’t decide?</h3>

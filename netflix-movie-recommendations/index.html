@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Movie Recommendations | MyMovieJam</title>
+    <meta name="description" content="Honest Netflix movie recommendations, reviews, and what-to-watch-tonight picks from MyMovieJam." />
+    <link rel="canonical" href="https://mymoviejam.com/netflix-movie-recommendations/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MyMovieJam" />
+    <meta property="og:title" content="Netflix Movie Recommendations | MyMovieJam" />
+    <meta property="og:description" content="MyMovieJam’s Netflix recommendation hub for honest reviews, tonight picks, and better next-watch decisions." />
+    <meta property="og:url" content="https://mymoviejam.com/netflix-movie-recommendations/" />
+    <meta property="og:image" content="https://mymoviejam.com/blog/images/stop-scrolling-hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Netflix Movie Recommendations | MyMovieJam" />
+    <meta name="twitter:description" content="MyMovieJam’s Netflix recommendation hub for honest reviews, tonight picks, and better next-watch decisions." />
+    <meta name="twitter:image" content="https://mymoviejam.com/blog/images/stop-scrolling-hero.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --accent: #ff4444;
+            --text: #111;
+            --muted: #666;
+            --surface: #fff;
+            --gradient: linear-gradient(135deg, #f8f9fe 0%, #f0e6ff 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: var(--gradient);
+            color: var(--text);
+        }
+
+        a { color: inherit; }
+
+        .page-shell {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px 0 10px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            background: var(--accent);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon svg {
+            width: 22px;
+            height: 22px;
+            fill: #fff;
+        }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--muted);
+            font-weight: 500;
+            padding: 8px 14px;
+            border-radius: 999px;
+        }
+
+        nav a.active,
+        nav a:hover {
+            background: rgba(37, 211, 102, 0.12);
+            color: var(--primary);
+        }
+
+        .hero {
+            text-align: center;
+            margin: 44px auto 32px;
+            max-width: 840px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.92);
+            border-radius: 999px;
+            padding: 10px 18px;
+            color: var(--muted);
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0 10px 24px rgba(25, 4, 82, 0.08);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(34px, 6vw, 56px);
+            letter-spacing: -0.04em;
+            margin-bottom: 16px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: var(--muted);
+        }
+
+        .quick-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin: 32px 0 56px;
+        }
+
+        .quick-card {
+            background: rgba(255,255,255,0.92);
+            border-radius: 24px;
+            padding: 22px;
+            box-shadow: 0 12px 30px rgba(25, 4, 82, 0.07);
+        }
+
+        .quick-card strong {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            letter-spacing: -0.02em;
+        }
+
+        .quick-card p {
+            color: var(--muted);
+            line-height: 1.55;
+        }
+
+        .section-label {
+            font-size: 14px;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 14px;
+            font-weight: 700;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+            margin-bottom: 56px;
+        }
+
+        .content-card {
+            background: rgba(255,255,255,0.96);
+            border-radius: 28px;
+            padding: 24px;
+            box-shadow: 0 14px 34px rgba(25, 4, 82, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .content-card .tag {
+            display: inline-flex;
+            align-items: center;
+            width: fit-content;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: rgba(37, 211, 102, 0.12);
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .content-card h2 {
+            font-size: 24px;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        .content-card p {
+            color: var(--muted);
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        .content-card ul {
+            padding-left: 18px;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .content-card li + li {
+            margin-top: 8px;
+        }
+
+        .content-card a.card-link {
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .cta {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            border-radius: 32px;
+            padding: 38px;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 18px 36px rgba(18, 140, 126, 0.28);
+        }
+
+        .cta h2 {
+            font-size: 30px;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        .cta p {
+            max-width: 720px;
+            margin: 0 auto 20px;
+            opacity: 0.92;
+            line-height: 1.6;
+        }
+
+        .cta a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            background: #fff;
+            color: var(--primary-dark);
+            font-weight: 700;
+            border-radius: 999px;
+            padding: 14px 24px;
+        }
+
+        footer.site-foot {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(0,0,0,0.08);
+            text-align: center;
+            color: var(--muted);
+        }
+
+        @media (max-width: 720px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .cta {
+                padding: 30px 22px;
+            }
+        }
+
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "url": "https://mymoviejam.com/netflix-movie-recommendations/",
+          "name": "Netflix Movie Recommendations | MyMovieJam",
+          "description": "Honest Netflix movie recommendations, reviews, and what-to-watch-tonight picks from MyMovieJam."
+        },
+        {
+          "@type": "ItemList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "url": "https://mymoviejam.com/blog/apex-netflix-review/"},
+            {"@type": "ListItem", "position": 2, "url": "https://mymoviejam.com/blog/best-action-picks-to-stream/"},
+            {"@type": "ListItem", "position": 3, "url": "https://mymoviejam.com/blog/heartbreak-high-season-3-netflix-review/"},
+            {"@type": "ListItem", "position": 4, "url": "https://mymoviejam.com/blog/something-very-bad-is-going-to-happen-netflix-review/"}
+          ]
+        }
+      ]
+    }
+    </script>
+    <script async src="https://plausible.io/js/pa--oC4nGgp0K7LQGFneiNaZ.js"></script>
+    <script>
+        window.plausible = window.plausible || function () { (plausible.q = plausible.q || []).push(arguments) };
+        plausible.init = plausible.init || function (opts) { plausible.o = opts || {}; };
+        plausible.init();
+    </script>
+</head>
+<body>
+    <div class="page-shell">
+        <header>
+            <a class="logo" href="/">
+                <span class="logo-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></span>
+                <span class="logo-text">MyMovieJam</span>
+            </a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/blog/">Blog</a>
+                <a href="/movie-recommendations/">Recommendations</a>
+                <a href="https://api.whatsapp.com/send?phone=6581615926&text=Hi%20MovieJam,%20what%20should%20I%20watch%20tonight?" target="_blank" rel="noopener">Chat on WhatsApp</a>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="eyebrow">Netflix hub · Honest reviews · Better tonight picks</div>
+                <h1>Netflix movie recommendations that help you pick faster</h1>
+                <p>This is the Netflix layer of the new MyMovieJam strategy: honest reviews, decision-help pages, and quicker paths for viewers who already know they are staying inside the red app tonight.</p>
+            </section>
+            <section class="quick-grid">
+            <div class="quick-card">
+                <strong>Best for</strong>
+                <p>Searches like “Should I watch Apex on Netflix?” and “best action movies on Netflix right now”.</p>
+            </div>
+            <div class="quick-card">
+                <strong>What we optimize for</strong>
+                <p>Faster decisions, honest fit, and less fake hype.</p>
+            </div>
+            <div class="quick-card">
+                <strong>Use this hub when</strong>
+                <p>You want Netflix-first guidance instead of a broad all-platform recommendation page.</p>
+            </div>
+            </section>
+            <div class="section-label">Start here</div>
+            <section class="card-grid">
+                <article class="content-card">
+                    <span class="tag">Netflix Review</span>
+                    <h2>Apex on Netflix review</h2>
+                    <p>A clean example of the honest-review direction: clear verdict, who should watch, who should skip, and no fake prestige language.</p>
+                    <ul><li>Best for survival-thriller viewers.</li><li>Strong watch-with-caveats template.</li></ul>
+                    <a class="card-link" href="/blog/apex-netflix-review/">Read the Apex review →</a>
+                </article>
+                <article class="content-card">
+                    <span class="tag">Decision Help</span>
+                    <h2>Best action picks to stream</h2>
+                    <p>Useful for Netflix-adjacent action-night intent even when the final shortlist mixes formats and platform certainty is imperfect.</p>
+                    <ul><li>Good for momentum-first viewing.</li><li>Works when you want something loud tonight.</li></ul>
+                    <a class="card-link" href="/blog/best-action-picks-to-stream/">Open the action picks →</a>
+                </article>
+                <article class="content-card">
+                    <span class="tag">Netflix Review</span>
+                    <h2>Heartbreak High Season 3 review</h2>
+                    <p>For viewers deciding whether the Netflix binge is worth finishing or better left for completionists.</p>
+                    <ul><li>Best for binge-decision intent.</li><li>Useful watch-or-skip framing.</li></ul>
+                    <a class="card-link" href="/blog/heartbreak-high-season-3-netflix-review/">Read the Heartbreak High review →</a>
+                </article>
+                <article class="content-card">
+                    <span class="tag">Netflix Review</span>
+                    <h2>Something Very Bad Is Going to Happen review</h2>
+                    <p>A darker Netflix review path for viewers who want premium dread, not just generic horror noise.</p>
+                    <ul><li>Good for slow-burn horror intent.</li><li>Adds tonal range to the Netflix hub.</li></ul>
+                    <a class="card-link" href="/blog/something-very-bad-is-going-to-happen-netflix-review/">Read the horror review →</a>
+                </article>
+                <article class="content-card">
+                    <span class="tag">Similarity</span>
+                    <h2>Stranger Things fan follow-ups</h2>
+                    <p>When the Netflix question is really “what else scratches this same itch?”, these related pages are the better entry point.</p>
+                    <ul><li>Built for fan-fit behavior.</li><li>Useful for franchise-adjacent browsing.</li></ul>
+                    <a class="card-link" href="/blog/best-animated-netflix-shows-for-stranger-things-fans/">Open the Stranger Things follow-ups →</a>
+                </article>
+                <article class="content-card">
+                    <span class="tag">Bigger Hub</span>
+                    <h2>Need more than Netflix?</h2>
+                    <p>If your decision is still broader than one platform, step up into the full recommendation hub.</p>
+                    <ul><li>Best for cross-platform nights.</li><li>Connects reviews, tonight picks, and similarity paths.</li></ul>
+                    <a class="card-link" href="/movie-recommendations/">Go to all recommendations →</a>
+                </article>
+            </section>
+            <section class="cta">
+                <h2>Want Netflix picks based on your exact mood?</h2>
+                <p>Tell MovieJam whether you want something intense, fun, emotional, or low-effort and we will turn Netflix overload into a short clean shortlist.</p>
+                <a href="https://api.whatsapp.com/send?phone=6581615926&text=Hi%20MovieJam,%20give%20me%203%20movie%20or%20show%20picks" target="_blank" rel="noopener">Get picks on WhatsApp →</a>
+            </section>
+        </main>
+        <footer class="site-foot">
+            <p>© 2026 MyMovieJam. Built for people who are done doom-scrolling.</p>
+        </footer>
+    </div>
+</body>
+</html>
