@@ -1,117 +1,105 @@
 {
-  "generated_at": "2026-05-04T10:00:18",
-  "date": "2026-05-04",
-  "readable_date": "May 4, 2026",
-  "family": "platform_genre",
-  "headline": "Best biography picks on Amazon Prime right now: 7 titles worth starting first",
-  "slug": "best-biography-picks-on-amazon-prime-3",
-  "primary_keyword": "best biography picks on amazon prime",
-  "meta_description": "Need the best biography picks on Amazon Prime? These are the titles worth starting first if you want something better than random browsing.",
-  "eyebrow": "Curated List · May 4, 2026",
-  "subtitle": "Featuring Lincoln, Moneyball, and The Fighter — plus more biography picks that deserve real attention.",
+  "generated_at": "2026-05-05T10:00:14",
+  "date": "2026-05-05",
+  "readable_date": "May 5, 2026",
+  "family": "evergreen_genre",
+  "headline": "Best comedy picks to stream when you want something better than another lazy scroll",
+  "slug": "best-comedy-picks-to-stream",
+  "primary_keyword": "best comedy picks to stream",
+  "meta_description": "Need better comedy picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
+  "eyebrow": "Curated List · May 5, 2026",
+  "subtitle": "Featuring Dream Girl 2, Sukhee, and zakir mannpasand — plus more comedy picks that deserve real attention.",
   "tags": [
-    "Amazon Prime",
-    "Biography",
+    "Comedy",
     "Curated list"
   ],
-  "genre": "Biography",
-  "platform": "Amazon Prime",
+  "genre": "Comedy",
+  "platform": null,
   "year": null,
   "hero_image": {
-    "file": "best-biography-picks-on-amazon-prime-3.jpg",
-    "path": "blog/images/best-biography-picks-on-amazon-prime-3.jpg",
-    "web_path": "/blog/images/best-biography-picks-on-amazon-prime-3.jpg",
-    "eyebrow": "Biography · Amazon Prime",
-    "title": "Best biography picks on Amazon Prime right now: 7 titles worth starting first",
-    "subtitle": "Featuring Lincoln, Moneyball, and The Fighter — plus more biography picks that deserve real attention."
+    "file": "best-comedy-picks-to-stream.jpg",
+    "path": "blog/images/best-comedy-picks-to-stream.jpg",
+    "web_path": "/blog/images/best-comedy-picks-to-stream.jpg",
+    "eyebrow": "Comedy",
+    "title": "Best comedy picks to stream when you want something better than another lazy scroll",
+    "subtitle": "Featuring Dream Girl 2, Sukhee, and zakir mannpasand — plus more comedy picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "86",
-      "title": "Lincoln",
-      "genre": "Biography/Drama/History",
-      "primary_genre": "Biography",
-      "ott_platform": "Netflix, Amazon Prime",
+      "id": "3",
+      "title": "Dream Girl 2",
+      "genre": "Comedy/Hindi",
+      "primary_genre": "Comedy",
+      "ott_platform": "Netflix",
       "platforms": [
-        "Netflix",
-        "Amazon Prime"
+        "Netflix"
       ],
-      "year_of_release": 2012,
-      "description": "A film about President Abraham Lincoln's efforts to pass the 13th Amendment during the Civil War."
+      "year_of_release": 2023,
+      "description": "The sequel to the hit Hindi comedy, likely continuing the protagonist's voice-mimicking adventures."
     },
     {
-      "id": "90",
-      "title": "Moneyball",
-      "genre": "Biography/Drama/Sport",
-      "primary_genre": "Biography",
+      "id": "14",
+      "title": "Sukhee",
+      "genre": "Comedy",
+      "primary_genre": "Comedy",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2023,
+      "description": "A feel-good Hindi comedy likely centered around a character's journey to happiness."
+    },
+    {
+      "id": "928",
+      "title": "zakir mannpasand",
+      "genre": "Comedy/Family Drama",
+      "primary_genre": "Comedy",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2023,
+      "description": "A light, feel-good comedy centered on relationships, family bonds, and a man whose likable nature brings joy and chaos in equal measure."
+    },
+    {
+      "id": "19",
+      "title": "Bhool Bhulaiyaa 2",
+      "genre": "Comedy/Horror",
+      "primary_genre": "Comedy",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2022,
+      "description": "A Hindi comedy-horror sequel about a haunted mansion and strange occurrences."
+    },
+    {
+      "id": "6",
+      "title": "Emily in Paris",
+      "genre": "Comedy",
+      "primary_genre": "Comedy",
+      "ott_platform": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
+      "year_of_release": 2020,
+      "description": "An American comedy series about a young woman's adventures in the fashion industry in Paris."
+    },
+    {
+      "id": "7",
+      "title": "Panchayat",
+      "genre": "Comedy",
+      "primary_genre": "Comedy",
       "ott_platform": "Amazon Prime",
       "platforms": [
         "Amazon Prime"
       ],
-      "year_of_release": 2011,
-      "description": "Oakland A's GM Billy Beane's successful attempt to build a baseball team on a budget."
+      "year_of_release": 2020,
+      "description": "A heartwarming Hindi comedy series depicting life in rural India through the eyes of a city-bred government officer."
     },
     {
-      "id": "102",
-      "title": "The Fighter",
-      "genre": "Biography/Drama/Sport",
-      "primary_genre": "Biography",
-      "ott_platform": "Amazon Prime",
-      "platforms": [
-        "Amazon Prime"
-      ],
-      "year_of_release": 2010,
-      "description": "The early years of boxer 'Irish' Micky Ward and his brother, who helped train him."
-    },
-    {
-      "id": "100",
-      "title": "The Blind Side",
-      "genre": "Biography/Drama/Sport",
-      "primary_genre": "Biography",
-      "ott_platform": "Amazon Prime",
-      "platforms": [
-        "Amazon Prime"
-      ],
-      "year_of_release": 2009,
-      "description": "The story of Michael Oher, an homeless boy who became an All-American football player."
-    },
-    {
-      "id": "89",
-      "title": "Milk",
-      "genre": "Biography/Drama",
-      "primary_genre": "Biography",
-      "ott_platform": "Netflix, Amazon Prime",
-      "platforms": [
-        "Netflix",
-        "Amazon Prime"
-      ],
-      "year_of_release": 2008,
-      "description": "The story of Harvey Milk, California's first openly gay elected official."
-    },
-    {
-      "id": "106",
-      "title": "The Pursuit of Happyness",
-      "genre": "Biography/Drama",
-      "primary_genre": "Biography",
-      "ott_platform": "Netflix, Amazon Prime",
-      "platforms": [
-        "Netflix",
-        "Amazon Prime"
-      ],
-      "year_of_release": 2006,
-      "description": "A struggling salesman takes custody of his son as he's poised to begin a life-changing career."
-    },
-    {
-      "id": "88",
-      "title": "Miracle",
-      "genre": "Biography/Drama/Sport",
-      "primary_genre": "Biography",
-      "ott_platform": "Amazon Prime",
-      "platforms": [
-        "Amazon Prime"
-      ],
-      "year_of_release": 2004,
-      "description": "The story of the US men's ice hockey team's victory over the Soviet team at the 1980 Winter Olympics."
+      "id": "663",
+      "title": "ted lasso",
+      "genre": "Comedy/Sports",
+      "primary_genre": "Comedy",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2020,
+      "description": "A heartwarming comedy series about an American football coach who moves to England to manage a soccer team."
     }
   ],
   "cta": {
