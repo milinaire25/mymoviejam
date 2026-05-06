@@ -1,105 +1,102 @@
 {
-  "generated_at": "2026-05-05T10:00:14",
-  "date": "2026-05-05",
-  "readable_date": "May 5, 2026",
-  "family": "evergreen_genre",
-  "headline": "Best comedy picks to stream when you want something better than another lazy scroll",
-  "slug": "best-comedy-picks-to-stream",
-  "primary_keyword": "best comedy picks to stream",
-  "meta_description": "Need better comedy picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
-  "eyebrow": "Curated List · May 5, 2026",
-  "subtitle": "Featuring Dream Girl 2, Sukhee, and zakir mannpasand — plus more comedy picks that deserve real attention.",
+  "generated_at": "2026-05-06T10:00:12",
+  "date": "2026-05-06",
+  "readable_date": "May 6, 2026",
+  "family": "platform_genre",
+  "headline": "Best documentary picks on Netflix right now: 6 titles worth starting first",
+  "slug": "best-documentary-picks-on-netflix",
+  "primary_keyword": "best documentary picks on netflix",
+  "meta_description": "Need the best documentary picks on Netflix? These are the titles worth starting first if you want something better than random browsing.",
+  "eyebrow": "Curated List · May 6, 2026",
+  "subtitle": "Featuring Black Warrant, Surviving Black Hawk Down, and The Greatest Rivalry India vs Pakistan — plus more documentary picks that deserve real attention.",
   "tags": [
-    "Comedy",
+    "Netflix",
+    "Documentary",
     "Curated list"
   ],
-  "genre": "Comedy",
-  "platform": null,
+  "genre": "Documentary",
+  "platform": "Netflix",
   "year": null,
   "hero_image": {
-    "file": "best-comedy-picks-to-stream.jpg",
-    "path": "blog/images/best-comedy-picks-to-stream.jpg",
-    "web_path": "/blog/images/best-comedy-picks-to-stream.jpg",
-    "eyebrow": "Comedy",
-    "title": "Best comedy picks to stream when you want something better than another lazy scroll",
-    "subtitle": "Featuring Dream Girl 2, Sukhee, and zakir mannpasand — plus more comedy picks that deserve real attention."
+    "file": "best-documentary-picks-on-netflix.jpg",
+    "path": "blog/images/best-documentary-picks-on-netflix.jpg",
+    "web_path": "/blog/images/best-documentary-picks-on-netflix.jpg",
+    "eyebrow": "Documentary · Netflix",
+    "title": "Best documentary picks on Netflix right now: 6 titles worth starting first",
+    "subtitle": "Featuring Black Warrant, Surviving Black Hawk Down, and The Greatest Rivalry India vs Pakistan — plus more documentary picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "3",
-      "title": "Dream Girl 2",
-      "genre": "Comedy/Hindi",
-      "primary_genre": "Comedy",
+      "id": "268",
+      "title": "Black Warrant",
+      "genre": "Documentary/Action",
+      "primary_genre": "Documentary",
       "ott_platform": "Netflix",
       "platforms": [
         "Netflix"
       ],
-      "year_of_release": 2023,
-      "description": "The sequel to the hit Hindi comedy, likely continuing the protagonist's voice-mimicking adventures."
+      "year_of_release": 2025,
+      "description": "A new jailer at Tihar Prison faces corruption and injustice grappling with a choice preserve the system or fight for reform in this tense, gritty drama."
     },
     {
-      "id": "14",
-      "title": "Sukhee",
-      "genre": "Comedy",
-      "primary_genre": "Comedy",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2023,
-      "description": "A feel-good Hindi comedy likely centered around a character's journey to happiness."
+      "id": "267",
+      "title": "Surviving Black Hawk Down",
+      "genre": "Documentary/Action",
+      "primary_genre": "Documentary",
+      "ott_platform": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
+      "year_of_release": 2025,
+      "description": "American forces on the defensive Mogadishu 93 through raw real voices."
     },
     {
-      "id": "928",
-      "title": "zakir mannpasand",
-      "genre": "Comedy/Family Drama",
-      "primary_genre": "Comedy",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2023,
-      "description": "A light, feel-good comedy centered on relationships, family bonds, and a man whose likable nature brings joy and chaos in equal measure."
+      "id": "266",
+      "title": "The Greatest Rivalry India vs Pakistan",
+      "genre": "Documentary/Sports",
+      "primary_genre": "Documentary",
+      "ott_platform": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
+      "year_of_release": 2025,
+      "description": "Cricket ultimate showdown The Greatest Rivalry: India vs Pakistan on #Netflix relives epic battles. A must-watch doc for sports fans."
     },
     {
-      "id": "19",
-      "title": "Bhool Bhulaiyaa 2",
-      "genre": "Comedy/Horror",
-      "primary_genre": "Comedy",
-      "ott_platform": "",
-      "platforms": [],
+      "id": "203",
+      "title": "Inside the mind of a CAT",
+      "genre": "Documentary/Science/Kids",
+      "primary_genre": "Documentary",
+      "ott_platform": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
       "year_of_release": 2022,
-      "description": "A Hindi comedy-horror sequel about a haunted mansion and strange occurrences."
+      "description": "Learn about the relationship between humans and Cats in this cute documentary."
     },
     {
-      "id": "6",
-      "title": "Emily in Paris",
-      "genre": "Comedy",
-      "primary_genre": "Comedy",
+      "id": "497",
+      "title": "my octopus teacher",
+      "genre": "Documentary",
+      "primary_genre": "Documentary",
       "ott_platform": "Netflix",
       "platforms": [
         "Netflix"
       ],
       "year_of_release": 2020,
-      "description": "An American comedy series about a young woman's adventures in the fashion industry in Paris."
+      "description": "A filmmaker forges an unusual friendship with an octopus living in a South African kelp forest, learning as the animal shares the mysteries of her world."
     },
     {
-      "id": "7",
-      "title": "Panchayat",
-      "genre": "Comedy",
-      "primary_genre": "Comedy",
-      "ott_platform": "Amazon Prime",
+      "id": "233",
+      "title": "Nayanthara",
+      "genre": "Documentary",
+      "primary_genre": "Documentary",
+      "ott_platform": "Netflix",
       "platforms": [
-        "Amazon Prime"
+        "Netflix"
       ],
-      "year_of_release": 2020,
-      "description": "A heartwarming Hindi comedy series depicting life in rural India through the eyes of a city-bred government officer."
-    },
-    {
-      "id": "663",
-      "title": "ted lasso",
-      "genre": "Comedy/Sports",
-      "primary_genre": "Comedy",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2020,
-      "description": "A heartwarming comedy series about an American football coach who moves to England to manage a soccer team."
+      "year_of_release": null,
+      "description": "It really gives you a glimpse into the life of the incredible Nayanthara. If you need some motivation or just love a good cinematic story, give this documentary a watch."
     }
   ],
   "cta": {
