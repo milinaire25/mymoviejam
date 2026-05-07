@@ -1,102 +1,109 @@
 {
-  "generated_at": "2026-05-06T10:00:12",
-  "date": "2026-05-06",
-  "readable_date": "May 6, 2026",
-  "family": "platform_genre",
-  "headline": "Best documentary picks on Netflix right now: 6 titles worth starting first",
-  "slug": "best-documentary-picks-on-netflix",
-  "primary_keyword": "best documentary picks on netflix",
-  "meta_description": "Need the best documentary picks on Netflix? These are the titles worth starting first if you want something better than random browsing.",
-  "eyebrow": "Curated List · May 6, 2026",
-  "subtitle": "Featuring Black Warrant, Surviving Black Hawk Down, and The Greatest Rivalry India vs Pakistan — plus more documentary picks that deserve real attention.",
+  "generated_at": "2026-05-07T10:00:18",
+  "date": "2026-05-07",
+  "readable_date": "May 7, 2026",
+  "family": "evergreen_genre",
+  "headline": "Best drama picks to stream when you want something better than another lazy scroll",
+  "slug": "best-drama-picks-to-stream-3",
+  "primary_keyword": "best drama picks to stream",
+  "meta_description": "Need better drama picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
+  "eyebrow": "Curated List · May 7, 2026",
+  "subtitle": "Featuring Kota Factory, Article 15, and the hate u give — plus more drama picks that deserve real attention.",
   "tags": [
-    "Netflix",
-    "Documentary",
+    "Drama",
     "Curated list"
   ],
-  "genre": "Documentary",
-  "platform": "Netflix",
+  "genre": "Drama",
+  "platform": null,
   "year": null,
   "hero_image": {
-    "file": "best-documentary-picks-on-netflix.jpg",
-    "path": "blog/images/best-documentary-picks-on-netflix.jpg",
-    "web_path": "/blog/images/best-documentary-picks-on-netflix.jpg",
-    "eyebrow": "Documentary · Netflix",
-    "title": "Best documentary picks on Netflix right now: 6 titles worth starting first",
-    "subtitle": "Featuring Black Warrant, Surviving Black Hawk Down, and The Greatest Rivalry India vs Pakistan — plus more documentary picks that deserve real attention."
+    "file": "best-drama-picks-to-stream-3.jpg",
+    "path": "blog/images/best-drama-picks-to-stream-3.jpg",
+    "web_path": "/blog/images/best-drama-picks-to-stream-3.jpg",
+    "eyebrow": "Drama",
+    "title": "Best drama picks to stream when you want something better than another lazy scroll",
+    "subtitle": "Featuring Kota Factory, Article 15, and the hate u give — plus more drama picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "268",
-      "title": "Black Warrant",
-      "genre": "Documentary/Action",
-      "primary_genre": "Documentary",
+      "id": "464",
+      "title": "Kota Factory",
+      "genre": "Drama",
+      "primary_genre": "Drama",
       "ott_platform": "Netflix",
       "platforms": [
         "Netflix"
       ],
-      "year_of_release": 2025,
-      "description": "A new jailer at Tihar Prison faces corruption and injustice grappling with a choice preserve the system or fight for reform in this tense, gritty drama."
+      "year_of_release": 2019,
+      "description": "Kota Factory follows Vaibhav and friends in Kota, tackling IIT-JEE prep with humor and heart. A raw, black-and-white Indian series on Netflix."
     },
     {
-      "id": "267",
-      "title": "Surviving Black Hawk Down",
-      "genre": "Documentary/Action",
-      "primary_genre": "Documentary",
-      "ott_platform": "Netflix",
-      "platforms": [
-        "Netflix"
-      ],
-      "year_of_release": 2025,
-      "description": "American forces on the defensive Mogadishu 93 through raw real voices."
+      "id": "17",
+      "title": "Article 15",
+      "genre": "Drama/Crime",
+      "primary_genre": "Drama",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2019,
+      "description": "A Hindi crime drama about caste-based discrimination and police investigation."
     },
     {
-      "id": "266",
-      "title": "The Greatest Rivalry India vs Pakistan",
-      "genre": "Documentary/Sports",
-      "primary_genre": "Documentary",
-      "ott_platform": "Netflix",
-      "platforms": [
-        "Netflix"
-      ],
-      "year_of_release": 2025,
-      "description": "Cricket ultimate showdown The Greatest Rivalry: India vs Pakistan on #Netflix relives epic battles. A must-watch doc for sports fans."
+      "id": "1026",
+      "title": "the hate u give",
+      "genre": "Drama",
+      "primary_genre": "Drama",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2018,
+      "description": "A powerful story of a young girl navigating identity and injustice after witnessing a police shooting."
     },
     {
-      "id": "203",
-      "title": "Inside the mind of a CAT",
-      "genre": "Documentary/Science/Kids",
-      "primary_genre": "Documentary",
+      "id": "78",
+      "title": "Hidden Figures",
+      "genre": "Drama/History/True Story",
+      "primary_genre": "Drama",
       "ott_platform": "Netflix",
       "platforms": [
         "Netflix"
       ],
-      "year_of_release": 2022,
-      "description": "Learn about the relationship between humans and Cats in this cute documentary."
+      "year_of_release": 2016,
+      "description": "NASA's unsung heroes in the space race."
     },
     {
-      "id": "497",
-      "title": "my octopus teacher",
-      "genre": "Documentary",
-      "primary_genre": "Documentary",
+      "id": "111",
+      "title": "Zero Dark Thirty",
+      "genre": "Drama/History/Thriller",
+      "primary_genre": "Drama",
       "ott_platform": "Netflix",
       "platforms": [
         "Netflix"
       ],
-      "year_of_release": 2020,
-      "description": "A filmmaker forges an unusual friendship with an octopus living in a South African kelp forest, learning as the animal shares the mysteries of her world."
+      "year_of_release": 2012,
+      "description": "The hunt for Osama bin Laden after the September 11 attacks."
     },
     {
-      "id": "233",
-      "title": "Nayanthara",
-      "genre": "Documentary",
-      "primary_genre": "Documentary",
+      "id": "79",
+      "title": "Invictus",
+      "genre": "Drama/Sports/True Story",
+      "primary_genre": "Drama",
       "ott_platform": "Netflix",
       "platforms": [
         "Netflix"
       ],
-      "year_of_release": null,
-      "description": "It really gives you a glimpse into the life of the incredible Nayanthara. If you need some motivation or just love a good cinematic story, give this documentary a watch."
+      "year_of_release": 2009,
+      "description": "A rugby team unites post-apartheid South Africa."
+    },
+    {
+      "id": "81",
+      "title": "Into the Wild",
+      "genre": "Drama/Adventure/True Story",
+      "primary_genre": "Drama",
+      "ott_platform": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
+      "year_of_release": 2007,
+      "description": "A young man abandons society for nature."
     }
   ],
   "cta": {
