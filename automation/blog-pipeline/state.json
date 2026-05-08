@@ -71,6 +71,12 @@
       "headline": "Best drama picks to stream when you want something better than another lazy scroll",
       "family": "evergreen_genre",
       "published_at": "2026-05-07T10:03:09"
+    },
+    {
+      "slug": "best-drama-picks-on-amazon-prime-2",
+      "headline": "Best drama picks on Amazon Prime right now: 6 titles worth starting first",
+      "family": "platform_genre",
+      "published_at": "2026-05-08T10:02:28"
     }
   ],
   "published_titles": [
@@ -152,7 +158,13 @@
     "Hidden Figures",
     "Zero Dark Thirty",
     "Invictus",
-    "Into the Wild"
+    "Into the Wild",
+    "Coach Carter",
+    "A Beautiful Mind",
+    "Titanic",
+    "Apollo 13",
+    "JFK",
+    "Che"
   ],
   "theme_history": [
     {
@@ -214,12 +226,17 @@
       "family": "evergreen_genre",
       "slug": "best-drama-picks-to-stream-3",
       "published_at": "2026-05-07T10:03:09"
+    },
+    {
+      "family": "platform_genre",
+      "slug": "best-drama-picks-on-amazon-prime-2",
+      "published_at": "2026-05-08T10:02:28"
     }
   ],
-  "next_theme_index": 0,
-  "last_generated_at": "2026-05-07T10:00:18",
+  "next_theme_index": 2,
+  "last_generated_at": "2026-05-08T10:00:12",
   "notes": "Pipeline state for automated MyMovieJam daily blog generation. Titles are marked only after a post is successfully published.",
-  "last_generated_slug": "best-drama-picks-to-stream-3",
-  "last_generated_family": "evergreen_genre",
-  "last_theme_index_used": 3
+  "last_generated_slug": "best-drama-picks-on-amazon-prime-2",
+  "last_generated_family": "platform_genre",
+  "last_theme_index_used": 1
 }

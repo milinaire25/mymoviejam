@@ -1,109 +1,102 @@
 {
-  "generated_at": "2026-05-07T10:00:18",
-  "date": "2026-05-07",
-  "readable_date": "May 7, 2026",
-  "family": "evergreen_genre",
-  "headline": "Best drama picks to stream when you want something better than another lazy scroll",
-  "slug": "best-drama-picks-to-stream-3",
-  "primary_keyword": "best drama picks to stream",
-  "meta_description": "Need better drama picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
-  "eyebrow": "Curated List · May 7, 2026",
-  "subtitle": "Featuring Kota Factory, Article 15, and the hate u give — plus more drama picks that deserve real attention.",
+  "generated_at": "2026-05-08T10:00:12",
+  "date": "2026-05-08",
+  "readable_date": "May 8, 2026",
+  "family": "platform_genre",
+  "headline": "Best drama picks on Amazon Prime right now: 6 titles worth starting first",
+  "slug": "best-drama-picks-on-amazon-prime-2",
+  "primary_keyword": "best drama picks on amazon prime",
+  "meta_description": "Need the best drama picks on Amazon Prime? These are the titles worth starting first if you want something better than random browsing.",
+  "eyebrow": "Curated List · May 8, 2026",
+  "subtitle": "Featuring Coach Carter, A Beautiful Mind, and Titanic — plus more drama picks that deserve real attention.",
   "tags": [
+    "Amazon Prime",
     "Drama",
     "Curated list"
   ],
   "genre": "Drama",
-  "platform": null,
+  "platform": "Amazon Prime",
   "year": null,
   "hero_image": {
-    "file": "best-drama-picks-to-stream-3.jpg",
-    "path": "blog/images/best-drama-picks-to-stream-3.jpg",
-    "web_path": "/blog/images/best-drama-picks-to-stream-3.jpg",
-    "eyebrow": "Drama",
-    "title": "Best drama picks to stream when you want something better than another lazy scroll",
-    "subtitle": "Featuring Kota Factory, Article 15, and the hate u give — plus more drama picks that deserve real attention."
+    "file": "best-drama-picks-on-amazon-prime-2.jpg",
+    "path": "blog/images/best-drama-picks-on-amazon-prime-2.jpg",
+    "web_path": "/blog/images/best-drama-picks-on-amazon-prime-2.jpg",
+    "eyebrow": "Drama · Amazon Prime",
+    "title": "Best drama picks on Amazon Prime right now: 6 titles worth starting first",
+    "subtitle": "Featuring Coach Carter, A Beautiful Mind, and Titanic — plus more drama picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "464",
-      "title": "Kota Factory",
-      "genre": "Drama",
-      "primary_genre": "Drama",
-      "ott_platform": "Netflix",
-      "platforms": [
-        "Netflix"
-      ],
-      "year_of_release": 2019,
-      "description": "Kota Factory follows Vaibhav and friends in Kota, tackling IIT-JEE prep with humor and heart. A raw, black-and-white Indian series on Netflix."
-    },
-    {
-      "id": "17",
-      "title": "Article 15",
-      "genre": "Drama/Crime",
-      "primary_genre": "Drama",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2019,
-      "description": "A Hindi crime drama about caste-based discrimination and police investigation."
-    },
-    {
-      "id": "1026",
-      "title": "the hate u give",
-      "genre": "Drama",
-      "primary_genre": "Drama",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2018,
-      "description": "A powerful story of a young girl navigating identity and injustice after witnessing a police shooting."
-    },
-    {
-      "id": "78",
-      "title": "Hidden Figures",
-      "genre": "Drama/History/True Story",
-      "primary_genre": "Drama",
-      "ott_platform": "Netflix",
-      "platforms": [
-        "Netflix"
-      ],
-      "year_of_release": 2016,
-      "description": "NASA's unsung heroes in the space race."
-    },
-    {
-      "id": "111",
-      "title": "Zero Dark Thirty",
-      "genre": "Drama/History/Thriller",
-      "primary_genre": "Drama",
-      "ott_platform": "Netflix",
-      "platforms": [
-        "Netflix"
-      ],
-      "year_of_release": 2012,
-      "description": "The hunt for Osama bin Laden after the September 11 attacks."
-    },
-    {
-      "id": "79",
-      "title": "Invictus",
+      "id": "70",
+      "title": "Coach Carter",
       "genre": "Drama/Sports/True Story",
       "primary_genre": "Drama",
-      "ott_platform": "Netflix",
+      "ott_platform": "Amazon Prime",
       "platforms": [
-        "Netflix"
+        "Amazon Prime"
       ],
-      "year_of_release": 2009,
-      "description": "A rugby team unites post-apartheid South Africa."
+      "year_of_release": 2005,
+      "description": "A coach teaches life lessons on and off the court."
     },
     {
-      "id": "81",
-      "title": "Into the Wild",
-      "genre": "Drama/Adventure/True Story",
+      "id": "58",
+      "title": "A Beautiful Mind",
+      "genre": "Drama/Biography/True Story",
       "primary_genre": "Drama",
-      "ott_platform": "Netflix",
+      "ott_platform": "Amazon Prime",
       "platforms": [
-        "Netflix"
+        "Amazon Prime"
       ],
-      "year_of_release": 2007,
-      "description": "A young man abandons society for nature."
+      "year_of_release": 2001,
+      "description": "A mathematician battles schizophrenia."
+    },
+    {
+      "id": "108",
+      "title": "Titanic",
+      "genre": "Drama/Romance",
+      "primary_genre": "Drama",
+      "ott_platform": "Amazon Prime",
+      "platforms": [
+        "Amazon Prime"
+      ],
+      "year_of_release": 1997,
+      "description": "A fictionalized account of the sinking of the RMS Titanic, focusing on a romance between passengers."
+    },
+    {
+      "id": "63",
+      "title": "Apollo 13",
+      "genre": "Drama/History/True Story",
+      "primary_genre": "Drama",
+      "ott_platform": "Amazon Prime",
+      "platforms": [
+        "Amazon Prime"
+      ],
+      "year_of_release": 1995,
+      "description": "NASA faces a mission in crisis to bring astronauts home."
+    },
+    {
+      "id": "83",
+      "title": "JFK",
+      "genre": "Drama/History/True Story",
+      "primary_genre": "Drama",
+      "ott_platform": "Amazon Prime",
+      "platforms": [
+        "Amazon Prime"
+      ],
+      "year_of_release": 1991,
+      "description": "A lawyer investigates JFK's assassination."
+    },
+    {
+      "id": "69",
+      "title": "Che",
+      "genre": "Drama/Biography/True Story",
+      "primary_genre": "Drama",
+      "ott_platform": "Amazon Prime",
+      "platforms": [
+        "Amazon Prime"
+      ],
+      "year_of_release": null,
+      "description": "The life and legacy of revolutionary Che Guevara."
     }
   ],
   "cta": {
