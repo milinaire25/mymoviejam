@@ -344,7 +344,7 @@ def add_noise(img, opacity=20):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate an upgraded MyMovieJam blog hero image.")
+    parser = argparse.ArgumentParser(description="Generate a minimal MyMovieJam blog hero image.")
     parser.add_argument("--title", required=True)
     parser.add_argument("--eyebrow", required=True)
     parser.add_argument("--subtitle", required=True)
@@ -354,76 +354,55 @@ def main():
     out_path = Path(args.out)
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
-    bg1, bg2, accent, accent2, blue = hash_palette(args.title + "|" + args.eyebrow)
-    img = gradient_bg(bg1, bg2)
-    img = add_noise(img, opacity=12)
+    img = Image.new("RGBA", SIZE, (8, 8, 10, 255))
+
+    bg = Image.new("RGBA", SIZE, (0, 0, 0, 0))
+    bp = bg.load()
+    for y in range(H):
+        mix = y / (H - 1)
+        top = (7, 7, 9)
+        bottom = (18, 18, 22)
+        row = tuple(int(top[i] * (1 - mix) + bottom[i] * mix) for i in range(3))
+        for x in range(W):
+            bp[x, y] = row + (255,)
+    img = Image.alpha_composite(img, bg)
 
     glow = Image.new("RGBA", SIZE, (0, 0, 0, 0))
     g = ImageDraw.Draw(glow, "RGBA")
-    g.ellipse((1020, -120, 1710, 520), fill=accent2 + (110,))
-    g.ellipse((880, 150, 1510, 860), fill=accent + (54,))
-    g.ellipse((-220, 540, 520, 1200), fill=(66, 18, 24, 82))
-    glow = glow.filter(ImageFilter.GaussianBlur(82))
+    g.ellipse((-180, -120, 520, 420), fill=(48, 72, 128, 48))
+    g.ellipse((1080, 500, 1710, 1120), fill=(88, 88, 120, 34))
+    glow = glow.filter(ImageFilter.GaussianBlur(120))
     img = Image.alpha_composite(img, glow)
-
-    featured_titles = infer_queries(args.title, args.subtitle)
-    poster_layer = poster_stack_with_art(featured_titles, accent, blue)
-    img = Image.alpha_composite(img, poster_layer)
-
-    left_panel = Image.new("RGBA", SIZE, (0, 0, 0, 0))
-    lp = ImageDraw.Draw(left_panel, "RGBA")
-    lp.rounded_rectangle((44, 42, 942, H - 42), radius=40, fill=(6, 8, 14, 154), outline=(255, 255, 255, 20), width=2)
-    lp.rounded_rectangle((64, H - 186, 496, H - 112), radius=28, fill=accent2 + (255,), outline=accent + (255,), width=3)
-    lp.rounded_rectangle((64, 72, 278, 116), radius=18, fill=(10, 12, 18, 214), outline=blue + (160,), width=2)
-    img = Image.alpha_composite(img, left_panel)
+    img = add_noise(img, opacity=6)
 
     draw = ImageDraw.Draw(img)
-    eyebrow_font = load_font(FONT_CANDIDATES_BOLD, 26)
-    title_font, title_lines = fit_title_font(draw, args.title, 760, 4, start_size=100, min_size=56)
-    subtitle_font = load_font(FONT_CANDIDATES_REGULAR, 28)
-    cta_font = load_font(FONT_CANDIDATES_BOLD, 34)
-    footer_font = load_font(FONT_CANDIDATES_BOLD, 30)
-    micro_font = load_font(FONT_CANDIDATES_REGULAR, 18)
-    chip_font = load_font(FONT_CANDIDATES_BOLD, 20)
+    eyebrow_text = f"{args.eyebrow.upper()} • MYMOVIEJAM"
+    eyebrow_font = load_font(FONT_CANDIDATES_REGULAR, 26)
+    title_font, title_lines = fit_title_font(draw, args.title, 1120, 4, start_size=96, min_size=52)
+    footer_font = load_font(FONT_CANDIDATES_REGULAR, 20)
 
-    draw.text((86, 80), args.eyebrow.upper(), font=eyebrow_font, fill=(255, 255, 255))
-    draw.text((288, 81), "•", font=eyebrow_font, fill=accent)
-    draw.text((308, 81), "MYMOVIEJAM", font=eyebrow_font, fill=(255, 255, 255))
+    eyebrow_bbox = draw.textbbox((0, 0), eyebrow_text, font=eyebrow_font)
+    eyebrow_w = eyebrow_bbox[2] - eyebrow_bbox[0]
+    draw.text(((W - eyebrow_w) / 2, 164), eyebrow_text, font=eyebrow_font, fill=(176, 176, 184))
 
-    y = 178
+    y = 318
     for line in title_lines:
-        draw.text((89, y + 4), line, font=title_font, fill=(0, 0, 0, 126))
-        draw.text((86, y), line, font=title_font, fill=(255, 255, 255))
-        y += title_font.size + 6
+        bbox = draw.textbbox((0, 0), line, font=title_font)
+        line_w = bbox[2] - bbox[0]
+        x = (W - line_w) / 2
+        draw.text((x, y), line, font=title_font, fill=(245, 245, 247))
+        y += title_font.size + 10
 
-    underline_y = y + 8
-    draw.rounded_rectangle((88, underline_y, 430, underline_y + 9), radius=4, fill=accent)
-    draw.rounded_rectangle((438, underline_y + 2, 606, underline_y + 10), radius=4, fill=(255, 241, 214))
+    rule_y = y + 28
+    rule_w = 180
+    draw.rounded_rectangle(((W - rule_w) / 2, rule_y, (W + rule_w) / 2, rule_y + 6), radius=3, fill=(92, 92, 102))
 
-    subtitle = shorten_text(args.subtitle, max_chars=125)
-    subtitle_lines = wrap_text(draw, subtitle, subtitle_font, 740)[:3]
-    y = underline_y + 34
-    for idx, line in enumerate(subtitle_lines):
-        color = (232, 236, 244) if idx < len(subtitle_lines) - 1 else (255, 223, 146)
-        draw.text((90, y), line, font=subtitle_font, fill=color)
-        y += subtitle_font.size + 10
+    footer = "mymoviejam.com"
+    footer_bbox = draw.textbbox((0, 0), footer, font=footer_font)
+    footer_w = footer_bbox[2] - footer_bbox[0]
+    draw.text(((W - footer_w) / 2, H - 96), footer, font=footer_font, fill=(124, 124, 132))
 
-    chips = featured_titles[:3]
-    chip_x = 88
-    chip_y = y + 26
-    for idx, chip in enumerate(chips):
-        rect = draw_pill(draw, chip_x, chip_y, chip.upper(), chip_font, fill=(10, 12, 18, 214), text_fill=(255, 255, 255), outline=accent + (140,))
-        chip_x = rect[2] + 16
-        if chip_x > 760 and idx < len(chips) - 1:
-            chip_x = 88
-            chip_y += 52
-
-    draw.text((102, H - 168), "Get picks on WhatsApp →", font=cta_font, fill=(255, 255, 255))
-    draw.text((86, 804), "MYMOVIEJAM BLOG", font=footer_font, fill=(255, 255, 255))
-    draw.text((86, 846), "better movie picks, less scrolling", font=footer_font, fill=(255, 244, 214))
-    draw.text((86, 876), "Smart recommendations for what to watch tonight.", font=micro_font, fill=(214, 220, 230))
-
-    img.convert("RGB").save(out_path, quality=92)
+    img.convert("RGB").save(out_path, quality=94)
     print(out_path)
 
 
