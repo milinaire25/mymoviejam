@@ -1,102 +1,101 @@
 {
-  "generated_at": "2026-05-08T10:00:12",
-  "date": "2026-05-08",
-  "readable_date": "May 8, 2026",
-  "family": "platform_genre",
-  "headline": "Best drama picks on Amazon Prime right now: 6 titles worth starting first",
-  "slug": "best-drama-picks-on-amazon-prime-2",
-  "primary_keyword": "best drama picks on amazon prime",
-  "meta_description": "Need the best drama picks on Amazon Prime? These are the titles worth starting first if you want something better than random browsing.",
-  "eyebrow": "Curated List · May 8, 2026",
-  "subtitle": "Featuring Coach Carter, A Beautiful Mind, and Titanic — plus more drama picks that deserve real attention.",
+  "generated_at": "2026-05-09T10:00:13",
+  "date": "2026-05-09",
+  "readable_date": "May 9, 2026",
+  "family": "evergreen_genre",
+  "headline": "Best crime picks to stream when you want something better than another lazy scroll",
+  "slug": "best-crime-picks-to-stream",
+  "primary_keyword": "best crime picks to stream",
+  "meta_description": "Need better crime picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
+  "eyebrow": "Curated List · May 9, 2026",
+  "subtitle": "Featuring dabba cartel, american manhunt, and raid 2 — plus more crime picks that deserve real attention.",
   "tags": [
-    "Amazon Prime",
-    "Drama",
+    "Crime",
     "Curated list"
   ],
-  "genre": "Drama",
-  "platform": "Amazon Prime",
+  "genre": "Crime",
+  "platform": null,
   "year": null,
   "hero_image": {
-    "file": "best-drama-picks-on-amazon-prime-2.jpg",
-    "path": "blog/images/best-drama-picks-on-amazon-prime-2.jpg",
-    "web_path": "/blog/images/best-drama-picks-on-amazon-prime-2.jpg",
-    "eyebrow": "Drama · Amazon Prime",
-    "title": "Best drama picks on Amazon Prime right now: 6 titles worth starting first",
-    "subtitle": "Featuring Coach Carter, A Beautiful Mind, and Titanic — plus more drama picks that deserve real attention."
+    "file": "best-crime-picks-to-stream.jpg",
+    "path": "blog/images/best-crime-picks-to-stream.jpg",
+    "web_path": "/blog/images/best-crime-picks-to-stream.jpg",
+    "eyebrow": "Crime",
+    "title": "Best crime picks to stream when you want something better than another lazy scroll",
+    "subtitle": "Featuring dabba cartel, american manhunt, and raid 2 — plus more crime picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "70",
-      "title": "Coach Carter",
-      "genre": "Drama/Sports/True Story",
-      "primary_genre": "Drama",
-      "ott_platform": "Amazon Prime",
+      "id": "332",
+      "title": "dabba cartel",
+      "genre": "Crime/Thriller Indian",
+      "primary_genre": "Crime",
+      "ott_platform": "Netflix",
       "platforms": [
-        "Amazon Prime"
+        "Netflix"
       ],
-      "year_of_release": 2005,
-      "description": "A coach teaches life lessons on and off the court."
+      "year_of_release": 2025,
+      "description": "A gripping series about a group of women who form an unlikely drug cartel, challenging gender norms and the criminal underworld."
     },
     {
-      "id": "58",
-      "title": "A Beautiful Mind",
-      "genre": "Drama/Biography/True Story",
-      "primary_genre": "Drama",
-      "ott_platform": "Amazon Prime",
-      "platforms": [
-        "Amazon Prime"
-      ],
-      "year_of_release": 2001,
-      "description": "A mathematician battles schizophrenia."
+      "id": "694",
+      "title": "american manhunt",
+      "genre": "Crime/Documentary",
+      "primary_genre": "Crime",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2025,
+      "description": "A gripping documentary series about real-life manhunts of world most dangerous criminal."
     },
     {
-      "id": "108",
-      "title": "Titanic",
-      "genre": "Drama/Romance",
-      "primary_genre": "Drama",
-      "ott_platform": "Amazon Prime",
-      "platforms": [
-        "Amazon Prime"
-      ],
-      "year_of_release": 1997,
-      "description": "A fictionalized account of the sinking of the RMS Titanic, focusing on a romance between passengers."
+      "id": "832",
+      "title": "raid 2",
+      "genre": "Crime/Thriller",
+      "primary_genre": "Crime",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2025,
+      "description": "Income Tax officer uncovers corruption linked to politician in this tense sequel."
     },
     {
-      "id": "63",
-      "title": "Apollo 13",
-      "genre": "Drama/History/True Story",
-      "primary_genre": "Drama",
-      "ott_platform": "Amazon Prime",
-      "platforms": [
-        "Amazon Prime"
-      ],
-      "year_of_release": 1995,
-      "description": "NASA faces a mission in crisis to bring astronauts home."
+      "id": "900",
+      "title": "wolf king",
+      "genre": "Crime, Thriller",
+      "primary_genre": "Crime",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2025,
+      "description": "A gritty underworld tale of loyalty, betrayal, and survival."
     },
     {
-      "id": "83",
-      "title": "JFK",
-      "genre": "Drama/History/True Story",
-      "primary_genre": "Drama",
-      "ott_platform": "Amazon Prime",
-      "platforms": [
-        "Amazon Prime"
-      ],
-      "year_of_release": 1991,
-      "description": "A lawyer investigates JFK's assassination."
+      "id": "562",
+      "title": "farzi",
+      "genre": "Crime/Thriller",
+      "primary_genre": "Crime",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2023,
+      "description": "An artist who gets pulled into the murky high stakes of a con job and a fiery task force officer on the mission to rid the country of his menaces in a fast-paced, edgy cat-and-mouse thriller."
     },
     {
-      "id": "69",
-      "title": "Che",
-      "genre": "Drama/Biography/True Story",
-      "primary_genre": "Drama",
-      "ott_platform": "Amazon Prime",
-      "platforms": [
-        "Amazon Prime"
-      ],
-      "year_of_release": null,
-      "description": "The life and legacy of revolutionary Che Guevara."
+      "id": "1025",
+      "title": "kohra 2",
+      "genre": "Crime/Drama/Thriller",
+      "primary_genre": "Crime",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2022,
+      "description": "A gripping crime drama exploring dark secrets, complex relationships, and a murder investigation in rural India."
+    },
+    {
+      "id": "896",
+      "title": "blacklist",
+      "genre": "Crime, Thriller",
+      "primary_genre": "Crime",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2019,
+      "description": "A master criminal known as Raymond \"Red\" Reddington teams up with the FBI to catch elusive criminals."
     }
   ],
   "cta": {

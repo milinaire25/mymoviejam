@@ -77,6 +77,12 @@
       "headline": "Best drama picks on Amazon Prime right now: 6 titles worth starting first",
       "family": "platform_genre",
       "published_at": "2026-05-08T10:02:28"
+    },
+    {
+      "slug": "best-crime-picks-to-stream",
+      "headline": "Best crime picks to stream when you want something better than another lazy scroll",
+      "family": "evergreen_genre",
+      "published_at": "2026-05-09T10:03:35"
     }
   ],
   "published_titles": [
@@ -164,7 +170,14 @@
     "Titanic",
     "Apollo 13",
     "JFK",
-    "Che"
+    "Che",
+    "dabba cartel",
+    "american manhunt",
+    "raid 2",
+    "wolf king",
+    "farzi",
+    "kohra 2",
+    "blacklist"
   ],
   "theme_history": [
     {
@@ -231,12 +244,17 @@
       "family": "platform_genre",
       "slug": "best-drama-picks-on-amazon-prime-2",
       "published_at": "2026-05-08T10:02:28"
+    },
+    {
+      "family": "evergreen_genre",
+      "slug": "best-crime-picks-to-stream",
+      "published_at": "2026-05-09T10:03:35"
     }
   ],
-  "next_theme_index": 2,
-  "last_generated_at": "2026-05-08T10:00:12",
+  "next_theme_index": 0,
+  "last_generated_at": "2026-05-09T10:00:13",
   "notes": "Pipeline state for automated MyMovieJam daily blog generation. Titles are marked only after a post is successfully published.",
-  "last_generated_slug": "best-drama-picks-on-amazon-prime-2",
-  "last_generated_family": "platform_genre",
-  "last_theme_index_used": 1
+  "last_generated_slug": "best-crime-picks-to-stream",
+  "last_generated_family": "evergreen_genre",
+  "last_theme_index_used": 3
 }
