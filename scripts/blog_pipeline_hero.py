@@ -104,8 +104,11 @@ def parse_featured_titles(subtitle):
 
 
 def infer_review_target(title):
-    cleaned = re.sub(r"\b(review|ending explained|is it worth it|worth it|moviejam|netflix|amazon prime|prime video|disney\+?)\b", "", title, flags=re.IGNORECASE)
+    cleaned = re.sub(r"\b(review|ending explained|is it worth it|worth it|moviejam|series review|movie review)\b", "", title, flags=re.IGNORECASE)
+    cleaned = re.sub(r"\bon\s+(netflix|amazon prime|prime video|disney\+?|hulu|max|apple tv\+?)\b", "", cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r"\b(netflix|amazon prime|prime video|disney\+?|hulu|max|apple tv\+?)\b", "", cleaned, flags=re.IGNORECASE)
     cleaned = re.split(r"[:\-–|]", cleaned)[0].strip(" ?!.:")
+    cleaned = re.sub(r"\b(on|at|for|from|with)\b\s*$", "", cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(r"\s+", " ", cleaned).strip()
     return strip_year_suffix(cleaned)
 
