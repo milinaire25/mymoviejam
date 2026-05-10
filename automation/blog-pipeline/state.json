@@ -83,6 +83,12 @@
       "headline": "Best crime picks to stream when you want something better than another lazy scroll",
       "family": "evergreen_genre",
       "published_at": "2026-05-09T10:03:35"
+    },
+    {
+      "slug": "best-biography-picks-on-amazon-prime-4",
+      "headline": "Best biography picks on Amazon Prime right now: 5 titles worth starting first",
+      "family": "platform_genre",
+      "published_at": "2026-05-10T10:02:01"
     }
   ],
   "published_titles": [
@@ -177,7 +183,12 @@
     "wolf king",
     "farzi",
     "kohra 2",
-    "blacklist"
+    "blacklist",
+    "The Aviator",
+    "Remember the Titans",
+    "The Hurricane",
+    "Chaplin",
+    "Jackie"
   ],
   "theme_history": [
     {
@@ -249,12 +260,17 @@
       "family": "evergreen_genre",
       "slug": "best-crime-picks-to-stream",
       "published_at": "2026-05-09T10:03:35"
+    },
+    {
+      "family": "platform_genre",
+      "slug": "best-biography-picks-on-amazon-prime-4",
+      "published_at": "2026-05-10T10:02:01"
     }
   ],
-  "next_theme_index": 0,
-  "last_generated_at": "2026-05-09T10:00:13",
+  "next_theme_index": 2,
+  "last_generated_at": "2026-05-10T10:00:14",
   "notes": "Pipeline state for automated MyMovieJam daily blog generation. Titles are marked only after a post is successfully published.",
-  "last_generated_slug": "best-crime-picks-to-stream",
-  "last_generated_family": "evergreen_genre",
-  "last_theme_index_used": 3
+  "last_generated_slug": "best-biography-picks-on-amazon-prime-4",
+  "last_generated_family": "platform_genre",
+  "last_theme_index_used": 1
 }
