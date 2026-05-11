@@ -89,6 +89,12 @@
       "headline": "Best biography picks on Amazon Prime right now: 5 titles worth starting first",
       "family": "platform_genre",
       "published_at": "2026-05-10T10:02:01"
+    },
+    {
+      "slug": "best-action-picks-to-stream-2",
+      "headline": "Best action picks to stream when you want something better than another lazy scroll",
+      "family": "evergreen_genre",
+      "published_at": "2026-05-11T10:03:21"
     }
   ],
   "published_titles": [
@@ -188,7 +194,14 @@
     "Remember the Titans",
     "The Hurricane",
     "Chaplin",
-    "Jackie"
+    "Jackie",
+    "thefamily man",
+    "Dunkirk",
+    "Deepwater Horizon",
+    "The Siege of Jadotville",
+    "American Sniper",
+    "John Wick",
+    "Khakee"
   ],
   "theme_history": [
     {
@@ -265,12 +278,17 @@
       "family": "platform_genre",
       "slug": "best-biography-picks-on-amazon-prime-4",
       "published_at": "2026-05-10T10:02:01"
+    },
+    {
+      "family": "evergreen_genre",
+      "slug": "best-action-picks-to-stream-2",
+      "published_at": "2026-05-11T10:03:21"
     }
   ],
-  "next_theme_index": 2,
-  "last_generated_at": "2026-05-10T10:00:14",
+  "next_theme_index": 0,
+  "last_generated_at": "2026-05-11T10:00:16",
   "notes": "Pipeline state for automated MyMovieJam daily blog generation. Titles are marked only after a post is successfully published.",
-  "last_generated_slug": "best-biography-picks-on-amazon-prime-4",
-  "last_generated_family": "platform_genre",
-  "last_theme_index_used": 1
+  "last_generated_slug": "best-action-picks-to-stream-2",
+  "last_generated_family": "evergreen_genre",
+  "last_theme_index_used": 3
 }

@@ -1,93 +1,108 @@
 {
-  "generated_at": "2026-05-10T10:00:14",
-  "date": "2026-05-10",
-  "readable_date": "May 10, 2026",
-  "family": "platform_genre",
-  "headline": "Best biography picks on Amazon Prime right now: 5 titles worth starting first",
-  "slug": "best-biography-picks-on-amazon-prime-4",
-  "primary_keyword": "best biography picks on amazon prime",
-  "meta_description": "Need the best biography picks on Amazon Prime? These are the titles worth starting first if you want something better than random browsing.",
-  "eyebrow": "Curated List · May 10, 2026",
-  "subtitle": "Featuring The Aviator, Remember the Titans, and The Hurricane — plus more biography picks that deserve real attention.",
+  "generated_at": "2026-05-11T10:00:16",
+  "date": "2026-05-11",
+  "readable_date": "May 11, 2026",
+  "family": "evergreen_genre",
+  "headline": "Best action picks to stream when you want something better than another lazy scroll",
+  "slug": "best-action-picks-to-stream-2",
+  "primary_keyword": "best action picks to stream",
+  "meta_description": "Need better action picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
+  "eyebrow": "Curated List · May 11, 2026",
+  "subtitle": "Featuring thefamily man, Dunkirk, and Deepwater Horizon — plus more action picks that deserve real attention.",
   "tags": [
-    "Amazon Prime",
-    "Biography",
+    "Action",
     "Curated list"
   ],
-  "genre": "Biography",
-  "platform": "Amazon Prime",
+  "genre": "Action",
+  "platform": null,
   "year": null,
   "hero_image": {
-    "file": "best-biography-picks-on-amazon-prime-4.jpg",
-    "path": "blog/images/best-biography-picks-on-amazon-prime-4.jpg",
-    "web_path": "/blog/images/best-biography-picks-on-amazon-prime-4.jpg",
-    "eyebrow": "Biography · Amazon Prime",
-    "title": "Best biography picks on Amazon Prime right now: 5 titles worth starting first",
-    "subtitle": "Featuring The Aviator, Remember the Titans, and The Hurricane — plus more biography picks that deserve real attention."
+    "file": "best-action-picks-to-stream-2.jpg",
+    "path": "blog/images/best-action-picks-to-stream-2.jpg",
+    "web_path": "/blog/images/best-action-picks-to-stream-2.jpg",
+    "eyebrow": "Action",
+    "title": "Best action picks to stream when you want something better than another lazy scroll",
+    "subtitle": "Featuring thefamily man, Dunkirk, and Deepwater Horizon — plus more action picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "98",
-      "title": "The Aviator",
-      "genre": "Biography/Drama",
-      "primary_genre": "Biography",
-      "ott_platform": "Amazon Prime",
+      "id": "903",
+      "title": "thefamily man",
+      "genre": "Action, Thriller, Drama",
+      "primary_genre": "Action",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2019,
+      "description": "A middle-class man and world-class spy, struggles to balance family life with his role in the National Intelligence Agency."
+    },
+    {
+      "id": "73",
+      "title": "Dunkirk",
+      "genre": "Action/War/True Story",
+      "primary_genre": "Action",
+      "ott_platform": "Netflix",
       "platforms": [
+        "Netflix"
+      ],
+      "year_of_release": 2017,
+      "description": "The evacuation of Allied soldiers during WWII."
+    },
+    {
+      "id": "72",
+      "title": "Deepwater Horizon",
+      "genre": "Action/Drama/True Story",
+      "primary_genre": "Action",
+      "ott_platform": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
+      "year_of_release": 2016,
+      "description": "An oil rig faces a catastrophic explosion."
+    },
+    {
+      "id": "210",
+      "title": "The Siege of Jadotville",
+      "genre": "Action/War",
+      "primary_genre": "Action",
+      "ott_platform": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
+      "year_of_release": 2016,
+      "description": "This war drama showcases the untold story of Irish UN troops in Congo, delivering intense action and a reminder of the power of strategic thinking over brute force."
+    },
+    {
+      "id": "62",
+      "title": "American Sniper",
+      "genre": "Action/Biography/True Story",
+      "primary_genre": "Action",
+      "ott_platform": "Netflix, Amazon Prime",
+      "platforms": [
+        "Netflix",
         "Amazon Prime"
       ],
+      "year_of_release": 2014,
+      "description": "A Navy SEAL becomes a top sniper in U.S. history."
+    },
+    {
+      "id": "796",
+      "title": "John Wick",
+      "genre": "Action/Thriller",
+      "primary_genre": "Action",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2014,
+      "description": "An ex-hitman comes out of retirement to track down the gangsters who took everything from him."
+    },
+    {
+      "id": "22",
+      "title": "Khakee",
+      "genre": "Action/Thriller",
+      "primary_genre": "Action",
+      "ott_platform": "",
+      "platforms": [],
       "year_of_release": 2004,
-      "description": "The story of aviation pioneer Howard Hughes, focusing on his life from the late 1920s to 1940s."
-    },
-    {
-      "id": "91",
-      "title": "Remember the Titans",
-      "genre": "Biography/Drama/Sport",
-      "primary_genre": "Biography",
-      "ott_platform": "Netflix, Amazon Prime",
-      "platforms": [
-        "Netflix",
-        "Amazon Prime"
-      ],
-      "year_of_release": 2000,
-      "description": "A newly integrated high school football team overcomes racial tensions in 1970s Virginia."
-    },
-    {
-      "id": "103",
-      "title": "The Hurricane",
-      "genre": "Biography/Drama/Sport",
-      "primary_genre": "Biography",
-      "ott_platform": "Netflix, Amazon Prime",
-      "platforms": [
-        "Netflix",
-        "Amazon Prime"
-      ],
-      "year_of_release": 1999,
-      "description": "The story of Rubin 'Hurricane' Carter, a boxer wrongly imprisoned for murder."
-    },
-    {
-      "id": "67",
-      "title": "Chaplin",
-      "genre": "Biography/Drama/True Story",
-      "primary_genre": "Biography",
-      "ott_platform": "Amazon Prime",
-      "platforms": [
-        "Amazon Prime"
-      ],
-      "year_of_release": 1992,
-      "description": "The life and career of Charlie Chaplin."
-    },
-    {
-      "id": "82",
-      "title": "Jackie",
-      "genre": "Biography/Drama/True Story",
-      "primary_genre": "Biography",
-      "ott_platform": "Netflix, Amazon Prime",
-      "platforms": [
-        "Netflix",
-        "Amazon Prime"
-      ],
-      "year_of_release": null,
-      "description": "The story of Jackie Kennedy after JFK's death."
+      "description": "A Hindi action-thriller about a police squad tasked with escorting a terrorist to court."
     }
   ],
   "cta": {
