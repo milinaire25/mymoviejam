@@ -95,6 +95,12 @@
       "headline": "Best action picks to stream when you want something better than another lazy scroll",
       "family": "evergreen_genre",
       "published_at": "2026-05-11T10:03:21"
+    },
+    {
+      "slug": "best-fantasy-picks-to-stream",
+      "headline": "Best fantasy picks to stream when you want something better than another lazy scroll",
+      "family": "evergreen_genre",
+      "published_at": "2026-05-12T10:02:54"
     }
   ],
   "published_titles": [
@@ -201,7 +207,14 @@
     "The Siege of Jadotville",
     "American Sniper",
     "John Wick",
-    "Khakee"
+    "Khakee",
+    "harry potter",
+    "Orion and the Dark",
+    "Nightbooks",
+    "Over the Moon",
+    "The Witches",
+    "Arrietty",
+    "Ponyo"
   ],
   "theme_history": [
     {
@@ -283,12 +296,17 @@
       "family": "evergreen_genre",
       "slug": "best-action-picks-to-stream-2",
       "published_at": "2026-05-11T10:03:21"
+    },
+    {
+      "family": "evergreen_genre",
+      "slug": "best-fantasy-picks-to-stream",
+      "published_at": "2026-05-12T10:02:54"
     }
   ],
   "next_theme_index": 0,
-  "last_generated_at": "2026-05-11T10:00:16",
+  "last_generated_at": "2026-05-12T10:00:13",
   "notes": "Pipeline state for automated MyMovieJam daily blog generation. Titles are marked only after a post is successfully published.",
-  "last_generated_slug": "best-action-picks-to-stream-2",
+  "last_generated_slug": "best-fantasy-picks-to-stream",
   "last_generated_family": "evergreen_genre",
   "last_theme_index_used": 3
 }

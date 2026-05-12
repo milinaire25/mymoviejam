@@ -1,108 +1,99 @@
 {
-  "generated_at": "2026-05-11T10:00:16",
-  "date": "2026-05-11",
-  "readable_date": "May 11, 2026",
+  "generated_at": "2026-05-12T10:00:13",
+  "date": "2026-05-12",
+  "readable_date": "May 12, 2026",
   "family": "evergreen_genre",
-  "headline": "Best action picks to stream when you want something better than another lazy scroll",
-  "slug": "best-action-picks-to-stream-2",
-  "primary_keyword": "best action picks to stream",
-  "meta_description": "Need better action picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
-  "eyebrow": "Curated List · May 11, 2026",
-  "subtitle": "Featuring thefamily man, Dunkirk, and Deepwater Horizon — plus more action picks that deserve real attention.",
+  "headline": "Best fantasy picks to stream when you want something better than another lazy scroll",
+  "slug": "best-fantasy-picks-to-stream",
+  "primary_keyword": "best fantasy picks to stream",
+  "meta_description": "Need better fantasy picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
+  "eyebrow": "Curated List · May 12, 2026",
+  "subtitle": "Featuring harry potter, Orion and the Dark, and Nightbooks — plus more fantasy picks that deserve real attention.",
   "tags": [
-    "Action",
+    "Fantasy",
     "Curated list"
   ],
-  "genre": "Action",
+  "genre": "Fantasy",
   "platform": null,
   "year": null,
   "hero_image": {
-    "file": "best-action-picks-to-stream-2.jpg",
-    "path": "blog/images/best-action-picks-to-stream-2.jpg",
-    "web_path": "/blog/images/best-action-picks-to-stream-2.jpg",
-    "eyebrow": "Action",
-    "title": "Best action picks to stream when you want something better than another lazy scroll",
-    "subtitle": "Featuring thefamily man, Dunkirk, and Deepwater Horizon — plus more action picks that deserve real attention."
+    "file": "best-fantasy-picks-to-stream.jpg",
+    "path": "blog/images/best-fantasy-picks-to-stream.jpg",
+    "web_path": "/blog/images/best-fantasy-picks-to-stream.jpg",
+    "eyebrow": "Fantasy",
+    "title": "Best fantasy picks to stream when you want something better than another lazy scroll",
+    "subtitle": "Featuring harry potter, Orion and the Dark, and Nightbooks — plus more fantasy picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "903",
-      "title": "thefamily man",
-      "genre": "Action, Thriller, Drama",
-      "primary_genre": "Action",
+      "id": "931",
+      "title": "harry potter",
+      "genre": "Fantasy/Adventure",
+      "primary_genre": "Fantasy",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2019,
-      "description": "A middle-class man and world-class spy, struggles to balance family life with his role in the National Intelligence Agency."
+      "year_of_release": 2026,
+      "description": "A young wizard discovers his magical heritage and faces dark forces while attending Hogwarts School of Witchcraft and Wizardry."
     },
     {
-      "id": "73",
-      "title": "Dunkirk",
-      "genre": "Action/War/True Story",
-      "primary_genre": "Action",
-      "ott_platform": "Netflix",
-      "platforms": [
-        "Netflix"
-      ],
-      "year_of_release": 2017,
-      "description": "The evacuation of Allied soldiers during WWII."
-    },
-    {
-      "id": "72",
-      "title": "Deepwater Horizon",
-      "genre": "Action/Drama/True Story",
-      "primary_genre": "Action",
-      "ott_platform": "Netflix",
-      "platforms": [
-        "Netflix"
-      ],
-      "year_of_release": 2016,
-      "description": "An oil rig faces a catastrophic explosion."
-    },
-    {
-      "id": "210",
-      "title": "The Siege of Jadotville",
-      "genre": "Action/War",
-      "primary_genre": "Action",
-      "ott_platform": "Netflix",
-      "platforms": [
-        "Netflix"
-      ],
-      "year_of_release": 2016,
-      "description": "This war drama showcases the untold story of Irish UN troops in Congo, delivering intense action and a reminder of the power of strategic thinking over brute force."
-    },
-    {
-      "id": "62",
-      "title": "American Sniper",
-      "genre": "Action/Biography/True Story",
-      "primary_genre": "Action",
-      "ott_platform": "Netflix, Amazon Prime",
-      "platforms": [
-        "Netflix",
-        "Amazon Prime"
-      ],
-      "year_of_release": 2014,
-      "description": "A Navy SEAL becomes a top sniper in U.S. history."
-    },
-    {
-      "id": "796",
-      "title": "John Wick",
-      "genre": "Action/Thriller",
-      "primary_genre": "Action",
+      "id": "52",
+      "title": "Orion and the Dark",
+      "genre": "Fantasy/Adventure",
+      "primary_genre": "Fantasy",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2014,
-      "description": "An ex-hitman comes out of retirement to track down the gangsters who took everything from him."
+      "year_of_release": 2024,
+      "description": "A fantasy about a young boy who befriends the embodiment of Darkness to overcome his fears."
     },
     {
-      "id": "22",
-      "title": "Khakee",
-      "genre": "Action/Thriller",
-      "primary_genre": "Action",
+      "id": "54",
+      "title": "Nightbooks",
+      "genre": "Fantasy/Horror",
+      "primary_genre": "Fantasy",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2004,
-      "description": "A Hindi action-thriller about a police squad tasked with escorting a terrorist to court."
+      "year_of_release": 2021,
+      "description": "A fantasy-horror about a boy who is captured by a witch and must tell scary stories to survive."
+    },
+    {
+      "id": "46",
+      "title": "Over the Moon",
+      "genre": "Fantasy/Adventure",
+      "primary_genre": "Fantasy",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2020,
+      "description": "An animated fantasy about a girl who builds a rocket to the moon to meet a mythical goddess."
+    },
+    {
+      "id": "48",
+      "title": "The Witches",
+      "genre": "Fantasy/Adventure",
+      "primary_genre": "Fantasy",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2020,
+      "description": "A fantasy film about a boy who stumbles upon a group of witches plotting to turn kids into mice."
+    },
+    {
+      "id": "42",
+      "title": "Arrietty",
+      "genre": "Fantasy/Adventure",
+      "primary_genre": "Fantasy",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2010,
+      "description": "A fantasy film about tiny people living secretly in the walls of a house."
+    },
+    {
+      "id": "34",
+      "title": "Ponyo",
+      "genre": "Fantasy/Adventure",
+      "primary_genre": "Fantasy",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2008,
+      "description": "A magical animated film about a fish who turns into a girl and embarks on an adventure."
     }
   ],
   "cta": {
