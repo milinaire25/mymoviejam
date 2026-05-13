@@ -101,6 +101,12 @@
       "headline": "Best fantasy picks to stream when you want something better than another lazy scroll",
       "family": "evergreen_genre",
       "published_at": "2026-05-12T10:02:54"
+    },
+    {
+      "slug": "best-comedy-picks-to-stream-2",
+      "headline": "Best comedy picks to stream when you want something better than another lazy scroll",
+      "family": "evergreen_genre",
+      "published_at": "2026-05-13T10:03:30"
     }
   ],
   "published_titles": [
@@ -214,7 +220,14 @@
     "Over the Moon",
     "The Witches",
     "Arrietty",
-    "Ponyo"
+    "Ponyo",
+    "Dream Girl",
+    "The Who Was Show",
+    "Bhool Bhulaiyaa",
+    "happy gilmore 1",
+    "two much",
+    "Richie Rich",
+    "Great Indian Kapil Show S 2"
   ],
   "theme_history": [
     {
@@ -301,12 +314,17 @@
       "family": "evergreen_genre",
       "slug": "best-fantasy-picks-to-stream",
       "published_at": "2026-05-12T10:02:54"
+    },
+    {
+      "family": "evergreen_genre",
+      "slug": "best-comedy-picks-to-stream-2",
+      "published_at": "2026-05-13T10:03:30"
     }
   ],
   "next_theme_index": 0,
-  "last_generated_at": "2026-05-12T10:00:13",
+  "last_generated_at": "2026-05-13T10:00:07",
   "notes": "Pipeline state for automated MyMovieJam daily blog generation. Titles are marked only after a post is successfully published.",
-  "last_generated_slug": "best-fantasy-picks-to-stream",
+  "last_generated_slug": "best-comedy-picks-to-stream-2",
   "last_generated_family": "evergreen_genre",
   "last_theme_index_used": 3
 }

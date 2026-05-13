@@ -1,99 +1,105 @@
 {
-  "generated_at": "2026-05-12T10:00:13",
-  "date": "2026-05-12",
-  "readable_date": "May 12, 2026",
+  "generated_at": "2026-05-13T10:00:07",
+  "date": "2026-05-13",
+  "readable_date": "May 13, 2026",
   "family": "evergreen_genre",
-  "headline": "Best fantasy picks to stream when you want something better than another lazy scroll",
-  "slug": "best-fantasy-picks-to-stream",
-  "primary_keyword": "best fantasy picks to stream",
-  "meta_description": "Need better fantasy picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
-  "eyebrow": "Curated List · May 12, 2026",
-  "subtitle": "Featuring harry potter, Orion and the Dark, and Nightbooks — plus more fantasy picks that deserve real attention.",
+  "headline": "Best comedy picks to stream when you want something better than another lazy scroll",
+  "slug": "best-comedy-picks-to-stream-2",
+  "primary_keyword": "best comedy picks to stream",
+  "meta_description": "Need better comedy picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
+  "eyebrow": "Curated List · May 13, 2026",
+  "subtitle": "Featuring Dream Girl, The Who Was Show, and Bhool Bhulaiyaa — plus more comedy picks that deserve real attention.",
   "tags": [
-    "Fantasy",
+    "Comedy",
     "Curated list"
   ],
-  "genre": "Fantasy",
+  "genre": "Comedy",
   "platform": null,
   "year": null,
   "hero_image": {
-    "file": "best-fantasy-picks-to-stream.jpg",
-    "path": "blog/images/best-fantasy-picks-to-stream.jpg",
-    "web_path": "/blog/images/best-fantasy-picks-to-stream.jpg",
-    "eyebrow": "Fantasy",
-    "title": "Best fantasy picks to stream when you want something better than another lazy scroll",
-    "subtitle": "Featuring harry potter, Orion and the Dark, and Nightbooks — plus more fantasy picks that deserve real attention."
+    "file": "best-comedy-picks-to-stream-2.jpg",
+    "path": "blog/images/best-comedy-picks-to-stream-2.jpg",
+    "web_path": "/blog/images/best-comedy-picks-to-stream-2.jpg",
+    "eyebrow": "Comedy",
+    "title": "Best comedy picks to stream when you want something better than another lazy scroll",
+    "subtitle": "Featuring Dream Girl, The Who Was Show, and Bhool Bhulaiyaa — plus more comedy picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "931",
-      "title": "harry potter",
-      "genre": "Fantasy/Adventure",
-      "primary_genre": "Fantasy",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2026,
-      "description": "A young wizard discovers his magical heritage and faces dark forces while attending Hogwarts School of Witchcraft and Wizardry."
+      "id": "2",
+      "title": "Dream Girl",
+      "genre": "Comedy/Hindi",
+      "primary_genre": "Comedy",
+      "ott_platform": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
+      "year_of_release": 2019,
+      "description": "A Hindi comedy about a man with a talent for mimicking female voices."
     },
     {
-      "id": "52",
-      "title": "Orion and the Dark",
-      "genre": "Fantasy/Adventure",
-      "primary_genre": "Fantasy",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2024,
-      "description": "A fantasy about a young boy who befriends the embodiment of Darkness to overcome his fears."
+      "id": "202",
+      "title": "The Who Was Show",
+      "genre": "Comedy/History/Kids",
+      "primary_genre": "Comedy",
+      "ott_platform": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
+      "year_of_release": 2018,
+      "description": "Learn about people who had a big impact on the world in a funny way, Great family watch."
     },
     {
-      "id": "54",
-      "title": "Nightbooks",
-      "genre": "Fantasy/Horror",
-      "primary_genre": "Fantasy",
+      "id": "20",
+      "title": "Bhool Bhulaiyaa",
+      "genre": "Comedy/Horror",
+      "primary_genre": "Comedy",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2021,
-      "description": "A fantasy-horror about a boy who is captured by a witch and must tell scary stories to survive."
+      "year_of_release": 2007,
+      "description": "A Hindi comedy-horror about a psychiatrist trying to solve the mystery of a haunted palace."
     },
     {
-      "id": "46",
-      "title": "Over the Moon",
-      "genre": "Fantasy/Adventure",
-      "primary_genre": "Fantasy",
+      "id": "834",
+      "title": "happy gilmore 1",
+      "genre": "Comedy/Sports",
+      "primary_genre": "Comedy",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2020,
-      "description": "An animated fantasy about a girl who builds a rocket to the moon to meet a mythical goddess."
+      "year_of_release": 1996,
+      "description": "A hockey player turned golfer uses his slap shot to dominate the golf course."
     },
     {
-      "id": "48",
-      "title": "The Witches",
-      "genre": "Fantasy/Adventure",
-      "primary_genre": "Fantasy",
+      "id": "905",
+      "title": "two much",
+      "genre": "Comedy",
+      "primary_genre": "Comedy",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2020,
-      "description": "A fantasy film about a boy who stumbles upon a group of witches plotting to turn kids into mice."
+      "year_of_release": 1995,
+      "description": "The talk show, hosted by Kajol and Twinkle, promises candid conversations."
     },
     {
-      "id": "42",
-      "title": "Arrietty",
-      "genre": "Fantasy/Adventure",
-      "primary_genre": "Fantasy",
+      "id": "51",
+      "title": "Richie Rich",
+      "genre": "Comedy/Family",
+      "primary_genre": "Comedy",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2010,
-      "description": "A fantasy film about tiny people living secretly in the walls of a house."
+      "year_of_release": 1994,
+      "description": "A family comedy about the richest kid in the world and his adventures."
     },
     {
-      "id": "34",
-      "title": "Ponyo",
-      "genre": "Fantasy/Adventure",
-      "primary_genre": "Fantasy",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2008,
-      "description": "A magical animated film about a fish who turns into a girl and embarks on an adventure."
+      "id": "5",
+      "title": "Great Indian Kapil Show S 2",
+      "genre": "Comedy",
+      "primary_genre": "Comedy",
+      "ott_platform": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
+      "year_of_release": null,
+      "description": "The second season of a popular Hindi comedy show featuring stand-up and celebrity interviews."
     }
   ],
   "cta": {
