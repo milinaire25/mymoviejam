@@ -1,105 +1,103 @@
 {
-  "generated_at": "2026-05-13T10:00:07",
-  "date": "2026-05-13",
-  "readable_date": "May 13, 2026",
+  "generated_at": "2026-05-14T10:00:16",
+  "date": "2026-05-14",
+  "readable_date": "May 14, 2026",
   "family": "evergreen_genre",
-  "headline": "Best comedy picks to stream when you want something better than another lazy scroll",
-  "slug": "best-comedy-picks-to-stream-2",
-  "primary_keyword": "best comedy picks to stream",
-  "meta_description": "Need better comedy picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
-  "eyebrow": "Curated List · May 13, 2026",
-  "subtitle": "Featuring Dream Girl, The Who Was Show, and Bhool Bhulaiyaa — plus more comedy picks that deserve real attention.",
+  "headline": "Best thriller picks to stream when you want something better than another lazy scroll",
+  "slug": "best-thriller-picks-to-stream",
+  "primary_keyword": "best thriller picks to stream",
+  "meta_description": "Need better thriller picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
+  "eyebrow": "Curated List · May 14, 2026",
+  "subtitle": "Featuring all the sharks, exterritorial, and straw — plus more thriller picks that deserve real attention.",
   "tags": [
-    "Comedy",
+    "Thriller",
     "Curated list"
   ],
-  "genre": "Comedy",
+  "genre": "Thriller",
   "platform": null,
   "year": null,
   "hero_image": {
-    "file": "best-comedy-picks-to-stream-2.jpg",
-    "path": "blog/images/best-comedy-picks-to-stream-2.jpg",
-    "web_path": "/blog/images/best-comedy-picks-to-stream-2.jpg",
-    "eyebrow": "Comedy",
-    "title": "Best comedy picks to stream when you want something better than another lazy scroll",
-    "subtitle": "Featuring Dream Girl, The Who Was Show, and Bhool Bhulaiyaa — plus more comedy picks that deserve real attention."
+    "file": "best-thriller-picks-to-stream.jpg",
+    "path": "blog/images/best-thriller-picks-to-stream.jpg",
+    "web_path": "/blog/images/best-thriller-picks-to-stream.jpg",
+    "eyebrow": "Thriller",
+    "title": "Best thriller picks to stream when you want something better than another lazy scroll",
+    "subtitle": "Featuring all the sharks, exterritorial, and straw — plus more thriller picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "2",
-      "title": "Dream Girl",
-      "genre": "Comedy/Hindi",
-      "primary_genre": "Comedy",
+      "id": "831",
+      "title": "all the sharks",
+      "genre": "Thriller/Action",
+      "primary_genre": "Thriller",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2025,
+      "description": "Action thriller involving dangerous encounters with sharks."
+    },
+    {
+      "id": "664",
+      "title": "exterritorial",
+      "genre": "Thriller/Drama",
+      "primary_genre": "Thriller",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2025,
+      "description": "A political thriller exploring diplomatic immunity and international law complexities."
+    },
+    {
+      "id": "797",
+      "title": "straw",
+      "genre": "Thriller/Drama",
+      "primary_genre": "Thriller",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2025,
+      "description": "A psychological thriller about seemingly small decisions that lead to life-changing consequences."
+    },
+    {
+      "id": "9",
+      "title": "Maharaja",
+      "genre": "Thriller",
+      "primary_genre": "Thriller",
       "ott_platform": "Netflix",
       "platforms": [
         "Netflix"
       ],
-      "year_of_release": 2019,
-      "description": "A Hindi comedy about a man with a talent for mimicking female voices."
+      "year_of_release": 2024,
+      "description": "A gripping Tamil thriller about a desperate father challenging both gangsters and police to find justice."
     },
     {
-      "id": "202",
-      "title": "The Who Was Show",
-      "genre": "Comedy/History/Kids",
-      "primary_genre": "Comedy",
+      "id": "25",
+      "title": "IC814",
+      "genre": "Thriller",
+      "primary_genre": "Thriller",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2024,
+      "description": "A Hindi thriller based on the real-life hijacking of Indian Airlines Flight IC814."
+    },
+    {
+      "id": "4",
+      "title": "Chor Nikal ke Bhaga",
+      "genre": "Thriller",
+      "primary_genre": "Thriller",
       "ott_platform": "Netflix",
       "platforms": [
         "Netflix"
       ],
-      "year_of_release": 2018,
-      "description": "Learn about people who had a big impact on the world in a funny way, Great family watch."
+      "year_of_release": 2023,
+      "description": "A thrilling Hindi heist movie with unexpected twists and turns."
     },
     {
-      "id": "20",
-      "title": "Bhool Bhulaiyaa",
-      "genre": "Comedy/Horror",
-      "primary_genre": "Comedy",
+      "id": "16",
+      "title": "Jaanejaan",
+      "genre": "Thriller",
+      "primary_genre": "Thriller",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2007,
-      "description": "A Hindi comedy-horror about a psychiatrist trying to solve the mystery of a haunted palace."
-    },
-    {
-      "id": "834",
-      "title": "happy gilmore 1",
-      "genre": "Comedy/Sports",
-      "primary_genre": "Comedy",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 1996,
-      "description": "A hockey player turned golfer uses his slap shot to dominate the golf course."
-    },
-    {
-      "id": "905",
-      "title": "two much",
-      "genre": "Comedy",
-      "primary_genre": "Comedy",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 1995,
-      "description": "The talk show, hosted by Kajol and Twinkle, promises candid conversations."
-    },
-    {
-      "id": "51",
-      "title": "Richie Rich",
-      "genre": "Comedy/Family",
-      "primary_genre": "Comedy",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 1994,
-      "description": "A family comedy about the richest kid in the world and his adventures."
-    },
-    {
-      "id": "5",
-      "title": "Great Indian Kapil Show S 2",
-      "genre": "Comedy",
-      "primary_genre": "Comedy",
-      "ott_platform": "Netflix",
-      "platforms": [
-        "Netflix"
-      ],
-      "year_of_release": null,
-      "description": "The second season of a popular Hindi comedy show featuring stand-up and celebrity interviews."
+      "year_of_release": 2023,
+      "description": "A Hindi thriller revolving around suspense and hidden secrets."
     }
   ],
   "cta": {
