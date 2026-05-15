@@ -1,103 +1,101 @@
 {
-  "generated_at": "2026-05-14T10:00:16",
-  "date": "2026-05-14",
-  "readable_date": "May 14, 2026",
+  "generated_at": "2026-05-15T10:00:09",
+  "date": "2026-05-15",
+  "readable_date": "May 15, 2026",
   "family": "evergreen_genre",
-  "headline": "Best thriller picks to stream when you want something better than another lazy scroll",
-  "slug": "best-thriller-picks-to-stream",
-  "primary_keyword": "best thriller picks to stream",
-  "meta_description": "Need better thriller picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
-  "eyebrow": "Curated List · May 14, 2026",
-  "subtitle": "Featuring all the sharks, exterritorial, and straw — plus more thriller picks that deserve real attention.",
+  "headline": "Best adventure picks to stream when you want something better than another lazy scroll",
+  "slug": "best-adventure-picks-to-stream",
+  "primary_keyword": "best adventure picks to stream",
+  "meta_description": "Need better adventure picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
+  "eyebrow": "Curated List · May 15, 2026",
+  "subtitle": "Featuring The Monkey King, True Spirit, and The Sea Beast — plus more adventure picks that deserve real attention.",
   "tags": [
-    "Thriller",
+    "Adventure",
     "Curated list"
   ],
-  "genre": "Thriller",
+  "genre": "Adventure",
   "platform": null,
   "year": null,
   "hero_image": {
-    "file": "best-thriller-picks-to-stream.jpg",
-    "path": "blog/images/best-thriller-picks-to-stream.jpg",
-    "web_path": "/blog/images/best-thriller-picks-to-stream.jpg",
-    "eyebrow": "Thriller",
-    "title": "Best thriller picks to stream when you want something better than another lazy scroll",
-    "subtitle": "Featuring all the sharks, exterritorial, and straw — plus more thriller picks that deserve real attention."
+    "file": "best-adventure-picks-to-stream.jpg",
+    "path": "blog/images/best-adventure-picks-to-stream.jpg",
+    "web_path": "/blog/images/best-adventure-picks-to-stream.jpg",
+    "eyebrow": "Adventure",
+    "title": "Best adventure picks to stream when you want something better than another lazy scroll",
+    "subtitle": "Featuring The Monkey King, True Spirit, and The Sea Beast — plus more adventure picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "831",
-      "title": "all the sharks",
-      "genre": "Thriller/Action",
-      "primary_genre": "Thriller",
+      "id": "33",
+      "title": "The Monkey King",
+      "genre": "Adventure/Animation",
+      "primary_genre": "Adventure",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2025,
-      "description": "Action thriller involving dangerous encounters with sharks."
+      "year_of_release": 2023,
+      "description": "An animated adventure based on the legendary Monkey King from Chinese folklore."
     },
     {
-      "id": "664",
-      "title": "exterritorial",
-      "genre": "Thriller/Drama",
-      "primary_genre": "Thriller",
+      "id": "40",
+      "title": "True Spirit",
+      "genre": "Adventure/Drama",
+      "primary_genre": "Adventure",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2025,
-      "description": "A political thriller exploring diplomatic immunity and international law complexities."
+      "year_of_release": 2023,
+      "description": "A drama about a young girl setting out to become the youngest person to sail solo around the world."
     },
     {
-      "id": "797",
-      "title": "straw",
-      "genre": "Thriller/Drama",
-      "primary_genre": "Thriller",
+      "id": "36",
+      "title": "The Sea Beast",
+      "genre": "Adventure/Animation",
+      "primary_genre": "Adventure",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2025,
-      "description": "A psychological thriller about seemingly small decisions that lead to life-changing consequences."
+      "year_of_release": 2022,
+      "description": "An animated adventure about a legendary sea monster hunter who finds an unlikely friend."
     },
     {
-      "id": "9",
-      "title": "Maharaja",
-      "genre": "Thriller",
-      "primary_genre": "Thriller",
+      "id": "906",
+      "title": "do little",
+      "genre": "Adventure, Family, Kids",
+      "primary_genre": "Adventure",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2020,
+      "description": "A veterinarian who talks to animals embarks on a whimsical journey."
+    },
+    {
+      "id": "28",
+      "title": "Hilda",
+      "genre": "Adventure/Animation",
+      "primary_genre": "Adventure",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2018,
+      "description": "An animated series about a fearless girl exploring a magical world full of creatures."
+    },
+    {
+      "id": "85",
+      "title": "Jungle",
+      "genre": "Adventure/Drama/True Story",
+      "primary_genre": "Adventure",
       "ott_platform": "Netflix",
       "platforms": [
         "Netflix"
       ],
-      "year_of_release": 2024,
-      "description": "A gripping Tamil thriller about a desperate father challenging both gangsters and police to find justice."
+      "year_of_release": 2017,
+      "description": "A man survives the Amazon rainforest alone."
     },
     {
-      "id": "25",
-      "title": "IC814",
-      "genre": "Thriller",
-      "primary_genre": "Thriller",
+      "id": "55",
+      "title": "Mogawli",
+      "genre": "Adventure/Family",
+      "primary_genre": "Adventure",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2024,
-      "description": "A Hindi thriller based on the real-life hijacking of Indian Airlines Flight IC814."
-    },
-    {
-      "id": "4",
-      "title": "Chor Nikal ke Bhaga",
-      "genre": "Thriller",
-      "primary_genre": "Thriller",
-      "ott_platform": "Netflix",
-      "platforms": [
-        "Netflix"
-      ],
-      "year_of_release": 2023,
-      "description": "A thrilling Hindi heist movie with unexpected twists and turns."
-    },
-    {
-      "id": "16",
-      "title": "Jaanejaan",
-      "genre": "Thriller",
-      "primary_genre": "Thriller",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2023,
-      "description": "A Hindi thriller revolving around suspense and hidden secrets."
+      "year_of_release": null,
+      "description": "An adventure film about a boy raised by wolves in the jungle, based on 'The Jungle Book'."
     }
   ],
   "cta": {

@@ -113,6 +113,12 @@
       "headline": "Best thriller picks to stream when you want something better than another lazy scroll",
       "family": "evergreen_genre",
       "published_at": "2026-05-14T10:04:00"
+    },
+    {
+      "slug": "best-adventure-picks-to-stream",
+      "headline": "Best adventure picks to stream when you want something better than another lazy scroll",
+      "family": "evergreen_genre",
+      "published_at": "2026-05-15T10:03:25"
     }
   ],
   "published_titles": [
@@ -240,7 +246,14 @@
     "Maharaja",
     "IC814",
     "Chor Nikal ke Bhaga",
-    "Jaanejaan"
+    "Jaanejaan",
+    "The Monkey King",
+    "True Spirit",
+    "The Sea Beast",
+    "do little",
+    "Hilda",
+    "Jungle",
+    "Mogawli"
   ],
   "theme_history": [
     {
@@ -337,12 +350,17 @@
       "family": "evergreen_genre",
       "slug": "best-thriller-picks-to-stream",
       "published_at": "2026-05-14T10:04:00"
+    },
+    {
+      "family": "evergreen_genre",
+      "slug": "best-adventure-picks-to-stream",
+      "published_at": "2026-05-15T10:03:25"
     }
   ],
   "next_theme_index": 0,
-  "last_generated_at": "2026-05-14T10:00:16",
+  "last_generated_at": "2026-05-15T10:00:09",
   "notes": "Pipeline state for automated MyMovieJam daily blog generation. Titles are marked only after a post is successfully published.",
-  "last_generated_slug": "best-thriller-picks-to-stream",
+  "last_generated_slug": "best-adventure-picks-to-stream",
   "last_generated_family": "evergreen_genre",
   "last_theme_index_used": 3
 }
