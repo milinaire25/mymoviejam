@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The Punisher: One Last Kill review artwork</title>
+  <desc id="desc">Dark red review card for The Punisher: One Last Kill with MyMovieJam rating 5 out of 10 and clear skip verdict.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="52%" stop-color="#1f1115"/>
+      <stop offset="100%" stop-color="#5b1016"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" rx="48"/>
+  <rect x="74" y="70" width="1452" height="760" rx="36" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="120" y="180" fill="#86efac" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="5">MYMOVIEJAM REVIEW</text>
+  <text x="120" y="320" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="86" font-weight="900">THE PUNISHER:</text>
+  <text x="120" y="415" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="86" font-weight="900">ONE LAST KILL</text>
+  <rect x="120" y="470" width="510" height="8" rx="4" fill="url(#line)"/>
+  <text x="120" y="560" fill="#fca5a5" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="700">Brutal action. Thin story. Clear no.</text>
+  <text x="120" y="640" fill="#e5e7eb" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="500">Bernthal still works. The special doesn’t.</text>
+  <rect x="1120" y="150" width="290" height="290" rx="36" fill="#ffffff" opacity="0.08"/>
+  <text x="1265" y="265" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700">MYMOVIEJAM</text>
+  <text x="1265" y="360" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="120" font-weight="900">5/10</text>
+  <text x="1265" y="414" text-anchor="middle" fill="#fecaca" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">AVERAGE · SKIP</text>
+  <text x="120" y="760" fill="#d1d5db" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="500">Disney+ review · audience-first verdict · no sugarcoating</text>
+</svg>
