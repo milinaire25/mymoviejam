@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-05-16T10:00:11",
-  "date": "2026-05-16",
-  "readable_date": "May 16, 2026",
+  "generated_at": "2026-05-17T10:00:09",
+  "date": "2026-05-17",
+  "readable_date": "May 17, 2026",
   "family": "evergreen_genre",
-  "headline": "Best crime picks to stream when you want something better than another lazy scroll",
-  "slug": "best-crime-picks-to-stream-2",
-  "primary_keyword": "best crime picks to stream",
-  "meta_description": "Need better crime picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
-  "eyebrow": "Curated List · May 16, 2026",
-  "subtitle": "Featuring narcos, American Hustle, and The Investigator — plus more crime picks that deserve real attention.",
+  "headline": "Best horror picks to stream when you want something better than another lazy scroll",
+  "slug": "best-horror-picks-to-stream",
+  "primary_keyword": "best horror picks to stream",
+  "meta_description": "Need better horror picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
+  "eyebrow": "Curated List · May 17, 2026",
+  "subtitle": "Featuring frankenstein, Thamma, and Dont Come Home — plus more horror picks that deserve real attention.",
   "tags": [
-    "Crime",
+    "Horror",
     "Curated list"
   ],
-  "genre": "Crime",
+  "genre": "Horror",
   "platform": null,
   "year": null,
   "hero_image": {
-    "file": "best-crime-picks-to-stream-2.jpg",
-    "path": "blog/images/best-crime-picks-to-stream-2.jpg",
-    "web_path": "/blog/images/best-crime-picks-to-stream-2.jpg",
-    "eyebrow": "Crime",
-    "title": "Best crime picks to stream when you want something better than another lazy scroll",
-    "subtitle": "Featuring narcos, American Hustle, and The Investigator — plus more crime picks that deserve real attention."
+    "file": "best-horror-picks-to-stream.jpg",
+    "path": "blog/images/best-horror-picks-to-stream.jpg",
+    "web_path": "/blog/images/best-horror-picks-to-stream.jpg",
+    "eyebrow": "Horror",
+    "title": "Best horror picks to stream when you want something better than another lazy scroll",
+    "subtitle": "Featuring frankenstein, Thamma, and Dont Come Home — plus more horror picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "898",
-      "title": "narcos",
-      "genre": "Crime, Drama",
-      "primary_genre": "Crime",
+      "id": "929",
+      "title": "frankenstein",
+      "genre": "Horror/Gothic",
+      "primary_genre": "Horror",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2015,
-      "description": "The rise and fall of drug cartels in Colombia and their global impact."
+      "year_of_release": 2025,
+      "description": "A scientist creates a living creature from dead body parts, leading to tragic consequences as the monster seeks acceptance and identity."
     },
     {
-      "id": "61",
-      "title": "American Hustle",
-      "genre": "Crime/Drama/True Story",
-      "primary_genre": "Crime",
+      "id": "927",
+      "title": "Thamma",
+      "genre": "Horror",
+      "primary_genre": "Horror",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2013,
-      "description": "A con artist helps the FBI uncover corruption."
+      "year_of_release": 2025,
+      "description": "A chilling horror film that follows eerie supernatural events surrounding a mysterious figure known as Thamma. The story blends atmospheric tension, psychological fear, and unsettling twists that keep viewers on edge."
     },
     {
-      "id": "27",
-      "title": "The Investigator",
-      "genre": "Crime/Drama",
-      "primary_genre": "Crime",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2013,
-      "description": "A crime drama centered around a detective solving complex cases."
-    },
-    {
-      "id": "68",
-      "title": "Catch Me If You Can",
-      "genre": "Crime/Drama/True Story",
-      "primary_genre": "Crime",
+      "id": "232",
+      "title": "Dont Come Home",
+      "genre": "Horror",
+      "primary_genre": "Horror",
       "ott_platform": "Netflix",
       "platforms": [
         "Netflix"
       ],
-      "year_of_release": 2002,
-      "description": "A con artist evades the FBI with clever tricks."
+      "year_of_release": 2024,
+      "description": "Dive into the eerie world where a mothers search for her vanished daughter in their ancestral home unveils chilling family secrets."
     },
     {
-      "id": "76",
-      "title": "Goodfellas",
-      "genre": "Crime/Drama/True Story",
-      "primary_genre": "Crime",
+      "id": "101",
+      "title": "The Conjuring",
+      "genre": "Horror/Mystery/Thriller",
+      "primary_genre": "Horror",
       "ott_platform": "Netflix",
       "platforms": [
         "Netflix"
       ],
-      "year_of_release": 1990,
-      "description": "A man's life in the mob unfolds over decades."
+      "year_of_release": 2013,
+      "description": "Paranormal investigators help a family terrorized by a dark presence in their home."
     },
     {
-      "id": "430",
-      "title": "khakee bengal chapter",
-      "genre": "Crime/Drama",
-      "primary_genre": "Crime",
+      "id": "932",
+      "title": "halloween",
+      "genre": "Horror/Slasher",
+      "primary_genre": "Horror",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 1978,
+      "description": "A masked killer, Michael Myers, returns to terrorize a quiet town on Halloween night in this iconic slasher classic."
+    },
+    {
+      "id": "1058",
+      "title": "something bad is going to happen",
+      "genre": "Horror/Thriller",
+      "primary_genre": "Horror",
       "ott_platform": "",
       "platforms": [],
       "year_of_release": null,
-      "description": "Based on true events, Khakee: The Bengal Chapter follows the journey of a courageous police officer as he tackles organized crime in Bihar and Bengal during the early 2000s."
+      "description": "A tense psychological thriller where a looming sense of dread builds into a chilling reality."
     }
   ],
   "cta": {
