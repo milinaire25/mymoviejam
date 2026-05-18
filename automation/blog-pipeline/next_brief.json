@@ -1,93 +1,83 @@
 {
-  "generated_at": "2026-05-17T10:00:09",
-  "date": "2026-05-17",
-  "readable_date": "May 17, 2026",
+  "generated_at": "2026-05-18T10:00:10",
+  "date": "2026-05-18",
+  "readable_date": "May 18, 2026",
   "family": "evergreen_genre",
-  "headline": "Best horror picks to stream when you want something better than another lazy scroll",
-  "slug": "best-horror-picks-to-stream",
-  "primary_keyword": "best horror picks to stream",
-  "meta_description": "Need better horror picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
-  "eyebrow": "Curated List · May 17, 2026",
-  "subtitle": "Featuring frankenstein, Thamma, and Dont Come Home — plus more horror picks that deserve real attention.",
+  "headline": "Best action picks to stream when you want something better than another lazy scroll",
+  "slug": "best-action-picks-to-stream-3",
+  "primary_keyword": "best action picks to stream",
+  "meta_description": "Need better action picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
+  "eyebrow": "Curated List · May 18, 2026",
+  "subtitle": "Featuring Black Hawk Down, Paatal lok Season 2, and durandhar 1 — plus more action picks that deserve real attention.",
   "tags": [
-    "Horror",
+    "Action",
     "Curated list"
   ],
-  "genre": "Horror",
+  "genre": "Action",
   "platform": null,
   "year": null,
   "hero_image": {
-    "file": "best-horror-picks-to-stream.jpg",
-    "path": "blog/images/best-horror-picks-to-stream.jpg",
-    "web_path": "/blog/images/best-horror-picks-to-stream.jpg",
-    "eyebrow": "Horror",
-    "title": "Best horror picks to stream when you want something better than another lazy scroll",
-    "subtitle": "Featuring frankenstein, Thamma, and Dont Come Home — plus more horror picks that deserve real attention."
+    "file": "best-action-picks-to-stream-3.jpg",
+    "path": "blog/images/best-action-picks-to-stream-3.jpg",
+    "web_path": "/blog/images/best-action-picks-to-stream-3.jpg",
+    "eyebrow": "Action",
+    "title": "Best action picks to stream when you want something better than another lazy scroll",
+    "subtitle": "Featuring Black Hawk Down, Paatal lok Season 2, and durandhar 1 — plus more action picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "929",
-      "title": "frankenstein",
-      "genre": "Horror/Gothic",
-      "primary_genre": "Horror",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2025,
-      "description": "A scientist creates a living creature from dead body parts, leading to tragic consequences as the monster seeks acceptance and identity."
-    },
-    {
-      "id": "927",
-      "title": "Thamma",
-      "genre": "Horror",
-      "primary_genre": "Horror",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2025,
-      "description": "A chilling horror film that follows eerie supernatural events surrounding a mysterious figure known as Thamma. The story blends atmospheric tension, psychological fear, and unsettling twists that keep viewers on edge."
-    },
-    {
-      "id": "232",
-      "title": "Dont Come Home",
-      "genre": "Horror",
-      "primary_genre": "Horror",
-      "ott_platform": "Netflix",
+      "id": "64",
+      "title": "Black Hawk Down",
+      "genre": "Action/War/True Story",
+      "primary_genre": "Action",
+      "ott_platform": "Amazon Prime",
       "platforms": [
-        "Netflix"
+        "Amazon Prime"
       ],
-      "year_of_release": 2024,
-      "description": "Dive into the eerie world where a mothers search for her vanished daughter in their ancestral home unveils chilling family secrets."
+      "year_of_release": 2001,
+      "description": "U.S. soldiers face a deadly mission in Somalia."
     },
     {
-      "id": "101",
-      "title": "The Conjuring",
-      "genre": "Horror/Mystery/Thriller",
-      "primary_genre": "Horror",
-      "ott_platform": "Netflix",
+      "id": "269",
+      "title": "Paatal lok Season 2",
+      "genre": "Action",
+      "primary_genre": "Action",
+      "ott_platform": "Amazon Prime",
       "platforms": [
-        "Netflix"
+        "Amazon Prime"
       ],
-      "year_of_release": 2013,
-      "description": "Paranormal investigators help a family terrorized by a dark presence in their home."
+      "year_of_release": null,
+      "description": "Hathi Ram, a weary cop, probes a murder in North-East India, facing power and loss in his quest for truth."
     },
     {
-      "id": "932",
-      "title": "halloween",
-      "genre": "Horror/Slasher",
-      "primary_genre": "Horror",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 1978,
-      "description": "A masked killer, Michael Myers, returns to terrorize a quiet town on Halloween night in this iconic slasher classic."
-    },
-    {
-      "id": "1058",
-      "title": "something bad is going to happen",
-      "genre": "Horror/Thriller",
-      "primary_genre": "Horror",
+      "id": "1061",
+      "title": "durandhar 1",
+      "genre": "Action/Drama",
+      "primary_genre": "Action",
       "ott_platform": "",
       "platforms": [],
       "year_of_release": null,
-      "description": "A tense psychological thriller where a looming sense of dread builds into a chilling reality."
+      "description": "A powerful Indian action drama about courage, justice, and a man rising against all odds."
+    },
+    {
+      "id": "826",
+      "title": "rangastalam",
+      "genre": "Action/Drama",
+      "primary_genre": "Action",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": null,
+      "description": "A partially deaf man fights against corruption and injustice in his village in this critically acclaimed Telugu period drama."
+    },
+    {
+      "id": "761",
+      "title": "stolen hindi ap",
+      "genre": "Action/Thriller",
+      "primary_genre": "Action",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": null,
+      "description": "Two brothers witness a baby being kidnapped at a railway station."
     }
   ],
   "cta": {

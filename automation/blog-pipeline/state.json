@@ -131,6 +131,12 @@
       "headline": "Best horror picks to stream when you want something better than another lazy scroll",
       "family": "evergreen_genre",
       "published_at": "2026-05-17T10:02:31"
+    },
+    {
+      "slug": "best-action-picks-to-stream-3",
+      "headline": "Best action picks to stream when you want something better than another lazy scroll",
+      "family": "evergreen_genre",
+      "published_at": "2026-05-18T10:03:02"
     }
   ],
   "published_titles": [
@@ -277,7 +283,12 @@
     "Dont Come Home",
     "The Conjuring",
     "halloween",
-    "something bad is going to happen"
+    "something bad is going to happen",
+    "Black Hawk Down",
+    "Paatal lok Season 2",
+    "durandhar 1",
+    "rangastalam",
+    "stolen hindi ap"
   ],
   "theme_history": [
     {
@@ -389,12 +400,17 @@
       "family": "evergreen_genre",
       "slug": "best-horror-picks-to-stream",
       "published_at": "2026-05-17T10:02:31"
+    },
+    {
+      "family": "evergreen_genre",
+      "slug": "best-action-picks-to-stream-3",
+      "published_at": "2026-05-18T10:03:02"
     }
   ],
   "next_theme_index": 0,
-  "last_generated_at": "2026-05-17T10:00:09",
+  "last_generated_at": "2026-05-18T10:00:10",
   "notes": "Pipeline state for automated MyMovieJam daily blog generation. Titles are marked only after a post is successfully published.",
-  "last_generated_slug": "best-horror-picks-to-stream",
+  "last_generated_slug": "best-action-picks-to-stream-3",
   "last_generated_family": "evergreen_genre",
   "last_theme_index_used": 3
 }
