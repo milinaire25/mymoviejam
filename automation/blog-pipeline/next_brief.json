@@ -1,83 +1,79 @@
 {
-  "generated_at": "2026-05-18T10:00:10",
-  "date": "2026-05-18",
-  "readable_date": "May 18, 2026",
+  "generated_at": "2026-05-19T10:00:12",
+  "date": "2026-05-19",
+  "readable_date": "May 19, 2026",
   "family": "evergreen_genre",
-  "headline": "Best action picks to stream when you want something better than another lazy scroll",
-  "slug": "best-action-picks-to-stream-3",
-  "primary_keyword": "best action picks to stream",
-  "meta_description": "Need better action picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
-  "eyebrow": "Curated List · May 18, 2026",
-  "subtitle": "Featuring Black Hawk Down, Paatal lok Season 2, and durandhar 1 — plus more action picks that deserve real attention.",
+  "headline": "Best documentary picks to stream when you want something better than another lazy scroll",
+  "slug": "best-documentary-picks-to-stream",
+  "primary_keyword": "best documentary picks to stream",
+  "meta_description": "Need better documentary picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
+  "eyebrow": "Curated List · May 19, 2026",
+  "subtitle": "Featuring pangolin kulu’s journey, Inside the Mind of a Dog, and Backyard Wilderness — plus more documentary picks that deserve real attention.",
   "tags": [
-    "Action",
+    "Documentary",
     "Curated list"
   ],
-  "genre": "Action",
+  "genre": "Documentary",
   "platform": null,
   "year": null,
   "hero_image": {
-    "file": "best-action-picks-to-stream-3.jpg",
-    "path": "blog/images/best-action-picks-to-stream-3.jpg",
-    "web_path": "/blog/images/best-action-picks-to-stream-3.jpg",
-    "eyebrow": "Action",
-    "title": "Best action picks to stream when you want something better than another lazy scroll",
-    "subtitle": "Featuring Black Hawk Down, Paatal lok Season 2, and durandhar 1 — plus more action picks that deserve real attention."
+    "file": "best-documentary-picks-to-stream.jpg",
+    "path": "blog/images/best-documentary-picks-to-stream.jpg",
+    "web_path": "/blog/images/best-documentary-picks-to-stream.jpg",
+    "eyebrow": "Documentary",
+    "title": "Best documentary picks to stream when you want something better than another lazy scroll",
+    "subtitle": "Featuring pangolin kulu’s journey, Inside the Mind of a Dog, and Backyard Wilderness — plus more documentary picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "64",
-      "title": "Black Hawk Down",
-      "genre": "Action/War/True Story",
-      "primary_genre": "Action",
-      "ott_platform": "Amazon Prime",
-      "platforms": [
-        "Amazon Prime"
-      ],
-      "year_of_release": 2001,
-      "description": "U.S. soldiers face a deadly mission in Somalia."
-    },
-    {
-      "id": "269",
-      "title": "Paatal lok Season 2",
-      "genre": "Action",
-      "primary_genre": "Action",
-      "ott_platform": "Amazon Prime",
-      "platforms": [
-        "Amazon Prime"
-      ],
-      "year_of_release": null,
-      "description": "Hathi Ram, a weary cop, probes a murder in North-East India, facing power and loss in his quest for truth."
-    },
-    {
-      "id": "1061",
-      "title": "durandhar 1",
-      "genre": "Action/Drama",
-      "primary_genre": "Action",
+      "id": "496",
+      "title": "pangolin kulu’s journey",
+      "genre": "Documentary",
+      "primary_genre": "Documentary",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": null,
-      "description": "A powerful Indian action drama about courage, justice, and a man rising against all odds."
+      "year_of_release": 2025,
+      "description": "A heartwarming documentary following Kulu, a rescued pangolin, as conservationists help rehabilitate and return the endangered animal back to the wild."
     },
     {
-      "id": "826",
-      "title": "rangastalam",
-      "genre": "Action/Drama",
-      "primary_genre": "Action",
+      "id": "50",
+      "title": "Inside the Mind of a Dog",
+      "genre": "Documentary",
+      "primary_genre": "Documentary",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": null,
-      "description": "A partially deaf man fights against corruption and injustice in his village in this critically acclaimed Telugu period drama."
+      "year_of_release": 2024,
+      "description": "A documentary exploring how dogs think, learn, and interact with humans."
     },
     {
-      "id": "761",
-      "title": "stolen hindi ap",
-      "genre": "Action/Thriller",
-      "primary_genre": "Action",
+      "id": "49",
+      "title": "Backyard Wilderness",
+      "genre": "Documentary",
+      "primary_genre": "Documentary",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": null,
-      "description": "Two brothers witness a baby being kidnapped at a railway station."
+      "year_of_release": 2018,
+      "description": "A documentary about the hidden wonders of nature right in our own backyards."
+    },
+    {
+      "id": "995",
+      "title": "free solo",
+      "genre": "Documentary/Adventure",
+      "primary_genre": "Documentary",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2018,
+      "description": "Climb. Fearless. Silence. Survival."
+    },
+    {
+      "id": "909",
+      "title": "senna",
+      "genre": "Documentary/Sport",
+      "primary_genre": "Documentary",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2010,
+      "description": "A moving and immersive documentary that chronicles the rise and tragic death of Brazilian Formula One racing champion Ayrton Senna, told almost entirely through archival footage and his own voice."
     }
   ],
   "cta": {
