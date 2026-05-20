@@ -143,6 +143,12 @@
       "headline": "Best documentary picks to stream when you want something better than another lazy scroll",
       "family": "evergreen_genre",
       "published_at": "2026-05-19T10:03:41"
+    },
+    {
+      "slug": "best-fantasy-picks-to-stream-2",
+      "headline": "Best fantasy picks to stream when you want something better than another lazy scroll",
+      "family": "evergreen_genre",
+      "published_at": "2026-05-20T10:03:07"
     }
   ],
   "published_titles": [
@@ -299,7 +305,12 @@
     "Inside the Mind of a Dog",
     "Backyard Wilderness",
     "free solo",
-    "senna"
+    "senna",
+    "Charlie and the Chocolate Factory",
+    "Sharkboy and Lavagirl",
+    "Spirited Away",
+    "Worst Witch",
+    "My Neighbor Totoro"
   ],
   "theme_history": [
     {
@@ -421,12 +432,17 @@
       "family": "evergreen_genre",
       "slug": "best-documentary-picks-to-stream",
       "published_at": "2026-05-19T10:03:41"
+    },
+    {
+      "family": "evergreen_genre",
+      "slug": "best-fantasy-picks-to-stream-2",
+      "published_at": "2026-05-20T10:03:07"
     }
   ],
   "next_theme_index": 0,
-  "last_generated_at": "2026-05-19T10:00:12",
+  "last_generated_at": "2026-05-20T10:00:11",
   "notes": "Pipeline state for automated MyMovieJam daily blog generation. Titles are marked only after a post is successfully published.",
-  "last_generated_slug": "best-documentary-picks-to-stream",
+  "last_generated_slug": "best-fantasy-picks-to-stream-2",
   "last_generated_family": "evergreen_genre",
   "last_theme_index_used": 3
 }

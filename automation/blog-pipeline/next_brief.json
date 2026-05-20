@@ -1,79 +1,79 @@
 {
-  "generated_at": "2026-05-19T10:00:12",
-  "date": "2026-05-19",
-  "readable_date": "May 19, 2026",
+  "generated_at": "2026-05-20T10:00:11",
+  "date": "2026-05-20",
+  "readable_date": "May 20, 2026",
   "family": "evergreen_genre",
-  "headline": "Best documentary picks to stream when you want something better than another lazy scroll",
-  "slug": "best-documentary-picks-to-stream",
-  "primary_keyword": "best documentary picks to stream",
-  "meta_description": "Need better documentary picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
-  "eyebrow": "Curated List · May 19, 2026",
-  "subtitle": "Featuring pangolin kulu’s journey, Inside the Mind of a Dog, and Backyard Wilderness — plus more documentary picks that deserve real attention.",
+  "headline": "Best fantasy picks to stream when you want something better than another lazy scroll",
+  "slug": "best-fantasy-picks-to-stream-2",
+  "primary_keyword": "best fantasy picks to stream",
+  "meta_description": "Need better fantasy picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
+  "eyebrow": "Curated List · May 20, 2026",
+  "subtitle": "Featuring Charlie and the Chocolate Factory, Sharkboy and Lavagirl, and Spirited Away — plus more fantasy picks that deserve real attention.",
   "tags": [
-    "Documentary",
+    "Fantasy",
     "Curated list"
   ],
-  "genre": "Documentary",
+  "genre": "Fantasy",
   "platform": null,
   "year": null,
   "hero_image": {
-    "file": "best-documentary-picks-to-stream.jpg",
-    "path": "blog/images/best-documentary-picks-to-stream.jpg",
-    "web_path": "/blog/images/best-documentary-picks-to-stream.jpg",
-    "eyebrow": "Documentary",
-    "title": "Best documentary picks to stream when you want something better than another lazy scroll",
-    "subtitle": "Featuring pangolin kulu’s journey, Inside the Mind of a Dog, and Backyard Wilderness — plus more documentary picks that deserve real attention."
+    "file": "best-fantasy-picks-to-stream-2.jpg",
+    "path": "blog/images/best-fantasy-picks-to-stream-2.jpg",
+    "web_path": "/blog/images/best-fantasy-picks-to-stream-2.jpg",
+    "eyebrow": "Fantasy",
+    "title": "Best fantasy picks to stream when you want something better than another lazy scroll",
+    "subtitle": "Featuring Charlie and the Chocolate Factory, Sharkboy and Lavagirl, and Spirited Away — plus more fantasy picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "496",
-      "title": "pangolin kulu’s journey",
-      "genre": "Documentary",
-      "primary_genre": "Documentary",
+      "id": "30",
+      "title": "Charlie and the Chocolate Factory",
+      "genre": "Fantasy/Family",
+      "primary_genre": "Fantasy",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2025,
-      "description": "A heartwarming documentary following Kulu, a rescued pangolin, as conservationists help rehabilitate and return the endangered animal back to the wild."
+      "year_of_release": 2005,
+      "description": "A fantasy about a boy's adventure in a magical chocolate factory."
     },
     {
-      "id": "50",
-      "title": "Inside the Mind of a Dog",
-      "genre": "Documentary",
-      "primary_genre": "Documentary",
+      "id": "41",
+      "title": "Sharkboy and Lavagirl",
+      "genre": "Fantasy/Adventure",
+      "primary_genre": "Fantasy",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2024,
-      "description": "A documentary exploring how dogs think, learn, and interact with humans."
+      "year_of_release": 2005,
+      "description": "A fantasy adventure about a boy's dream world where his superheroes come to life."
     },
     {
-      "id": "49",
-      "title": "Backyard Wilderness",
-      "genre": "Documentary",
-      "primary_genre": "Documentary",
+      "id": "37",
+      "title": "Spirited Away",
+      "genre": "Fantasy/Adventure",
+      "primary_genre": "Fantasy",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2018,
-      "description": "A documentary about the hidden wonders of nature right in our own backyards."
+      "year_of_release": 2001,
+      "description": "An animated fantasy about a girl trapped in a magical world and her quest to return home."
     },
     {
-      "id": "995",
-      "title": "free solo",
-      "genre": "Documentary/Adventure",
-      "primary_genre": "Documentary",
+      "id": "29",
+      "title": "Worst Witch",
+      "genre": "Fantasy/Adventure",
+      "primary_genre": "Fantasy",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2018,
-      "description": "Climb. Fearless. Silence. Survival."
+      "year_of_release": 1998,
+      "description": "A fantasy series about a young girl attending a school for witches and her magical mishaps."
     },
     {
-      "id": "909",
-      "title": "senna",
-      "genre": "Documentary/Sport",
-      "primary_genre": "Documentary",
+      "id": "35",
+      "title": "My Neighbor Totoro",
+      "genre": "Fantasy/Adventure",
+      "primary_genre": "Fantasy",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2010,
-      "description": "A moving and immersive documentary that chronicles the rise and tragic death of Brazilian Formula One racing champion Ayrton Senna, told almost entirely through archival footage and his own voice."
+      "year_of_release": 1988,
+      "description": "A heartwarming animated tale about two girls who discover friendly forest spirits."
     }
   ],
   "cta": {
