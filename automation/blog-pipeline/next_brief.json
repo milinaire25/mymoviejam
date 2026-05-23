@@ -1,79 +1,78 @@
 {
-  "generated_at": "2026-05-21T10:00:14",
-  "date": "2026-05-21",
-  "readable_date": "May 21, 2026",
-  "family": "evergreen_genre",
-  "headline": "Best sci fi picks to stream when you want something better than another lazy scroll",
-  "slug": "best-sci-fi-picks-to-stream",
-  "primary_keyword": "best sci fi picks to stream",
-  "meta_description": "Need better sci fi picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
-  "eyebrow": "Curated List · May 21, 2026",
-  "subtitle": "Featuring stranger things 5, war machine 2026, and The Matrix — plus more sci fi picks that deserve real attention.",
+  "generated_at": "2026-05-23T10:00:53",
+  "date": "2026-05-23",
+  "readable_date": "May 23, 2026",
+  "family": "platform_genre",
+  "headline": "Best school picks on Disney+ right now: 4 titles worth starting first",
+  "slug": "best-school-picks-on-disney",
+  "primary_keyword": "best school picks on disney+",
+  "meta_description": "Need the best school picks on Disney+? These are the titles worth starting first if you want something better than random browsing.",
+  "eyebrow": "Curated List · May 23, 2026",
+  "subtitle": "Featuring Zombies, Descendants 2, and The Thundermans — plus more school picks that deserve real attention.",
   "tags": [
-    "Sci Fi",
+    "Disney+",
+    "School",
     "Curated list"
   ],
-  "genre": "Sci Fi",
-  "platform": null,
+  "genre": "School",
+  "platform": "Disney+",
   "year": null,
   "hero_image": {
-    "file": "best-sci-fi-picks-to-stream.jpg",
-    "path": "blog/images/best-sci-fi-picks-to-stream.jpg",
-    "web_path": "/blog/images/best-sci-fi-picks-to-stream.jpg",
-    "eyebrow": "Sci Fi",
-    "title": "Best sci fi picks to stream when you want something better than another lazy scroll",
-    "subtitle": "Featuring stranger things 5, war machine 2026, and The Matrix — plus more sci fi picks that deserve real attention."
+    "file": "best-school-picks-on-disney.jpg",
+    "path": "blog/images/best-school-picks-on-disney.jpg",
+    "web_path": "/blog/images/best-school-picks-on-disney.jpg",
+    "eyebrow": "School · Disney+",
+    "title": "Best school picks on Disney+ right now: 4 titles worth starting first",
+    "subtitle": "Featuring Zombies, Descendants 2, and The Thundermans — plus more school picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "933",
-      "title": "stranger things 5",
-      "genre": "Sci Fi, Horror, Drama",
-      "primary_genre": "Sci Fi",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2026,
-      "description": "The final battle as Hawkins faces its darkest threat from the Upside Down."
+      "id": "206",
+      "title": "Zombies",
+      "genre": "School/Horror/Kids",
+      "primary_genre": "School",
+      "ott_platform": "Disney+",
+      "platforms": [
+        "Disney+"
+      ],
+      "year_of_release": 2018,
+      "description": "Zombies in Disney \"Zombies\" are lively, friendly, with pale skin, blue eyes, and stitches. They are strong, sentient, and strive for integration with humans."
     },
     {
-      "id": "1059",
-      "title": "war machine 2026",
-      "genre": "Sci Fi/Action",
-      "primary_genre": "Sci Fi",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2026,
-      "description": "A futuristic war epic exploring advanced military tech, power struggles, and global conflict."
+      "id": "207",
+      "title": "Descendants 2",
+      "genre": "School/Fantasy/Kids",
+      "primary_genre": "School",
+      "ott_platform": "Disney+",
+      "platforms": [
+        "Disney+"
+      ],
+      "year_of_release": 2017,
+      "description": "4 of her friends search for Mal, who went back to her home island without telling them, but then what one of them gets captured."
     },
     {
-      "id": "760",
-      "title": "The Matrix",
-      "genre": "Sci Fi/Action",
-      "primary_genre": "Sci Fi",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 1999,
-      "description": "A computer hacker discovers that reality as he knows it is actually a simulated world controlled by machines, and joins a rebellion to free humanity."
+      "id": "209",
+      "title": "The Thundermans",
+      "genre": "School/Kids",
+      "primary_genre": "School",
+      "ott_platform": "Disney+",
+      "platforms": [
+        "Disney+"
+      ],
+      "year_of_release": 2013,
+      "description": "A family of 6 with special powers"
     },
     {
-      "id": "397",
-      "title": "the terminator",
-      "genre": "Sci Fi/Action",
-      "primary_genre": "Sci Fi",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 1984,
-      "description": "A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity's future salvation."
-    },
-    {
-      "id": "958",
-      "title": "avatater: the way if water",
-      "genre": "Sci Fi, Adventure",
-      "primary_genre": "Sci Fi",
-      "ott_platform": "",
-      "platforms": [],
+      "id": "208",
+      "title": "Sam and Cat",
+      "genre": "School/Comedy/Kids",
+      "primary_genre": "School",
+      "ott_platform": "Disney+",
+      "platforms": [
+        "Disney+"
+      ],
       "year_of_release": null,
-      "description": "Jake Sully explores Pandora oceans while protecting his family from new dangers."
+      "description": "Sam and Cat- total opposites, but best friends."
     }
   ],
   "cta": {

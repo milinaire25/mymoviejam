@@ -2,7 +2,7 @@
   "csv_path": "data/blog_mymoviejam_enriched.csv",
   "state_path": "automation/blog-pipeline/state.json",
   "brief_output_path": "automation/blog-pipeline/next_brief.json",
-  "min_titles_per_post": 5,
+  "min_titles_per_post": 4,
   "target_titles_per_post": 7,
   "theme_rotation": [
     "year_genre",

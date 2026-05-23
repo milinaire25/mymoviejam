@@ -155,6 +155,12 @@
       "headline": "Best sci fi picks to stream when you want something better than another lazy scroll",
       "family": "evergreen_genre",
       "published_at": "2026-05-21T10:03:36"
+    },
+    {
+      "slug": "best-school-picks-on-disney",
+      "headline": "Best school picks on Disney+ right now: 4 titles worth starting first",
+      "family": "platform_genre",
+      "published_at": "2026-05-23T10:03:12"
     }
   ],
   "published_titles": [
@@ -321,7 +327,11 @@
     "war machine 2026",
     "The Matrix",
     "the terminator",
-    "avatater: the way if water"
+    "avatater: the way if water",
+    "Zombies",
+    "Descendants 2",
+    "The Thundermans",
+    "Sam and Cat"
   ],
   "theme_history": [
     {
@@ -453,12 +463,17 @@
       "family": "evergreen_genre",
       "slug": "best-sci-fi-picks-to-stream",
       "published_at": "2026-05-21T10:03:36"
+    },
+    {
+      "family": "platform_genre",
+      "slug": "best-school-picks-on-disney",
+      "published_at": "2026-05-23T10:03:12"
     }
   ],
-  "next_theme_index": 0,
-  "last_generated_at": "2026-05-21T10:00:14",
+  "next_theme_index": 2,
+  "last_generated_at": "2026-05-23T10:00:53",
   "notes": "Pipeline state for automated MyMovieJam daily blog generation. Titles are marked only after a post is successfully published.",
-  "last_generated_slug": "best-sci-fi-picks-to-stream",
-  "last_generated_family": "evergreen_genre",
-  "last_theme_index_used": 3
+  "last_generated_slug": "best-school-picks-on-disney",
+  "last_generated_family": "platform_genre",
+  "last_theme_index_used": 1
 }
