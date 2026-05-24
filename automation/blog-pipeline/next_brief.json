@@ -1,78 +1,69 @@
 {
-  "generated_at": "2026-05-23T10:00:53",
-  "date": "2026-05-23",
-  "readable_date": "May 23, 2026",
-  "family": "platform_genre",
-  "headline": "Best school picks on Disney+ right now: 4 titles worth starting first",
-  "slug": "best-school-picks-on-disney",
-  "primary_keyword": "best school picks on disney+",
-  "meta_description": "Need the best school picks on Disney+? These are the titles worth starting first if you want something better than random browsing.",
-  "eyebrow": "Curated List · May 23, 2026",
-  "subtitle": "Featuring Zombies, Descendants 2, and The Thundermans — plus more school picks that deserve real attention.",
+  "generated_at": "2026-05-24T10:00:16",
+  "date": "2026-05-24",
+  "readable_date": "May 24, 2026",
+  "family": "evergreen_genre",
+  "headline": "Best animation picks to stream when you want something better than another lazy scroll",
+  "slug": "best-animation-picks-to-stream",
+  "primary_keyword": "best animation picks to stream",
+  "meta_description": "Need better animation picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
+  "eyebrow": "Curated List · May 24, 2026",
+  "subtitle": "Featuring woody woodpecker goes to camp, ron’s gone wrong, and Pets United — plus more animation picks that deserve real attention.",
   "tags": [
-    "Disney+",
-    "School",
+    "Animation",
     "Curated list"
   ],
-  "genre": "School",
-  "platform": "Disney+",
+  "genre": "Animation",
+  "platform": null,
   "year": null,
   "hero_image": {
-    "file": "best-school-picks-on-disney.jpg",
-    "path": "blog/images/best-school-picks-on-disney.jpg",
-    "web_path": "/blog/images/best-school-picks-on-disney.jpg",
-    "eyebrow": "School · Disney+",
-    "title": "Best school picks on Disney+ right now: 4 titles worth starting first",
-    "subtitle": "Featuring Zombies, Descendants 2, and The Thundermans — plus more school picks that deserve real attention."
+    "file": "best-animation-picks-to-stream.jpg",
+    "path": "blog/images/best-animation-picks-to-stream.jpg",
+    "web_path": "/blog/images/best-animation-picks-to-stream.jpg",
+    "eyebrow": "Animation",
+    "title": "Best animation picks to stream when you want something better than another lazy scroll",
+    "subtitle": "Featuring woody woodpecker goes to camp, ron’s gone wrong, and Pets United — plus more animation picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "206",
-      "title": "Zombies",
-      "genre": "School/Horror/Kids",
-      "primary_genre": "School",
-      "ott_platform": "Disney+",
-      "platforms": [
-        "Disney+"
-      ],
-      "year_of_release": 2018,
-      "description": "Zombies in Disney \"Zombies\" are lively, friendly, with pale skin, blue eyes, and stitches. They are strong, sentient, and strive for integration with humans."
+      "id": "529",
+      "title": "woody woodpecker goes to camp",
+      "genre": "Animation/Comedy",
+      "primary_genre": "Animation",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2024,
+      "description": "Woody Woodpecker and his friends head to Camp Woo Hoo for summer fun, only to discover they must save the camp from closing while dealing with the mischievous antics of their bird friend."
     },
     {
-      "id": "207",
-      "title": "Descendants 2",
-      "genre": "School/Fantasy/Kids",
-      "primary_genre": "School",
-      "ott_platform": "Disney+",
-      "platforms": [
-        "Disney+"
-      ],
-      "year_of_release": 2017,
-      "description": "4 of her friends search for Mal, who went back to her home island without telling them, but then what one of them gets captured."
+      "id": "960",
+      "title": "ron’s gone wrong",
+      "genre": "Animation, Comedy, Family",
+      "primary_genre": "Animation",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2021,
+      "description": "A boy and his malfunctioning robot discover friendship beyond technology."
     },
     {
-      "id": "209",
-      "title": "The Thundermans",
-      "genre": "School/Kids",
-      "primary_genre": "School",
-      "ott_platform": "Disney+",
-      "platforms": [
-        "Disney+"
-      ],
+      "id": "45",
+      "title": "Pets United",
+      "genre": "Animation/Comedy",
+      "primary_genre": "Animation",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2019,
+      "description": "An animated comedy about a group of pets who team up to save their city from robots."
+    },
+    {
+      "id": "133",
+      "title": "Frozen",
+      "genre": "Animation, Musical, Fantasy",
+      "primary_genre": "Animation",
+      "ott_platform": "",
+      "platforms": [],
       "year_of_release": 2013,
-      "description": "A family of 6 with special powers"
-    },
-    {
-      "id": "208",
-      "title": "Sam and Cat",
-      "genre": "School/Comedy/Kids",
-      "primary_genre": "School",
-      "ott_platform": "Disney+",
-      "platforms": [
-        "Disney+"
-      ],
-      "year_of_release": null,
-      "description": "Sam and Cat- total opposites, but best friends."
+      "description": "When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition."
     }
   ],
   "cta": {
