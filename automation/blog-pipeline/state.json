@@ -173,6 +173,12 @@
       "headline": "Jack Ryan: Ghost War review on Prime Video: slick action, thin movie, soft no",
       "family": "movie_review",
       "published_at": "2026-05-24T21:20:00"
+    },
+    {
+      "slug": "best-family-picks-to-stream",
+      "headline": "Best family picks to stream when you want something better than another lazy scroll",
+      "family": "evergreen_genre",
+      "published_at": "2026-05-25T10:03:22"
     }
   ],
   "published_titles": [
@@ -325,7 +331,7 @@
     "durandhar 1",
     "rangastalam",
     "stolen hindi ap",
-    "pangolin kulu\u2019s journey",
+    "pangolin kulu’s journey",
     "Inside the Mind of a Dog",
     "Backyard Wilderness",
     "free solo",
@@ -345,10 +351,14 @@
     "The Thundermans",
     "Sam and Cat",
     "woody woodpecker goes to camp",
-    "ron\u2019s gone wrong",
+    "ron’s gone wrong",
     "Pets United",
     "Frozen",
-    "Tom Clancy's Jack Ryan: Ghost War"
+    "Tom Clancy's Jack Ryan: Ghost War",
+    "paddington in peru ( kids)",
+    "The Christmas Chronicles",
+    "A Little Princess",
+    "kabhi khushi kabhi gam"
   ],
   "theme_history": [
     {
@@ -490,12 +500,17 @@
       "family": "evergreen_genre",
       "slug": "best-animation-picks-to-stream",
       "published_at": "2026-05-24T10:02:22"
+    },
+    {
+      "family": "evergreen_genre",
+      "slug": "best-family-picks-to-stream",
+      "published_at": "2026-05-25T10:03:22"
     }
   ],
   "next_theme_index": 0,
-  "last_generated_at": "2026-05-24T10:00:16",
+  "last_generated_at": "2026-05-25T10:00:13",
   "notes": "Pipeline state for automated MyMovieJam daily blog generation. Titles are marked only after a post is successfully published.",
-  "last_generated_slug": "best-animation-picks-to-stream",
+  "last_generated_slug": "best-family-picks-to-stream",
   "last_generated_family": "evergreen_genre",
   "last_theme_index_used": 3
 }

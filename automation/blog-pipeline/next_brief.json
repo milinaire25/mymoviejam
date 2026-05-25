@@ -1,69 +1,69 @@
 {
-  "generated_at": "2026-05-24T10:00:16",
-  "date": "2026-05-24",
-  "readable_date": "May 24, 2026",
+  "generated_at": "2026-05-25T10:00:13",
+  "date": "2026-05-25",
+  "readable_date": "May 25, 2026",
   "family": "evergreen_genre",
-  "headline": "Best animation picks to stream when you want something better than another lazy scroll",
-  "slug": "best-animation-picks-to-stream",
-  "primary_keyword": "best animation picks to stream",
-  "meta_description": "Need better animation picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
-  "eyebrow": "Curated List · May 24, 2026",
-  "subtitle": "Featuring woody woodpecker goes to camp, ron’s gone wrong, and Pets United — plus more animation picks that deserve real attention.",
+  "headline": "Best family picks to stream when you want something better than another lazy scroll",
+  "slug": "best-family-picks-to-stream",
+  "primary_keyword": "best family picks to stream",
+  "meta_description": "Need better family picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
+  "eyebrow": "Curated List · May 25, 2026",
+  "subtitle": "Featuring paddington in peru ( kids), The Christmas Chronicles, and A Little Princess — plus more family picks that deserve real attention.",
   "tags": [
-    "Animation",
+    "Family",
     "Curated list"
   ],
-  "genre": "Animation",
+  "genre": "Family",
   "platform": null,
   "year": null,
   "hero_image": {
-    "file": "best-animation-picks-to-stream.jpg",
-    "path": "blog/images/best-animation-picks-to-stream.jpg",
-    "web_path": "/blog/images/best-animation-picks-to-stream.jpg",
-    "eyebrow": "Animation",
-    "title": "Best animation picks to stream when you want something better than another lazy scroll",
-    "subtitle": "Featuring woody woodpecker goes to camp, ron’s gone wrong, and Pets United — plus more animation picks that deserve real attention."
+    "file": "best-family-picks-to-stream.jpg",
+    "path": "blog/images/best-family-picks-to-stream.jpg",
+    "web_path": "/blog/images/best-family-picks-to-stream.jpg",
+    "eyebrow": "Family",
+    "title": "Best family picks to stream when you want something better than another lazy scroll",
+    "subtitle": "Featuring paddington in peru ( kids), The Christmas Chronicles, and A Little Princess — plus more family picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "529",
-      "title": "woody woodpecker goes to camp",
-      "genre": "Animation/Comedy",
-      "primary_genre": "Animation",
+      "id": "762",
+      "title": "paddington in peru ( kids)",
+      "genre": "Family/Adventure",
+      "primary_genre": "Family",
       "ott_platform": "",
       "platforms": [],
       "year_of_release": 2024,
-      "description": "Woody Woodpecker and his friends head to Camp Woo Hoo for summer fun, only to discover they must save the camp from closing while dealing with the mischievous antics of their bird friend."
+      "description": "The beloved bear Paddington embarks on a thrilling adventure to Peru to visit his Aunt Lucy."
     },
     {
-      "id": "960",
-      "title": "ron’s gone wrong",
-      "genre": "Animation, Comedy, Family",
-      "primary_genre": "Animation",
+      "id": "39",
+      "title": "The Christmas Chronicles",
+      "genre": "Family/Adventure",
+      "primary_genre": "Family",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2021,
-      "description": "A boy and his malfunctioning robot discover friendship beyond technology."
+      "year_of_release": 2018,
+      "description": "A family adventure about two kids who team up with Santa to save Christmas."
     },
     {
-      "id": "45",
-      "title": "Pets United",
-      "genre": "Animation/Comedy",
-      "primary_genre": "Animation",
+      "id": "44",
+      "title": "A Little Princess",
+      "genre": "Family/Drama",
+      "primary_genre": "Family",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2019,
-      "description": "An animated comedy about a group of pets who team up to save their city from robots."
+      "year_of_release": 1995,
+      "description": "A family drama about a young girl who stays optimistic despite her hardships."
     },
     {
-      "id": "133",
-      "title": "Frozen",
-      "genre": "Animation, Musical, Fantasy",
-      "primary_genre": "Animation",
+      "id": "793",
+      "title": "kabhi khushi kabhi gam",
+      "genre": "Family/Drama",
+      "primary_genre": "Family",
       "ott_platform": "",
       "platforms": [],
-      "year_of_release": 2013,
-      "description": "When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition."
+      "year_of_release": null,
+      "description": "An epic Bollywood family drama about love, tradition, and reconciliation across generations."
     }
   ],
   "cta": {
