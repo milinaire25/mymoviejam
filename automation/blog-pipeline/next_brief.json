@@ -1,69 +1,75 @@
 {
-  "generated_at": "2026-05-25T10:00:13",
-  "date": "2026-05-25",
-  "readable_date": "May 25, 2026",
+  "generated_at": "2026-05-26T10:00:12",
+  "date": "2026-05-26",
+  "readable_date": "May 26, 2026",
   "family": "evergreen_genre",
-  "headline": "Best family picks to stream when you want something better than another lazy scroll",
-  "slug": "best-family-picks-to-stream",
-  "primary_keyword": "best family picks to stream",
-  "meta_description": "Need better family picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
-  "eyebrow": "Curated List · May 25, 2026",
-  "subtitle": "Featuring paddington in peru ( kids), The Christmas Chronicles, and A Little Princess — plus more family picks that deserve real attention.",
+  "headline": "Best sports picks to stream when you want something better than another lazy scroll",
+  "slug": "best-sports-picks-to-stream",
+  "primary_keyword": "best sports picks to stream",
+  "meta_description": "Need better sports picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
+  "eyebrow": "Curated List · May 26, 2026",
+  "subtitle": "Featuring the seat, Barbie Mysteries The Great Horse Chase, and My perfect Landing — plus more sports picks that deserve real attention.",
   "tags": [
-    "Family",
+    "Sports",
     "Curated list"
   ],
-  "genre": "Family",
+  "genre": "Sports",
   "platform": null,
   "year": null,
   "hero_image": {
-    "file": "best-family-picks-to-stream.jpg",
-    "path": "blog/images/best-family-picks-to-stream.jpg",
-    "web_path": "/blog/images/best-family-picks-to-stream.jpg",
-    "eyebrow": "Family",
-    "title": "Best family picks to stream when you want something better than another lazy scroll",
-    "subtitle": "Featuring paddington in peru ( kids), The Christmas Chronicles, and A Little Princess — plus more family picks that deserve real attention."
+    "file": "best-sports-picks-to-stream.jpg",
+    "path": "blog/images/best-sports-picks-to-stream.jpg",
+    "web_path": "/blog/images/best-sports-picks-to-stream.jpg",
+    "eyebrow": "Sports",
+    "title": "Best sports picks to stream when you want something better than another lazy scroll",
+    "subtitle": "Featuring the seat, Barbie Mysteries The Great Horse Chase, and My perfect Landing — plus more sports picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "762",
-      "title": "paddington in peru ( kids)",
-      "genre": "Family/Adventure",
-      "primary_genre": "Family",
+      "id": "662",
+      "title": "the seat",
+      "genre": "Sports/Drama",
+      "primary_genre": "Sports",
       "ott_platform": "",
       "platforms": [],
+      "year_of_release": 2025,
+      "description": "A high-octane Formula One drama about the intense competition, rivalries, and personal sacrifices in the world of professional racing."
+    },
+    {
+      "id": "205",
+      "title": "Barbie Mysteries The Great Horse Chase",
+      "genre": "Sports/Mystery/Kids",
+      "primary_genre": "Sports",
+      "ott_platform": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
       "year_of_release": 2024,
-      "description": "The beloved bear Paddington embarks on a thrilling adventure to Peru to visit his Aunt Lucy."
+      "description": "Watch the barbies solve the mystery of the missing horses."
     },
     {
-      "id": "39",
-      "title": "The Christmas Chronicles",
-      "genre": "Family/Adventure",
-      "primary_genre": "Family",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 2018,
-      "description": "A family adventure about two kids who team up with Santa to save Christmas."
+      "id": "204",
+      "title": "My perfect Landing",
+      "genre": "Sports/School/Kids",
+      "primary_genre": "Sports",
+      "ott_platform": "Netflix",
+      "platforms": [
+        "Netflix"
+      ],
+      "year_of_release": 2020,
+      "description": "Stream your way to success with My Perfect Landing on Netflix. Gymnastics, family, and adventure await!."
     },
     {
-      "id": "44",
-      "title": "A Little Princess",
-      "genre": "Family/Drama",
-      "primary_genre": "Family",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": 1995,
-      "description": "A family drama about a young girl who stays optimistic despite her hardships."
-    },
-    {
-      "id": "793",
-      "title": "kabhi khushi kabhi gam",
-      "genre": "Family/Drama",
-      "primary_genre": "Family",
-      "ott_platform": "",
-      "platforms": [],
-      "year_of_release": null,
-      "description": "An epic Bollywood family drama about love, tradition, and reconciliation across generations."
+      "id": "60",
+      "title": "Miracle on Ice",
+      "genre": "Sports/Drama/True Story",
+      "primary_genre": "Sports",
+      "ott_platform": "Disney+",
+      "platforms": [
+        "Disney+"
+      ],
+      "year_of_release": 1981,
+      "description": "The U.S. hockey team faces the Soviet Union."
     }
   ],
   "cta": {

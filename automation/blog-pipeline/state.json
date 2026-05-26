@@ -179,6 +179,12 @@
       "headline": "Best family picks to stream when you want something better than another lazy scroll",
       "family": "evergreen_genre",
       "published_at": "2026-05-25T10:03:22"
+    },
+    {
+      "slug": "best-sports-picks-to-stream",
+      "headline": "Best sports picks to stream when you want something better than another lazy scroll",
+      "family": "evergreen_genre",
+      "published_at": "2026-05-26T10:03:25"
     }
   ],
   "published_titles": [
@@ -358,7 +364,11 @@
     "paddington in peru ( kids)",
     "The Christmas Chronicles",
     "A Little Princess",
-    "kabhi khushi kabhi gam"
+    "kabhi khushi kabhi gam",
+    "the seat",
+    "Barbie Mysteries The Great Horse Chase",
+    "My perfect Landing",
+    "Miracle on Ice"
   ],
   "theme_history": [
     {
@@ -505,12 +515,17 @@
       "family": "evergreen_genre",
       "slug": "best-family-picks-to-stream",
       "published_at": "2026-05-25T10:03:22"
+    },
+    {
+      "family": "evergreen_genre",
+      "slug": "best-sports-picks-to-stream",
+      "published_at": "2026-05-26T10:03:25"
     }
   ],
   "next_theme_index": 0,
-  "last_generated_at": "2026-05-25T10:00:13",
+  "last_generated_at": "2026-05-26T10:00:12",
   "notes": "Pipeline state for automated MyMovieJam daily blog generation. Titles are marked only after a post is successfully published.",
-  "last_generated_slug": "best-family-picks-to-stream",
+  "last_generated_slug": "best-sports-picks-to-stream",
   "last_generated_family": "evergreen_genre",
   "last_theme_index_used": 3
 }
