@@ -185,6 +185,12 @@
       "headline": "Best sports picks to stream when you want something better than another lazy scroll",
       "family": "evergreen_genre",
       "published_at": "2026-05-26T10:03:25"
+    },
+    {
+      "slug": "best-romantic-comedy-movies-and-shows-in-2025",
+      "headline": "Best romantic comedy picks from 2025: 3 titles actually worth your time",
+      "family": "year_genre",
+      "published_at": "2026-06-01T17:37:02"
     }
   ],
   "published_titles": [
@@ -368,7 +374,10 @@
     "the seat",
     "Barbie Mysteries The Great Horse Chase",
     "My perfect Landing",
-    "Miracle on Ice"
+    "Miracle on Ice",
+    "de de pyaar de 2",
+    "single salma",
+    "sunnysanskarikitulsikumari"
   ],
   "theme_history": [
     {
@@ -520,12 +529,17 @@
       "family": "evergreen_genre",
       "slug": "best-sports-picks-to-stream",
       "published_at": "2026-05-26T10:03:25"
+    },
+    {
+      "family": "year_genre",
+      "slug": "best-romantic-comedy-movies-and-shows-in-2025",
+      "published_at": "2026-06-01T17:37:02"
     }
   ],
-  "next_theme_index": 0,
-  "last_generated_at": "2026-05-26T10:00:12",
+  "next_theme_index": 1,
+  "last_generated_at": "2026-06-01T17:35:23",
   "notes": "Pipeline state for automated MyMovieJam daily blog generation. Titles are marked only after a post is successfully published.",
-  "last_generated_slug": "best-sports-picks-to-stream",
-  "last_generated_family": "evergreen_genre",
-  "last_theme_index_used": 3
+  "last_generated_slug": "best-romantic-comedy-movies-and-shows-in-2025",
+  "last_generated_family": "year_genre",
+  "last_theme_index_used": 0
 }

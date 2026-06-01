@@ -1,75 +1,60 @@
 {
-  "generated_at": "2026-05-26T10:00:12",
-  "date": "2026-05-26",
-  "readable_date": "May 26, 2026",
-  "family": "evergreen_genre",
-  "headline": "Best sports picks to stream when you want something better than another lazy scroll",
-  "slug": "best-sports-picks-to-stream",
-  "primary_keyword": "best sports picks to stream",
-  "meta_description": "Need better sports picks for tonight? Here are the titles actually worth starting first, without the usual generic streaming-list fluff.",
-  "eyebrow": "Curated List · May 26, 2026",
-  "subtitle": "Featuring the seat, Barbie Mysteries The Great Horse Chase, and My perfect Landing — plus more sports picks that deserve real attention.",
+  "generated_at": "2026-06-01T17:35:23",
+  "date": "2026-06-01",
+  "readable_date": "June 1, 2026",
+  "family": "year_genre",
+  "headline": "Best romantic comedy picks from 2025: 3 titles actually worth your time",
+  "slug": "best-romantic-comedy-movies-and-shows-in-2025",
+  "primary_keyword": "best romantic comedy movies and shows in 2025",
+  "meta_description": "Looking for the best romantic comedy picks from 2025? Here are the titles that actually deserve your time, with clear audience-first takes and quick watch-fit guidance.",
+  "eyebrow": "Curated List · June 1, 2026",
+  "subtitle": "Featuring de de pyaar de 2, single salma, and sunnysanskarikitulsikumari — plus more romantic comedy picks that deserve real attention.",
   "tags": [
-    "Sports",
+    "Romantic Comedy",
+    "2025",
     "Curated list"
   ],
-  "genre": "Sports",
+  "genre": "Romantic Comedy",
   "platform": null,
-  "year": null,
+  "year": 2025,
   "hero_image": {
-    "file": "best-sports-picks-to-stream.jpg",
-    "path": "blog/images/best-sports-picks-to-stream.jpg",
-    "web_path": "/blog/images/best-sports-picks-to-stream.jpg",
-    "eyebrow": "Sports",
-    "title": "Best sports picks to stream when you want something better than another lazy scroll",
-    "subtitle": "Featuring the seat, Barbie Mysteries The Great Horse Chase, and My perfect Landing — plus more sports picks that deserve real attention."
+    "file": "best-romantic-comedy-movies-and-shows-in-2025.jpg",
+    "path": "blog/images/best-romantic-comedy-movies-and-shows-in-2025.jpg",
+    "web_path": "/blog/images/best-romantic-comedy-movies-and-shows-in-2025.jpg",
+    "eyebrow": "Romantic Comedy",
+    "title": "Best romantic comedy picks from 2025: 3 titles actually worth your time",
+    "subtitle": "Featuring de de pyaar de 2, single salma, and sunnysanskarikitulsikumari — plus more romantic comedy picks that deserve real attention."
   },
   "selected_titles": [
     {
-      "id": "662",
-      "title": "the seat",
-      "genre": "Sports/Drama",
-      "primary_genre": "Sports",
+      "id": "930",
+      "title": "de de pyaar de 2",
+      "genre": "Romantic Comedy/Family Drama",
+      "primary_genre": "Romantic Comedy",
       "ott_platform": "",
       "platforms": [],
       "year_of_release": 2025,
-      "description": "A high-octane Formula One drama about the intense competition, rivalries, and personal sacrifices in the world of professional racing."
+      "description": "A light-hearted romantic comedy that explores modern relationships, family dynamics, and second chances in love."
     },
     {
-      "id": "205",
-      "title": "Barbie Mysteries The Great Horse Chase",
-      "genre": "Sports/Mystery/Kids",
-      "primary_genre": "Sports",
-      "ott_platform": "Netflix",
-      "platforms": [
-        "Netflix"
-      ],
-      "year_of_release": 2024,
-      "description": "Watch the barbies solve the mystery of the missing horses."
+      "id": "996",
+      "title": "single salma",
+      "genre": "Romantic Comedy",
+      "primary_genre": "Romantic Comedy",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2025,
+      "description": "Single. Chaos. Love. Laughter."
     },
     {
-      "id": "204",
-      "title": "My perfect Landing",
-      "genre": "Sports/School/Kids",
-      "primary_genre": "Sports",
-      "ott_platform": "Netflix",
-      "platforms": [
-        "Netflix"
-      ],
-      "year_of_release": 2020,
-      "description": "Stream your way to success with My Perfect Landing on Netflix. Gymnastics, family, and adventure await!."
-    },
-    {
-      "id": "60",
-      "title": "Miracle on Ice",
-      "genre": "Sports/Drama/True Story",
-      "primary_genre": "Sports",
-      "ott_platform": "Disney+",
-      "platforms": [
-        "Disney+"
-      ],
-      "year_of_release": 1981,
-      "description": "The U.S. hockey team faces the Soviet Union."
+      "id": "910",
+      "title": "sunnysanskarikitulsikumari",
+      "genre": "Romantic Comedy",
+      "primary_genre": "Romantic Comedy",
+      "ott_platform": "",
+      "platforms": [],
+      "year_of_release": 2025,
+      "description": "Sunny Sanskari teams up with Tulsi Kumari to crash his ex wedding, but their plan for revenge leads to unexpected romance and self-discovery."
     }
   ],
   "cta": {
