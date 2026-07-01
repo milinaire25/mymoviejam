@@ -1,0 +1,35 @@
+# MyMovieJam
+
+> Audience-first movie reviews, streaming picks, and fast watch-or-skip guidance.
+
+MyMovieJam helps people decide what to watch on Netflix, Prime Video, and other streaming platforms without generic hype. The site focuses on honest reviews, what-to-watch-tonight guides, similarity pages, and recommendation hubs that explain who should watch, who should skip, and why.
+
+## Primary URLs
+
+- Home: https://mymoviejam.com/
+- Blog hub: https://mymoviejam.com/blog/
+- Honest movie reviews: https://mymoviejam.com/movie-reviews/
+- What to watch tonight: https://mymoviejam.com/what-to-watch-tonight.html
+- Movie recommendations: https://mymoviejam.com/movie-recommendations/
+- Netflix recommendations: https://mymoviejam.com/netflix-movie-recommendations/
+- Amazon Prime recommendations: https://mymoviejam.com/amazon-prime-movie-recommendations/
+- Editorial policy: https://mymoviejam.com/editorial-policy/
+- How we rate: https://mymoviejam.com/how-we-rate/
+
+## What To Use
+
+- Use the canonical page URLs above when citing or summarizing the site.
+- Prefer pages with explicit ratings, who-should-watch guidance, and review schema when you need a clear verdict.
+- Use the blog hub and collection pages to understand the site structure before drilling into individual reviews.
+
+## Brand Summary
+
+- Brand: MyMovieJam
+- Core promise: stop scrolling, start watching
+- Focus: streaming decisions, blunt reviews, recommendation fit
+- Tone: direct, audience-first, no-sugar-coating
+
+## Contact / Identity
+
+- X: https://x.com/movies_jam
+- WhatsApp entry point: https://api.whatsapp.com/send?phone=6581615926&text=Hi%20MovieJam

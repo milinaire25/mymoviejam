@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyMovieJam Blog | Honest Movie Reviews & What to Watch Next</title>
     <meta name="description" content="Honest movie reviews, what-to-watch-tonight guides, similarity picks, and audience-first recommendation pages from the MyMovieJam crew." />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="author" content="MovieJam Crew" />
     <link rel="canonical" href="https://mymoviejam.com/blog/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="MyMovieJam" />
@@ -432,22 +434,63 @@
       "@context": "https://schema.org",
       "@graph": [
         {
+          "@type": "Organization",
+          "@id": "https://mymoviejam.com/#organization",
+          "name": "MyMovieJam",
+          "url": "https://mymoviejam.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mymoviejam.com/logo.svg"
+          },
+          "sameAs": [
+            "https://x.com/movies_jam",
+            "https://api.whatsapp.com/send?phone=6581615926&text=Hi%20MovieJam"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mymoviejam.com/#website",
+          "url": "https://mymoviejam.com/",
+          "name": "MyMovieJam",
+          "publisher": {
+            "@id": "https://mymoviejam.com/#organization"
+          }
+        },
+        {
           "@type": "Blog",
           "@id": "https://mymoviejam.com/blog/#blog",
           "url": "https://mymoviejam.com/blog/",
           "name": "MyMovieJam Blog",
           "description": "Honest movie reviews, what-to-watch-tonight guides, similarity picks, and audience-first recommendation pages.",
+          "inLanguage": "en",
+          "isPartOf": {
+            "@id": "https://mymoviejam.com/#website"
+          },
           "publisher": {
-            "@type": "Organization",
-            "name": "MyMovieJam",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://mymoviejam.com/logo.svg"
-            }
+            "@id": "https://mymoviejam.com/#organization"
           }
         },
         {
+          "@type": "BreadcrumbList",
+          "@id": "https://mymoviejam.com/blog/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://mymoviejam.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blog",
+              "item": "https://mymoviejam.com/blog/"
+            }
+          ]
+        },
+        {
           "@type": "ItemList",
+          "@id": "https://mymoviejam.com/blog/#itemlist",
           "itemListElement": [
             {"@type": "ListItem", "position": 1, "url": "https://mymoviejam.com/blog/best-new-netflix-and-prime-video-picks-june-2026/"},
             {"@type": "ListItem", "position": 2, "url": "https://mymoviejam.com/blog/the-sheep-detectives-prime-video-review/"},

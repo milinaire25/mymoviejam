@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Recommendations | MyMovieJam</title>
     <meta name="description" content="Audience-first movie recommendations from MyMovieJam: honest, useful, and built around who should watch or skip." />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="author" content="MovieJam Crew" />
     <link rel="canonical" href="https://mymoviejam.com/movie-recommendations/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="MyMovieJam" />
@@ -319,13 +321,61 @@
       "@context": "https://schema.org",
       "@graph": [
         {
+          "@type": "Organization",
+          "@id": "https://mymoviejam.com/#organization",
+          "name": "MyMovieJam",
+          "url": "https://mymoviejam.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mymoviejam.com/logo.svg"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mymoviejam.com/#website",
+          "url": "https://mymoviejam.com/",
+          "name": "MyMovieJam",
+          "publisher": {
+            "@id": "https://mymoviejam.com/#organization"
+          }
+        },
+        {
           "@type": "CollectionPage",
+          "@id": "https://mymoviejam.com/movie-recommendations/#page",
           "url": "https://mymoviejam.com/movie-recommendations/",
           "name": "Movie Recommendations | MyMovieJam",
-          "description": "Audience-first movie recommendations from MyMovieJam: honest, useful, and built around who should watch or skip."
+          "description": "Audience-first movie recommendations from MyMovieJam: honest, useful, and built around who should watch or skip.",
+          "inLanguage": "en",
+          "isPartOf": {
+            "@id": "https://mymoviejam.com/#website"
+          },
+          "about": [
+            "movie recommendations",
+            "streaming recommendations",
+            "watch or skip guidance"
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://mymoviejam.com/movie-recommendations/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://mymoviejam.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Movie Recommendations",
+              "item": "https://mymoviejam.com/movie-recommendations/"
+            }
+          ]
         },
         {
           "@type": "ItemList",
+          "@id": "https://mymoviejam.com/movie-recommendations/#itemlist",
           "itemListElement": [
             {"@type": "ListItem", "position": 1, "url": "https://mymoviejam.com/movie-reviews/"},
             {"@type": "ListItem", "position": 2, "url": "https://mymoviejam.com/what-to-watch-tonight.html"},

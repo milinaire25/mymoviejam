@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What to Watch Tonight | MyMovieJam</title>
     <meta name="description" content="What to watch tonight on Netflix, Amazon Prime, and beyond. Decision-help recommendation pages from MyMovieJam." />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="author" content="MovieJam Crew" />
     <link rel="canonical" href="https://mymoviejam.com/what-to-watch-tonight.html" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="MyMovieJam" />
@@ -319,13 +321,66 @@
       "@context": "https://schema.org",
       "@graph": [
         {
+          "@type": "Organization",
+          "@id": "https://mymoviejam.com/#organization",
+          "name": "MyMovieJam",
+          "url": "https://mymoviejam.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mymoviejam.com/logo.svg"
+          },
+          "sameAs": [
+            "https://x.com/movies_jam",
+            "https://api.whatsapp.com/send?phone=6581615926&text=Hi%20MovieJam"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mymoviejam.com/#website",
+          "url": "https://mymoviejam.com/",
+          "name": "MyMovieJam",
+          "publisher": {
+            "@id": "https://mymoviejam.com/#organization"
+          }
+        },
+        {
           "@type": "CollectionPage",
+          "@id": "https://mymoviejam.com/what-to-watch-tonight.html#page",
           "url": "https://mymoviejam.com/what-to-watch-tonight.html",
           "name": "What to Watch Tonight | MyMovieJam",
-          "description": "What to watch tonight on Netflix, Amazon Prime, and beyond. Decision-help recommendation pages from MyMovieJam."
+          "description": "What to watch tonight on Netflix, Amazon Prime, and beyond. Decision-help recommendation pages from MyMovieJam.",
+          "inLanguage": "en",
+          "isPartOf": {
+            "@id": "https://mymoviejam.com/#website"
+          },
+          "about": [
+            "Netflix recommendations",
+            "Amazon Prime recommendations",
+            "what to watch tonight",
+            "streaming picks"
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://mymoviejam.com/what-to-watch-tonight.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://mymoviejam.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "What to Watch Tonight",
+              "item": "https://mymoviejam.com/what-to-watch-tonight.html"
+            }
+          ]
         },
         {
           "@type": "ItemList",
+          "@id": "https://mymoviejam.com/what-to-watch-tonight.html#itemlist",
           "itemListElement": [
             {"@type": "ListItem", "position": 1, "url": "https://mymoviejam.com/blog/best-action-picks-to-stream/"},
             {"@type": "ListItem", "position": 2, "url": "https://mymoviejam.com/blog/best-biography-picks-on-amazon-prime-3/"},
