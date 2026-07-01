@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mymoviejam.com/</loc>
-    <lastmod>2026-03-29</lastmod>
+    <lastmod>2026-07-01</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
@@ -12,13 +12,17 @@
   </url>
   <url>
     <loc>https://mymoviejam.com/blog/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-07-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mymoviejam.com/llms.txt</loc>
     <lastmod>2026-07-01</lastmod>
     <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://mymoviejam.com/blog/hoppers-disney-plus-review/</loc>
+    <lastmod>2026-07-01</lastmod>
   </url>
   <url>
     <loc>https://mymoviejam.com/blog/best-new-netflix-and-prime-video-picks-june-2026/</loc>
