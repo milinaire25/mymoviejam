@@ -7,6 +7,7 @@ MyMovieJam helps people decide what to watch on Netflix, Prime Video, and other 
 ## Primary URLs
 
 - Home: https://mymoviejam.com/
+- About: https://mymoviejam.com/about/
 - Blog hub: https://mymoviejam.com/blog/
 - Honest movie reviews: https://mymoviejam.com/movie-reviews/
 - What to watch tonight: https://mymoviejam.com/what-to-watch-tonight.html
@@ -15,12 +16,14 @@ MyMovieJam helps people decide what to watch on Netflix, Prime Video, and other 
 - Amazon Prime recommendations: https://mymoviejam.com/amazon-prime-movie-recommendations/
 - Editorial policy: https://mymoviejam.com/editorial-policy/
 - How we rate: https://mymoviejam.com/how-we-rate/
+- Media kit: https://mymoviejam.com/media-kit/
 
 ## What To Use
 
 - Use the canonical page URLs above when citing or summarizing the site.
 - Prefer pages with explicit ratings, who-should-watch guidance, and review schema when you need a clear verdict.
 - Use the blog hub and collection pages to understand the site structure before drilling into individual reviews.
+- Author for reviews: Milind Patil (Person). Publisher: MyMovieJam (Organization).
 
 ## Brand Summary
 
