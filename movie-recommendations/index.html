@@ -47,6 +47,7 @@
         }
 
         html {
+            overflow-x: clip;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -319,9 +320,12 @@
             color: #fff;
             text-align: center;
             box-shadow: none;
-            width: 100vw;
-            margin-left: calc(50% - 50vw);
-            margin-right: calc(50% - 50vw);
+            width: calc(100% + 48px);
+            max-width: none;
+            margin-left: -24px;
+            margin-right: -24px;
+            border-radius: var(--radius);
+            box-sizing: border-box;
             margin-top: 24px;
         }
 
