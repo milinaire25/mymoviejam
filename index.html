@@ -6,7 +6,7 @@
     <title>MyMovieJam | Stop Scrolling, Start Watching.</title>
     <meta name="description" content="Stop scrolling, start watching. Faster movie picks, audience-first recommendations, and what-to-watch-tonight help for Netflix, Prime Video, and more." />
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
-    <meta name="author" content="MovieJam Crew" />
+    <meta name="author" content="Milind Patil" />
     <meta name="google-site-verification" content="3zLZQuW5kkL6pW4GaPiBRhIaNLVOFs5IDiCuJC9R-EM" />
     <link rel="canonical" href="https://mymoviejam.com/" />
     <meta property="og:type" content="website" />
@@ -24,137 +24,86 @@
     <meta name="twitter:description" content="Stop scrolling, start watching with faster movie picks and smarter streaming recommendations." />
     <meta name="twitter:image" content="https://mymoviejam.com/blog/images/mymoviejam-home-share.jpg" />
     <meta name="twitter:image:alt" content="MyMovieJam logo with the tagline Stop scrolling. Start watching." />
-    <!-- Add Inter font from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --bg: #f5f5f7;
+            --surface: #ffffff;
+            --text: #1d1d1f;
+            --secondary: #6e6e73;
+            --border: rgba(0, 0, 0, 0.06);
+            --border-hover: rgba(0, 0, 0, 0.14);
+            --wa: #25D366;
+            --wa-dark: #128C7E;
+            --radius: 20px;
+            --content: 1080px;
+            --hero-max: 720px;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
         }
 
-        /* Update font weights for better hierarchy */
-        h1 {
-            font-weight: 900;
-            font-size: 42px;
-            margin-bottom: 40px;
-            line-height: 1.2;
-            letter-spacing: -0.02em;
-        }
-
-        .logo-text {
-            font-weight: 700;
-            font-size: 24px;
-        }
-
-        .badge span {
-            font-weight: 500;
-        }
-
-        .button-title {
-            font-weight: 600;
-        }
-
-        .cta h2 {
-            font-weight: 900;
-            letter-spacing: -0.02em;
+        html {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         body {
-            background: linear-gradient(135deg, #f8f9fe 0%, #f0e6ff 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--bg);
+            color: var(--text);
             min-height: 100vh;
-            padding: 20px;
+            line-height: 1.47059;
+            font-size: 17px;
+            font-weight: 400;
+            letter-spacing: -0.022em;
         }
 
+        a {
+            color: inherit;
+        }
+
+        /* —— Header —— */
         .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 20px;
-            padding: 20px 40px;
+            gap: 16px;
+            padding: 12px 28px;
             max-width: 100%;
-            margin: 0;
-            background: rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(10px);
-            flex-wrap: wrap;
+            background: rgba(245, 245, 247, 0.72);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid var(--border);
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 12px;
-            margin-left: 40px;
-        }
-
-        .social-links {
-            margin-right: 40px;
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-left: auto;
-            margin-right: 10px;
-        }
-
-        .nav-link {
+            gap: 10px;
             text-decoration: none;
-            font-weight: 500;
-            color: #000;
-            padding: 8px 18px;
-            border-radius: 999px;
-            background: #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            transition: all 0.2s ease;
-        }
-
-        .nav-link:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-        }
-
-        .x-link {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            text-decoration: none;
-            color: #000;
-            font-weight: 500;
-            padding: 8px 16px;
-            border-radius: 20px;
-            background: white;
-            transition: all 0.2s ease;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-
-        .x-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .x-link svg {
-            width: 20px;
-            height: 20px;
-        }
-
-        .x-link span {
-            font-size: 14px;
+            color: var(--text);
+            flex-shrink: 0;
         }
 
         .logo-icon {
             background: #ff4444;
-            width: 40px;
-            height: 40px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-            padding: 12px;
+            padding: 9px;
         }
 
         .logo-icon svg {
@@ -162,76 +111,171 @@
             height: 100%;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            text-align: center;
-            padding: 0 20px;
+        .logo-text {
+            font-weight: 600;
+            font-size: 19px;
+            letter-spacing: -0.02em;
         }
 
-        .badge {
-            background: white;
-            display: inline-flex;
-            align-items: center;
-            padding: 8px 20px;
-            border-radius: 25px;
-            margin-bottom: 30px;
-            gap: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            font-size: 16px;
-        }
-
-        .badge-icon {
-            background: #ff4444;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            flex-shrink: 0;
+        .nav-links {
             display: flex;
             align-items: center;
-            justify-content: center;
-            padding: 7px;
+            gap: 4px;
+            margin-left: auto;
         }
 
-        .badge-icon svg {
-            width: 100%;
-            height: 100%;
+        .nav-link {
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 14px;
+            color: var(--text);
+            padding: 6px 12px;
+            border-radius: 8px;
+            transition: color 0.2s ease, background 0.2s ease;
         }
 
+        .nav-link:hover {
+            color: var(--secondary);
+            background: transparent;
+        }
+
+        .social-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .x-link {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 400;
+            font-size: 13px;
+            padding: 6px 8px;
+            border-radius: 8px;
+            transition: color 0.2s ease;
+        }
+
+        .x-link:hover {
+            color: var(--text);
+        }
+
+        .x-link svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* —— Hero / main container —— */
+        .container {
+            max-width: var(--content);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 52px 24px 36px;
+            max-width: var(--hero-max);
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-weight: 700;
+            font-size: clamp(36px, 6vw, 60px);
+            line-height: 1.05;
+            letter-spacing: -0.03em;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+
+        .hero-subhead {
+            margin: 0 0 14px;
+            font-size: clamp(18px, 2.2vw, 22px);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: var(--secondary);
+            line-height: 1.3;
+        }
+
+        .home-copy {
+            max-width: var(--hero-max);
+            margin: 0 auto 24px;
+            font-size: 17px;
+            line-height: 1.5;
+            color: var(--secondary);
+            font-weight: 400;
+        }
+
+        /* —— WhatsApp CTAs —— */
         .action-buttons {
             display: flex;
             flex-direction: column;
-            gap: 18px;
-            max-width: 500px;
-            margin: 8px auto 0;
+            gap: 14px;
+            max-width: 440px;
+            margin: 0 auto;
         }
 
         .button {
             display: flex;
             align-items: center;
-            padding: 20px;
-            background: white;
-            border-radius: 15px;
+            padding: 18px 20px;
+            background: var(--surface);
+            border-radius: var(--radius);
             text-decoration: none;
-            color: black;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            transition: transform 0.2s;
+            color: var(--text);
+            border: 1px solid var(--border);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
             width: 100%;
         }
 
         .button:hover {
             transform: translateY(-2px);
+            border-color: var(--border-hover);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
         }
 
         .button:active {
             transform: translateY(0);
         }
 
+        .button-primary {
+            background: var(--wa);
+            border-color: var(--wa);
+            color: #fff;
+            box-shadow: 0 4px 14px rgba(37, 211, 102, 0.28);
+        }
+
+        .button-primary:hover {
+            border-color: #1ebe57;
+            background: #1ebe57;
+            box-shadow: 0 8px 28px rgba(37, 211, 102, 0.35);
+        }
+
+        .button-primary .button-title,
+        .button-primary .button-subtitle {
+            color: #fff;
+        }
+
+        .button-primary .button-subtitle {
+            opacity: 0.9;
+        }
+
+        .button-secondary {
+            background: var(--surface);
+            border-color: rgba(37, 211, 102, 0.28);
+        }
+
+        .button-secondary:hover {
+            border-color: rgba(37, 211, 102, 0.55);
+        }
+
         .button-icon {
-            width: 48px;
-            height: 48px;
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
-            margin-right: 15px;
+            margin-right: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -239,18 +283,18 @@
         }
 
         .button-icon svg {
-            width: 24px;
-            height: 24px;
+            width: 22px;
+            height: 22px;
         }
 
         .demo-icon {
             background: #e7f7ef;
-            color: #25D366;
+            color: var(--wa);
         }
 
         .chat-icon {
-            background: #25D366;
-            color: white;
+            background: rgba(255, 255, 255, 0.22);
+            color: #fff;
         }
 
         .button-text {
@@ -259,227 +303,336 @@
             min-width: 0;
         }
 
+        .button-title {
+            font-weight: 600;
+            font-size: 17px;
+            letter-spacing: -0.01em;
+        }
+
         .button-subtitle {
-            color: #666;
-            font-size: 14px;
+            color: var(--secondary);
+            font-size: 13px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            margin-top: 4px;
+            margin-top: 3px;
+            font-weight: 400;
         }
 
         .status {
-            margin-top: 30px;
-            color: #25D366;
+            margin-top: 18px;
+            color: var(--wa);
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 8px;
             font-weight: 500;
+            font-size: 14px;
         }
 
         .status-dot {
-            width: 8px;
-            height: 8px;
-            background: #25D366;
+            width: 7px;
+            height: 7px;
+            background: var(--wa);
             border-radius: 50%;
+            box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.2);
         }
 
+        /* —— Sections —— */
+        .section-block {
+            padding: 96px 0 0;
+            text-align: left;
+        }
+
+        .section-kicker {
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--secondary);
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: clamp(28px, 4vw, 40px);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            line-height: 1.15;
+            text-align: center;
+            margin-bottom: 14px;
+            color: var(--text);
+        }
+
+        .section-lede {
+            max-width: 720px;
+            margin: 0 auto 36px;
+            text-align: center;
+            color: var(--secondary);
+            line-height: 1.58;
+            font-size: 17px;
+        }
+
+        .hub-grid,
+        .review-spotlight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 8px;
+        }
+
+        .hub-card,
+        .review-spotlight-card {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 24px;
+            border: 1px solid var(--border);
+            box-shadow: none;
+            transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+        }
+
+        .hub-card:hover,
+        .review-spotlight-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--border-hover);
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+        }
+
+        .hub-card strong,
+        .review-spotlight-card strong {
+            display: block;
+            font-size: 19px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+            line-height: 1.25;
+        }
+
+        .hub-card span,
+        .review-spotlight-card p {
+            display: block;
+            color: var(--secondary);
+            line-height: 1.55;
+            margin-bottom: 14px;
+            font-size: 15px;
+        }
+
+        .hub-card small,
+        .review-spotlight-card > span {
+            color: var(--wa-dark);
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 0.01em;
+        }
+
+        .review-spotlight-rating {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: rgba(37, 211, 102, 0.1);
+            color: var(--wa-dark);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+        }
+
+        /* —— FAQ —— */
+        .faq-section {
+            max-width: 720px;
+            margin: 96px auto 0;
+            background: var(--surface);
+            border-radius: 22px;
+            padding: 48px 40px;
+            border: 1px solid var(--border);
+            box-shadow: none;
+        }
+
+        .faq-section h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 28px;
+            letter-spacing: -0.03em;
+            text-align: center;
+        }
+
+        .faq-item + .faq-item {
+            margin-top: 22px;
+            padding-top: 22px;
+            border-top: 1px solid var(--border);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 17px;
+            margin-bottom: 8px;
+            letter-spacing: -0.01em;
+        }
+
+        .faq-answer {
+            color: var(--secondary);
+            line-height: 1.58;
+            font-size: 15px;
+        }
+
+        /* —— Bottom CTA —— */
         .cta {
-            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-            padding: 60px 0;
-            margin-top: 60px;
+            background: linear-gradient(180deg, #25D366 0%, #1da851 100%);
+            padding: 88px 24px;
+            margin-top: 96px;
             color: white;
             text-align: center;
         }
 
+        .cta .container {
+            max-width: 640px;
+        }
+
         .cta h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
+            font-size: clamp(28px, 4vw, 40px);
+            font-weight: 700;
+            margin-bottom: 12px;
             color: white;
+            letter-spacing: -0.03em;
+            line-height: 1.15;
         }
 
         .cta p {
-            font-size: 18px;
-            margin-bottom: 30px;
-            opacity: 0.9;
+            font-size: 19px;
+            margin-bottom: 28px;
+            opacity: 0.92;
             font-weight: 400;
+            line-height: 1.4;
         }
 
         .whatsapp-btn {
             display: inline-flex;
             align-items: center;
-            background: white;
-            color: #25D366;
-            padding: 15px 30px;
-            border-radius: 30px;
+            background: #fff;
+            color: var(--wa-dark);
+            padding: 14px 28px;
+            border-radius: 980px;
             text-decoration: none;
             font-weight: 600;
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            font-size: 16px;
+            transition: transform 0.22s ease, box-shadow 0.22s ease;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
         }
 
         .whatsapp-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
         }
 
         .whatsapp-icon {
-            width: 24px;
-            height: 24px;
+            width: 22px;
+            height: 22px;
             margin-right: 10px;
         }
 
+        /* —— Footer —— */
         footer {
-            background: #f8f9fe;
-            padding: 30px 0;
+            background: var(--bg);
+            padding: 48px 24px 56px;
             text-align: center;
-            border-top: 1px solid rgba(0,0,0,0.1);
+            border-top: 1px solid var(--border);
         }
 
         footer p {
-            color: #666;
-            font-size: 16px;
+            color: var(--secondary);
+            font-size: 13px;
             font-weight: 400;
         }
-        
-        /* Add these new styles right here */
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px 4px;
+            margin: 16px 0 12px;
+        }
+
         .email-link {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             text-decoration: none;
-            color: #666;
-            padding: 8px 16px;
-            border-radius: 20px;
-            background: white;
-            margin-top: 15px;
-            transition: all 0.2s ease;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            color: var(--secondary);
+            padding: 6px 12px;
+            border-radius: 8px;
+            transition: color 0.2s ease;
+            font-size: 13px;
+            font-weight: 400;
+            background: transparent;
+            box-shadow: none;
         }
 
         .email-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            color: #333;
+            color: var(--text);
         }
 
         .email-link svg {
-            width: 20px;
-            height: 20px;
+            width: 16px;
+            height: 16px;
         }
 
-        .email-link span {
-            font-size: 14px;
-            font-weight: 500;
-        }
         .emoji {
-            font-size: 20px;
+            font-size: 14px;
             vertical-align: middle;
         }
-        .tagline {
-            margin: -20px 0 40px 0;
-            font-size: 24px;
-            font-weight: 900;
-            letter-spacing: -0.02em;
-            color: #666;
-        }
-        @media (max-width: 768px) {
-            .tagline {
-                font-size: 20px;
-                margin: -15px 0 30px 0;
-            }
-        }
 
-        @media (max-width: 480px) {
-            .tagline {
-                font-size: 18px;
-                margin: -10px 0 25px 0;
-            }
-        }
-
-        @media (max-width: 360px) {
-            .tagline {
-                font-size: 16px;
-                margin: -8px 0 20px 0;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-
+        /* —— Responsive —— */
+        @media (max-width: 700px) {
             .header {
-                padding: 15px 10px;
-                flex-direction: column;
-                align-items: flex-start;
+                padding: 10px 16px;
+                flex-wrap: wrap;
             }
 
             .logo-text {
-                font-size: 20px;
+                font-size: 17px;
             }
 
             .logo-icon {
-                width: 32px;
-                height: 32px;
-                padding: 9px;
-            }
-
-            .social-links {
-                margin-right: 10px;
+                width: 28px;
+                height: 28px;
+                padding: 8px;
             }
 
             .nav-links {
+                order: 3;
                 width: 100%;
-                margin: 10px 0 0;
+                margin: 4px 0 0;
+                gap: 0;
             }
 
             .nav-link {
-                width: max-content;
-            }
-
-            .x-link {
-                padding: 6px 12px;
-            }
-
-            .x-link svg {
-                width: 18px;
-                height: 18px;
-            }
-
-            .x-link span {
+                padding: 6px 10px;
                 font-size: 13px;
             }
 
-            .container {
-                margin: 20px auto;
-                padding: 0 10px;
+            .x-link span {
+                display: none;
             }
 
-            h1 {
-                font-size: 28px;
-                margin-bottom: 30px;
+            .hero {
+                padding: 64px 16px 56px;
             }
 
-            .badge {
-                padding: 6px 15px;
-                font-size: 14px;
-            }
-
-            .badge-icon {
-                width: 20px;
-                height: 20px;
-                padding: 6px;
+            .home-copy {
+                font-size: 17px;
+                margin-bottom: 32px;
             }
 
             .action-buttons {
-                gap: 14px;
                 max-width: 100%;
             }
 
             .button {
-                padding: 15px;
+                padding: 16px;
             }
 
             .button-icon {
@@ -488,26 +641,37 @@
                 margin-right: 12px;
             }
 
-            .button-icon svg {
-                width: 20px;
-                height: 20px;
-            }
-
             .button-title {
                 font-size: 16px;
             }
 
             .button-subtitle {
-                font-size: 13px;
+                font-size: 12px;
+            }
+
+            .section-block {
+                padding-top: 72px;
+            }
+
+            .hub-grid,
+            .review-spotlight-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .faq-section {
+                margin-top: 72px;
+                padding: 32px 22px;
+                border-radius: 18px;
+            }
+
+            .faq-section h2 {
+                font-size: 26px;
             }
 
             .cta {
-                padding: 40px 20px;
-                margin-top: 40px;
-            }
-
-            .cta h2 {
-                font-size: 28px;
+                padding: 64px 20px;
+                margin-top: 72px;
             }
 
             .cta p {
@@ -515,234 +679,20 @@
             }
 
             .whatsapp-btn {
-                padding: 12px 24px;
-                font-size: 14px;
+                padding: 12px 22px;
+                font-size: 15px;
+            }
+
+            footer {
+                padding: 36px 16px 44px;
             }
         }
 
         @media (max-width: 480px) {
-            .x-link span {
-                display: none;
-            }
-
-            .x-link {
-                padding: 8px;
-            }
-            /* Add these new styles here */
-            .email-link {
-                padding: 6px 12px;
-            }
-            
-            .email-link svg {
-                width: 16px;
-                height: 16px;
-            }
-            
-            .email-link span {
-                font-size: 13px;
-            }
-        }
-
-        @media (max-width: 360px) {
-            h1 {
-                font-size: 24px;
-            }
-
-            .badge {
-                font-size: 12px;
-                padding: 5px 12px;
-            }
-
-            .button-icon {
-                width: 36px;
-                height: 36px;
-                margin-right: 10px;
-            }
-
-            .button-title {
-                font-size: 14px;
-            }
-
             .button-subtitle {
-                font-size: 12px;
-            }
-
-            .cta h2 {
-                font-size: 24px;
-            }
-
-            .whatsapp-btn {
-                padding: 10px 20px;
-                font-size: 13px;
+                white-space: normal;
             }
         }
-        
-        .faq-section {
-            max-width: 800px;
-            margin: 60px auto 0;
-            background: rgba(255, 255, 255, 0.85);
-            border-radius: 24px;
-            padding: 40px;
-            box-shadow: 0 20px 45px rgba(15, 34, 61, 0.08);
-        }
-
-        .home-copy {
-            max-width: 720px;
-            margin: 0 auto 20px;
-            font-size: 18px;
-            line-height: 1.7;
-            color: #4a4a4a;
-        }
-
-        .hub-section {
-            margin-top: 48px;
-            text-align: left;
-        }
-
-        .section-kicker {
-            text-transform: uppercase;
-            letter-spacing: 0.16em;
-            font-size: 12px;
-            font-weight: 700;
-            color: #666;
-            margin-bottom: 12px;
-            text-align: center;
-        }
-
-        .hub-section h2 {
-            font-size: 32px;
-            letter-spacing: -0.03em;
-            text-align: center;
-            margin-bottom: 14px;
-        }
-
-        .hub-section > p {
-            max-width: 760px;
-            margin: 0 auto 28px;
-            text-align: center;
-            color: #555;
-            line-height: 1.7;
-        }
-
-        .hub-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 18px;
-            margin-top: 20px;
-        }
-
-        .hub-card {
-            display: block;
-            text-decoration: none;
-            color: inherit;
-            background: rgba(255, 255, 255, 0.94);
-            border-radius: 22px;
-            padding: 24px;
-            box-shadow: 0 14px 32px rgba(15, 34, 61, 0.08);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .hub-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 18px 38px rgba(15, 34, 61, 0.12);
-        }
-
-        .hub-card strong {
-            display: block;
-            font-size: 20px;
-            margin-bottom: 10px;
-            letter-spacing: -0.02em;
-        }
-
-        .hub-card span {
-            display: block;
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 14px;
-        }
-
-        .hub-card small {
-            color: #25D366;
-            font-weight: 700;
-            letter-spacing: 0.02em;
-        }
-
-        .review-spotlight {
-            margin-top: 44px;
-            text-align: left;
-        }
-
-        .review-spotlight-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 18px;
-            margin-top: 18px;
-        }
-
-        .review-spotlight-card {
-            display: block;
-            text-decoration: none;
-            color: inherit;
-            background: rgba(255, 255, 255, 0.94);
-            border-radius: 22px;
-            padding: 22px;
-            box-shadow: 0 14px 32px rgba(15, 34, 61, 0.08);
-        }
-
-        .review-spotlight-card strong {
-            display: block;
-            font-size: 20px;
-            margin-bottom: 8px;
-            letter-spacing: -0.02em;
-        }
-
-        .review-spotlight-card p {
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 12px;
-        }
-
-        .review-spotlight-rating {
-            display: inline-flex;
-            align-items: center;
-            margin-bottom: 12px;
-            padding: 7px 12px;
-            border-radius: 999px;
-            background: rgba(37, 211, 102, 0.12);
-            color: #128C7E;
-            font-size: 14px;
-            font-weight: 800;
-            letter-spacing: 0.01em;
-        }
-
-        .review-spotlight-card span {
-            color: #25D366;
-            font-weight: 700;
-        }
-
-        .faq-section h2 {
-            font-size: 30px;
-            margin-bottom: 24px;
-            letter-spacing: -0.02em;
-        }
-
-        .faq-item + .faq-item {
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(0,0,0,0.08);
-        }
-
-        .faq-question {
-            font-weight: 700;
-            font-size: 18px;
-            margin-bottom: 8px;
-        }
-
-        .faq-answer {
-            color: #444;
-            line-height: 1.6;
-        }
-       
     </style>
     <script type="application/ld+json">
     {
@@ -858,52 +808,49 @@
         </div>
     </header>
 
-    <main class="container">
-        
-        <h1>Stop Scrolling, Start Watching.</h1>
+    <main>
+        <div class="hero">
+            <h1>Stop Scrolling, Start Watching.</h1>
+            <p class="hero-subhead">Skip the fake hype. Find the right watch faster.</p>
+            <p class="home-copy">MyMovieJam is built for people who want a blunt answer fast: is this movie worth it, what should I watch tonight, and what fits if I loved something else? We focus on honest reviews, decision-help guides, similarity picks, and audience-first recommendations instead of generic movie fluff.</p>
 
+            <div class="action-buttons">
+                <a href="https://api.whatsapp.com/send?phone=6581615926&text=Hi MovieJam,%20What%20should%20I%20watch%20tonight?" class="button button-primary">
+                    <div class="button-icon chat-icon">
+                        <svg viewBox="0 0 448 512" fill="currentColor">
+                            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                        </svg>
+                    </div>
+                    <div class="button-text">
+                        <div class="button-title">Click to Start Chatting</div>
+                        <div class="button-subtitle">Opens WhatsApp • Chat with MovieJam AI</div>
+                    </div>
+                </a>
 
-        <div style="margin: -20px 0 20px 0; font-size: 24px; font-weight: 900; letter-spacing: -0.02em; color: #666;">
-            Skip the fake hype. Find the right watch faster.
+                <a href="https://api.whatsapp.com/send?phone=6581615926&text=Hi,%20What%20should%20I%20watch%20today%20?" class="button button-secondary">
+                    <div class="button-icon demo-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                    <div class="button-text">
+                        <div class="button-title">See How it works</div>
+                        <div class="button-subtitle">Opens WhatsApp • Get instant recommendations</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="status">
+                <div class="status-dot"></div>
+                <span>Online on WhatsApp</span>
+            </div>
         </div>
 
-        <p class="home-copy">MyMovieJam is built for people who want a blunt answer fast: is this movie worth it, what should I watch tonight, and what fits if I loved something else? We focus on honest reviews, decision-help guides, similarity picks, and audience-first recommendations instead of generic movie fluff.</p>
-
-        <div class="action-buttons">
-            <a href="https://api.whatsapp.com/send?phone=6581615926&text=Hi,%20What%20should%20I%20watch%20today%20?" class="button">
-                <div class="button-icon demo-icon">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M8 5v14l11-7z"/>
-                    </svg>
-                </div>
-                <div class="button-text">
-                    <div class="button-title">See How it works</div>
-                    <div class="button-subtitle">Opens WhatsApp • Get instant recommendations</div>
-                </div>
-            </a>
-
-            <a href="https://api.whatsapp.com/send?phone=6581615926&text=Hi MovieJam,%20What%20should%20I%20watch%20tonight?" class="button">
-                <div class="button-icon chat-icon">
-                    <svg viewBox="0 0 448 512" fill="currentColor">
-                        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
-                    </svg>
-                </div>
-                <div class="button-text">
-                    <div class="button-title">Click to Start Chatting</div>
-                    <div class="button-subtitle">Opens WhatsApp • Chat with MovieJam AI</div>
-                </div>
-            </a>
-        </div>
-
-        <div class="status">
-            <div class="status-dot"></div>
-            <span>Online on WhatsApp</span>
-        </div>
-
-        <section class="review-spotlight" aria-labelledby="single-review-spotlight">
+        <div class="container">
+        <section class="section-block review-spotlight" aria-labelledby="single-review-spotlight">
             <div class="section-kicker">Audience-first single-title reviews</div>
-            <h2 id="single-review-spotlight" style="text-align:center; margin-bottom:14px;">Start with our strongest single-title reviews</h2>
-            <p style="max-width:760px; margin:0 auto 24px; text-align:center; color:#555; line-height:1.7;">This is the clearest MyMovieJam selling point: blunt verdicts, real audience pulse, honest fit guidance, and visible ratings so users can judge value instantly.</p>
+            <h2 id="single-review-spotlight" class="section-title">Start with our strongest single-title reviews</h2>
+            <p class="section-lede">This is the clearest MyMovieJam selling point: blunt verdicts, real audience pulse, honest fit guidance, and visible ratings so users can judge value instantly.</p>
             <div class="review-spotlight-grid">
                 <a class="review-spotlight-card" href="/blog/spider-man-brand-new-day-review/">
                     <strong>Spider-Man: Brand New Day review</strong>
@@ -1027,10 +974,11 @@
                 </a>
             </div>
         </section>
-        <section class="hub-section" aria-labelledby="find-your-path">
+
+        <section class="section-block hub-section" aria-labelledby="find-your-path">
             <div class="section-kicker">More ways to explore</div>
-            <h2 id="find-your-path">Then go deeper by the kind of help you want</h2>
-            <p>Once you have seen the single-title reviews, the next layer is here: tonight picks, “movies like…” discovery, and recommendation hubs built around who should watch or skip.</p>
+            <h2 id="find-your-path" class="section-title">Then go deeper by the kind of help you want</h2>
+            <p class="section-lede">Once you have seen the single-title reviews, the next layer is here: tonight picks, “movies like…” discovery, and recommendation hubs built around who should watch or skip.</p>
             <div class="hub-grid">
                 <a class="hub-card" href="/movie-reviews/">
                     <strong>Honest movie reviews</strong>
@@ -1064,10 +1012,11 @@
                 </a>
             </div>
         </section>
-        <section class="hub-section" aria-labelledby="latest-from-blog">
+
+        <section class="section-block hub-section" aria-labelledby="latest-from-blog">
             <div class="section-kicker">Latest from the blog</div>
-            <h2 id="latest-from-blog">Fresh reviews and streaming picks, not an empty content pillar</h2>
-            <p>The blog is active and updated with real reviews, watch-tonight roundups, and quick decision-help posts that support the strongest search intents on the site.</p>
+            <h2 id="latest-from-blog" class="section-title">Fresh reviews and streaming picks, not an empty content pillar</h2>
+            <p class="section-lede">The blog is active and updated with real reviews, watch-tonight roundups, and quick decision-help posts that support the strongest search intents on the site.</p>
             <div class="hub-grid">
                 <a class="hub-card" href="/blog/odyssey-vs-spider-man-brand-new-day-on-x/">
                     <strong>Odyssey vs Spider-Man: Brand New Day on X</strong>
@@ -1111,6 +1060,7 @@
                 </a>
             </div>
         </section>
+        </div>
     </main>
 
     <section class="faq-section" id="faq">
@@ -1145,10 +1095,10 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 MyMovieJam.com. All rights reserved. <span class="emoji">🎬</span></p>
-            <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin:14px 0 8px;">
-                <a href="/about/" class="email-link" style="margin-top:0;"><span>About</span></a>
-                <a href="/editorial-policy/" class="email-link" style="margin-top:0;"><span>Editorial Policy</span></a>
-                <a href="/how-we-rate/" class="email-link" style="margin-top:0;"><span>How We Rate</span></a>
+            <div class="footer-links">
+                <a href="/about/" class="email-link"><span>About</span></a>
+                <a href="/editorial-policy/" class="email-link"><span>Editorial Policy</span></a>
+                <a href="/how-we-rate/" class="email-link"><span>How We Rate</span></a>
             </div>
             <a href="mailto:milinaire1425@icloud.com" class="email-link">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
