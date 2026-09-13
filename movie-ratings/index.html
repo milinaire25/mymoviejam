@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyMovieJam Ratings | Priority Movie & Series Scores</title>
+<meta name="description" content="Blunt MyMovieJam ratings for priority movies and series — score, one-line verdict, Watch if / Skip if, and WhatsApp picks." />
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<meta name="author" content="Milind Patil" />
+<link rel="canonical" href="https://mymoviejam.com/movie-ratings/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="MyMovieJam" />
+<meta property="og:title" content="MyMovieJam Priority Ratings" />
+<meta property="og:description" content="Scan blunt scores, open a card for Watch if / Skip if, then get a personal shortlist on WhatsApp." />
+<meta property="og:url" content="https://mymoviejam.com/movie-ratings/" />
+<meta property="og:image" content="https://mymoviejam.com/blog/images/mymoviejam-home-share.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="MyMovieJam Priority Ratings" />
+<meta name="twitter:description" content="Priority movie and series ratings with Watch if / Skip if guidance." />
+<meta name="twitter:image" content="https://mymoviejam.com/blog/images/mymoviejam-home-share.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f5f7;--surface:#fff;--text:#1d1d1f;--secondary:#6e6e73;--border:rgba(0,0,0,.08);--border-hover:rgba(0,0,0,.16);--wa:#25D366;--wa-dark:#1ebe57;--radius:20px;--content:860px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{overflow-x:clip;-webkit-font-smoothing:antialiased}
+body{font-family:-apple-system,BlinkMacSystemFont,'Inter','Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+a{color:inherit}
+.site-header{position:sticky;top:0;z-index:20;backdrop-filter:saturate(180%) blur(16px);background:rgba(245,245,247,.8);border-bottom:1px solid var(--border)}
+.header-inner{max-width:1080px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:20px;letter-spacing:-.02em}
+.logo-icon{width:36px;height:36px;border-radius:50%;background:#ff4444;display:flex;align-items:center;justify-content:center}
+.logo-icon svg{width:18px;height:18px;fill:#fff}
+nav{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+nav a{text-decoration:none;color:var(--secondary);font-size:14px;font-weight:500;padding:8px 12px;border-radius:980px}
+nav a:hover,nav a.active{color:var(--text);background:rgba(0,0,0,.04)}
+nav a.wa{color:var(--wa-dark);font-weight:600}
+.page{max-width:var(--content);margin:0 auto;padding:40px 24px 96px}
+.kicker{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--secondary);margin-bottom:12px}
+h1{font-size:clamp(32px,5vw,48px);font-weight:700;letter-spacing:-.03em;line-height:1.05;margin-bottom:12px}
+.lede{font-size:18px;line-height:1.5;color:var(--secondary);max-width:640px;margin-bottom:28px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.chip{border:1px solid var(--border);background:var(--surface);color:var(--secondary);padding:8px 14px;border-radius:980px;font-size:13px;font-weight:500;text-decoration:none}
+.chip.active{background:var(--text);color:#fff;border-color:var(--text)}
+.row{display:grid;grid-template-columns:64px 1fr auto;gap:16px;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:16px 18px;margin-bottom:10px;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.row:hover{transform:translateY(-1px);border-color:var(--border-hover);box-shadow:0 8px 24px rgba(0,0,0,.05)}
+.score{font-weight:800;font-size:22px;color:var(--wa-dark);letter-spacing:-.02em}
+.t{font-weight:700;font-size:16px;letter-spacing:-.01em}
+.s{font-size:13px;color:var(--secondary);margin-top:2px}
+.open{font-size:13px;font-weight:600;color:var(--secondary)}
+.cta{margin-top:36px;background:linear-gradient(180deg,#25D366 0%,#1da851 100%);color:#fff;border-radius:var(--radius);padding:28px 24px;text-align:center}
+.cta p{opacity:.95;margin:8px 0 16px;font-size:15px}
+.cta a{display:inline-flex;background:#fff;color:#128C7E;font-weight:700;text-decoration:none;border-radius:980px;padding:12px 18px}
+.site-foot{max-width:1080px;margin:0 auto;padding:24px;text-align:center;color:var(--secondary);font-size:14px;border-top:1px solid var(--border)}
+.back{color:var(--secondary);text-decoration:none;font-size:14px;font-weight:500;display:inline-block;margin-bottom:18px}
+.back:hover{color:var(--text)}
+.header-row{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:18px}
+.meta{margin-top:8px;color:var(--secondary);font-size:15px}
+.rating{flex-shrink:0;background:rgba(37,211,102,.12);color:var(--wa-dark);font-weight:800;font-size:28px;padding:12px 16px;border-radius:980px;letter-spacing:-.02em}
+.rating small{font-size:14px;font-weight:600;opacity:.8}
+.verdict{font-size:20px;line-height:1.4;letter-spacing:-.015em;margin:24px 0 28px;font-weight:500}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+.pill{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:18px}
+.pill h3{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--secondary);margin-bottom:8px;font-weight:700}
+.pill p{font-size:15px;line-height:1.45}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:40px}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-size:15px;font-weight:600;border-radius:980px;padding:14px 20px}
+.btn-primary{background:var(--wa);color:#fff}
+.btn-secondary{background:var(--surface);color:var(--text);border:1px solid var(--border)}
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:20px}
+.panel h2{font-size:18px;letter-spacing:-.02em;margin-bottom:10px}
+.panel p,.panel li{color:var(--secondary);font-size:15px;line-height:1.55}
+.panel ul{padding-left:18px}
+.panel li{margin:6px 0}
+.related{margin-top:28px}
+.related h2{font-size:22px;letter-spacing:-.02em;margin-bottom:14px}
+@media(max-width:640px){.split{grid-template-columns:1fr}.header-row{flex-direction:column}.row{grid-template-columns:52px 1fr}.open{display:none}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "MyMovieJam Priority Movie & Series Ratings", "description": "Blunt MyMovieJam ratings with Watch if / Skip if guidance for priority titles.", "numberOfItems": 23, "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://mymoviejam.com/movie-ratings/michael/", "name": "Michael"}, {"@type": "ListItem", "position": 2, "url": "https://mymoviejam.com/movie-ratings/the-crash/", "name": "The Crash"}, {"@type": "ListItem", "position": 3, "url": "https://mymoviejam.com/movie-ratings/made-in-india-a-titan-story/", "name": "Made In India: A Titan Story"}, {"@type": "ListItem", "position": 4, "url": "https://mymoviejam.com/movie-ratings/the-sheep-detectives/", "name": "The Sheep Detectives"}, {"@type": "ListItem", "position": 5, "url": "https://mymoviejam.com/movie-ratings/operation-safed-sagar/", "name": "Operation Safed Sagar"}, {"@type": "ListItem", "position": 6, "url": "https://mymoviejam.com/movie-ratings/pluribus/", "name": "Pluribus"}, {"@type": "ListItem", "position": 7, "url": "https://mymoviejam.com/movie-ratings/spider-noir/", "name": "Spider-Noir"}, {"@type": "ListItem", "position": 8, "url": "https://mymoviejam.com/movie-ratings/teach-you-a-lesson/", "name": "Teach You A Lesson"}, {"@type": "ListItem", "position": 9, "url": "https://mymoviejam.com/movie-ratings/emi-martinez-the-kid-who-stops-time/", "name": "Emi Martínez: The Kid Who Stops Time"}, {"@type": "ListItem", "position": 10, "url": "https://mymoviejam.com/movie-ratings/i-will-find-you/", "name": "I Will Find You"}, {"@type": "ListItem", "position": 11, "url": "https://mymoviejam.com/movie-ratings/margo-s-got-money-troubles/", "name": "Margo's Got Money Troubles"}, {"@type": "ListItem", "position": 12, "url": "https://mymoviejam.com/movie-ratings/reacher-season-4/", "name": "Reacher Season 4"}, {"@type": "ListItem", "position": 13, "url": "https://mymoviejam.com/movie-ratings/remarkably-bright-creatures/", "name": "Remarkably Bright Creatures"}, {"@type": "ListItem", "position": 14, "url": "https://mymoviejam.com/movie-ratings/the-boroughs/", "name": "The Boroughs"}, {"@type": "ListItem", "position": 15, "url": "https://mymoviejam.com/movie-ratings/the-pyramid-scheme/", "name": "The Pyramid Scheme"}, {"@type": "ListItem", "position": 16, "url": "https://mymoviejam.com/movie-ratings/widow-s-bay/", "name": "Widow's Bay"}, {"@type": "ListItem", "position": 17, "url": "https://mymoviejam.com/movie-ratings/can-this-love-be-translated/", "name": "Can This Love Be Translated?"}, {"@type": "ListItem", "position": 18, "url": "https://mymoviejam.com/movie-ratings/maa-behen/", "name": "Maa Behen"}, {"@type": "ListItem", "position": 19, "url": "https://mymoviejam.com/movie-ratings/musafir-cafe/", "name": "Musafir Cafe"}, {"@type": "ListItem", "position": 20, "url": "https://mymoviejam.com/movie-ratings/silo-season-3/", "name": "Silo Season 3"}, {"@type": "ListItem", "position": 21, "url": "https://mymoviejam.com/movie-ratings/ted-lasso-season-4/", "name": "Ted Lasso Season 4"}, {"@type": "ListItem", "position": 22, "url": "https://mymoviejam.com/movie-ratings/young-sherlock/", "name": "Young Sherlock"}, {"@type": "ListItem", "position": 23, "url": "https://mymoviejam.com/movie-ratings/pretty-lethal/", "name": "Pretty Lethal"}]}</script>
+<script async src="https://plausible.io/js/pa--oC4nGgp0K7LQGFneiNaZ.js"></script>
+<script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(opts){plausible.o=opts||{}};plausible.init();</script>
+</head>
+<body>
+<header class="site-header"><div class="header-inner">
+<a class="logo" href="/"><div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><span>MyMovieJam</span></a>
+<nav><a href="/" class="">Home</a><a href="/movie-reviews/" class="">Reviews</a><a href="/movie-ratings/" class="active">Ratings</a><a href="/blog/" class="">Blog</a><a href="/pricing.html" class="">Pricing</a><a href="https://api.whatsapp.com/send?phone=6581615926&amp;text=Hi%20MovieJam,%20What%20should%20I%20watch%20tonight?" class="wa" target="_blank" rel="noopener">Chat on WhatsApp</a></nav></div></header>
+<main class="page">
+  <div class="kicker">Priority ratings · Mode B</div>
+  <h1>23 blunt scores. One tap to the verdict.</h1>
+  <p class="lede">Our highest-confidence titles first — rating, fit, and Watch if / Skip if on each card. WhatsApp stays the personal shortlist. Built to be quoted by answer engines, not dumped as a spreadsheet.</p>
+  <div class="filters" aria-label="Filters">
+    <span class="chip active">All 23</span>
+    <a class="chip" href="#list">9+</a>
+    <a class="chip" href="#list">Netflix</a>
+    <a class="chip" href="#list">Prime</a>
+  </div>
+  <div id="list"><a class="row" href="/movie-ratings/michael/">
+<div class="score">10</div>
+<div><div class="t">Michael</div><div class="s">Theatrical · Performance-driven, music-powered theatrical feature. Crowd energy; pure entertainment escape.</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/the-crash/">
+<div class="score">10</div>
+<div><div class="t">The Crash</div><div class="s">Netflix · True-crime doc about a car crash that spirals into murder. Fast momentum, emotionally raw. Built for…</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/made-in-india-a-titan-story/">
+<div class="score">9</div>
+<div><div class="t">Made In India: A Titan Story</div><div class="s">Prime Video · Process-driven drama about ambition, rejection, and building something from nothing. Earns respect over hype.</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/the-sheep-detectives/">
+<div class="score">9</div>
+<div><div class="t">The Sheep Detectives</div><div class="s">Prime Video · Hugh Jackman reads mysteries to his flock — then the sheep solve one. Weird premise, warm payoff. Strong…</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/operation-safed-sagar/">
+<div class="score">8.5</div>
+<div><div class="t">Operation Safed Sagar</div><div class="s">Netflix · Kargil Air Force story where the praise that sticks is restraint, craft, and emotional pull —…</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/pluribus/">
+<div class="score">8.5</div>
+<div><div class="t">Pluribus</div><div class="s">Apple TV+ · Vince Gilligan&#x27;s (Breaking Bad) mind-bending sci-fi thriller starring Rhea Seehorn. Reddit: &#x27;one of the…</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/spider-noir/">
+<div class="score">8.5</div>
+<div><div class="t">Spider-Noir</div><div class="s">Prime Video · Nicolas Cage as the hardboiled Spider in a completely unhinged stylized action-comedy. Reddit: &#x27;Cage&#x27;s…</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/teach-you-a-lesson/">
+<div class="score">8.5</div>
+<div><div class="t">Teach You A Lesson</div><div class="s">Netflix · Korean webtoon adaptation about an anti-school-bullying task force with cathartic action and emotional…</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/emi-martinez-the-kid-who-stops-time/">
+<div class="score">8</div>
+<div><div class="t">Emi Martínez: The Kid Who Stops Time</div><div class="s">Netflix · Animated sports doc. Family-friendly, inspiring football story even if you&#x27;re not a hardcore sports fan.</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/i-will-find-you/">
+<div class="score">8</div>
+<div><div class="t">I Will Find You</div><div class="s">Netflix · Harlan Coben-style thriller: wrongfully imprisoned father, missing son, fast stakes. Immediate hook for…</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/margo-s-got-money-troubles/">
+<div class="score">8</div>
+<div><div class="t">Margo&#x27;s Got Money Troubles</div><div class="s">Apple TV+ · Elle Fanning and Michelle Pfeiffer in an ensemble limited series about survival, money troubles, and…</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/reacher-season-4/">
+<div class="score">8</div>
+<div><div class="t">Reacher Season 4</div><div class="s">Prime Video · Jack Reacher keeps delivering: clean action, simple durable word of mouth. Fun and satisfying more than…</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/remarkably-bright-creatures/">
+<div class="score">8</div>
+<div><div class="t">Remarkably Bright Creatures</div><div class="s">Netflix · Gentle emotional drama — warm recommendation for a softer night. Verify platform before claiming availability.</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/the-boroughs/">
+<div class="score">8</div>
+<div><div class="t">The Boroughs</div><div class="s">Netflix · Creepy small-town mystery with found-family dynamics. Stranger Things-adjacent energy without copying it.</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/the-pyramid-scheme/">
+<div class="score">8</div>
+<div><div class="t">The Pyramid Scheme</div><div class="s">Prime Video · TVF&#x27;s grounded look at pyramid marketing scams from Haridwar streets to betrayal and greed. Clean content…</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/widow-s-bay/">
+<div class="score">8</div>
+<div><div class="t">Widow&#x27;s Bay</div><div class="s">Apple TV+ · Mystery-comedy hybrid. Matthew Rhys leads a small-town mystery that works as both comedy and drama. One of…</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/can-this-love-be-translated/">
+<div class="score">7.5</div>
+<div><div class="t">Can This Love Be Translated?</div><div class="s">Netflix · Hong sisters&#x27; warm rom-com starring Kim Seon-ho about a translator and chaebol heir. &#x27;Masterclass in…</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/maa-behen/">
+<div class="score">7.5</div>
+<div><div class="t">Maa Behen</div><div class="s">Netflix · Dark comedy: mother and estranged daughters cover up a crime inside a nosy colony. Taste-dependent messy…</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/musafir-cafe/">
+<div class="score">7.5</div>
+<div><div class="t">Musafir Cafe</div><div class="s">Netflix · Hindi romantic drama (Vikrant Massey): Chander caught between a charged past love and quieter present…</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/silo-season-3/">
+<div class="score">7.5</div>
+<div><div class="t">Silo Season 3</div><div class="s">Apple TV+ · Rebecca Ferguson leads Apple&#x27;s flagship sci-fi. Solid transitional season as the central mystery unravels.…</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/ted-lasso-season-4/">
+<div class="score">7.5</div>
+<div><div class="t">Ted Lasso Season 4</div><div class="s">Apple TV+ · Ted returns to England coaching a women&#x27;s team. Same heart, new locker-room energy. Comfort-food TV more…</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/young-sherlock/">
+<div class="score">7.5</div>
+<div><div class="t">Young Sherlock</div><div class="s">Prime Video · Guy Ritchie&#x27;s take on teenage Sherlock solving first mysteries in Victorian London. Fiennes Tiffin leads…</div></div>
+<div class="open">Open card →</div></a><a class="row" href="/movie-ratings/pretty-lethal/">
+<div class="score">6.5</div>
+<div><div class="t">Pretty Lethal</div><div class="s">Prime Video · John Wick production team&#x27;s ballet-themed action thriller starring Uma Thurman and Maddie Ziegler. Great…</div></div>
+<div class="open">Open card →</div></a></div>
+  <div class="cta">
+    <strong style="font-size:20px;letter-spacing:-.02em">Want a shortlist, not a scroll?</strong>
+    <p>Tell MovieJam your mood, platform, and who you’re with.</p>
+    <a href="https://api.whatsapp.com/send?phone=6581615926&text=Hi%20MovieJam,%20What%20should%20I%20watch%20tonight?" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </div>
+</main>
+<footer class="site-foot"><p>© MyMovieJam · Honest ratings by Milind Patil · <a href="/how-we-rate/">How we rate</a> · <a href="/editorial-policy/">Editorial policy</a></p></footer>
+</body></html>
