@@ -10,12 +10,12 @@
 <link rel="canonical" href="https://mymoviejam.com/movie-ratings/margo-s-got-money-troubles/" />
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="MyMovieJam" />
-<meta property="og:title" content="Margo&#x27;s Got Money Troubles — 8/10 MyMovieJam" />
+<meta property="og:title" content="Margo&#x27;s Got Money Troubles — 8/10 MyMovieJam rating" />
 <meta property="og:description" content="Elle Fanning and Michelle Pfeiffer in an ensemble limited series about survival, money troubles, and unexpected turns. 100% RT score. Renewed for Season 2." />
 <meta property="og:url" content="https://mymoviejam.com/movie-ratings/margo-s-got-money-troubles/" />
 <meta property="og:image" content="https://mymoviejam.com/blog/images/mymoviejam-home-share.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Margo&#x27;s Got Money Troubles — 8/10" />
+<meta name="twitter:title" content="Margo&#x27;s Got Money Troubles — Rating 8/10" />
 <meta name="twitter:description" content="Elle Fanning and Michelle Pfeiffer in an ensemble limited series about survival, money troubles, and unexpected turns. 100% RT score. Renewed for Season 2." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,12 +39,16 @@ nav a.wa{color:var(--wa-dark);font-weight:600}
 .kicker{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--secondary);margin-bottom:12px}
 h1{font-size:clamp(32px,5vw,48px);font-weight:700;letter-spacing:-.03em;line-height:1.05;margin-bottom:12px}
 .lede{font-size:18px;line-height:1.5;color:var(--secondary);max-width:640px;margin-bottom:28px}
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
-.chip{border:1px solid var(--border);background:var(--surface);color:var(--secondary);padding:8px 14px;border-radius:980px;font-size:13px;font-weight:500;text-decoration:none}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.chip{border:1px solid var(--border);background:var(--surface);color:var(--secondary);padding:8px 14px;border-radius:980px;font-size:13px;font-weight:500;text-decoration:none;cursor:pointer;font-family:inherit}
 .chip.active{background:var(--text);color:#fff;border-color:var(--text)}
-.row{display:grid;grid-template-columns:64px 1fr auto;gap:16px;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:16px 18px;margin-bottom:10px;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.filter-status{font-size:13px;color:var(--secondary);margin-bottom:18px;min-height:1.2em}
+.row{display:grid;grid-template-columns:72px 1fr auto;gap:16px;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:16px 18px;margin-bottom:10px;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
 .row:hover{transform:translateY(-1px);border-color:var(--border-hover);box-shadow:0 8px 24px rgba(0,0,0,.05)}
-.score{font-weight:800;font-size:22px;color:var(--wa-dark);letter-spacing:-.02em}
+.row.hidden{display:none}
+.score-wrap{display:flex;flex-direction:column;align-items:flex-start;gap:2px}
+.score-label{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--secondary)}
+.score{font-weight:800;font-size:22px;color:var(--wa-dark);letter-spacing:-.02em;line-height:1}
 .t{font-weight:700;font-size:16px;letter-spacing:-.01em}
 .s{font-size:13px;color:var(--secondary);margin-top:2px}
 .open{font-size:13px;font-weight:600;color:var(--secondary)}
@@ -56,6 +60,8 @@ h1{font-size:clamp(32px,5vw,48px);font-weight:700;letter-spacing:-.03em;line-hei
 .back:hover{color:var(--text)}
 .header-row{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:18px}
 .meta{margin-top:8px;color:var(--secondary);font-size:15px}
+.rating-wrap{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.rating-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--secondary)}
 .rating{flex-shrink:0;background:rgba(37,211,102,.12);color:var(--wa-dark);font-weight:800;font-size:28px;padding:12px 16px;border-radius:980px;letter-spacing:-.02em}
 .rating small{font-size:14px;font-weight:600;opacity:.8}
 .verdict{font-size:20px;line-height:1.4;letter-spacing:-.015em;margin:24px 0 28px;font-weight:500}
@@ -74,7 +80,7 @@ h1{font-size:clamp(32px,5vw,48px);font-weight:700;letter-spacing:-.03em;line-hei
 .panel li{margin:6px 0}
 .related{margin-top:28px}
 .related h2{font-size:22px;letter-spacing:-.02em;margin-bottom:14px}
-@media(max-width:640px){.split{grid-template-columns:1fr}.header-row{flex-direction:column}.row{grid-template-columns:52px 1fr}.open{display:none}}
+@media(max-width:640px){.split{grid-template-columns:1fr}.header-row{flex-direction:column}.rating-wrap{align-items:flex-start}.row{grid-template-columns:64px 1fr}.open{display:none}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Review", "name": "Margo's Got Money Troubles MyMovieJam rating", "url": "https://mymoviejam.com/movie-ratings/margo-s-got-money-troubles/", "datePublished": "2026-09-13", "dateModified": "2026-09-13", "author": {"@type": "Person", "name": "Milind Patil"}, "publisher": {"@type": "Organization", "name": "MyMovieJam", "url": "https://mymoviejam.com/"}, "itemReviewed": {"@type": "TVSeries", "name": "Margo's Got Money Troubles"}, "reviewBody": "Elle Fanning and Michelle Pfeiffer in an ensemble limited series about survival, money troubles, and unexpected turns. 100% RT score. Renewed for Season 2.", "reviewRating": {"@type": "Rating", "ratingValue": "8", "bestRating": "10", "worstRating": "1"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Margo's Got Money Troubles worth watching?", "acceptedAnswer": {"@type": "Answer", "text": "Elle Fanning and Michelle Pfeiffer in an ensemble limited series about survival, money troubles, and unexpected turns. 100% RT score. Renewed for Season 2."}}, {"@type": "Question", "name": "Who should watch Margo's Got Money Troubles?", "acceptedAnswer": {"@type": "Answer", "text": "Ensemble cast drama-comedy"}}, {"@type": "Question", "name": "Who should skip Margo's Got Money Troubles?", "acceptedAnswer": {"@type": "Answer", "text": "Need pilot that hooks in 5 min"}}]}]}</script>
 <script async src="https://plausible.io/js/pa--oC4nGgp0K7LQGFneiNaZ.js"></script>
@@ -92,7 +98,10 @@ h1{font-size:clamp(32px,5vw,48px);font-weight:700;letter-spacing:-.03em;line-hei
       <h1>Margo&#x27;s Got Money Troubles</h1>
       <div class="meta">Series · Apple TV+ · Drama / Comedy / Limited Series · 2026 · By Milind Patil</div>
     </div>
-    <div class="rating">8 <small>/10</small></div>
+    <div class="rating-wrap">
+      <span class="rating-label">Rating</span>
+      <div class="rating">8 <small>/10</small></div>
+    </div>
   </div>
   <p class="verdict">Elle Fanning and Michelle Pfeiffer in an ensemble limited series about survival, money troubles, and unexpected turns. 100% RT score. Renewed for Season 2.</p>
   <div class="split">
@@ -117,7 +126,7 @@ h1{font-size:clamp(32px,5vw,48px);font-weight:700;letter-spacing:-.03em;line-hei
   </div>
   <div class="related">
     <h2>Nearby on the list</h2>
-    <a class="row" href="/movie-ratings/emi-martinez-the-kid-who-stops-time/"><div class="score">8</div><div><div class="t">Emi Martínez: The Kid Who Stops Time</div><div class="s">Netflix</div></div><div class="open">Open</div></a><a class="row" href="/movie-ratings/i-will-find-you/"><div class="score">8</div><div><div class="t">I Will Find You</div><div class="s">Netflix</div></div><div class="open">Open</div></a><a class="row" href="/movie-ratings/reacher-season-4/"><div class="score">8</div><div><div class="t">Reacher Season 4</div><div class="s">Prime Video</div></div><div class="open">Open</div></a>
+    <a class="row" href="/movie-ratings/emi-martinez-the-kid-who-stops-time/"><div class="score-wrap"><span class="score-label">Rating</span><div class="score">8</div></div><div><div class="t">Emi Martínez: The Kid Who Stops Time</div><div class="s">Netflix</div></div><div class="open">Open</div></a><a class="row" href="/movie-ratings/i-will-find-you/"><div class="score-wrap"><span class="score-label">Rating</span><div class="score">8</div></div><div><div class="t">I Will Find You</div><div class="s">Netflix</div></div><div class="open">Open</div></a><a class="row" href="/movie-ratings/reacher-season-4/"><div class="score-wrap"><span class="score-label">Rating</span><div class="score">8</div></div><div><div class="t">Reacher Season 4</div><div class="s">Prime Video</div></div><div class="open">Open</div></a>
   </div>
   <div class="cta" style="margin-top:36px">
     <strong style="font-size:20px;letter-spacing:-.02em">Need a tonight shortlist?</strong>
