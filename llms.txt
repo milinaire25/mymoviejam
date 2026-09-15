@@ -12,7 +12,7 @@ MyMovieJam helps people decide what to watch on Netflix, Prime Video, and other 
 - Honest movie reviews: https://mymoviejam.com/movie-reviews/
 - What to watch tonight: https://mymoviejam.com/what-to-watch-tonight.html
 - Movie recommendations: https://mymoviejam.com/movie-recommendations/
-- Priority ratings (Mode B): https://mymoviejam.com/movie-ratings/
+- Movie ratings (254 Watch if / Skip if cards): https://mymoviejam.com/movie-ratings/
 - Netflix recommendations: https://mymoviejam.com/netflix-movie-recommendations/
 - Amazon Prime recommendations: https://mymoviejam.com/amazon-prime-movie-recommendations/
 - Editorial policy: https://mymoviejam.com/editorial-policy/
