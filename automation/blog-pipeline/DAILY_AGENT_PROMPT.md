@@ -4,7 +4,7 @@ You are publishing exactly **one** new MyMovieJam blog post from the CSV-driven 
 
 ## Goal
 
-Create a daily SEO-optimized post that feels like a real MyMovieJam article:
+Create a daily post that is easy to find and feels like a real MyMovieJam article:
 - strong viral hook
 - opinionated audience-first voice
 - honest recommendations only
@@ -60,9 +60,9 @@ If a brief does not clearly support one of these clusters, reshape the angle so 
     - Use at least 1 community signal source when available (for example Reddit, X/Twitter reactions, or a reputable article summarizing social chatter)
     - If the title has real chatter, add a short “what viewers are actually saying” / internet-pulse section instead of relying only on your own framing
 11. Include:
-   - title/meta description/keywords
+   - title/meta description/keywords (see Required publishing rules #2)
    - OG + Twitter tags
-   - Article schema
+   - Article schema with the Person author (rule #1)
    - FAQ schema
    - visible trust signal when relevant (for example: clear byline, rating logic, or link path to /editorial-policy/ or /how-we-rate/)
    - quick picks section
@@ -78,6 +78,29 @@ If a brief does not clearly support one of these clusters, reshape the angle so 
    git push origin main
    ```
 
+
+## Required publishing rules (added 2026-10-01)
+
+These are mandatory for every post. Check each one before committing.
+
+1. **Author is always Milind Patil, as a Person.** In every Article, BlogPosting, Review and HowTo JSON-LD block, use exactly:
+   `"author":{"@type":"Person","@id":"https://mymoviejam.com/about/#milind-patil","name":"Milind Patil","url":"https://mymoviejam.com/about/"}`
+   - Show a visible byline: `By <a href="/about/">Milind Patil</a>`.
+   - Never use "MovieJam Crew", "MyMovieJam" or any Organization as the author. The Organization stays only in `publisher`.
+   - Set `<meta property="article:author" content="Milind Patil" />`.
+2. **Real meta description.** 140–160 characters, a specific one-line pitch for the post. Never just "MyMovieJam" or the site name. `og:description` and `twitter:description` must match it.
+   - Escape apostrophes and quotes properly (use `&#39;`/`’` or double-quoted attributes) so the content attribute is not cut off at the first apostrophe.
+3. **Scores must match everywhere.** If the post gives a MyMovieJam score:
+   - The JSON-LD `reviewRating.ratingValue` must equal the visible score (not IMDb, RT or any audience number shown on the page).
+   - If `/movie-ratings/<slug>/` exists for the title, link to it from the post, and make sure the card score equals the blog score. If they differ, the blog score wins: update `data/movies_series_master.csv` / the card, and note it in the commit message.
+   - Add the post to the card's "Full review" link (rating-card back-link) when a card exists.
+4. **Correct item type.** `itemReviewed` must be `TVSeries` for series, miniseries and seasons, and `Movie` only for films. Check before writing.
+5. **No SEO/strategy wording in reader-facing copy.** Do not write "SEO", "search intent", "query", "cluster", "layer", "strategy", "template", "answer engines" or "Google should see…" in visible text. The search clusters in this file are for planning only.
+6. **Ping IndexNow after the push succeeds:**
+   ```bash
+   python3 scripts/indexnow_ping.py https://mymoviejam.com/blog/<slug>/ https://mymoviejam.com/blog/ https://mymoviejam.com/sitemap.xml
+   ```
+   Include any rating-card URL you changed. Report the HTTP status in your success note.
 
 ## Transparency rule
 
@@ -106,5 +129,5 @@ Where it fits naturally, reinforce the site’s trust layer:
 ## Success condition
 
 At the end, the post is live in the repo, pushed to `main`, and the state file reflects the used titles.
-If everything succeeds, reply with a concise success note including the slug and commit hash.
+If everything succeeds, reply with a concise success note including the slug, commit hash and IndexNow HTTP status.
 If anything fails, reply with the blocker only.
