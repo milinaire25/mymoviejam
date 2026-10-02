@@ -99,7 +99,7 @@ h1{font-size:clamp(32px,5vw,48px);font-weight:700;letter-spacing:-.03em;line-hei
   <h1>253 blunt scores. One tap to the verdict.</h1>
   <p class="lede">Every title we have scored, with a one-line verdict and Watch if / Skip if on each card. Scores are out of 10 and come from real viewers we know, cross-checked against social sentiment on X (<a href="/how-we-rate/#mymoviejam-score" style="color:inherit">how the MyMovieJam score works</a>). Want a personal shortlist instead? Ask on WhatsApp.</p>
   <div class="filters" role="group" aria-label="Filter by platform or score">
-    <button type="button" class="chip active" data-filter="all">All</button><button type="button" class="chip" data-filter="9plus">9+</button><button type="button" class="chip" data-filter="netflix">Netflix</button><button type="button" class="chip" data-filter="prime">Prime</button><button type="button" class="chip" data-filter="appletv">Apple TV</button><button type="button" class="chip" data-filter="disney">Disney+</button>
+    <button type="button" class="chip active" data-filter="all">All</button><button type="button" class="chip" data-filter="8plus">Great (8+)</button><button type="button" class="chip" data-filter="netflix">Netflix</button><button type="button" class="chip" data-filter="prime">Prime</button><button type="button" class="chip" data-filter="appletv">Apple TV</button><button type="button" class="chip" data-filter="disney">Disney+</button>
   </div>
   <div class="filters secondary" role="group" aria-label="Filter by genre">
     <button type="button" class="chip active" data-genre-filter="all">All genres</button><button type="button" class="chip" data-genre-filter="Action">Action</button><button type="button" class="chip" data-genre-filter="Adventure">Adventure</button><button type="button" class="chip" data-genre-filter="Animation">Animation</button><button type="button" class="chip" data-genre-filter="Biography">Biography</button><button type="button" class="chip" data-genre-filter="Comedy">Comedy</button><button type="button" class="chip" data-genre-filter="Crime">Crime</button><button type="button" class="chip" data-genre-filter="Documentary">Documentary</button><button type="button" class="chip" data-genre-filter="Drama">Drama</button><button type="button" class="chip" data-genre-filter="Family">Family</button><button type="button" class="chip" data-genre-filter="Fantasy">Fantasy</button><button type="button" class="chip" data-genre-filter="Horror">Horror</button><button type="button" class="chip" data-genre-filter="Romance">Romance</button><button type="button" class="chip" data-genre-filter="Sci-Fi">Sci-Fi</button><button type="button" class="chip" data-genre-filter="Sports">Sports</button><button type="button" class="chip" data-genre-filter="Thriller">Thriller</button><button type="button" class="chip" data-genre-filter="Other">Other</button>
@@ -122,7 +122,7 @@ h1{font-size:clamp(32px,5vw,48px);font-weight:700;letter-spacing:-.03em;line-hei
   var total = rows.length;
   var plat = 'all';
   var genre = 'all';
-  var platLabels = {all:'all titles', '9plus':'titles rated 9+', netflix:'Netflix titles', prime:'Prime Video titles', appletv:'Apple TV titles', disney:'Disney+ titles'};
+  var platLabels = {all:'all titles', '8plus':'titles rated 8+', netflix:'Netflix titles', prime:'Prime Video titles', appletv:'Apple TV titles', disney:'Disney+ titles'};
   function apply(){
     platChips.forEach(function(c){ c.classList.toggle('active', c.getAttribute('data-filter')===plat); });
     genreChips.forEach(function(c){ c.classList.toggle('active', c.getAttribute('data-genre-filter')===genre); });
@@ -132,7 +132,7 @@ h1{font-size:clamp(32px,5vw,48px);font-weight:700;letter-spacing:-.03em;line-hei
       var score = parseFloat(row.getAttribute('data-score')||'0');
       var g = row.getAttribute('data-genre')||'';
       var ok = true;
-      if(plat==='9plus') ok = score >= 9;
+      if(plat==='8plus') ok = score >= 8;
       else if(plat==='netflix') ok = plats.indexOf('netflix')!==-1;
       else if(plat==='prime') ok = plats.indexOf('prime')!==-1;
       else if(plat==='appletv') ok = plats.indexOf('appletv')!==-1;
@@ -144,7 +144,8 @@ h1{font-size:clamp(32px,5vw,48px);font-weight:700;letter-spacing:-.03em;line-hei
     if(status){
       var bit = platLabels[plat] || 'titles';
       var gbit = (genre==='all') ? '' : (' in ' + genre);
-      status.textContent = 'Showing ' + shown + ' of ' + total + ' titles…' + (plat==='all' && genre==='all' ? '' : ' (' + bit + gbit + ')');
+      if(plat==='8plus') status.textContent = 'Showing ' + shown + ' titles rated 8+' + gbit;
+      else status.textContent = 'Showing ' + shown + ' of ' + total + ' titles…' + (plat==='all' && genre==='all' ? '' : ' (' + bit + gbit + ')');
     }
   }
   platChips.forEach(function(chip){
