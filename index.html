@@ -785,6 +785,12 @@
         plausible.init = plausible.init || function (opts) { plausible.o = opts || {}; };
         plausible.init();
     </script>
+<!-- Responsive launch video -->
+<style>
+.hero{max-width:1320px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:54px;align-items:center;padding:64px 40px 60px;text-align:left}.hero-intro{min-width:0}.hero h1{font-size:clamp(38px,4.3vw,60px)}.hero .home-copy{font-size:16px;line-height:1.65}.hero .action-buttons{margin-left:0}.hero .status{justify-content:flex-start}.launch-preview{min-width:0;text-align:left}.launch-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.launch-eyebrow{color:#6b6b70;font-size:11px;letter-spacing:.14em;font-weight:700}.launch-duration{font-size:12px;color:#71717a;background:white;padding:5px 10px;border-radius:30px;border:1px solid #e4e4e7}.launch-preview h2{font-size:clamp(22px,2.1vw,29px);letter-spacing:-.035em;line-height:1.2;margin:0 0 20px}.launch-player{position:relative;border:1px solid #e1e3e6;border-radius:20px;overflow:hidden;background:#f4f5f7;box-shadow:0 20px 65px #11182712}.launch-player video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}.launch-play{position:absolute;inset:auto auto 48px 50%;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;gap:10px;padding:12px 18px;border:0;border-radius:99px;background:#18191cf0;color:white;font:600 14px Inter,Arial,sans-serif;white-space:nowrap;cursor:pointer;box-shadow:0 6px 20px #0003}.launch-play:hover{background:#35363a}.launch-play:focus-visible{outline:3px solid #00c969;outline-offset:4px}.launch-play[hidden]{display:none}.launch-note{color:#6b6b70;font-size:14px;margin:18px 0 10px}.launch-transcript{font-size:12px;color:#71717a}.launch-transcript summary{cursor:pointer;width:fit-content}.launch-transcript p{font-size:14px;line-height:1.6;max-width:62ch}
+@media(max-width:850px){.hero{display:flex;flex-direction:column;gap:32px;max-width:720px;padding:36px 20px 42px;text-align:center}.hero .status{justify-content:center}.hero .action-buttons{margin-inline:auto}.launch-preview{width:100%}.launch-preview h2{font-size:24px}.launch-player{border-radius:14px}.launch-play{bottom:36px;padding:9px 13px;font-size:12px}.launch-note{font-size:13px}.hero .home-copy{font-size:15px}.hero h1{font-size:clamp(34px,7vw,46px)}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
 </head>
 <body>
     <header class="header">
@@ -813,7 +819,7 @@
     </header>
 
     <main>
-        <div class="hero">
+        <div class="hero"><div class="hero-intro">
             <h1>Stop Scrolling, Start Watching.</h1>
             <p class="hero-subhead">Skip the fake hype. Find the right watch faster.</p>
             <p class="home-copy">MyMovieJam is built for people who want a blunt answer fast: is this movie worth it, what should I watch tonight, and what fits if I loved something else? We focus on honest reviews, decision-help guides, similarity picks, and audience-first recommendations instead of generic movie fluff.</p>
@@ -847,7 +853,13 @@
             <div class="status">
                 <div class="status-dot"></div>
                 <span>Online on WhatsApp</span>
-            </div>
+            </div></div><section class="launch-preview" aria-labelledby="launch-title">
+<div class="launch-heading"><span class="launch-eyebrow">MEET MYMOVIEJAM</span><span class="launch-duration">20 seconds</span></div>
+<h2 id="launch-title">Your next great watch starts here.</h2>
+<div class="launch-player"><video id="launch-video" controls playsinline preload="none" width="1280" height="720" poster="/assets/launch/mymoviejam-poster.jpg" aria-label="MyMovieJam introduction: reviews, filters, and watch-or-skip guidance"><source src="/assets/launch/mymoviejam-launch.mp4" type="video/mp4"><track kind="captions" src="/assets/launch/captions.vtt" srclang="en" label="English">Your browser does not support this video. <a href="/assets/launch/mymoviejam-launch.mp4">Download the launch video</a>.</video><button class="launch-play" aria-label="Play the 20-second introduction"><span aria-hidden="true">▶</span> Watch the introduction</button></div>
+<p class="launch-note">Honest reviews. Clear verdicts. A lot less scrolling.</p>
+<details class="launch-transcript"><summary>Read the video summary</summary><p>Stop scrolling, start watching. Explore MyMovieJam's reviews and filter ratings by genre, platform, or score. Check who should watch or skip a title, then explore more at mymoviejam.com or start a chat on WhatsApp.</p></details>
+</section>
         </div>
 
         <div class="container">
@@ -1119,5 +1131,8 @@
             </a>
         </div>
     </footer>
+<script>
+const v=document.querySelector('#launch-video'), b=document.querySelector('.launch-play');b.addEventListener('click',async()=>{try{await v.play()}catch(e){b.hidden=false}});v.addEventListener('play',()=>b.hidden=true);v.addEventListener('ended',()=>b.hidden=false);
+</script>
 </body>
 </html>
