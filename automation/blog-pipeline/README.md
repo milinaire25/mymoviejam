@@ -11,7 +11,7 @@ This pipeline turns `data/blog_mymoviejam_enriched.csv` into one publishable MyM
    - best `{platform}` `{genre}` picks from `{year}`
    - evergreen `{genre}` picks
 3. Writes a brief to `automation/blog-pipeline/next_brief.json`.
-4. A daily agent reads that brief, writes the actual SEO article in the MyMovieJam site theme, creates a hero image, updates `blog/index.html` + `sitemap.xml`, commits, pushes, and then marks the titles as used.
+4. A daily agent reads that brief, writes the actual SEO article in the MyMovieJam site theme, creates a hero image, updates `blog/index.html`, runs `scripts/update_review_spotlight.py` to sync the homepage review lane, updates `sitemap.xml`, commits, pushes, and then marks the titles as used.
 
 ## Files
 

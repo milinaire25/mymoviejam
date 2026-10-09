@@ -53,13 +53,14 @@ If a brief does not clearly support one of these clusters, reshape the angle so 
    - Keep using the latest dark, high-contrast MyMovieJam hook-style look from `scripts/blog_pipeline_hero.py`.
    - Do not revert to the older softer blog-card look unless Milind explicitly asks.
 7. Update `blog/index.html` so the new post appears in the featured/latest area if appropriate and also inside the post grid.
-8. Update `sitemap.xml` with the new URL and `lastmod` date.
-9. Add 2-4 relevant internal links inside the article.
-10. For timely movie-specific review pages, research current audience pulse with live web search before writing.
+8. Run `python3 scripts/update_review_spotlight.py` so the homepage `Audience-first single-title reviews` section always stays synced with the newest review posts.
+9. Update `sitemap.xml` with the new URL and `lastmod` date.
+10. Add 2-4 relevant internal links inside the article.
+11. For timely movie-specific review pages, research current audience pulse with live web search before writing.
     - Use at least 1 official source (for example Netflix, Tudum, studio, or platform page)
     - Use at least 1 community signal source when available (for example Reddit, X/Twitter reactions, or a reputable article summarizing social chatter)
     - If the title has real chatter, add a short “what viewers are actually saying” / internet-pulse section instead of relying only on your own framing
-11. Include:
+12. Include:
    - title/meta description/keywords (see Required publishing rules #2)
    - OG + Twitter tags
    - Article schema with the Person author (rule #1)
@@ -67,13 +68,13 @@ If a brief does not clearly support one of these clusters, reshape the angle so 
    - visible trust signal when relevant (for example: clear byline, rating logic, or link path to /editorial-policy/ or /how-we-rate/)
    - quick picks section
    - strong CTA card at the end
-12. After files look correct, mark the brief as published:
+13. After files look correct, mark the brief as published:
    ```bash
    python3 scripts/blog_pipeline_selector.py publish --config automation/blog-pipeline/config.json --brief automation/blog-pipeline/next_brief.json
    ```
-13. Commit and push:
+14. Commit and push:
    ```bash
-   git add blog/index.html sitemap.xml blog/images blog/*/index.html automation/blog-pipeline/state.json automation/blog-pipeline/next_brief.json
+   git add blog/index.html index.html sitemap.xml scripts/update_review_spotlight.py blog/images blog/*/index.html automation/blog-pipeline/state.json automation/blog-pipeline/next_brief.json
    git commit -m "Add daily MyMovieJam blog: <slug>"
    git push origin main
    ```
