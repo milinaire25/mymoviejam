@@ -468,6 +468,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://mymoviejam.com/movie-ratings/small-prophets/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://mymoviejam.com/movie-ratings/rafa/</loc>
     <lastmod>2026-10-22</lastmod>
     <priority>0.8</priority>
@@ -1641,6 +1646,10 @@
     <loc>https://mymoviejam.com/movie-ratings/nayanthara-beyond-the-fairytale/</loc>
     <lastmod>2026-10-02</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mymoviejam.com/blog/small-prophets-apple-tv-review/</loc>
+    <lastmod>2026-10-23</lastmod>
   </url>
   <url>
     <loc>https://mymoviejam.com/blog/rafa-netflix-review/</loc>
