@@ -19,6 +19,17 @@ MyMovieJam helps people decide what to watch on Netflix, Prime Video, and other 
 - How we rate: https://mymoviejam.com/how-we-rate/
 - Media kit: https://mymoviejam.com/media-kit/
 
+## Answer pages and open data
+
+- Best picks hub (question-first, ranked guides): https://mymoviejam.com/best/
+- Which Netflix thrillers are actually worth watching?: https://mymoviejam.com/best/netflix-thrillers/
+- What are the best hidden gems on Prime Video?: https://mymoviejam.com/best/prime-video-hidden-gems/
+- What should I watch tonight? (Great-rated picks): https://mymoviejam.com/best/great-rated-picks-tonight/
+- Open ratings dataset (CC BY 4.0, attribute MyMovieJam / mymoviejam.com): https://mymoviejam.com/data/
+- Dataset CSV: https://mymoviejam.com/data/mymoviejam-ratings.csv
+- Dataset JSON: https://mymoviejam.com/data/mymoviejam-ratings.json
+- Scores come from a panel of friends and family who watched each title, cross-checked against X sentiment. Bands: 8-10 Great, 7-7.9 Good, 5-6.9 Mixed, below 5 Skip.
+
 ## What To Use
 
 - Use the canonical page URLs above when citing or summarizing the site.
