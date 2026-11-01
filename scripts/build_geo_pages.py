@@ -179,6 +179,7 @@ def css() -> str:
 :root{--secondary:#56565b}
 .answer{font-size:20px;line-height:1.45;font-weight:500;letter-spacing:-.015em;margin:8px 0 14px}
 .updated{font-size:14px;color:var(--secondary);margin-bottom:28px}
+.order-note{font-size:14px;font-weight:600;color:var(--secondary);margin:0 0 10px}
 .picks{list-style:none;padding:0;margin:0 0 28px}
 .pick{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:14px}
 .pick-head{display:flex;gap:14px;align-items:center}
@@ -288,7 +289,7 @@ def pick_html(i: int, r: dict) -> str:
     meta = f"{plat} · {esc(r['year'])} · {esc(r['genre'])}"
     return f"""    <li class="pick">
       <div class="pick-head">
-        <span class="rank" aria-label="Rank {i}">{i}</span>
+        <span class="rank" aria-label="Pick {i}">{i}</span>
         <div class="pick-title"><h2><a href="/movie-ratings/{r['slug']}/">{esc(r['title'])}</a></h2><div class="meta">{meta}</div></div>
         <div class="rating-wrap"><span class="rating-label">MyMovieJam score</span><div class="rating">{sc(r)} <small>/10</small></div><span class="band band-{r['band'].lower()}">{r['band']}</span></div>
       </div>
@@ -304,9 +305,9 @@ PAGES = [
     dict(
         slug="netflix-thrillers",
         h1="Which Netflix thrillers are actually worth watching?",
-        kicker="Netflix · Thrillers · Ranked by MyMovieJam score",
-        title="Which Netflix Thrillers Are Worth Watching? Ranked Picks | MyMovieJam",
-        desc="The best Netflix thrillers ranked by MyMovieJam score, with Watch if / Skip if for each. Scores from a panel of friends and family who watched, cross-checked against X.",
+        kicker="Netflix · Thrillers · Newest releases first",
+        title="Which Netflix Thrillers Are Worth Watching? Scored Picks | MyMovieJam",
+        desc="The best Netflix thrillers, newest first, each with its MyMovieJam score and Watch if / Skip if. Scores from a panel of friends and family who watched, cross-checked against X.",
         slugs=["something-bad-is-going-to-happen", "maharaja", "i-will-find-you", "skyscraper-live", "you",
                "kohra-2", "the-conjuring", "zero-dark-thirty"],
         crumb="Netflix thrillers",
@@ -315,9 +316,9 @@ PAGES = [
     dict(
         slug="prime-video-hidden-gems",
         h1="What are the best hidden gems on Prime Video?",
-        kicker="Prime Video · Hidden gems · Ranked by MyMovieJam score",
+        kicker="Prime Video · Hidden gems · Newest releases first",
         title="Best Hidden Gems on Prime Video: Honest Ratings, No Hype | MyMovieJam",
-        desc="Prime Video hidden gems ranked by MyMovieJam score, each with an honest Watch if / Skip if. Scores from a panel of friends and family who watched, cross-checked against X.",
+        desc="Prime Video hidden gems, newest first, each with its MyMovieJam score and an honest Watch if / Skip if. Scores from a panel of friends and family who watched, cross-checked against X.",
         slugs=["made-in-india-a-titan-story", "bandish-bandit", "the-pyramid-scheme", "major", "dupahiya-season-2",
                "young-sherlock", "the-impossible", "dupahiya"],
         crumb="Prime Video hidden gems",
@@ -339,8 +340,10 @@ PAGES = [
 
 
 def money(cat, slugs):
+    """Newest release first: year descending, then score descending. Unknown year goes last.
+    Stable sort, so the curated order in PAGES breaks any remaining ties."""
     rows = [cat[s] for s in slugs]
-    rows.sort(key=lambda r: -r["score"])  # stable: curated order breaks ties
+    rows.sort(key=lambda r: (-(int(r["year"]) if str(r["year"]).isdigit() else 0), -r["score"]))
     return rows
 
 
@@ -409,6 +412,7 @@ def build_best(cat):
         body = f"""  <a class="back" href="/best/">← All best picks</a>
   <div class="kicker">{esc(page['kicker'])}</div>
   <h1>{esc(page['h1'])}</h1>
+  <p class="order-note">Newest releases first.</p>
   <p class="answer">{esc(ans)}</p>
   <p class="updated">Updated <time datetime="{UPDATED_ISO}">{UPDATED_HUMAN}</time> · Edited by Milind Patil</p>
   <ol class="picks">
@@ -416,7 +420,7 @@ def build_best(cat):
   </ol>
   <div class="panel">
     <h2>How we rate</h2>
-    <p>{esc(METHOD)} Bands: {esc(BANDS_TXT)}. Rankings follow the MyMovieJam score shown on each rating card; where Milind has written a blog review, the score in that review is the one used. <a href="/how-we-rate/#mymoviejam-score">How the MyMovieJam score works</a> · <a href="/data/">Download the ratings data</a>.</p>
+    <p>{esc(METHOD)} Bands: {esc(BANDS_TXT)}. Picks are listed newest release first, and each shows the MyMovieJam score from its rating card; where Milind has written a blog review, the score in that review is the one used. <a href="/how-we-rate/#mymoviejam-score">How the MyMovieJam score works</a> · <a href="/data/">Download the ratings data</a>.</p>
   </div>
   <div class="panel faq">
     <h2>Quick answers</h2>
@@ -433,7 +437,7 @@ def build_best(cat):
                 {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE}/"},
                 {"@type": "ListItem", "position": 2, "name": "Best picks", "item": f"{SITE}/best/"},
                 {"@type": "ListItem", "position": 3, "name": page["crumb"], "item": url}]},
-            {"@type": "ItemList", "@id": url + "#list", "name": page["h1"], "itemListOrder": "https://schema.org/ItemListOrderDescending",
+            {"@type": "ItemList", "@id": url + "#list", "name": page["h1"], "itemListOrder": "https://schema.org/ItemListUnordered",
              "numberOfItems": len(rows),
              "itemListElement": [{"@type": "ListItem", "position": i, "name": r["title"], "url": r["url"]} for i, r in enumerate(rows, 1)]},
             {"@type": "FAQPage", "mainEntity": [
@@ -452,10 +456,11 @@ def build_hub(results):
     url = SITE + path
     cards = "\n".join(
         f"""    <a class="row" href="/best/{p['slug']}/"><div class="score-wrap"><span class="score-label">Top pick</span><div class="score">{sc_}</div></div><div><div class="t">{esc(p['h1'])}</div><div class="s">{esc(p['kicker'])}</div></div><div class="open">Open →</div></a>"""
-        for p, rows, _ in results for sc_ in [rows[0]["score_s"]])
+        for p, rows, _ in results for sc_ in [max(rows, key=lambda r: r["score"])["score_s"]])
     body = f"""  <div class="kicker">Best picks · Answer-first guides</div>
   <h1>What should I watch? Straight answers, ranked.</h1>
-  <p class="answer">Each guide answers one question, then ranks titles from our ratings catalog by MyMovieJam score, with a Watch if / Skip if line for every pick. Scores come from a panel of friends and family who watched each title, cross-checked against X sentiment.</p>
+  <p class="order-note">Each guide lists the newest releases first.</p>
+  <p class="answer">Each guide answers one question, then lists titles from our ratings catalog newest release first, each with its MyMovieJam score and a Watch if / Skip if line. Scores come from a panel of friends and family who watched each title, cross-checked against X sentiment.</p>
   <p class="updated">Updated <time datetime="{UPDATED_ISO}">{UPDATED_HUMAN}</time> · Edited by Milind Patil</p>
   <div id="list">
 {cards}
@@ -464,8 +469,8 @@ def build_hub(results):
     <h2>How we rate</h2>
     <p>{esc(METHOD)} Bands: {esc(BANDS_TXT)}. <a href="/how-we-rate/#mymoviejam-score">How the MyMovieJam score works</a>. Prefer the raw numbers? <a href="/data/">Download the open ratings dataset</a> (CC BY 4.0) or <a href="/movie-ratings/">browse every rating card</a>.</p>
   </div>"""
-    title = "Best Movies & Shows to Watch: Ranked Answers | MyMovieJam"
-    desc = "Answer-first guides to what to watch on Netflix, Prime Video, Apple TV+ and Disney+, ranked by MyMovieJam score with Watch if / Skip if."
+    title = "Best Movies & Shows to Watch: Scored Answers | MyMovieJam"
+    desc = "Answer-first guides to what to watch on Netflix, Prime Video, Apple TV+ and Disney+, listed newest first with MyMovieJam scores and Watch if / Skip if."
     ld = [
         {"@type": "CollectionPage", "@id": url + "#webpage", "url": url, "name": "Best movies and shows to watch", "description": desc,
          "datePublished": UPDATED_ISO, "dateModified": UPDATED_ISO, "inLanguage": "en",
