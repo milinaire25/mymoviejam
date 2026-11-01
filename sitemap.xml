@@ -1679,35 +1679,50 @@
   </url>
   <url>
     <loc>https://mymoviejam.com/best/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mymoviejam.com/best/netflix-thrillers/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mymoviejam.com/best/prime-video-hidden-gems/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mymoviejam.com/best/great-rated-picks-tonight/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mymoviejam.com/data/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mymoviejam.com/data/mymoviejam-ratings.csv</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-01</lastmod>
   </url>
   <url>
     <loc>https://mymoviejam.com/data/mymoviejam-ratings.json</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-01</lastmod>
+  </url>
+  <url>
+    <loc>https://mymoviejam.com/movie-ratings/spider-man-brand-new-day/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mymoviejam.com/movie-ratings/hoppers/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mymoviejam.com/movie-ratings/jack-ryan-ghost-war/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>

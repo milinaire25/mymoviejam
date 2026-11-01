@@ -19,8 +19,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://mymoviejam.com"
-UPDATED_ISO = "2026-10-31"
-UPDATED_HUMAN = "Oct 31, 2026"
+UPDATED_ISO = "2026-11-01"
+UPDATED_HUMAN = "Nov 1, 2026"
 SHARE_IMG = f"{SITE}/blog/images/mymoviejam-share-2026-10-v2.jpg"
 SHARE_ALT = ("MyMovieJam share card: Real opinions. Rated fast. Honest scores from people who actually "
              "watched, next to a Pluribus rating card scoring 8.8 Great with Watch if and Skip if lines.")
@@ -30,6 +30,52 @@ WA_TONIGHT = "https://api.whatsapp.com/send?phone=6581615926&text=Hi%20MovieJam,
 METHOD = ("Scores come from a panel of friends and family who watched each title, cross-checked against "
           "sentiment on X, with Milind Patil making the final call.")
 BANDS_TXT = "8–10 Great, 7–7.9 Good, 5–6.9 Mixed, below 5 Skip"
+
+# ---- shared site chrome (keep in sync with assets/mmj-ui.css) -------------------------
+UI_CSS = '<link rel="stylesheet" href="/assets/mmj-ui.css?v=20261101">'
+WA_GLYPH = ('<svg viewBox="0 0 448 512" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>')
+NAV_ITEMS = [("Reviews", "/movie-reviews/"), ("Ratings", "/movie-ratings/"), ("Best picks", "/best/"), ("Data", "/data/"), ("Blog", "/blog/")]
+
+
+def uh_header(current: str | None) -> str:
+    """One header for every page except the homepage. `current` = nav label to mark as the current page."""
+    nav = "".join(
+        f'<a href="{u}"' + (' aria-current="page"' if n == current else "") + f">{n}</a>" for n, u in NAV_ITEMS)
+    return (
+        '<header class="uh">'
+        '<a class="logo" href="/"><span class="logo-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span>MyMovieJam</span></a>'
+        f'<a class="wa-pill" href="{WA_NAV}" target="_blank" rel="noopener" aria-label="Chat with MovieJam on WhatsApp">{WA_GLYPH}<span><span class="long">Chat on </span>WhatsApp</span></a>'
+        f'<nav class="uh-nav" aria-label="Main">{nav}</nav></header>')
+
+
+def wa_bar() -> str:
+    return (f'<div class="wa-bar" role="region" aria-label="WhatsApp chat"><a href="{WA_NAV}" target="_blank" rel="noopener" '
+            f'aria-label="Chat with MovieJam on WhatsApp">{WA_GLYPH}<span>Chat on WhatsApp</span></a></div>')
+
+
+
+_GREEN_TEXT = {"#1ebe57", "#25d366"}
+
+
+def fix_text_colors(text: str) -> str:
+    """Replace the bright greens #1ebe57 / #25D366 used as TEXT colour with #0d5738.
+    Backgrounds, borders and SVG fills are left alone. Resolves var(--x) through :root definitions."""
+    defs = {k: v.strip().lower() for k, v in re.findall(r"(--[\w-]+)\s*:\s*([^;}]+)", text)}
+
+    def resolve(v: str, depth: int = 0) -> str:
+        v = re.sub(r"\s*!important\s*$", "", v.strip().lower())
+        m = re.fullmatch(r"var\(\s*(--[\w-]+)\s*(?:,[^)]*)?\)", v)
+        if m and depth < 5:
+            return resolve(defs.get(m.group(1), ""), depth + 1)
+        return v
+
+    def sub(m: re.Match) -> str:
+        if resolve(m.group(2)) in _GREEN_TEXT:
+            imp = " !important" if "!important" in m.group(2).lower() else ""
+            return f"color{m.group(1)}#0d5738{imp}"
+        return m.group(0)
+
+    return re.sub(r"(?<![\w-])color(\s*:\s*)([^;}\"']+)", sub, text)
 
 
 def esc(s: str) -> str:
@@ -130,6 +176,7 @@ def css() -> str:
     ref = (ROOT / "movie-ratings/operation-safed-sagar/index.html").read_text(encoding="utf-8")
     base = re.search(r"<style>\n(.*?)</style>", ref, re.S).group(1)
     extra = """
+:root{--secondary:#56565b}
 .answer{font-size:20px;line-height:1.45;font-weight:500;letter-spacing:-.015em;margin:8px 0 14px}
 .updated{font-size:14px;color:var(--secondary);margin-bottom:28px}
 .picks{list-style:none;padding:0;margin:0 0 28px}
@@ -140,15 +187,19 @@ def css() -> str:
 .pick-title h2{font-size:20px;letter-spacing:-.02em;line-height:1.2}
 .pick-title h2 a{text-decoration:none}
 .pick-title h2 a:hover{text-decoration:underline}
-.pick .meta{margin-top:4px;font-size:14px}
+.pick .meta{margin-top:4px;font-size:14px;color:var(--secondary)}
 .pick .rating{font-size:22px;padding:8px 14px}
-.band{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:4px 10px;border-radius:980px}
-.band-great{background:rgba(37,211,102,.14);color:var(--wa-dark)}
+.band{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:4px 10px;border-radius:980px}
+.band-great{background:#e3f5ea;color:#0d5738}
 .band-good{background:rgba(0,122,255,.1);color:#0a5bc4}
 .band-mixed{background:rgba(255,159,10,.16);color:#9a5b00}
-.pick .split{margin:16px 0 10px}
-.pick-link{font-size:14px;font-weight:600;color:var(--secondary);text-decoration:none}
-.pick-link:hover{color:var(--text)}
+.pick .split{margin:16px 0 10px;grid-template-columns:1fr}
+@media(min-width:560px){.pick .split{grid-template-columns:1fr 1fr}}
+.rating-label,.pill h3{font-size:13px;letter-spacing:.06em;color:var(--secondary)}
+.pill p{color:var(--secondary)}
+.pick-title h2 a{display:inline-flex;align-items:center;min-height:44px}
+a.pick-link{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1.5px solid rgba(13,87,56,.4);border-radius:980px;background:#fff;color:#0d5738;font-size:15px;font-weight:600;text-decoration:none}
+a.pick-link:hover{border-color:#0d5738}
 .faq h3{font-size:16px;margin:16px 0 6px}
 .faq h3:first-of-type{margin-top:0}
 .note{font-size:14px;line-height:1.55;color:var(--secondary);margin:0 0 20px}
@@ -160,7 +211,7 @@ pre.sample{background:#f5f5f7;border:1px solid var(--border);border-radius:12px;
 .panel p+p{margin-top:10px}
 @media(max-width:640px){.pick-head{flex-wrap:wrap}.pick .rating-wrap{align-items:flex-start;width:100%}}
 """
-    return base + extra
+    return fix_text_colors(base) + extra
 
 
 def jsonld(obj) -> str:
@@ -171,7 +222,7 @@ ORG = {"@type": "Organization", "@id": f"{SITE}/#organization", "name": "MyMovie
 EDITOR = {"@type": "Person", "@id": f"{SITE}/about/#milind-patil", "name": "Milind Patil", "url": f"{SITE}/about/"}
 
 
-def shell(*, path: str, title: str, desc: str, kicker: str, h1: str, body: str, ld: list, og_type="article") -> str:
+def shell(*, path: str, title: str, desc: str, kicker: str, h1: str, body: str, ld: list, og_type="article", bar: bool = False) -> str:
     url = f"{SITE}{path}"
     graph = {"@context": "https://schema.org", "@graph": ld}
     return f"""<!DOCTYPE html>
@@ -204,13 +255,12 @@ def shell(*, path: str, title: str, desc: str, kicker: str, h1: str, body: str, 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 {css()}</style>
+{UI_CSS}
 <script async src="https://plausible.io/js/pa--oC4nGgp0K7LQGFneiNaZ.js"></script>
 <script>window.plausible=window.plausible||function(){{(plausible.q=plausible.q||[]).push(arguments)}},plausible.init=plausible.init||function(opts){{plausible.o=opts||{{}}}};plausible.init();</script>
 </head>
-<body>
-<header class="site-header"><div class="header-inner">
-<a class="logo" href="/"><div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><span>MyMovieJam</span></a>
-<nav><a href="/" class="">Home</a><a href="/movie-reviews/" class="">Reviews</a><a href="/movie-ratings/" class="">Ratings</a><a href="/best/" class="{'active' if path.startswith('/best') else ''}">Best picks</a><a href="/blog/" class="">Blog</a><a href="/pricing.html" class="">Pricing</a><a href="{WA_NAV}" class="wa" target="_blank" rel="noopener">Chat on WhatsApp</a></nav></div></header>
+<body{' class="has-bar"' if bar else ''}>
+{uh_header('Best picks' if path.startswith('/best') else 'Data' if path.startswith('/data') else None)}
 <main class="page">
 {body}
   <div class="actions">
@@ -223,8 +273,8 @@ def shell(*, path: str, title: str, desc: str, kicker: str, h1: str, body: str, 
     <a href="{WA_TONIGHT}" target="_blank" rel="noopener">Chat on WhatsApp</a>
   </div>
 </main>
-<footer class="site-foot"><p>© MyMovieJam · MyMovieJam scores, edited by Milind Patil · <a href="/how-we-rate/">How we rate</a> · <a href="/editorial-policy/">Editorial policy</a> · <a href="/data/">Ratings data</a></p></footer>
-</body></html>
+<footer class="site-foot"><p>© MyMovieJam · MyMovieJam scores, edited by Milind Patil · <a href="/how-we-rate/">How we rate</a> · <a href="/editorial-policy/">Editorial policy</a> · <a href="/data/">Ratings data</a> · <a href="/pricing.html">Pricing</a></p></footer>
+{wa_bar() if bar else ''}</body></html>
 """
 
 
@@ -278,8 +328,8 @@ PAGES = [
         h1="What should I watch tonight?",
         kicker="Great-rated picks (8+) · Netflix, Prime Video, Apple TV+ and Disney+",
         title="What Should I Watch Tonight? Great-Rated Picks on Netflix, Prime, Apple TV+ | MyMovieJam",
-        desc="What to watch tonight: Great-rated (8+) picks across Netflix, Prime Video and Apple TV+, each with Watch if / Skip if. Scores from a panel of friends and family, cross-checked against X.",
-        slugs=["the-crash", "made-in-india-a-titan-story", "the-sheep-detectives", "rafa", "pluribus", "small-prophets",
+        desc="What to watch tonight: Great-rated (8+) picks across Netflix, Prime Video, Apple TV+ and Disney+, each with Watch if / Skip if. Scores from a panel of friends and family, cross-checked against X.",
+        slugs=["the-crash", "hoppers", "made-in-india-a-titan-story", "the-sheep-detectives", "rafa", "pluribus", "small-prophets",
                "margo-s-got-money-troubles", "operation-safed-sagar", "spider-noir"],
         crumb="What to watch tonight",
         related=[("/what-to-watch-tonight/", "More ways to decide tonight"), ("/netflix-movie-recommendations/", "Netflix movie recommendations"),
@@ -318,10 +368,14 @@ def answers(cat, page, rows):
                 f"headliners; that is an editorial call, not a popularity statistic. Every title below scores {lo:g} or higher.")
     if slug == "great-rated-picks-tonight":
         assert all(r["score"] >= 8 for r in rows)
+        dis = [r for r in rows if r["platform"] == "Disney+"]
+        dis_txt = (f"On Disney+, {dis[0]['title']} ({dis[0]['score_s']}/10) is the Great-rated pick. " if dis else "")
+        tail = ("Every pick below is Great (8–10) with our panel of friends and family." if dis else
+                "Every pick below is Great (8–10) with our panel of friends and family, and no Disney+ title in our catalog reaches Great, so none is listed.")
         return (f"The highest-scoring pick tonight is {n('the-crash')} on Netflix ({v('the-crash')}/10), a true-crime documentary. "
                 f"If you want something gentler, try {n('the-sheep-detectives')} on Prime Video ({v('the-sheep-detectives')}/10) or "
                 f"{n('small-prophets')} on Apple TV+ ({v('small-prophets')}/10). "
-                f"Every pick below is Great (8–10) with our panel of friends and family, and no Disney+ title in our catalog reaches Great, so none is listed.")
+                f"{dis_txt}{tail}")
     raise KeyError(slug)
 
 
@@ -339,10 +393,16 @@ def build_best(cat):
             ("What do the score bands mean?", BANDS_TXT + "."),
         ]
         if page["slug"] == "great-rated-picks-tonight":
-            dis = max((r for r in cat.values() if r["platform"] == "Disney+"), key=lambda r: r["score"])
-            faq.append(("Is there a Great-rated Disney+ pick?",
-                        f"Not right now. The highest-rated Disney+ title in our catalog is {dis['title']} at {dis['score_s']}/10 ({dis['band']}), "
-                        f"so none is listed here."))
+            great_dis = [r for r in rows if r["platform"] == "Disney+" and r["score"] >= 8]
+            if great_dis:
+                d0 = great_dis[0]
+                faq.append(("Is there a Great-rated Disney+ pick?",
+                            f"Yes. {d0['title']} is Great-rated on Disney+ at {d0['score_s']}/10 and is listed below."))
+            else:
+                dis = max((r for r in cat.values() if r["platform"] == "Disney+"), key=lambda r: r["score"])
+                faq.append(("Is there a Great-rated Disney+ pick?",
+                            f"Not right now. The highest-rated Disney+ title in our catalog is {dis['title']} at {dis['score_s']}/10 ({dis['band']}), "
+                            f"so none is listed here."))
         items = "\n".join(pick_html(i, r) for i, r in enumerate(rows, 1))
         faq_html = "\n".join(f"    <h3>{esc(q)}</h3>\n    <p>{esc(a)}</p>" for q, a in faq)
         rel = " · ".join(f'<a href="{u}">{esc(t)}</a>' for u, t in page["related"])
@@ -379,7 +439,7 @@ def build_best(cat):
             {"@type": "FAQPage", "mainEntity": [
                 {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]},
         ]
-        html_out = shell(path=path, title=page["title"], desc=page["desc"], kicker=page["kicker"], h1=page["h1"], body=body, ld=ld)
+        html_out = shell(path=path, title=page["title"], desc=page["desc"], kicker=page["kicker"], h1=page["h1"], body=body, ld=ld, bar=True)
         d = ROOT / "best" / page["slug"]
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(html_out, encoding="utf-8")
@@ -415,7 +475,7 @@ def build_hub(results):
          "itemListElement": [{"@type": "ListItem", "position": i, "name": p["h1"], "url": f"{SITE}/best/{p['slug']}/"} for i, (p, _, _) in enumerate(results, 1)]},
     ]
     (ROOT / "best").mkdir(exist_ok=True)
-    (ROOT / "best/index.html").write_text(shell(path=path, title=title, desc=desc, kicker="", h1="", body=body, ld=ld, og_type="website"), encoding="utf-8")
+    (ROOT / "best/index.html").write_text(shell(path=path, title=title, desc=desc, kicker="", h1="", body=body, ld=ld, og_type="website", bar=True), encoding="utf-8")
 
 
 # ---------------------------------------------------------------- /data page
