@@ -5,7 +5,7 @@
  "license": "CC BY 4.0",
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "MyMovieJam (mymoviejam.com)",
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "method": "Scores come from a panel of friends and family who watched each title, cross-checked against sentiment on X, with Milind Patil making the final call. Bands: 8–10 Great, 7–7.9 Good, 5–6.9 Mixed, below 5 Skip. See https://mymoviejam.com/how-we-rate/",
  "fields": [
   "title",
@@ -43,6 +43,18 @@
    "watch_if": "True-crime fans who want post-watch debate",
    "skip_if": "You want feel-good escape only",
    "rating_page_url": "https://mymoviejam.com/movie-ratings/the-crash/"
+  },
+  {
+   "title": "Hoppers",
+   "year": 2026,
+   "type": "Film",
+   "genre": "Animation / Comedy / Adventure / Family",
+   "platform": "Disney+",
+   "score": 9.3,
+   "band": "Great",
+   "watch_if": "Family watch nights, Pixar fans who want something lighter than soul-search prestige, and anyone who needs one safe recommendation that still feels fresh.",
+   "skip_if": "You want razor-sharp satire, darker animation, or a truly top-tier Pixar masterpiece that rewires your brain.",
+   "rating_page_url": "https://mymoviejam.com/movie-ratings/hoppers/"
   },
   {
    "title": "A Star Is Born",
@@ -187,6 +199,18 @@
    "watch_if": "You like gentle, deadpan British comedy with a little strange magic, or you loved Detectorists",
    "skip_if": "You need plot momentum, big jokes or a twist every episode",
    "rating_page_url": "https://mymoviejam.com/movie-ratings/small-prophets/"
+  },
+  {
+   "title": "Spider-Man: Brand New Day",
+   "year": 2026,
+   "type": "Film",
+   "genre": "Superhero",
+   "platform": "Theatrical",
+   "score": 8.8,
+   "band": "Great",
+   "watch_if": "You wanted Tom Holland back in a more classic, grounded Spider-Man lane with stronger Peter Parker material and cleaner New York energy.",
+   "skip_if": "You are currently exhausted by MCU connective tissue and want a superhero movie with almost zero franchise setup hanging off it.",
+   "rating_page_url": "https://mymoviejam.com/movie-ratings/spider-man-brand-new-day/"
   },
   {
    "title": "12th Fail",
@@ -2947,6 +2971,18 @@
    "watch_if": "Adventure fans who don't mind rough edges",
    "skip_if": "You want a tight script; at 5.6/10 this one is uneven",
    "rating_page_url": "https://mymoviejam.com/movie-ratings/do-little/"
+  },
+  {
+   "title": "Jack Ryan: Ghost War",
+   "year": null,
+   "type": "Film",
+   "genre": "Spy Action",
+   "platform": "Prime Video",
+   "score": 5.5,
+   "band": "Mixed",
+   "watch_if": "You already liked the Jack Ryan series, enjoy clean modern spy action, and are okay lowering your expectations from “smart thriller” to “decent franchise extension.”",
+   "skip_if": "You wanted the layered cat-and-mouse plotting of the show, or you are choosing one Prime Video action movie tonight and want the best possible use of two hours.",
+   "rating_page_url": "https://mymoviejam.com/movie-ratings/jack-ryan-ghost-war/"
   },
   {
    "title": "Richie Rich",

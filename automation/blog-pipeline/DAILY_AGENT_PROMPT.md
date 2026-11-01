@@ -97,6 +97,7 @@ These are mandatory for every post. Check each one before committing.
    - Add the post to the card's "Full review" link (rating-card back-link) when a card exists.
 4. **Correct item type.** `itemReviewed` must be `TVSeries` for series, miniseries and seasons, and `Movie` only for films. Check before writing.
 5. **No SEO/strategy wording in reader-facing copy.** Do not write "SEO", "search intent", "query", "cluster", "layer", "strategy", "template", "answer engines" or "Google should see…" in visible text. The search clusters in this file are for planning only.
+5a. **Site chrome and counts.** Copy the header (`header.uh`), the `assets/mmj-ui.css` link, the footer with its Pricing link, the sticky WhatsApp bar (`.wa-bar`, reviews only) and, when the review has a rating card, the score box under the H1 from `blog/dorothy-netflix-review/index.html`. Never publish viewer, vote or review counts. Run `python3 scripts/lint_counts.py` before pushing; it must exit 0.
 6. **Ping IndexNow after the push succeeds:**
    ```bash
    python3 scripts/indexnow_ping.py https://mymoviejam.com/blog/<slug>/ https://mymoviejam.com/blog/ https://mymoviejam.com/sitemap.xml
