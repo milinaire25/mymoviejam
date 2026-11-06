@@ -467,7 +467,12 @@
     <lastmod>2026-10-02</lastmod>
     <priority>0.8</priority>
   </url>
-  <url>
+    <url>
+    <loc>https://mymoviejam.com/movie-ratings/possible-love/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://mymoviejam.com/movie-ratings/dorothy/</loc>
     <lastmod>2026-10-30</lastmod>
     <priority>0.8</priority>
@@ -1657,7 +1662,11 @@
     <lastmod>2026-10-02</lastmod>
     <priority>0.8</priority>
   </url>
-  <url>
+    <url>
+    <loc>https://mymoviejam.com/blog/possible-love-netflix-review/</loc>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+<url>
     <loc>https://mymoviejam.com/blog/dorothy-netflix-review/</loc>
     <lastmod>2026-10-30</lastmod>
   </url>
