@@ -5,7 +5,7 @@
  "license": "CC BY 4.0",
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "MyMovieJam (mymoviejam.com)",
- "updated": "2026-11-01",
+ "updated": "2026-11-06",
  "method": "Scores come from a panel of friends and family who watched each title, cross-checked against sentiment on X, with Milind Patil making the final call. Bands: 8–10 Great, 7–7.9 Good, 5–6.9 Mixed, below 5 Skip. See https://mymoviejam.com/how-we-rate/",
  "fields": [
   "title",
@@ -20,6 +20,30 @@
   "rating_page_url"
  ],
  "ratings": [
+  {
+   "title": "The Remarried Empress",
+   "year": 2026,
+   "type": "Series",
+   "genre": "Fantasy romance",
+   "platform": "Disney+",
+   "score": 7.7,
+   "band": "Good",
+   "watch_if": "Glossy K-fantasy palace romance with strong lead chemistry; fine with early-season tonal unevenness.",
+   "skip_if": "You need a faithful webtoon adaptation or dislike heightened / ethereal production styles.",
+   "rating_page_url": "https://mymoviejam.com/movie-ratings/the-remarried-empress/"
+  },
+  {
+   "title": "Carrie",
+   "year": 2026,
+   "type": "Series",
+   "genre": "Horror drama",
+   "platform": "Prime Video",
+   "score": 7.8,
+   "band": "Good",
+   "watch_if": "Flanagan character horror and a modern Carrie that assumes you know the De Palma beats.",
+   "skip_if": "You want a faithful shot-for-shot Carrie or dislike serialized expansion of a short classic.",
+   "rating_page_url": "https://mymoviejam.com/movie-ratings/carrie/"
+  },
   {
    "title": "Michael",
    "year": 2026,
