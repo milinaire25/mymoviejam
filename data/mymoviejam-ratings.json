@@ -5,7 +5,7 @@
  "license": "CC BY 4.0",
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "MyMovieJam (mymoviejam.com)",
- "updated": "2026-11-06",
+ "updated": "2026-11-13",
  "method": "Scores come from a panel of friends and family who watched each title, cross-checked against sentiment on X, with Milind Patil making the final call. Bands: 8–10 Great, 7–7.9 Good, 5–6.9 Mixed, below 5 Skip. See https://mymoviejam.com/how-we-rate/",
  "fields": [
   "title",
@@ -20,6 +20,18 @@
   "rating_page_url"
  ],
  "ratings": [
+  {
+   "title": "Baththa",
+   "year": 2026,
+   "type": "Movie",
+   "genre": "Comedy-drama",
+   "platform": "Netflix",
+   "score": 8.5,
+   "band": "Great",
+   "watch_if": "You want a warm, funny Tamil family film with real emotional payoff, and you like Vijay Sethupathi in a role built around a child actor.",
+   "skip_if": "You want a tight two-hour watch or a hard-edged gangster film; it is long and the final stretch drags for some viewers.",
+   "rating_page_url": "https://mymoviejam.com/movie-ratings/baththa/"
+  },
   {
    "title": "The Remarried Empress",
    "year": 2026,
