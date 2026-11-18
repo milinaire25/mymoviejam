@@ -5,7 +5,7 @@
  "license": "CC BY 4.0",
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "MyMovieJam (mymoviejam.com)",
- "updated": "2026-11-13",
+ "updated": "2026-11-18",
  "method": "Scores come from a panel of friends and family who watched each title, cross-checked against sentiment on X, with Milind Patil making the final call. Bands: 8–10 Great, 7–7.9 Good, 5–6.9 Mixed, below 5 Skip. See https://mymoviejam.com/how-we-rate/",
  "fields": [
   "title",
@@ -20,6 +20,30 @@
   "rating_page_url"
  ],
  "ratings": [
+  {
+   "title": "Daayra",
+   "year": 2026,
+   "type": "Movie",
+   "genre": "Thriller",
+   "platform": "Netflix",
+   "score": 8.0,
+   "band": "Great",
+   "watch_if": "You want a grim, talk-it-over Hindi police procedural that treats encounters as contested rather than heroic, and you like Prithviraj Sukumaran in a restrained role.",
+   "skip_if": "You want a fast, propulsive cop thriller or something light. It runs 143 minutes, starts from a rape-and-murder case, and viewers and critics split on the slow first half and the ending.",
+   "rating_page_url": "https://mymoviejam.com/movie-ratings/daayra/"
+  },
+  {
+   "title": "Zakir Khan: Papa Yaar",
+   "year": 2026,
+   "type": "Stand-up special",
+   "genre": "Stand-up comedy",
+   "platform": "Netflix",
+   "score": 8.0,
+   "band": "Great",
+   "watch_if": "You like Zakir Khan’s storytelling style (nostalgia, family, father-and-son stories) and want something warm and emotional alongside the laughs.",
+   "skip_if": "You want rapid-fire jokes or something new from Zakir Khan. Critics and viewers note it leans on emotion over punchlines and echoes his earlier specials.",
+   "rating_page_url": "https://mymoviejam.com/movie-ratings/zakir-khan-papa-yaar/"
+  },
   {
    "title": "Baththa",
    "year": 2026,
