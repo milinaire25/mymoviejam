@@ -488,6 +488,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://mymoviejam.com/movie-ratings/anaesthesia/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://mymoviejam.com/movie-ratings/baththa/</loc>
     <lastmod>2026-11-13</lastmod>
     <priority>0.8</priority>
@@ -1686,6 +1691,10 @@
     <loc>https://mymoviejam.com/movie-ratings/nayanthara-beyond-the-fairytale/</loc>
     <lastmod>2026-10-02</lastmod>
     <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://mymoviejam.com/blog/anaesthesia-netflix-review/</loc>
+    <lastmod>2026-11-20</lastmod>
   </url>
     <url>
     <loc>https://mymoviejam.com/blog/baththa-netflix-review/</loc>

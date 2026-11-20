@@ -5,7 +5,7 @@
  "license": "CC BY 4.0",
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "MyMovieJam (mymoviejam.com)",
- "updated": "2026-11-18",
+ "updated": "2026-11-20",
  "method": "Scores come from a panel of friends and family who watched each title, cross-checked against sentiment on X, with Milind Patil making the final call. Bands: 8–10 Great, 7–7.9 Good, 5–6.9 Mixed, below 5 Skip. See https://mymoviejam.com/how-we-rate/",
  "fields": [
   "title",
@@ -20,6 +20,18 @@
   "rating_page_url"
  ],
  "ratings": [
+  {
+   "title": "Anaesthesia",
+   "year": 2026,
+   "type": "Series",
+   "genre": "Medical drama",
+   "platform": "Netflix",
+   "score": 7.9,
+   "band": "Good",
+   "watch_if": "You want a fast, tense hospital drama with a strong lead performance, and you are fine with graphic surgery scenes and strong language.",
+   "skip_if": "You are squeamish about blood and surgery, want strict medical realism, or need a tidy ending; some viewers wanted more from the finish.",
+   "rating_page_url": "https://mymoviejam.com/movie-ratings/anaesthesia/"
+  },
   {
    "title": "Daayra",
    "year": 2026,
@@ -55,6 +67,18 @@
    "watch_if": "You want a warm, funny Tamil family film with real emotional payoff, and you like Vijay Sethupathi in a role built around a child actor.",
    "skip_if": "You want a tight two-hour watch or a hard-edged gangster film; it is long and the final stretch drags for some viewers.",
    "rating_page_url": "https://mymoviejam.com/movie-ratings/baththa/"
+  },
+  {
+   "title": "Possible Love",
+   "year": 2026,
+   "type": "Movie",
+   "genre": "Drama",
+   "platform": "Netflix",
+   "score": 8.6,
+   "band": "Great",
+   "watch_if": "You want a patient, novelistic Korean drama with award-caliber performances and don't mind a nearly three-hour slow burn.",
+   "skip_if": "You need plot propulsion, short runtime, or a light Friday binge — this is deliberate and demanding.",
+   "rating_page_url": "https://mymoviejam.com/movie-ratings/possible-love/"
   },
   {
    "title": "The Remarried Empress",
