@@ -488,6 +488,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://mymoviejam.com/movie-ratings/the-blue-road/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://mymoviejam.com/movie-ratings/anaesthesia/</loc>
     <lastmod>2026-11-20</lastmod>
     <priority>0.8</priority>
@@ -1691,6 +1696,10 @@
     <loc>https://mymoviejam.com/movie-ratings/nayanthara-beyond-the-fairytale/</loc>
     <lastmod>2026-10-02</lastmod>
     <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://mymoviejam.com/blog/the-blue-road-netflix-review/</loc>
+    <lastmod>2026-11-27</lastmod>
   </url>
     <url>
     <loc>https://mymoviejam.com/blog/anaesthesia-netflix-review/</loc>

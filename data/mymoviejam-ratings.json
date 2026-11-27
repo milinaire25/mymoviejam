@@ -5,7 +5,7 @@
  "license": "CC BY 4.0",
  "license_url": "https://creativecommons.org/licenses/by/4.0/",
  "attribution": "MyMovieJam (mymoviejam.com)",
- "updated": "2026-11-20",
+ "updated": "2026-11-27",
  "method": "Scores come from a panel of friends and family who watched each title, cross-checked against sentiment on X, with Milind Patil making the final call. Bands: 8–10 Great, 7–7.9 Good, 5–6.9 Mixed, below 5 Skip. See https://mymoviejam.com/how-we-rate/",
  "fields": [
   "title",
@@ -20,6 +20,18 @@
   "rating_page_url"
  ],
  "ratings": [
+  {
+   "title": "The Blue Road",
+   "year": 2026,
+   "type": "Series",
+   "genre": "Crime thriller",
+   "platform": "Netflix",
+   "score": 8.1,
+   "band": "Great",
+   "watch_if": "You want a dark, twisty detective thriller with two strong leads, you are fine with subtitles in Korean and Japanese, and gruesome crime scenes do not put you off.",
+   "skip_if": "You are squeamish about mutilated bodies and violence, or you want a pure whodunit; some viewers say the second half drifts from the case into history and backstory.",
+   "rating_page_url": "https://mymoviejam.com/movie-ratings/the-blue-road/"
+  },
   {
    "title": "Anaesthesia",
    "year": 2026,
